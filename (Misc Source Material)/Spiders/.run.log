@@ -1,0 +1,26 @@
+I index
+F 2005
+F 2011
+F 2039
+F 2117
+F 2118
+F 2119
+F 2120
+F 2121
+I egsnp
+F 376
+F 377
+F 378
+F 379
+F 380
+I sketchbook
+F 877
+F 878
+F 879
+F 880
+F 881
+Traceback (most recent call last):
+  File ".last_tmp.py", line 72, in <module>
+    raw_input()
+EOFError: EOF when reading a line
+

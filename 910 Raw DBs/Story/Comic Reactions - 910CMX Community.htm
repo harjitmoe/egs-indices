@@ -1,0 +1,1128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en"><head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Comic Reactions - 910CMX Community</title>
+		<link rel="shortcut icon" href="http://community.910cmx.com/favicon.ico">
+		<meta property="og:title" content="Comic Reactions">
+		<meta property="og:site_name" content="910CMX Community">
+		<meta property="og:image" content="http://community.910cmx.com/public/style_images/mobile/meta_image.png">
+		
+		
+	<script type="text/javascript" src="Comic%20Reactions%20-%20910CMX%20Community_files/prototype.js"></script>
+
+<script type="text/javascript">
+var LOADING_TEMPLATE = new Template( "<div id='loadingBox'><img src='http://community.910cmx.com/public/style_images/mobile/wait.gif' /><span>Loading...</span></div>" );
+</script>
+<script type="text/javascript" src="Comic%20Reactions%20-%20910CMX%20Community_files/ipb.js" charset="utf-8"></script>
+<!--Remove if you don't want touch devices-->
+<script type="text/javascript" src="Comic%20Reactions%20-%20910CMX%20Community_files/mobile_touch.js"></script>
+<!-- Fix youtube video sizes -->
+<script type="text/javascript">
+	Event.observe( window, 'resize', handleEmbeddedVideo );
+	Event.observe( window, 'load', handleEmbeddedVideo );
+
+	function handleEmbeddedVideo(e)
+	{
+		var pageWidth	= $('content').getWidth() - 40;
+
+		$$('.EmbeddedVideo', '.EmbeddedVideo embed').each( function(elem){
+			var aspectRatio = $(elem).readAttribute('height') / $(elem).readAttribute('width');
+
+			if( $(elem).readAttribute('width') > pageWidth )
+			{
+				$(elem).writeAttribute( { width: pageWidth, height: pageWidth * aspectRatio });
+			}
+		});
+	}
+</script>
+<script type="text/javascript">
+	document.observe("dom:loaded", function(){
+					  		
+		$$('.bbc_spoiler_show').find( function( elem ) {
+			elem.addClassName( 'button page-button' ).setStyle( { 'font-size' : '12px', 'padding': '5px' } );
+			elem.observe('click', _fireSpoiler );
+		} ) 
+	
+	} );
+		
+	function _fireSpoiler(e)
+	{
+		button = Event.element(e);
+		
+		Event.stop(e);
+	
+		var returnvalue = $(button).up().down('.bbc_spoiler_wrapper').down('.bbc_spoiler_content').toggle();
+		
+		if( returnvalue.visible() )
+		{
+			$(button).value = "Hide";
+		}
+		else
+		{
+			$(button).value = "Show";
+		}
+	}		
+</script>
+	
+				
+			<link rel="stylesheet" type="text/css" title="Main" media="screen" href="Comic%20Reactions%20-%20910CMX%20Community_files/calendar_select.css">
+		
+	
+
+				
+			<link rel="stylesheet" type="text/css" title="Main" media="screen" href="Comic%20Reactions%20-%20910CMX%20Community_files/ipb_editor.css">
+		
+	
+
+				
+			<link rel="stylesheet" type="text/css" title="Main" media="screen" href="Comic%20Reactions%20-%20910CMX%20Community_files/ipb_styles.css">
+		
+	
+	
+
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=7" />-->
+		
+	
+		
+		
+			<meta name="description" content="Comic Reactions: Discuss individual comic pages and/or strips.">
+		
+		
+		
+			<meta property="og:description" content="Comic Reactions: Discuss individual comic pages and/or strips.">
+		
+		
+	
+
+		
+		
+			<meta name="identifier-url" content="http://community.910cmx.com/index.php?/forum/105-comic-reactions/">
+		
+		
+			<meta property="og:url" content="http://community.910cmx.com/index.php?/forum/105-comic-reactions/">
+		
+		
+		
+	
+
+<meta property="og:image" content="http://community.910cmx.com/public/style_images/mobile/meta_image.png">
+	
+		
+			
+			
+			
+			
+				<link id="ipsCanonical" rel="canonical" href="http://community.910cmx.com/index.php?/forum/105-comic-reactions/">
+			
+		
+
+			
+			
+			
+			
+				<link rel="next" href="http://community.910cmx.com/index.php?/forum/105-comic-reactions/page-2?prune_day=100&amp;sort_by=Z-A&amp;sort_key=last_post&amp;topicfilter=all">
+			
+		
+
+			
+			
+			
+			
+				<link rel="last" href="http://community.910cmx.com/index.php?/forum/105-comic-reactions/page-38?prune_day=100&amp;sort_by=Z-A&amp;sort_key=last_post&amp;topicfilter=all">
+			
+		
+
+			
+			
+			
+			
+				<link rel="up" href="http://community.910cmx.com/index.php?/forum/103-el-goonish-shive-wwwegscomicscom/">
+			
+		
+	
+
+		
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="910CMX Community" href="http://community.910cmx.com/index.php?/rss/forums/1-910cmx-community/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="910CMX Community Blogs RSS feed" href="http://community.910cmx.com/index.php?/rss/blog/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Convention Calendar" href="http://community.910cmx.com/index.php?/rss/calendar/2-convention-calendar/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Community Calendar" href="http://community.910cmx.com/index.php?/rss/calendar/1-community-calendar/">
+			
+			
+			
+		
+	
+
+	
+
+<script type="text/javascript">
+	var isRTL	= false;
+	var rtlIe	= '';
+	var rtlFull	= '';
+</script>
+
+
+		
+		<!--<meta name="apple-mobile-web-app-capable" content="yes">-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable = no;">
+	</head>
+	<body id="ipboard_body">
+		<div id="ipbwrapper">
+			
+				<div id="secondary_navigation">
+					<a href="http://community.910cmx.com/index.php?/forum/103-el-goonish-shive-wwwegscomicscom/">← &nbsp;El Goonish Shive -- www.egscomics.com</a>
+				</div>
+			
+				<h1>
+	<a href="http://community.910cmx.com/" title="Go to community index" rel="home" accesskey="1">910CMX Community</a>
+</h1>
+			
+			<div style="display: block;" id="options-button">»</div>	
+			<div style="display: none;" id="user_navigation" class="clearfix">
+				<ul class="clearfix" id="user_bar">
+					
+						<a class="button secondary" style="width:auto" href="http://community.910cmx.com/index.php?app=core&amp;module=global&amp;section=login&amp;do=logout&amp;k=b87599b72db7d163618c5e0ec35b4130">Sign Out HarJIT</a>
+					
+				<li class="dummy"><span></span></li><li class="dummy"><span></span></li><li class="dummy"><span></span></li></ul>
+				<ul class="clearfix launcher">
+					<li id="nav_messages"><a href="http://community.910cmx.com/index.php?app=members&amp;module=messaging" title="Messenger"><span class="icon"></span>Messenger</a></li>
+					<li id="nav_notifications"><a href="http://community.910cmx.com/index.php?app=core&amp;module=usercp&amp;tab=core&amp;area=notificationlog"><span class="icon"></span>Notifications</a></li>
+					
+						<li id="nav_members"><a href="http://community.910cmx.com/index.php?app=members" title="Go to Member List"><span class="icon"></span>Members</a></li>
+					
+					
+						<li id="nav_blog"><a href="http://community.910cmx.com/index.php?/blogs/" title="Go to %sBlogs"><span class="icon"></span>Blogs</a></li>
+					
+					
+						<li id="nav_gallery"><a href="http://community.910cmx.com/index.php?/gallery/" title="Go to %sGallery"><span class="icon"></span>Gallery</a></li>
+					
+					<li id="nav_vnc"><a href="http://community.910cmx.com/index.php?app=core&amp;module=search&amp;do=viewNewContent&amp;search_app=forums" accesskey="2"><span class="icon"></span>New Content</a></li>
+					<li id="nav_statuses"><a href="http://community.910cmx.com/index.php?/statuses/all/"><span class="icon"></span>Status Updates</a></li>
+					<li id="nav_search"><a href="http://community.910cmx.com/index.php?app=core&amp;module=search" accesskey="2"><span class="icon"></span>Search</a></li>
+					<li id="nav_markread"><a href="http://community.910cmx.com/index.php?app=forums&amp;module=forums&amp;section=markasread&amp;marktype=all&amp;k=b87599b72db7d163618c5e0ec35b4130" title="Mark all as read"><span class="icon"></span>Mark All Read</a></li>
+				</ul>
+			</div>
+			<script type="text/javascript">
+				/* Prevent flash of header */
+				document.getElementById('user_navigation').style.display = 'none';
+			</script>
+			
+			<div id="content" class="clear">
+				<table><tbody><tr><td style="width: 472px; height: 100px;">
+
+<!-- Project Wonderful Ad Box Code -->
+<div id="pw_adbox_31490_1_0"></div>
+<script type="text/javascript"></script>
+<noscript><map name="admap31490" id="admap31490"><area href="http://www.projectwonderful.com/out_nojs.php?r=0&c=0&id=31490&type=1" shape="rect" coords="0,0,468,60" title="" alt="" target="_blank" /></map>
+<table cellpadding="0" cellspacing="0" style="width:468px;border-style:none;background-color:#204066;"><tr><td><img src="http://www.projectwonderful.com/nojs.php?id=31490&type=1" style="width:468px;height:60px;border-style:none;" usemap="#admap31490" alt="" /></td></tr><tr><td style="background-color:#204066;" colspan="1"><center><a style="font-size:10px;color:#0000ff;text-decoration:none;line-height:1.2;font-weight:bold;font-family:Tahoma, verdana,arial,helvetica,sans-serif;text-transform: none;letter-spacing:normal;text-shadow:none;white-space:normal;word-spacing:normal;" href="http://www.projectwonderful.com/advertisehere.php?id=31490&type=1" target="_blank">Ads by Project Wonderful!  Your ad here, right now: $0.60</a></center></td></tr><tr><td colspan="1" style="vertical-align:top;width:468px;background-color:#000000;height:3px;font-size:1px;padding:0px;max-height:3px;"></td></tr></table>
+</noscript>
+<!-- End Project Wonderful Ad Box Code -->
+
+</td><td width="*"></td><td style="width: 472px; height: 100px;">
+
+<!-- Project Wonderful Ad Box Code -->
+<div id="pw_adbox_58682_1_0"></div>
+<script type="text/javascript"></script>
+<noscript><map name="admap58682" id="admap58682"><area href="http://www.projectwonderful.com/out_nojs.php?r=0&c=0&id=58682&type=1" shape="rect" coords="0,0,468,60" title="" alt="" target="_blank" /></map>
+<table cellpadding="0" cellspacing="0" style="width:468px;border-style:none;background-color:204066;"><tr><td><img src="http://www.projectwonderful.com/nojs.php?id=58682&type=1" style="width:468px;height:60px;border-style:none;" usemap="#admap58682" alt="" /></td></tr><tr><td style="background-color:204066;" colspan="1"><center><a style="font-size:10px;color:#0000ff;text-decoration:none;line-height:1.2;font-weight:bold;font-family:Tahoma, verdana,arial,helvetica,sans-serif;text-transform: none;letter-spacing:normal;text-shadow:none;white-space:normal;word-spacing:normal;" href="http://www.projectwonderful.com/advertisehere.php?id=58682&type=1" target="_blank">Ads by Project Wonderful!  Your ad here, right now: $0.60</a></center></td></tr></table>
+</noscript>
+<!-- End Project Wonderful Ad Box Code -->
+
+</td></tr></tbody></table>
+				<h2>Comic Reactions</h2>
+
+	<div class="master_list" id="board_index">
+		
+			
+								
+					<div id="forum-134" class="row touch-row"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+							<div class="icon">
+								
+									<img src="Comic%20Reactions%20-%20910CMX%20Community_files/f_read.png" alt="Read forum" title="Read forum">
+								
+							</div>
+							<a href="http://community.910cmx.com/index.php?/forum/134-egsnp/" title="EGS:NP" class="title">EGS:NP</a>
+							<br><span class="desc">198 topics · Last post Today, 05:26 PM</span>
+						</div>
+				
+				
+					<div id="forum-125" class="row touch-row"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+							<div class="icon">
+								
+									<img src="Comic%20Reactions%20-%20910CMX%20Community_files/f_read.png" alt="Read forum" title="Read forum">
+								
+							</div>
+							<a href="http://community.910cmx.com/index.php?/forum/125-sketchbook/" title="Sketchbook" class="title">Sketchbook</a>
+							<br><span class="desc">431 topics · Last post Yesterday, 07:49 AM</span>
+						</div>
+				
+			
+		
+	</div>
+
+<div class="master_list">
+	<!--<h2>Comic Reactions</h2>-->
+		<div class="controls">
+			<div class="buttons">
+				
+					<a href="http://community.910cmx.com/index.php?app=forums&amp;module=post&amp;section=post&amp;do=new_post&amp;f=105" title="Start New Topic" accesskey="s" class="button">Start New Topic</a>
+				
+				
+		<a class="button page-button disabled prev" href="#">« Prev</a>
+	
+	
+		<a class="button page-button next" href="http://community.910cmx.com/index.php?/forum/105-comic-reactions/page-2?prune_day=100&amp;sort_by=Z-A&amp;sort_key=last_post&amp;topicfilter=all" title="Next page" rel="next">Next »</a>
+	
+			</div>
+		</div>
+		
+		
+		
+		
+			<h3>Topics In This Forum</h3>
+			
+				<div class="row touch-row  " id="topic-14131"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+	<span title="This topic is locked"><img src="Comic%20Reactions%20-%20910CMX%20Community_files/t_locked.png" alt="This topic is locked"><br></span>
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/14131-forum-courtesy-rules-updated/?view=getnewpost" class="topic_title title">Forum courtesy rules updated</a>
+							
+	<span class="topic_prefix">Pinned</span>&nbsp;
+
+							
+							
+							<br>
+							<span class="subtext">
+								2 replies: Last by The Old Hack, Jul 19 2014 11:18 AM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-7865"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+	<span title="This topic is locked"><img src="Comic%20Reactions%20-%20910CMX%20Community_files/t_locked.png" alt="This topic is locked"><br></span>
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/7865-moved-reactions-to-classic/?view=getnewpost" class="topic_title title">Moved Reactions to Classic</a>
+							
+	<span class="topic_prefix">Pinned</span>&nbsp;
+
+							
+							
+							<br>
+							<span class="subtext">
+								0 replies: Last by DanShive, Mar 05 2010 01:49 AM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-7825"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+	<span title="This topic is locked"><img src="Comic%20Reactions%20-%20910CMX%20Community_files/t_locked.png" alt="This topic is locked"><br></span>
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/7825-reaction-thread-guidelines/?view=getnewpost" class="topic_title title">Reaction Thread Guidelines</a>
+							
+	<span class="topic_prefix">Pinned</span>&nbsp;
+
+							
+							
+							<br>
+							<span class="subtext">
+								0 replies: Last by DanShive, Feb 28 2010 08:02 PM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15419"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15419-story-wednesday-august-5-2015/?view=getnewpost" class="topic_title title">Story Wednesday August 5, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									3 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								40 replies: Last by The Old Hack, Today, 02:50 PM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15423"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15423-story-friday-august-7-2015/?view=getnewpost" class="topic_title title">Story: Friday August 7 2015</a>
+							
+							
+								<span class="mini_pagination">
+									2 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								30 replies: Last by Matoyak, Today, 03:23 AM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15414"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15414-story-monday-august-3-2015/?view=getnewpost" class="topic_title title">Story Monday August 3, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									2 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								35 replies: Last by Scotty, Aug 05 2015 01:32 PM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15406"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15406-story-monday-july-27-2015/?view=getnewpost" class="topic_title title">Story Monday July 27, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									2 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								33 replies: Last by CritterKeeper, Aug 03 2015 01:53 PM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15410"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15410-story-friday-july-31-2015/?view=getnewpost" class="topic_title title">Story Friday July 31, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									2 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								34 replies: Last by Oda, Aug 03 2015 04:54 AM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15408"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+<img src="Comic%20Reactions%20-%20910CMX%20Community_files/t_read_dot.png" alt="You posted in this topic" title="You posted in this topic"><br>
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15408-story-wed-july-29-2015/?view=getnewpost" class="topic_title title">Story Wed, July 29 2015</a>
+							
+							
+								<span class="mini_pagination">
+									2 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								34 replies: Last by edupoet81, Jul 31 2015 02:01 AM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15401"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+<img src="Comic%20Reactions%20-%20910CMX%20Community_files/t_read_dot.png" alt="You posted in this topic" title="You posted in this topic"><br>
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15401-story-friday-july-24-2015/?view=getnewpost" class="topic_title title">Story Friday July 24, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									3 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								55 replies: Last by Oda, Jul 28 2015 05:19 AM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15399"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15399-story-july-22-2015/?view=getnewpost" class="topic_title title">Story July 22, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									4 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								63 replies: Last by jmucchiello, Jul 26 2015 06:50 PM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15395"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15395-story-friday-july-17-2015/?view=getnewpost" class="topic_title title">Story Friday July 17, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									2 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								31 replies: Last by The Old Hack, Jul 19 2015 11:41 AM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15393"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15393-story-wednesday-july-15-2015/?view=getnewpost" class="topic_title title">Story Wednesday July 15, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									3 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								57 replies: Last by Scotty, Jul 18 2015 04:40 AM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15386"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15386-story-monday-july-13-2015/?view=getnewpost" class="topic_title title">Story Monday July 13, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									3 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								49 replies: Last by WR...S, Jul 15 2015 07:39 AM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15379"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+<img src="Comic%20Reactions%20-%20910CMX%20Community_files/t_read_dot.png" alt="You posted in this topic" title="You posted in this topic"><br>
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15379-story-friday-july-10-2015/?view=getnewpost" class="topic_title title">Story Friday July 10, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									6 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								107 replies: Last by J. Michael Looney, Jul 13 2015 09:25 PM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15377"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+<img src="Comic%20Reactions%20-%20910CMX%20Community_files/t_read_dot.png" alt="You posted in this topic" title="You posted in this topic"><br>
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15377-story-wednesday-july-8-2015/?view=getnewpost" class="topic_title title">Story Wednesday July 8 2015</a>
+							
+							
+								<span class="mini_pagination">
+									2 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								39 replies: Last by Scotty, Jul 12 2015 10:33 PM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15367"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+<img src="Comic%20Reactions%20-%20910CMX%20Community_files/t_read_dot.png" alt="You posted in this topic" title="You posted in this topic"><br>
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15367-story-friday-july-3-2015/?view=getnewpost" class="topic_title title">Story Friday July 3, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									2 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								29 replies: Last by warrl, Jul 11 2015 10:25 PM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15374"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+<img src="Comic%20Reactions%20-%20910CMX%20Community_files/t_read_dot.png" alt="You posted in this topic" title="You posted in this topic"><br>
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15374-story-monday-july-6-2015/?view=getnewpost" class="topic_title title">Story Monday July 6 2015</a>
+							
+							
+								<span class="mini_pagination">
+									3 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								50 replies: Last by Vorlonagent, Jul 08 2015 09:17 PM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15364"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+<img src="Comic%20Reactions%20-%20910CMX%20Community_files/t_read_dot.png" alt="You posted in this topic" title="You posted in this topic"><br>
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15364-story-wednesday-jul-1-2015/?view=getnewpost" class="topic_title title">Story Wednesday, Jul 1, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									5 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								99 replies: Last by Maplestrip, Jul 04 2015 06:44 PM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15356"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15356-story-friday-june-26-2015/?view=getnewpost" class="topic_title title">Story Friday June 26, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									3 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								56 replies: Last by Rognik, Jul 02 2015 08:03 PM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15361"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15361-story-monday-june-29-2015/?view=getnewpost" class="topic_title title">Story Monday June 29, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									3 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								45 replies: Last by Arcanimus, Jul 01 2015 05:23 AM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15348"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15348-story-wednesday-june-24-2015/?view=getnewpost" class="topic_title title">Story Wednesday June 24, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									3 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								54 replies: Last by Scotty, Jul 01 2015 12:25 AM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15345"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15345-story-monday-june-22-2015/?view=getnewpost" class="topic_title title">Story: Monday June  22 2015</a>
+							
+							
+								<span class="mini_pagination">
+									5 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								86 replies: Last by hkmaly, Jun 27 2015 02:11 AM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15337"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15337-story-friday-june-19-2015/?view=getnewpost" class="topic_title title">Story Friday June 19, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									3 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								57 replies: Last by CritterKeeper, Jun 25 2015 01:34 PM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15319"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15319-story-friday-june-12-2015/?view=getnewpost" class="topic_title title">Story Friday June 12, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									4 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								60 replies: Last by drachefly, Jun 22 2015 12:14 PM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15329"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15329-story-wednesday-june-17-2015/?view=getnewpost" class="topic_title title">Story: Wednesday June  17 2015</a>
+							
+							
+								<span class="mini_pagination">
+									3 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								54 replies: Last by CritterKeeper, Jun 20 2015 01:29 PM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15324"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15324-story-monday-june-15-2015/?view=getnewpost" class="topic_title title">Story Monday June 15, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									2 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								29 replies: Last by Vorlonagent, Jun 20 2015 12:25 AM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15315"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15315-storywednesday-june-10-2015/?view=getnewpost" class="topic_title title">StoryWednesday June 10 2015</a>
+							
+							
+								<span class="mini_pagination">
+									2 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								22 replies: Last by Scotty, Jun 12 2015 09:23 PM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15312"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+<img src="Comic%20Reactions%20-%20910CMX%20Community_files/t_read_dot.png" alt="You posted in this topic" title="You posted in this topic"><br>
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15312-story-monday-june-8-2015/?view=getnewpost" class="topic_title title">Story Monday June 8, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									3 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								55 replies: Last by hkmaly, Jun 12 2015 01:12 AM
+							</span>
+						</div>
+					</div>
+			
+
+				<div class="row touch-row  " id="topic-15295"><div undefined="margin-top:12px !important" style="margin-top: 12px ! important;" class="touch-row-arrow"></div>
+						<div class="icon">
+							
+
+
+
+						</div>
+						<div class="rowContent">
+							
+							<a href="http://community.910cmx.com/index.php?/topic/15295-story-wednesday-may-27-2015/?view=getnewpost" class="topic_title title">Story Wednesday May 27, 2015</a>
+							
+							
+								<span class="mini_pagination">
+									3 pages
+								</span>
+							
+							
+							<br>
+							<span class="subtext">
+								50 replies: Last by Qwertystop, Jun 03 2015 08:26 PM
+							</span>
+						</div>
+					</div>
+			
+		
+		<div class="controls">
+			<div class="buttons">
+				
+					<a href="http://community.910cmx.com/index.php?app=forums&amp;module=post&amp;section=post&amp;do=new_post&amp;f=105" title="Start New Topic" accesskey="s" class="button">Start New Topic</a>
+				
+				
+		<a class="button page-button disabled prev" href="#">« Prev</a>
+	
+	
+		<a class="button page-button next" href="http://community.910cmx.com/index.php?/forum/105-comic-reactions/page-2?prune_day=100&amp;sort_by=Z-A&amp;sort_key=last_post&amp;topicfilter=all" title="Next page" rel="next">Next »</a>
+	
+			</div>
+		</div>	
+</div>
+				
+			</div>
+			
+			<div id="footer" class="clear">
+				
+						<a href="#" id="show_skins">Change Theme</a>
+						<div id="show_skins_box" style="display: none">
+							<form action="http://community.910cmx.com/index.php?showforum=105" method="post">
+								<fieldset>
+									<input name="k" value="b87599b72db7d163618c5e0ec35b4130" type="hidden">
+									<label for="newSkin" class="hide">Theme:</label>
+									<select name="settingNewSkin" id="newSkin">
+										
+											<option value="3" selected="selected">IP.Board Mobile</option>
+										
+
+											<option value="18">910CMX 3.2</option>
+										
+
+											<option value="26">Default Skin</option>
+										
+									</select>
+									<input value="Go" class="input_submit alt" id="newSkinSubmit" type="submit">
+								</fieldset>
+							</form>
+						
+				
+				
+					<a href="#" id="show_langs">English (USA)</a>
+					<div id="show_langs_box" style="display: none">
+						<form action="http://community.910cmx.com/index.php?showforum=105" method="post">
+							<fieldset>
+								<input name="k" value="b87599b72db7d163618c5e0ec35b4130" type="hidden">
+								<input name="setlanguage" value="1" type="hidden">
+								<input name="langurlbits" value="showforum=105&amp;cal_id=" type="hidden">
+								<label for="newLang" class="hide">Language:</label>
+								<select name="langid" id="newLang">
+									
+										<option value="1" selected="selected">
+											English (USA)
+										</option>
+									
+								</select>
+								<input class="input_submit alt" value="Go" id="newLangSubmit" type="submit">
+							</fieldset>
+						</form>
+					</div>
+				
+
+				
+			</div>
+			<div id="task"><div><img src="Comic%20Reactions%20-%20910CMX%20Community_files/index.gif" alt="" style="border: 0px;height:1px;width:1px;"></div></div>
+		</div>
+		<div id="shade" style="display:none"></div>
+		<!-- pre-load -->
+		<div style="display:none"><img src="Comic%20Reactions%20-%20910CMX%20Community_files/wait.gif"></div>
+	
+</div><div style="top: 2637.5px; left: 10px; position: fixed;" id="loadingBox"><img src="Comic%20Reactions%20-%20910CMX%20Community_files/wait.gif"><span>Loading...</span></div></body></html>
