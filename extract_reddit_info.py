@@ -36,7 +36,7 @@ import os
 files=os.listdir("Reddit Titles")
 for file in files:
     f=open("Reddit Titles/"+file)
-    b=f.read().replace("loggedin ","")
+    b=f.read().replace("loggedin ","").replace("&#32;"," ")
     f.close()
     b=b.replace("https://","http://")
     while initiator in b:
