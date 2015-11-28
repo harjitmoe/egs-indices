@@ -78,7 +78,6 @@ def handle_titles_ookii_sketch_addendum(strip):
         strip["Titles"]["DeviantArt"]="El Goonish Holiday 2010"
     if strip["Id"]==77:
         strip["Titles"]["DeviantArt"]="El Goonish X-Mas 2011"
-    strip["SharedDateIndex"]=0
 
 haylo_errorlinks=["[S.T.O.R.Y. March 8, 2004] Crap!-y writing"]
 

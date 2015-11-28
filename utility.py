@@ -198,6 +198,7 @@ def handle_titles_ookii(strip,sect):
     del strip["Title"]
     if sect=="sketch":
         handle_titles_ookii_sketch_addendum(strip)
+        strip["SharedDateIndex"]=0
 
 def merge_haylo(strip,haylo_db):
     if strip["Date"] in haylo_db:
