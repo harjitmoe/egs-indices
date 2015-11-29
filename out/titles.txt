@@ -1818,7 +1818,7 @@
 |2014-02-24 = ("This seems to amount to a good summary of Susan's romantic history. (HarJIT)")
 |2014-02-25 = ("A useful insight into the mind of Diane (HarJIT)")
 |2014-02-26 = ("Diane realises (HarJIT)")
-|2014-02-27 = ("Identity - The end (HarJIT)")
+|2014-02-27 = ("Identity - The end (Official)")
 |2014-03-03 = ("Summer Moments #1 - Bad Influence (Official)")
 |2014-03-04 = ("Summer Moments #2 - Guess Which Of Us Is Who (Official)")
 |2014-03-05 = ("Summer Moments #3 - At The Movies (Official)")
@@ -3944,7 +3944,7 @@
 |1815 = ("This seems to amount to a good summary of Susan's romantic history. (HarJIT)")
 |1816 = ("A useful insight into the mind of Diane (HarJIT)")
 |1817 = ("Diane realises (HarJIT)")
-|1818 = ("Identity - The end (HarJIT)")
+|1818 = ("Identity - The end (Official)")
 |1819 = ("Summer Moments #1 - Bad Influence (Official)")
 |1820 = ("Summer Moments #2 - Guess Which Of Us Is Who (Official)")
 |1821 = ("Summer Moments #3 - At The Movies (Official)")
@@ -5273,6 +5273,7 @@
 |2010-01-28 = ("Cousin Family Tree")
 |2010-02-02 = ("Time Keeps On Shrinking")
 |2010-02-04 = ("Trying Too Hard To Realize The Camera's Still Rolling")
+|2014-02-27 = ("Identity - The end")
 |2014-03-03 = ("Summer Moments #1 - Bad Influence")
 |2014-03-04 = ("Summer Moments #2 - Guess Which Of Us Is Who")
 |2014-03-05 = ("Summer Moments #3 - At The Movies")
@@ -6299,6 +6300,7 @@
 |1052 = ("Cousin Family Tree")
 |1053 = ("Time Keeps On Shrinking")
 |1054 = ("Trying Too Hard To Realize The Camera's Still Rolling")
+|1818 = ("Identity - The end")
 |1819 = ("Summer Moments #1 - Bad Influence")
 |1820 = ("Summer Moments #2 - Guess Which Of Us Is Who")
 |1821 = ("Summer Moments #3 - At The Movies")
@@ -21836,7 +21838,6 @@
 |2014-02-24 = ("This seems to amount to a good summary of Susan's romantic history.")
 |2014-02-25 = ("A useful insight into the mind of Diane")
 |2014-02-26 = ("Diane realises")
-|2014-02-27 = ("Identity - The end")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1665 = ("Make Me Stay")
@@ -21922,7 +21923,6 @@
 |1815 = ("This seems to amount to a good summary of Susan's romantic history.")
 |1816 = ("A useful insight into the mind of Diane")
 |1817 = ("Diane realises")
-|1818 = ("Identity - The end")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |reddit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}

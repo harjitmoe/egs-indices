@@ -52,8 +52,12 @@ import re, os, time
 
 i = 1
 dab={}
+if os.path.exists("b.txt"):
+    f=open("b.txt","rU")
+    dab=eval(f.read())
+    f.close()
 #wget="..\\wget.exe"
-wget="wget"
+wget="wget-gnu"
 names={"index":"story","egsnp":"np","sketchbook":"sketch"}
 
 f=open("metadataegs3.txt")
@@ -78,7 +82,7 @@ for interface in ("index","egsnp","sketchbook"):
             else:
                 fs=0
             try:
-                if names[interface]+"-"+str(i) not in dab.keys():
+                if (names[interface]+"-"+styla+"-"+str(i) not in dab.keys()) or (dab[names[interface]+"-"+styla+"-"+str(i)]==None):
                     url = "http://www.egscomics.com/"+interface+".php?date="+(sub[i][styla])
                     #time.sleep(0.5)
                     os.system(wget+" -O \""+interface+".php@id="+str(i)+"\" \""+url+"\" >> wgetlog.txt 2>&1")
@@ -93,7 +97,7 @@ for interface in ("index","egsnp","sketchbook"):
                     works=sub[i][styla]
                     if not res2:
                         works=None
-                    dab[names[interface]+"-"+styla+"-"+str(i)]=(works,res2.group())
+                    dab[names[interface]+"-"+styla+"-"+str(i)]=(works,res2.group() if res2 else None)
                 else:
                     fs=0
             except Exception,e:

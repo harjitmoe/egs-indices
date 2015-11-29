@@ -7,12 +7,421 @@ F 2129
 F 2130
 F 2131
 F 2132
+I index
+F 2005
+F 2011
+F 2039
+F 2128
+F 2129
+F 2130
+F 2131
+F 2132
 I egsnp
 F 388
 F 389
 F 390
 F 391
 F 392
+I egsnp
+Pfail 1 cannot concatenate 'str' and 'NoneType' objects
+Pfail 2 cannot concatenate 'str' and 'NoneType' objects
+Pfail 3 cannot concatenate 'str' and 'NoneType' objects
+Pfail 4 cannot concatenate 'str' and 'NoneType' objects
+Pfail 5 cannot concatenate 'str' and 'NoneType' objects
+Pfail 6 cannot concatenate 'str' and 'NoneType' objects
+Pfail 7 cannot concatenate 'str' and 'NoneType' objects
+Pfail 8 cannot concatenate 'str' and 'NoneType' objects
+Pfail 9 cannot concatenate 'str' and 'NoneType' objects
+Pfail 10 cannot concatenate 'str' and 'NoneType' objects
+Pfail 11 cannot concatenate 'str' and 'NoneType' objects
+Pfail 12 cannot concatenate 'str' and 'NoneType' objects
+Pfail 13 cannot concatenate 'str' and 'NoneType' objects
+Pfail 14 cannot concatenate 'str' and 'NoneType' objects
+Pfail 15 cannot concatenate 'str' and 'NoneType' objects
+Pfail 16 cannot concatenate 'str' and 'NoneType' objects
+Pfail 17 cannot concatenate 'str' and 'NoneType' objects
+Pfail 18 cannot concatenate 'str' and 'NoneType' objects
+Pfail 19 cannot concatenate 'str' and 'NoneType' objects
+Pfail 20 cannot concatenate 'str' and 'NoneType' objects
+Pfail 21 cannot concatenate 'str' and 'NoneType' objects
+Pfail 22 cannot concatenate 'str' and 'NoneType' objects
+Pfail 23 cannot concatenate 'str' and 'NoneType' objects
+Pfail 24 cannot concatenate 'str' and 'NoneType' objects
+Pfail 25 cannot concatenate 'str' and 'NoneType' objects
+Pfail 26 cannot concatenate 'str' and 'NoneType' objects
+Pfail 27 cannot concatenate 'str' and 'NoneType' objects
+Pfail 28 cannot concatenate 'str' and 'NoneType' objects
+Pfail 29 cannot concatenate 'str' and 'NoneType' objects
+Pfail 30 cannot concatenate 'str' and 'NoneType' objects
+Pfail 31 cannot concatenate 'str' and 'NoneType' objects
+Pfail 32 cannot concatenate 'str' and 'NoneType' objects
+Pfail 33 cannot concatenate 'str' and 'NoneType' objects
+Pfail 34 cannot concatenate 'str' and 'NoneType' objects
+Pfail 35 cannot concatenate 'str' and 'NoneType' objects
+Pfail 36 cannot concatenate 'str' and 'NoneType' objects
+Pfail 37 cannot concatenate 'str' and 'NoneType' objects
+Pfail 38 cannot concatenate 'str' and 'NoneType' objects
+Pfail 39 cannot concatenate 'str' and 'NoneType' objects
+Pfail 40 cannot concatenate 'str' and 'NoneType' objects
+Pfail 41 cannot concatenate 'str' and 'NoneType' objects
+Pfail 42 cannot concatenate 'str' and 'NoneType' objects
+Pfail 43 cannot concatenate 'str' and 'NoneType' objects
+Pfail 44 cannot concatenate 'str' and 'NoneType' objects
+Pfail 45 cannot concatenate 'str' and 'NoneType' objects
+Pfail 46 cannot concatenate 'str' and 'NoneType' objects
+Pfail 47 cannot concatenate 'str' and 'NoneType' objects
+Pfail 48 cannot concatenate 'str' and 'NoneType' objects
+Pfail 49 cannot concatenate 'str' and 'NoneType' objects
+Pfail 50 cannot concatenate 'str' and 'NoneType' objects
+Pfail 51 cannot concatenate 'str' and 'NoneType' objects
+Pfail 52 cannot concatenate 'str' and 'NoneType' objects
+Pfail 53 cannot concatenate 'str' and 'NoneType' objects
+Pfail 54 cannot concatenate 'str' and 'NoneType' objects
+Pfail 55 cannot concatenate 'str' and 'NoneType' objects
+Pfail 56 cannot concatenate 'str' and 'NoneType' objects
+Pfail 57 cannot concatenate 'str' and 'NoneType' objects
+Pfail 58 cannot concatenate 'str' and 'NoneType' objects
+Pfail 59 cannot concatenate 'str' and 'NoneType' objects
+Pfail 60 cannot concatenate 'str' and 'NoneType' objects
+Pfail 61 cannot concatenate 'str' and 'NoneType' objects
+Pfail 62 cannot concatenate 'str' and 'NoneType' objects
+Pfail 63 cannot concatenate 'str' and 'NoneType' objects
+Pfail 64 cannot concatenate 'str' and 'NoneType' objects
+Pfail 65 cannot concatenate 'str' and 'NoneType' objects
+Pfail 66 cannot concatenate 'str' and 'NoneType' objects
+Pfail 67 cannot concatenate 'str' and 'NoneType' objects
+Pfail 68 cannot concatenate 'str' and 'NoneType' objects
+Pfail 69 cannot concatenate 'str' and 'NoneType' objects
+Pfail 70 cannot concatenate 'str' and 'NoneType' objects
+Pfail 71 cannot concatenate 'str' and 'NoneType' objects
+Pfail 72 cannot concatenate 'str' and 'NoneType' objects
+Pfail 73 cannot concatenate 'str' and 'NoneType' objects
+Pfail 74 cannot concatenate 'str' and 'NoneType' objects
+Pfail 75 cannot concatenate 'str' and 'NoneType' objects
+Pfail 76 cannot concatenate 'str' and 'NoneType' objects
+Pfail 77 cannot concatenate 'str' and 'NoneType' objects
+Pfail 78 cannot concatenate 'str' and 'NoneType' objects
+Pfail 79 cannot concatenate 'str' and 'NoneType' objects
+Pfail 80 cannot concatenate 'str' and 'NoneType' objects
+Pfail 81 cannot concatenate 'str' and 'NoneType' objects
+Pfail 82 cannot concatenate 'str' and 'NoneType' objects
+Pfail 83 cannot concatenate 'str' and 'NoneType' objects
+Pfail 84 cannot concatenate 'str' and 'NoneType' objects
+Pfail 85 cannot concatenate 'str' and 'NoneType' objects
+Pfail 86 cannot concatenate 'str' and 'NoneType' objects
+Pfail 87 cannot concatenate 'str' and 'NoneType' objects
+Pfail 88 cannot concatenate 'str' and 'NoneType' objects
+Pfail 89 cannot concatenate 'str' and 'NoneType' objects
+Pfail 90 cannot concatenate 'str' and 'NoneType' objects
+Pfail 91 cannot concatenate 'str' and 'NoneType' objects
+Pfail 92 cannot concatenate 'str' and 'NoneType' objects
+Pfail 93 cannot concatenate 'str' and 'NoneType' objects
+Pfail 94 cannot concatenate 'str' and 'NoneType' objects
+Pfail 95 cannot concatenate 'str' and 'NoneType' objects
+Pfail 96 cannot concatenate 'str' and 'NoneType' objects
+Pfail 97 cannot concatenate 'str' and 'NoneType' objects
+Pfail 98 cannot concatenate 'str' and 'NoneType' objects
+Pfail 99 cannot concatenate 'str' and 'NoneType' objects
+Pfail 100 cannot concatenate 'str' and 'NoneType' objects
+Pfail 101 cannot concatenate 'str' and 'NoneType' objects
+Pfail 102 cannot concatenate 'str' and 'NoneType' objects
+Pfail 103 cannot concatenate 'str' and 'NoneType' objects
+Pfail 104 cannot concatenate 'str' and 'NoneType' objects
+Pfail 105 cannot concatenate 'str' and 'NoneType' objects
+Pfail 106 cannot concatenate 'str' and 'NoneType' objects
+Pfail 107 cannot concatenate 'str' and 'NoneType' objects
+Pfail 108 cannot concatenate 'str' and 'NoneType' objects
+Pfail 109 cannot concatenate 'str' and 'NoneType' objects
+Pfail 110 cannot concatenate 'str' and 'NoneType' objects
+Pfail 111 cannot concatenate 'str' and 'NoneType' objects
+Pfail 112 cannot concatenate 'str' and 'NoneType' objects
+Pfail 113 cannot concatenate 'str' and 'NoneType' objects
+Pfail 114 cannot concatenate 'str' and 'NoneType' objects
+Pfail 115 cannot concatenate 'str' and 'NoneType' objects
+Pfail 116 cannot concatenate 'str' and 'NoneType' objects
+Pfail 117 cannot concatenate 'str' and 'NoneType' objects
+Pfail 118 cannot concatenate 'str' and 'NoneType' objects
+Pfail 119 cannot concatenate 'str' and 'NoneType' objects
+Pfail 120 cannot concatenate 'str' and 'NoneType' objects
+Pfail 121 cannot concatenate 'str' and 'NoneType' objects
+Pfail 122 cannot concatenate 'str' and 'NoneType' objects
+Pfail 123 cannot concatenate 'str' and 'NoneType' objects
+Pfail 124 cannot concatenate 'str' and 'NoneType' objects
+Pfail 125 cannot concatenate 'str' and 'NoneType' objects
+Pfail 126 cannot concatenate 'str' and 'NoneType' objects
+Pfail 127 cannot concatenate 'str' and 'NoneType' objects
+Pfail 128 cannot concatenate 'str' and 'NoneType' objects
+Pfail 129 cannot concatenate 'str' and 'NoneType' objects
+Pfail 130 cannot concatenate 'str' and 'NoneType' objects
+Pfail 131 cannot concatenate 'str' and 'NoneType' objects
+Pfail 132 cannot concatenate 'str' and 'NoneType' objects
+Pfail 133 cannot concatenate 'str' and 'NoneType' objects
+Pfail 134 cannot concatenate 'str' and 'NoneType' objects
+Pfail 135 cannot concatenate 'str' and 'NoneType' objects
+Pfail 136 cannot concatenate 'str' and 'NoneType' objects
+Pfail 137 cannot concatenate 'str' and 'NoneType' objects
+Pfail 138 cannot concatenate 'str' and 'NoneType' objects
+Pfail 139 cannot concatenate 'str' and 'NoneType' objects
+Pfail 140 cannot concatenate 'str' and 'NoneType' objects
+Pfail 141 cannot concatenate 'str' and 'NoneType' objects
+Pfail 142 cannot concatenate 'str' and 'NoneType' objects
+Pfail 143 cannot concatenate 'str' and 'NoneType' objects
+Pfail 144 cannot concatenate 'str' and 'NoneType' objects
+Pfail 145 cannot concatenate 'str' and 'NoneType' objects
+Pfail 146 cannot concatenate 'str' and 'NoneType' objects
+Pfail 147 cannot concatenate 'str' and 'NoneType' objects
+Pfail 148 cannot concatenate 'str' and 'NoneType' objects
+Pfail 149 cannot concatenate 'str' and 'NoneType' objects
+Pfail 150 cannot concatenate 'str' and 'NoneType' objects
+Pfail 151 cannot concatenate 'str' and 'NoneType' objects
+Pfail 152 cannot concatenate 'str' and 'NoneType' objects
+Pfail 153 cannot concatenate 'str' and 'NoneType' objects
+Pfail 154 cannot concatenate 'str' and 'NoneType' objects
+Pfail 155 cannot concatenate 'str' and 'NoneType' objects
+Pfail 156 cannot concatenate 'str' and 'NoneType' objects
+Pfail 157 cannot concatenate 'str' and 'NoneType' objects
+Pfail 158 cannot concatenate 'str' and 'NoneType' objects
+Pfail 159 cannot concatenate 'str' and 'NoneType' objects
+Pfail 160 cannot concatenate 'str' and 'NoneType' objects
+Pfail 161 cannot concatenate 'str' and 'NoneType' objects
+Pfail 162 cannot concatenate 'str' and 'NoneType' objects
+Pfail 163 cannot concatenate 'str' and 'NoneType' objects
+Pfail 164 cannot concatenate 'str' and 'NoneType' objects
+Pfail 165 cannot concatenate 'str' and 'NoneType' objects
+Pfail 166 cannot concatenate 'str' and 'NoneType' objects
+Pfail 167 cannot concatenate 'str' and 'NoneType' objects
+Pfail 168 cannot concatenate 'str' and 'NoneType' objects
+Pfail 169 cannot concatenate 'str' and 'NoneType' objects
+Pfail 170 cannot concatenate 'str' and 'NoneType' objects
+Pfail 171 cannot concatenate 'str' and 'NoneType' objects
+Pfail 172 cannot concatenate 'str' and 'NoneType' objects
+Pfail 173 cannot concatenate 'str' and 'NoneType' objects
+Pfail 174 cannot concatenate 'str' and 'NoneType' objects
+Pfail 175 cannot concatenate 'str' and 'NoneType' objects
+Pfail 176 cannot concatenate 'str' and 'NoneType' objects
+Pfail 177 cannot concatenate 'str' and 'NoneType' objects
+Pfail 178 cannot concatenate 'str' and 'NoneType' objects
+Pfail 179 cannot concatenate 'str' and 'NoneType' objects
+Pfail 180 cannot concatenate 'str' and 'NoneType' objects
+Pfail 181 cannot concatenate 'str' and 'NoneType' objects
+Pfail 182 cannot concatenate 'str' and 'NoneType' objects
+Pfail 183 cannot concatenate 'str' and 'NoneType' objects
+Pfail 184 cannot concatenate 'str' and 'NoneType' objects
+Pfail 185 cannot concatenate 'str' and 'NoneType' objects
+Pfail 186 cannot concatenate 'str' and 'NoneType' objects
+Pfail 187 cannot concatenate 'str' and 'NoneType' objects
+Pfail 188 cannot concatenate 'str' and 'NoneType' objects
+Pfail 189 cannot concatenate 'str' and 'NoneType' objects
+Pfail 190 cannot concatenate 'str' and 'NoneType' objects
+Pfail 191 cannot concatenate 'str' and 'NoneType' objects
+Pfail 192 cannot concatenate 'str' and 'NoneType' objects
+Pfail 193 cannot concatenate 'str' and 'NoneType' objects
+Pfail 194 cannot concatenate 'str' and 'NoneType' objects
+Pfail 195 cannot concatenate 'str' and 'NoneType' objects
+Pfail 196 cannot concatenate 'str' and 'NoneType' objects
+Pfail 197 cannot concatenate 'str' and 'NoneType' objects
+Pfail 198 cannot concatenate 'str' and 'NoneType' objects
+Pfail 199 cannot concatenate 'str' and 'NoneType' objects
+Pfail 200 cannot concatenate 'str' and 'NoneType' objects
+Pfail 201 cannot concatenate 'str' and 'NoneType' objects
+Pfail 202 cannot concatenate 'str' and 'NoneType' objects
+Pfail 203 cannot concatenate 'str' and 'NoneType' objects
+Pfail 204 cannot concatenate 'str' and 'NoneType' objects
+Pfail 205 cannot concatenate 'str' and 'NoneType' objects
+Pfail 206 cannot concatenate 'str' and 'NoneType' objects
+Pfail 207 cannot concatenate 'str' and 'NoneType' objects
+Pfail 208 cannot concatenate 'str' and 'NoneType' objects
+Pfail 209 cannot concatenate 'str' and 'NoneType' objects
+Pfail 210 cannot concatenate 'str' and 'NoneType' objects
+Pfail 211 cannot concatenate 'str' and 'NoneType' objects
+Pfail 212 cannot concatenate 'str' and 'NoneType' objects
+Pfail 213 cannot concatenate 'str' and 'NoneType' objects
+Pfail 214 cannot concatenate 'str' and 'NoneType' objects
+Pfail 215 cannot concatenate 'str' and 'NoneType' objects
+Pfail 216 cannot concatenate 'str' and 'NoneType' objects
+Pfail 217 cannot concatenate 'str' and 'NoneType' objects
+Pfail 218 cannot concatenate 'str' and 'NoneType' objects
+Pfail 219 cannot concatenate 'str' and 'NoneType' objects
+Pfail 220 cannot concatenate 'str' and 'NoneType' objects
+Pfail 221 cannot concatenate 'str' and 'NoneType' objects
+Pfail 222 cannot concatenate 'str' and 'NoneType' objects
+Pfail 223 cannot concatenate 'str' and 'NoneType' objects
+Pfail 224 cannot concatenate 'str' and 'NoneType' objects
+Pfail 225 cannot concatenate 'str' and 'NoneType' objects
+Pfail 226 cannot concatenate 'str' and 'NoneType' objects
+Pfail 227 cannot concatenate 'str' and 'NoneType' objects
+Pfail 228 cannot concatenate 'str' and 'NoneType' objects
+Pfail 229 cannot concatenate 'str' and 'NoneType' objects
+Pfail 230 cannot concatenate 'str' and 'NoneType' objects
+Pfail 231 cannot concatenate 'str' and 'NoneType' objects
+Pfail 232 cannot concatenate 'str' and 'NoneType' objects
+Pfail 233 cannot concatenate 'str' and 'NoneType' objects
+Pfail 234 cannot concatenate 'str' and 'NoneType' objects
+Pfail 235 cannot concatenate 'str' and 'NoneType' objects
+Pfail 236 cannot concatenate 'str' and 'NoneType' objects
+Pfail 237 cannot concatenate 'str' and 'NoneType' objects
+Pfail 238 cannot concatenate 'str' and 'NoneType' objects
+Pfail 239 cannot concatenate 'str' and 'NoneType' objects
+Pfail 240 cannot concatenate 'str' and 'NoneType' objects
+Pfail 241 cannot concatenate 'str' and 'NoneType' objects
+Pfail 242 cannot concatenate 'str' and 'NoneType' objects
+Pfail 243 cannot concatenate 'str' and 'NoneType' objects
+Pfail 244 cannot concatenate 'str' and 'NoneType' objects
+Pfail 245 cannot concatenate 'str' and 'NoneType' objects
+Pfail 246 cannot concatenate 'str' and 'NoneType' objects
+Pfail 247 cannot concatenate 'str' and 'NoneType' objects
+Pfail 248 cannot concatenate 'str' and 'NoneType' objects
+Pfail 249 cannot concatenate 'str' and 'NoneType' objects
+Pfail 250 cannot concatenate 'str' and 'NoneType' objects
+Pfail 251 cannot concatenate 'str' and 'NoneType' objects
+Pfail 252 cannot concatenate 'str' and 'NoneType' objects
+Pfail 253 cannot concatenate 'str' and 'NoneType' objects
+Pfail 254 cannot concatenate 'str' and 'NoneType' objects
+Pfail 255 cannot concatenate 'str' and 'NoneType' objects
+Pfail 256 cannot concatenate 'str' and 'NoneType' objects
+Pfail 257 cannot concatenate 'str' and 'NoneType' objects
+Pfail 258 cannot concatenate 'str' and 'NoneType' objects
+Pfail 259 cannot concatenate 'str' and 'NoneType' objects
+Pfail 260 cannot concatenate 'str' and 'NoneType' objects
+Pfail 261 cannot concatenate 'str' and 'NoneType' objects
+Pfail 262 cannot concatenate 'str' and 'NoneType' objects
+Pfail 263 cannot concatenate 'str' and 'NoneType' objects
+Pfail 264 cannot concatenate 'str' and 'NoneType' objects
+Pfail 265 cannot concatenate 'str' and 'NoneType' objects
+Pfail 266 cannot concatenate 'str' and 'NoneType' objects
+Pfail 267 cannot concatenate 'str' and 'NoneType' objects
+Pfail 268 cannot concatenate 'str' and 'NoneType' objects
+Pfail 269 cannot concatenate 'str' and 'NoneType' objects
+Pfail 270 cannot concatenate 'str' and 'NoneType' objects
+Pfail 271 cannot concatenate 'str' and 'NoneType' objects
+Pfail 272 cannot concatenate 'str' and 'NoneType' objects
+Pfail 273 cannot concatenate 'str' and 'NoneType' objects
+Pfail 274 cannot concatenate 'str' and 'NoneType' objects
+Pfail 275 cannot concatenate 'str' and 'NoneType' objects
+Pfail 276 cannot concatenate 'str' and 'NoneType' objects
+Pfail 277 cannot concatenate 'str' and 'NoneType' objects
+Pfail 278 cannot concatenate 'str' and 'NoneType' objects
+Pfail 279 cannot concatenate 'str' and 'NoneType' objects
+Pfail 280 cannot concatenate 'str' and 'NoneType' objects
+Pfail 281 cannot concatenate 'str' and 'NoneType' objects
+Pfail 282 cannot concatenate 'str' and 'NoneType' objects
+Pfail 283 cannot concatenate 'str' and 'NoneType' objects
+Pfail 284 cannot concatenate 'str' and 'NoneType' objects
+Pfail 285 cannot concatenate 'str' and 'NoneType' objects
+Pfail 286 cannot concatenate 'str' and 'NoneType' objects
+Pfail 287 cannot concatenate 'str' and 'NoneType' objects
+Pfail 288 cannot concatenate 'str' and 'NoneType' objects
+Pfail 289 cannot concatenate 'str' and 'NoneType' objects
+Pfail 290 cannot concatenate 'str' and 'NoneType' objects
+Pfail 291 cannot concatenate 'str' and 'NoneType' objects
+Pfail 292 cannot concatenate 'str' and 'NoneType' objects
+Pfail 293 cannot concatenate 'str' and 'NoneType' objects
+Pfail 294 cannot concatenate 'str' and 'NoneType' objects
+Pfail 295 cannot concatenate 'str' and 'NoneType' objects
+Pfail 296 cannot concatenate 'str' and 'NoneType' objects
+Pfail 297 cannot concatenate 'str' and 'NoneType' objects
+Pfail 298 cannot concatenate 'str' and 'NoneType' objects
+Pfail 299 cannot concatenate 'str' and 'NoneType' objects
+Pfail 300 cannot concatenate 'str' and 'NoneType' objects
+Pfail 301 cannot concatenate 'str' and 'NoneType' objects
+Pfail 302 cannot concatenate 'str' and 'NoneType' objects
+Pfail 303 cannot concatenate 'str' and 'NoneType' objects
+Pfail 304 cannot concatenate 'str' and 'NoneType' objects
+Pfail 305 cannot concatenate 'str' and 'NoneType' objects
+Pfail 306 cannot concatenate 'str' and 'NoneType' objects
+Pfail 307 cannot concatenate 'str' and 'NoneType' objects
+Pfail 308 cannot concatenate 'str' and 'NoneType' objects
+Pfail 309 cannot concatenate 'str' and 'NoneType' objects
+Pfail 310 cannot concatenate 'str' and 'NoneType' objects
+Pfail 311 cannot concatenate 'str' and 'NoneType' objects
+Pfail 312 cannot concatenate 'str' and 'NoneType' objects
+Pfail 313 cannot concatenate 'str' and 'NoneType' objects
+Pfail 314 cannot concatenate 'str' and 'NoneType' objects
+Pfail 315 cannot concatenate 'str' and 'NoneType' objects
+Pfail 316 cannot concatenate 'str' and 'NoneType' objects
+Pfail 317 cannot concatenate 'str' and 'NoneType' objects
+Pfail 318 cannot concatenate 'str' and 'NoneType' objects
+Pfail 319 cannot concatenate 'str' and 'NoneType' objects
+Pfail 320 cannot concatenate 'str' and 'NoneType' objects
+Pfail 321 cannot concatenate 'str' and 'NoneType' objects
+Pfail 322 cannot concatenate 'str' and 'NoneType' objects
+Pfail 323 cannot concatenate 'str' and 'NoneType' objects
+Pfail 324 cannot concatenate 'str' and 'NoneType' objects
+Pfail 325 cannot concatenate 'str' and 'NoneType' objects
+Pfail 326 cannot concatenate 'str' and 'NoneType' objects
+Pfail 327 cannot concatenate 'str' and 'NoneType' objects
+Pfail 328 cannot concatenate 'str' and 'NoneType' objects
+Pfail 329 cannot concatenate 'str' and 'NoneType' objects
+Pfail 330 cannot concatenate 'str' and 'NoneType' objects
+Pfail 331 cannot concatenate 'str' and 'NoneType' objects
+Pfail 332 cannot concatenate 'str' and 'NoneType' objects
+Pfail 333 cannot concatenate 'str' and 'NoneType' objects
+Pfail 334 cannot concatenate 'str' and 'NoneType' objects
+Pfail 335 cannot concatenate 'str' and 'NoneType' objects
+Pfail 336 cannot concatenate 'str' and 'NoneType' objects
+Pfail 337 cannot concatenate 'str' and 'NoneType' objects
+Pfail 338 cannot concatenate 'str' and 'NoneType' objects
+Pfail 339 cannot concatenate 'str' and 'NoneType' objects
+Pfail 340 cannot concatenate 'str' and 'NoneType' objects
+Pfail 341 cannot concatenate 'str' and 'NoneType' objects
+Pfail 342 cannot concatenate 'str' and 'NoneType' objects
+Pfail 343 cannot concatenate 'str' and 'NoneType' objects
+Pfail 344 cannot concatenate 'str' and 'NoneType' objects
+Pfail 345 cannot concatenate 'str' and 'NoneType' objects
+Pfail 346 cannot concatenate 'str' and 'NoneType' objects
+Pfail 347 cannot concatenate 'str' and 'NoneType' objects
+Pfail 348 cannot concatenate 'str' and 'NoneType' objects
+Pfail 349 cannot concatenate 'str' and 'NoneType' objects
+Pfail 350 cannot concatenate 'str' and 'NoneType' objects
+Pfail 351 cannot concatenate 'str' and 'NoneType' objects
+Pfail 352 cannot concatenate 'str' and 'NoneType' objects
+Pfail 353 cannot concatenate 'str' and 'NoneType' objects
+Pfail 354 cannot concatenate 'str' and 'NoneType' objects
+Pfail 355 cannot concatenate 'str' and 'NoneType' objects
+Pfail 356 cannot concatenate 'str' and 'NoneType' objects
+Pfail 357 cannot concatenate 'str' and 'NoneType' objects
+Pfail 358 cannot concatenate 'str' and 'NoneType' objects
+Pfail 359 cannot concatenate 'str' and 'NoneType' objects
+Pfail 360 cannot concatenate 'str' and 'NoneType' objects
+Pfail 361 cannot concatenate 'str' and 'NoneType' objects
+Pfail 362 cannot concatenate 'str' and 'NoneType' objects
+Pfail 363 cannot concatenate 'str' and 'NoneType' objects
+Pfail 364 cannot concatenate 'str' and 'NoneType' objects
+Pfail 365 cannot concatenate 'str' and 'NoneType' objects
+Pfail 366 cannot concatenate 'str' and 'NoneType' objects
+Pfail 367 cannot concatenate 'str' and 'NoneType' objects
+Pfail 368 cannot concatenate 'str' and 'NoneType' objects
+Pfail 369 cannot concatenate 'str' and 'NoneType' objects
+Pfail 370 cannot concatenate 'str' and 'NoneType' objects
+Pfail 371 cannot concatenate 'str' and 'NoneType' objects
+Pfail 372 cannot concatenate 'str' and 'NoneType' objects
+Pfail 373 cannot concatenate 'str' and 'NoneType' objects
+Pfail 374 cannot concatenate 'str' and 'NoneType' objects
+Pfail 375 cannot concatenate 'str' and 'NoneType' objects
+Pfail 376 cannot concatenate 'str' and 'NoneType' objects
+Pfail 377 cannot concatenate 'str' and 'NoneType' objects
+Pfail 378 cannot concatenate 'str' and 'NoneType' objects
+Pfail 379 cannot concatenate 'str' and 'NoneType' objects
+Pfail 380 cannot concatenate 'str' and 'NoneType' objects
+Pfail 381 cannot concatenate 'str' and 'NoneType' objects
+Pfail 382 cannot concatenate 'str' and 'NoneType' objects
+Pfail 383 cannot concatenate 'str' and 'NoneType' objects
+Pfail 384 cannot concatenate 'str' and 'NoneType' objects
+Pfail 385 cannot concatenate 'str' and 'NoneType' objects
+Pfail 386 cannot concatenate 'str' and 'NoneType' objects
+Pfail 387 cannot concatenate 'str' and 'NoneType' objects
+F 388
+F 389
+F 390
+F 391
+F 392
+I sketchbook
+Pfail 768 cannot concatenate 'str' and 'NoneType' objects
+F 877
+F 878
+F 879
+F 880
+F 881
 I sketchbook
 F 877
 F 878
@@ -20,7 +429,7 @@ F 879
 F 880
 F 881
 Traceback (most recent call last):
-  File ".last_tmp.py", line 122, in <module>
+  File ".last_tmp.py", line 111, in <module>
     raw_input()
 EOFError: EOF when reading a line
 
