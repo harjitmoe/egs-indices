@@ -2125,6 +2125,10 @@
 |2015-11-20 = ("Question Griffin (LittleKingsguard, based on filename) (Reddit)")
 |2015-11-23 = ("How and Why (m2pt5, based on filename) (Reddit)")
 |2015-11-25 = ("More Questions. (jstutter, based on filename) (Reddit)")
+|2015-11-30 = ("")
+|2015-12-02 = ("")
+|2015-12-04 = ("")
+|2015-12-07 = ("")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic (Official)")
@@ -4251,6 +4255,10 @@
 |2125 = ("Question Griffin (LittleKingsguard, based on filename) (Reddit)")
 |2126 = ("How and Why (m2pt5, based on filename) (Reddit)")
 |2127 = ("More Questions. (jstutter, based on filename) (Reddit)")
+|2128 = ("")
+|2129 = ("")
+|2130 = ("")
+|2131 = ("")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -9926,6 +9934,10 @@
 |2015-11-20 = ("Question Griffin (LittleKingsguard, based on filename)")
 |2015-11-23 = ("How and Why (m2pt5, based on filename)")
 |2015-11-25 = ("More Questions. (jstutter, based on filename)")
+|2015-11-30 = ("what")
+|2015-12-02 = ("griffinbell")
+|2015-12-04 = ("cantditchus")
+|2015-12-07 = ("cantbabysitus")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -12052,6 +12064,10 @@
 |2125 = ("Question Griffin (LittleKingsguard, based on filename)")
 |2126 = ("How and Why (m2pt5, based on filename)")
 |2127 = ("More Questions. (jstutter, based on filename)")
+|2128 = ("what")
+|2129 = ("griffinbell")
+|2130 = ("cantditchus")
+|2131 = ("cantbabysitus")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -15368,6 +15384,10 @@
 |2015-11-20 = ("Question Griffin (LittleKingsguard, based on filename)")
 |2015-11-23 = ("How and Why (m2pt5, based on filename)")
 |2015-11-25 = ("More Questions. (jstutter, based on filename)")
+|2015-11-30 = ("what")
+|2015-12-02 = ("griffinbell")
+|2015-12-04 = ("cantditchus")
+|2015-12-07 = ("cantbabysitus")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -17494,6 +17514,10 @@
 |2125 = ("Question Griffin (LittleKingsguard, based on filename)")
 |2126 = ("How and Why (m2pt5, based on filename)")
 |2127 = ("More Questions. (jstutter, based on filename)")
+|2128 = ("what")
+|2129 = ("griffinbell")
+|2130 = ("cantditchus")
+|2131 = ("cantbabysitus")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -19626,6 +19650,10 @@
 |2015-11-20 = ("Question Griffin (LittleKingsguard, based on filename)")
 |2015-11-23 = ("How and Why (m2pt5, based on filename)")
 |2015-11-25 = ("More Questions. (jstutter, based on filename)")
+|2015-11-30 = ("what")
+|2015-12-02 = ("griffinbell")
+|2015-12-04 = ("cantditchus")
+|2015-12-07 = ("cantbabysitus")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -21752,6 +21780,10 @@
 |2125 = ("Question Griffin (LittleKingsguard, based on filename)")
 |2126 = ("How and Why (m2pt5, based on filename)")
 |2127 = ("More Questions. (jstutter, based on filename)")
+|2128 = ("what")
+|2129 = ("griffinbell")
+|2130 = ("cantditchus")
+|2131 = ("cantbabysitus")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -31626,6 +31658,10 @@
 |2015-11-23 = ("So Jelly (jstutter) (Reddit)")
 |2015-11-25 = ("Bwuh (jstutter, based on filename) (Reddit)")
 |2015-11-27 = ("Bwuh 2 (MonoGreenControl, based on filename) (Reddit)")
+|2015-11-30 = ("")
+|2015-12-02 = ("")
+|2015-12-04 = ("")
+|2015-12-07 = ("")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)")
@@ -32013,6 +32049,10 @@
 |385 = ("So Jelly (jstutter) (Reddit)")
 |386 = ("Bwuh (jstutter, based on filename) (Reddit)")
 |387 = ("Bwuh 2 (MonoGreenControl, based on filename) (Reddit)")
+|388 = ("")
+|389 = ("")
+|390 = ("")
+|391 = ("")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -32711,6 +32751,10 @@
 |2015-11-23 = ("So Jelly (jstutter)")
 |2015-11-25 = ("Bwuh (jstutter, based on filename)")
 |2015-11-27 = ("Bwuh 2 (MonoGreenControl, based on filename)")
+|2015-11-30 = ("maturity")
+|2015-12-02 = ("gracesmash")
+|2015-12-04 = ("Amazing")
+|2015-12-07 = ("sinceyouasked")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -33098,6 +33142,10 @@
 |385 = ("So Jelly (jstutter)")
 |386 = ("Bwuh (jstutter, based on filename)")
 |387 = ("Bwuh 2 (MonoGreenControl, based on filename)")
+|388 = ("maturity")
+|389 = ("gracesmash")
+|390 = ("Amazing")
+|391 = ("sinceyouasked")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -33559,6 +33607,10 @@
 |2015-11-23 = ("So Jelly (jstutter)")
 |2015-11-25 = ("Bwuh (jstutter, based on filename)")
 |2015-11-27 = ("Bwuh 2 (MonoGreenControl, based on filename)")
+|2015-11-30 = ("maturity")
+|2015-12-02 = ("gracesmash")
+|2015-12-04 = ("Amazing")
+|2015-12-07 = ("sinceyouasked")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -33946,6 +33998,10 @@
 |385 = ("So Jelly (jstutter)")
 |386 = ("Bwuh (jstutter, based on filename)")
 |387 = ("Bwuh 2 (MonoGreenControl, based on filename)")
+|388 = ("maturity")
+|389 = ("gracesmash")
+|390 = ("Amazing")
+|391 = ("sinceyouasked")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -34747,6 +34803,10 @@
 |2015-11-23 = ("So Jelly (jstutter)")
 |2015-11-25 = ("Bwuh (jstutter, based on filename)")
 |2015-11-27 = ("Bwuh 2 (MonoGreenControl, based on filename)")
+|2015-11-30 = ("maturity")
+|2015-12-02 = ("gracesmash")
+|2015-12-04 = ("Amazing")
+|2015-12-07 = ("sinceyouasked")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("XYC")
@@ -35134,6 +35194,10 @@
 |385 = ("So Jelly (jstutter)")
 |386 = ("Bwuh (jstutter, based on filename)")
 |387 = ("Bwuh 2 (MonoGreenControl, based on filename)")
+|388 = ("maturity")
+|389 = ("gracesmash")
+|390 = ("Amazing")
+|391 = ("sinceyouasked")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}

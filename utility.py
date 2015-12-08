@@ -33,6 +33,14 @@ null=None
 false=False
 true=True
 
+class SimpleNamespace(object): pass
+
+titlebank=SimpleNamespace()
+titlebanf=open("titlebank.dat","rU")
+titlebank.__dict__.update(eval(titlebanf.read()))
+titlebanf.close()
+sys.modules["titlebank"]=titlebank
+
 #Use a tarfile: due to the sheer number of small files, the Ookii subdirectory was taking a
 #disproportionately long time (for its file size) to copy to backup, and taking a disproportionate
 #drive footprint.  Using a tarfile fixes this problem.
@@ -188,7 +196,7 @@ def load_ookii_record(strip):
     else:
         strip.update(scour(eval(specific_db)))
 
-from titlebank import handle_titles_ookii_sketch_addendum, haylo_errorlinks
+from titlebank import datitles, haylo_errorlinks
 
 def handle_titles_ookii(strip,sect):
     if "untitled" in strip["Title"].lower():
@@ -197,7 +205,8 @@ def handle_titles_ookii(strip,sect):
         strip["Titles"]={"Official":strip["Title"]}
     del strip["Title"]
     if sect=="sketch":
-        handle_titles_ookii_sketch_addendum(strip)
+        if strip["Id"] in datitles:
+            strip["Titles"]["DeviantArt"]=datitles[strip["Id"]]
         strip["SharedDateIndex"]=0
 
 def merge_haylo(strip,haylo_db):
