@@ -2,7 +2,6 @@
 # -*- python -*-
 """fetch transcripts, fix titles"""
 
-from titlebank import *
 
 # Copyright (c) HarJIT 2014, 2015.
 #
@@ -34,6 +33,7 @@ from titlebank import *
 from titleharjit import *
 
 import os,utility
+from titlebank import * #Must be imported after utility
 
 alldat=eval(open(".build/AllMegaDb.txt","rU").read())
 for arc in utility.specific_section(alldat,"story")["StoryArcs"]:
