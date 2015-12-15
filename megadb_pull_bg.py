@@ -29,6 +29,8 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
+import utility
+
 f=open("BgNames.txt","rU")
 b=eval(f.read()) #Blatantly no security, assume trust
 f.close()
@@ -51,6 +53,6 @@ for i in sorted(c.keys()):
     comment=c[i]
     comics.append({"ReactionLinks": [], "SharedDateIndex": 0, "OokiiId": -1, "DateIndexable": False, "Section": "Backgrounds", "RecordType": "Comic", "Titles": {"Official": title}, "Characters": None, "Date": "?", "Commentary": comment, "Transcript": None, "Id": int(i,10), "SpecialUrl": formurl(i)})
 
-alldat=eval(open(".build/AllMegaDb.txt","rU").read())
+alldat=utility.open_alldat()
 alldat.append({"Title":"Backgrounds","StoryArcs":comics,"RecordType":"Section"})
-open(".build/AllMegaDb.txt","w").write(repr(alldat))
+utility.save_alldat(alldat)

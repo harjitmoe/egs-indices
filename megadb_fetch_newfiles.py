@@ -33,7 +33,7 @@ import utility
 
 import os,sys
 
-alldat=eval(open(".build/AllMegaDb.txt","rU").read())
+alldat=utility.open_alldat()
 
 #XXX the possibility of an ID irregularity across a boundary is not
 #considered (and *presently* unheard of, *presently*)
@@ -89,5 +89,5 @@ for sect in ("story","np","sketch"):
             #else clause of for-loop, i.e. finished without break
             arcs[-1]["Comics"].append(strip_obj)
 
-open(".build/AllMegaDb.txt","w").write(repr(alldat))
+utility.save_alldat(alldat)
 

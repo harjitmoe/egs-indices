@@ -32,10 +32,10 @@
 
 from titleharjit import *
 
-import os,utility
+import os, utility
 from titlebank import * #Must be imported after utility
 
-alldat=eval(open(".build/AllMegaDb.txt","rU").read())
+alldat=utility.open_alldat()
 for arc in utility.specific_section(alldat,"story")["StoryArcs"]:
     for strip in arc['Comics']:
         if os.path.exists("..\\Transcripts\\"+strip['Date']+".txt"):
@@ -79,4 +79,4 @@ for arc in utility.specific_section(alldat,"sketch")["StoryArcs"]:
                 elif c.count(marker4):
                     strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker4,1)[1].split("</p>",1)[0].split("<br />",1)[0])
 
-open(".build/AllMegaDb.txt","w").write(repr(alldat))
+utility.save_alldat(alldat)

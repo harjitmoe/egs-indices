@@ -37,7 +37,7 @@ locals().update(utility.open_dbs("story"))
 
 import os,sys
 
-main_db=eval(open(".build/AllMegaDb.txt","rU").read())
+main_db=utility.open_alldat()
 
 for name,dates in haylo_additional_hierarchy:
     db={"Title":": ".join(name.split(" - ",1)),"RecordType":"StoryLine"}
@@ -81,5 +81,5 @@ for name,dates in haylo_additional_hierarchy:
         comics.append(strip)
     db["Comics"]=comics
     utility.specific_section(main_db,"story")["StoryArcs"].append(db)
-open(".build/AllMegaDb.txt","w").write(str(main_db))
+utility.save_alldat(main_db)
 

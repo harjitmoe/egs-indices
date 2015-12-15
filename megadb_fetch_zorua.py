@@ -102,7 +102,7 @@ for line in f: #Very rare that I actually do this
         ldb["Characters"].append({'CharacterName':name,'AppearanceNumber':charobjs[nom]["count"]})
     db.append(ldb)
 
-alldat=eval(open(".build/AllMegaDb.txt","rU").read())
+alldat=utility.open_alldat()
 for arc in utility.specific_section(alldat,"np")["StoryArcs"]:
     for strip in arc['Comics']:
         if db:
@@ -114,4 +114,4 @@ for arc in utility.specific_section(alldat,"np")["StoryArcs"]:
             if ldb["Characters"]:
                 strip['Characters']["Zorua"]=ldb["Characters"]
 
-open(".build/AllMegaDb.txt","w").write(repr(alldat))
+utility.save_alldat(alldat)

@@ -26,7 +26,7 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import md5,binascii,sys,urllib
+import binascii,sys,urllib
 import utility
 reallyspaced="<hr /><hr style='page-break-before:always;' />"
 
@@ -199,7 +199,7 @@ def output_html(record,parent=None):
             else:
                 print>>sys.stderr,comic["Section"],comic["Date"]
 
-sections=eval(open(".build/AllMegaDb.txt").read()) #Insecure
+sections=utility.open_alldat()
 #HTML 5:
 #print "<!doctype html>"
 #print '<html><head><title>Index of EGS Strips</title><meta charset="UTF-8" /></head>'

@@ -38,7 +38,7 @@ true=True
 
 import os,sys
 
-main_db=eval(open(".build/AllMegaDb.txt","rU").read())
+main_db=utility.open_alldat()
 
 #SB2Year
 
@@ -89,4 +89,4 @@ utility.specific_section(main_db,"story")["StoryArcs"]=arcs
 
 #
 
-open(".build/AllMegaDb.txt","w").write(repr(main_db))
+utility.save_alldat(main_db)

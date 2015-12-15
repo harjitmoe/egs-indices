@@ -27,9 +27,7 @@
 
 import utility
 
-f=open(".build/AllMegaDb.txt","rU")
-alldat=eval(f.read()) #Blatantly no security, assume trust
-f.close()
+alldat=utility.open_alldat()
 
 stdb=utility.specific_section(alldat,"story")["StoryArcs"]
 sbdb=utility.specific_section(alldat,"sketch")["StoryArcs"]

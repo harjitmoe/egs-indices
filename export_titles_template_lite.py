@@ -38,9 +38,7 @@ def doit():
 
 print "<includeonly>{{#switch:{{{1}}}"
 
-f=open(".build/AllMegaDb.txt","rU")
-alldat=eval(f.read()) #Blatantly no security, assume trust
-f.close()
+alldat=utility.open_alldat()
 
 for sect in ("story","sketch","np"):
     b=utility.specific_section(alldat,sect)["StoryArcs"]

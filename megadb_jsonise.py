@@ -10,11 +10,9 @@
 # different terms.  This note is not part of the above notice.
 #
 
-import json
-f=open(".build/AllMegaDb.txt","rb+")
-dat=eval(f.read())
-f.seek(0)
+import json, utility
+dat=utility.open_alldat()
+f=open(".build/AllMegaDb.txt","w")
 f.write(json.dumps(dat))
-f.truncate()
 f.close()
 

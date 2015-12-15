@@ -77,4 +77,4 @@ for sect in ("story","np","sketch"):
     map(handle_line,main_db)
     output.append({"Title":utility.egslink2ookii[sect],"StoryArcs":main_db,"RecordType":"Section"})
 
-open(".build/AllMegaDb.txt","w").write(repr(output))
+utility.save_alldat(output)

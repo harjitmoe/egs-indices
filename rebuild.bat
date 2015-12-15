@@ -3,7 +3,7 @@
 @rem to work or you'll break the output).  Generally no attempt at 
 @rem 3k compatibility has been made.
 
-set PYINTER=C:\Python27\python
+set PYINTER=ipy
 
 @echo off
 %PYINTER% rebuild.py

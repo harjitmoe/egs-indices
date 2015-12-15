@@ -41,6 +41,18 @@ titlebank.__dict__.update(eval(titlebanf.read()))
 titlebanf.close()
 sys.modules["titlebank"]=titlebank
 
+import pickle
+def open_alldat():
+    f=open(".build/AllMegaDb.pickle","rb")
+    b=pickle.load(f)
+    f.close()
+    return b
+def save_alldat(b):
+    f=open(".build/AllMegaDb.pickle","wb")
+    pickle.dump(b,f)
+    f.close()
+    return b
+
 #Use a tarfile: due to the sheer number of small files, the Ookii subdirectory was taking a
 #disproportionately long time (for its file size) to copy to backup, and taking a disproportionate
 #drive footprint.  Using a tarfile fixes this problem.
