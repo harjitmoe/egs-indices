@@ -344,3 +344,25 @@ def iso2top(iso):
         _iso2top[iso]="%s, %s %d, %04d"%(wd,m2,d,y)
     return _iso2top[iso]
 
+def openrf(fn, *mode):
+    import os
+    try:
+        from MacOS import openrf
+    except ImportError:
+        mode=list(mode)
+        if mode:
+            #MacOS.openrf allows and ignores asterisks.
+            #One is passed by AppleSingle.py without explanation.
+            #Ignore them likewise.
+            mode[0]=mode[0].replace("*","")
+        try:
+            #NTFS under Windows and others
+            return open(fn+":rsrc", *mode)
+        except (EnvironmentError, SystemError):
+            if (os.name=="posix") and not os.path.isdir(fn):
+                #Used for HFS+ on some platform(s)
+                return open(fn+"/rsrc", *mode)
+            raise
+    else:
+        return openrf(fn, *mode)
+
