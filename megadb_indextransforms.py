@@ -38,8 +38,6 @@ true=True
 
 import os,sys
 
-main_db=utility.open_alldat()
-
 #SB2Year
 
 by_year={}
@@ -57,18 +55,19 @@ def handle_strip_record(strip):
 def handle_arc(arc):
     map(handle_strip_record,arc["Comics"])
 
-map(handle_arc,utility.specific_section(main_db,"sketch")["StoryArcs"])
-
-output=[]
-for year in by_year_order:
-    output.append(by_year[year])
-
-utility.specific_section(main_db,"sketch")["StoryArcs"]=output
+def megadb_sb2year(main_db):
+    print ">>> megadb_sb2year (megadb_indextransforms)"
+    map(handle_arc,utility.specific_section(main_db,"sketch")["StoryArcs"])
+    output=[]
+    for year in by_year_order:
+        output.append(by_year[year])
+    utility.specific_section(main_db,"sketch")["StoryArcs"]=output
+    return main_db
 
 #ArcLine
 
-arcs=[]
 curatitl=""
+arcs=[]
 
 def handle_line(line):
     global curatitl
@@ -83,10 +82,16 @@ def handle_line(line):
         curatitl=""
         arcs.append(line)
 
-map(handle_line,utility.specific_section(main_db,"story")["StoryArcs"])
-
-utility.specific_section(main_db,"story")["StoryArcs"]=arcs
+def megadb_arcline(main_db):
+    print ">>> megadb_sb2year (megadb_indextransforms)"
+    map(handle_line,utility.specific_section(main_db,"story")["StoryArcs"])
+    utility.specific_section(main_db,"story")["StoryArcs"]=arcs
+    return main_db
 
 #
 
-utility.save_alldat(main_db)
+def megadb_indextransforms(alldat):
+    return megadb_arcline(megadb_sb2year(alldat))
+
+if __name__=="__main__":
+    utility.save_alldat(megadb_indextransforms(utility.open_alldat()))

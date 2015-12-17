@@ -10,7 +10,7 @@
 # different terms.  This note is not part of the above notice.
 #
 
-import json
+import json,os
 
 def extract_bg_title_db():
     print (">>> extract_bg_title_db")

@@ -70,11 +70,14 @@ def handle_line(line):
     map(handle_strip_record,line["Comics"])
     line["RecordType"]="StoryLine"
 
-output=[]
+def megadb_generate_initial():
+    print (">>> megadb_generate_initial")
+    output=[]
+    for sect in ("story","np","sketch"):
+        globals().update(utility.open_dbs(sect)) #Must be globals - darn you Nested Scopes!
+        map(handle_line,main_db)
+        output.append({"Title":utility.egslink2ookii[sect],"StoryArcs":main_db,"RecordType":"Section"})
+    return output
 
-for sect in ("story","np","sketch"):
-    locals().update(utility.open_dbs(sect))
-    map(handle_line,main_db)
-    output.append({"Title":utility.egslink2ookii[sect],"StoryArcs":main_db,"RecordType":"Section"})
-
-utility.save_alldat(output)
+if __name__=="__main__":
+    utility.save_alldat(megadb_generate_initial())

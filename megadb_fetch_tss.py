@@ -35,50 +35,52 @@ from titleharjit import *
 import os, utility
 from titlebank import * #Must be imported after utility
 
-alldat=utility.open_alldat()
-for arc in utility.specific_section(alldat,"story")["StoryArcs"]:
-    for strip in arc['Comics']:
-        if os.path.exists("..\\Transcripts\\"+strip['Date']+".txt"):
-            #print strip["Date"]
-            ts_file=open("..\\Transcripts\\"+strip['Date']+".txt","rU").read()
-            transcript=ts_file.read()
-            ts_file.close()
-            #Thank goodness for Python mutables
-            #I can change strip and it also changes in alldat
-            # on account of referencing the same object
-            strip["Transcript"]=utility.scour(transcript.rstrip("\n")+"\n\n")
-        else:
-            #print strip['Date']
-            strip["Transcript"]=None
-        if ("Official" not in strip['Titles']):
-            if strip['Id'] in megatitles:
-                strip['Titles']["Official"]=megatitles[strip['Id']]
-            if strip['Id'] in mytitles:
-                strip['Titles']["HarJIT"]=mytitles[strip['Id']]
-            if strip['Id'] in titles:
-                strip['Titles']["Tumblr"]=titles[strip['Id']]
+def megadb_fetch_tss(alldat):
+    print (">>> megadb_fetch_tss")
+    for arc in utility.specific_section(alldat,"story")["StoryArcs"]:
+        for strip in arc['Comics']:
+            if os.path.exists("..\\Transcripts\\"+strip['Date']+".txt"):
+                #print strip["Date"]
+                ts_file=open("..\\Transcripts\\"+strip['Date']+".txt","rU")
+                transcript=ts_file.read()
+                ts_file.close()
+                #Thank goodness for Python mutables
+                #I can change strip and it also changes in alldat
+                # on account of referencing the same object
+                strip["Transcript"]=utility.scour(transcript.rstrip("\n")+"\n\n")
+            else:
+                #print strip['Date']
+                strip["Transcript"]=None
+            if ("Official" not in strip['Titles']):
+                if strip['Id'] in megatitles:
+                    strip['Titles']["Official"]=megatitles[strip['Id']]
+                if strip['Id'] in mytitles:
+                    strip['Titles']["HarJIT"]=mytitles[strip['Id']]
+                if strip['Id'] in titles:
+                    strip['Titles']["Tumblr"]=titles[strip['Id']]
+    globals().update(utility.open_dbs("sketch")) #Must be globals - darn you Nested Scopes!
+    marker="<strong>Requested by"
+    marker2="<strong><a href=\"http://www.patreon.com/egscomics\">Requested</a> by"
+    marker3="<strong><a href=\"http://www.patreon.com/egscomics\"> Requested</a> by"
+    marker4="<strong> Requested</strong></a><strong> by"
+    for arc in utility.specific_section(alldat,"sketch")["StoryArcs"]:
+        for strip in arc['Comics']:        
+            if ("Official" not in strip['Titles']):
+                if strip['Id'] in sbmytitles:
+                    strip['Titles']["HarJIT"]=sbmytitles[strip['Id']]
+                if strip['Id'] in sbmegatitles: #NOT elif
+                    strip['Titles']["Official"]=sbmegatitles[strip['Id']]
+                elif strip['Id'] in metadataegs: #YES elif
+                    c=utility.dirty(metadataegs[strip['Id']]["Commentary"])
+                    if c.count(marker):
+                        strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker,1)[1].split("</p>",1)[0].split("<br />",1)[0])
+                    elif c.count(marker2):
+                        strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker2,1)[1].split("</p>",1)[0].split("<br />",1)[0])
+                    elif c.count(marker3):
+                        strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker3,1)[1].split("</p>",1)[0].split("<br />",1)[0])
+                    elif c.count(marker4):
+                        strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker4,1)[1].split("</p>",1)[0].split("<br />",1)[0])
+    return alldat
 
-locals().update(utility.open_dbs("sketch"))
-marker="<strong>Requested by"
-marker2="<strong><a href=\"http://www.patreon.com/egscomics\">Requested</a> by"
-marker3="<strong><a href=\"http://www.patreon.com/egscomics\"> Requested</a> by"
-marker4="<strong> Requested</strong></a><strong> by"
-for arc in utility.specific_section(alldat,"sketch")["StoryArcs"]:
-    for strip in arc['Comics']:        
-        if ("Official" not in strip['Titles']):
-            if strip['Id'] in sbmytitles:
-                strip['Titles']["HarJIT"]=sbmytitles[strip['Id']]
-            if strip['Id'] in sbmegatitles: #NOT elif
-                strip['Titles']["Official"]=sbmegatitles[strip['Id']]
-            elif strip['Id'] in metadataegs: #YES elif
-                c=utility.dirty(metadataegs[strip['Id']]["Commentary"])
-                if c.count(marker):
-                    strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker,1)[1].split("</p>",1)[0].split("<br />",1)[0])
-                elif c.count(marker2):
-                    strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker2,1)[1].split("</p>",1)[0].split("<br />",1)[0])
-                elif c.count(marker3):
-                    strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker3,1)[1].split("</p>",1)[0].split("<br />",1)[0])
-                elif c.count(marker4):
-                    strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker4,1)[1].split("</p>",1)[0].split("<br />",1)[0])
-
-utility.save_alldat(alldat)
+if __name__=="__main__":
+    utility.save_alldat(megadb_fetch_tss(utility.open_alldat()))

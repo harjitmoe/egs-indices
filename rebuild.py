@@ -15,7 +15,7 @@
 # to work or you'll break the output).  Generally no attempt at 
 # 3k compatibility has been made.
 
-import sys, os, shutil, json
+import sys, os, shutil, json, utility
 
 # Remove build dir so existing files do not mess up regen process
 shutil.rmtree(".build")
@@ -55,19 +55,27 @@ import extract_haylo_hierarchy
 extract_haylo_hierarchy.extract_haylo_hierarchy()
 
 # Generate MegaDB
-execfile2("megadb_generate_initial.py")
+import megadb_generate_initial
+alldat=megadb_generate_initial.megadb_generate_initial()
 
 # Add new strips
-execfile2("megadb_fetch_haylonew.py")
-execfile2("megadb_fetch_newfiles.py")
+import megadb_fetch_haylonew
+alldat=megadb_fetch_haylonew.megadb_fetch_haylonew(alldat)
+import megadb_fetch_newfiles
+alldat=megadb_fetch_newfiles.megadb_fetch_newfiles(alldat)
 
 # Fetch transcripts whilst adding new titles and appearance data
-execfile2("megadb_fetch_tss.py")
-execfile2("megadb_fetch_zorua.py")
+import megadb_fetch_tss
+alldat=megadb_fetch_tss.megadb_fetch_tss(alldat)
+import megadb_fetch_zorua
+alldat=megadb_fetch_zorua.megadb_fetch_zorua(alldat)
 
 # Divide Sketchbook by ID, introduce true-arc records, pull BG
-execfile2("megadb_indextransforms.py")
-execfile2("megadb_pull_bg.py")
+import megadb_indextransforms
+alldat=megadb_indextransforms.megadb_indextransforms(alldat)
+import megadb_pull_bg
+alldat=megadb_pull_bg.megadb_pull_bg(alldat)
+utility.save_alldat(alldat) #for modules still using the slightly older system.
 
 # Regenerate Shiveapedia templates and docs
 execfile2("export_titles_template.py")
@@ -76,7 +84,8 @@ execfile2("export_titles_template_lite2.py")
 execfile2("export_numberdatemaps.py")
 
 # Generate the HTML index, make JSON
-execfile2("export_html.py")
+import export_html
+export_html.export_html(alldat)
 execfile2("megadb_jsonise.py")
 
 # Enter build dir

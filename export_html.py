@@ -200,8 +200,9 @@ def output_html(outfile,record,parent=None):
                 print>>sys.stderr, comic["Section"],comic["Date"]
 
 
-def export_html(sections,outfile):
+def export_html(sections):
     print (">>> export_html")
+    outfile=open(".build/index.html","w")
     #HTML 5:
     #print>>outfile, "<!doctype html>"
     #print>>outfile, '<html><head><title>Index of EGS Strips</title><meta charset="UTF-8" /></head>'
@@ -219,5 +220,4 @@ def export_html(sections,outfile):
 
 if __name__=="__main__":
     sections=utility.open_alldat()
-    outfile=open(".build/index.html","w")
-    export_html(sections,outfile)
+    export_html(sections)

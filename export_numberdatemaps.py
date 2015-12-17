@@ -118,3 +118,5 @@ for title,db in (("Main Story",stdb),("Sketchbook",sbdb),("EGS:NP",npdb)):
     print>>nom, "|}\n\n"
     print>>dim, "|}\n\n"
     print>>dfm, "|}\n\n"
+
+map(file.close,(nem,nom,dim,dfm))

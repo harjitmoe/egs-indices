@@ -139,3 +139,5 @@ The third is either "date" or "id" depending on what is being passed in.  The su
 </noinclude>
 """
 
+outfile.close()
+

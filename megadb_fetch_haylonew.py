@@ -33,53 +33,55 @@ null=None
 false=False
 true=True
 
-locals().update(utility.open_dbs("story"))
-
 import os,sys
 
-main_db=utility.open_alldat()
+def megadb_fetch_haylonew(main_db):
+    print (">>> megadb_fetch_haylonew")
+    globals().update(utility.open_dbs("story")) #Must be globals - darn you Nested Scopes!
+    for name,dates in haylo_additional_hierarchy:
+        db={"Title":": ".join(name.split(" - ",1)),"RecordType":"StoryLine"}
+        comics=[]
+        for date in dates:
+            date,title,fora=haylo_db[date]
+            strip={}
+            if title.split("-")[-1].strip():
+                #Would rather \x96 but...
+                strip["Titles"]={"Haylo":title.split("-")[-1].strip().replace("&ndash;","-")}
+            else:
+                strip["Titles"]={}
+            strip["Date"]=date
+            try:
+                strip["Id"]=date2id[date]
+            except:
+                strip["Id"]=-1#i.e. error
+                print>>sys.stderr,"Error: cannot find date-id mapping for %s"%date
+            strip["OokiiId"]=-1
+            strip["ReactionLinks"]=fora
+            if strip["Date"] in links_910new:
+                utility.merge_reactions(strip["ReactionLinks"],links_910new[strip["Date"]])
+            #Date indexing
+            strip["DateIndexable"]=False
+            if strip["Id"] in dateswork:
+                dsi=dateswork[strip["Id"]]
+                for crit in ('WorksInternal','WorksExternal'):
+                    if crit in dsi.keys():
+                        works,date=dsi[crit]
+                        if works:
+                            if date!=strip["Date"]:
+                                raise AssertionError
+                            strip["DateIndexable"]=True
+            if strip["Id"] in metadataegs:
+                strip.update(metadataegs[strip["Id"]])
+            strip["SharedDateIndex"]=0
+            strip["FileNameTitle"]=None
+            strip["Section"]="Story"
+            strip["Characters"]=None
+            strip["RecordType"]="Comic"
+            comics.append(strip)
+        db["Comics"]=comics
+        utility.specific_section(main_db,"story")["StoryArcs"].append(db)
+    return main_db
 
-for name,dates in haylo_additional_hierarchy:
-    db={"Title":": ".join(name.split(" - ",1)),"RecordType":"StoryLine"}
-    comics=[]
-    for date in dates:
-        date,title,fora=haylo_db[date]
-        strip={}
-        if title.split("-")[-1].strip():
-            #Would rather \x96 but...
-            strip["Titles"]={"Haylo":title.split("-")[-1].strip().replace("&ndash;","-")}
-        else:
-            strip["Titles"]={}
-        strip["Date"]=date
-        try:
-            strip["Id"]=date2id[date]
-        except:
-            strip["Id"]=-1#i.e. error
-            print>>sys.stderr,"Error: cannot find date-id mapping for %s"%date
-        strip["OokiiId"]=-1
-        strip["ReactionLinks"]=fora
-        if strip["Date"] in links_910new:
-            utility.merge_reactions(strip["ReactionLinks"],links_910new[strip["Date"]])
-        #Date indexing
-        strip["DateIndexable"]=False
-        if strip["Id"] in dateswork:
-            dsi=dateswork[strip["Id"]]
-            for crit in ('WorksInternal','WorksExternal'):
-                if crit in dsi.keys():
-                    works,date=dsi[crit]
-                    if works:
-                        if date!=strip["Date"]:
-                            raise AssertionError
-                        strip["DateIndexable"]=True
-        if strip["Id"] in metadataegs:
-            strip.update(metadataegs[strip["Id"]])
-        strip["SharedDateIndex"]=0
-        strip["FileNameTitle"]=None
-        strip["Section"]="Story"
-        strip["Characters"]=None
-        strip["RecordType"]="Comic"
-        comics.append(strip)
-    db["Comics"]=comics
-    utility.specific_section(main_db,"story")["StoryArcs"].append(db)
-utility.save_alldat(main_db)
+if __name__=="__main__":
+    utility.save_alldat(megadb_fetch_haylonew(utility.open_alldat()))
 
