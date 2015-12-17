@@ -13,49 +13,50 @@
 import sys,os
 import utility
 
-def doit():
+def doit(outfile,b):
     source="Official"
-    print "|"+source.lower()+" = {{#switch:{{{3}}}",
+    print>>outfile, "|"+source.lower()+" = {{#switch:{{{3}}}",
     #Only, by date
-    print "|date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}"
+    print>>outfile, "|date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}"
     for arc in b:
         for line in (arc["StoryLines"] if arc["RecordType"]=="StoryArc" else (arc,)):
             for comic in line["Comics"]:
                 if not comic["SharedDateIndex"]:
                     if source in comic["Titles"]:
-                        print "|"+comic["Date"]+' = ("'+utility.clean(comic["Titles"][source])+'")'
-    print "|#default = }}"
+                        print>>outfile, "|"+comic["Date"]+' = ("'+utility.clean(comic["Titles"][source])+'")'
+    print>>outfile, "|#default = }}"
     #Only, by ID
-    print "|id = {{#switch:{{{4}}}"
+    print>>outfile, "|id = {{#switch:{{{4}}}"
     for arc in b:
         for line in (arc["StoryLines"] if arc["RecordType"]=="StoryArc" else (arc,)):
             for comic in line["Comics"]:
                 if comic["Id"]!=-1:
                     if source in comic["Titles"]:
-                        print "|"+`comic["Id"]`+' = ("'+utility.clean(comic["Titles"][source])+'")'
-    print "|#default = }}"
-    print "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}' (only official supported in this version)</span>}}"
-
-print "<includeonly>{{#switch:{{{1}}}"
+                        print>>outfile, "|"+`comic["Id"]`+' = ("'+utility.clean(comic["Titles"][source])+'")'
+    print>>outfile, "|#default = }}"
+    print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}' (only official supported in this version)</span>}}"
 
 alldat=utility.open_alldat()
+outfile=open(".build/titles_lite.txt","w")
+
+print>>outfile, "<includeonly>{{#switch:{{{1}}}"
 
 for sect in ("story","sketch","np"):
     b=utility.specific_section(alldat,sect)["StoryArcs"]
-    print "|%s={{#switch:{{{2}}}"%sect
-    doit()
-    print "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}"
+    print>>outfile, "|%s={{#switch:{{{2}}}"%sect
+    doit(outfile,b)
+    print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}"
 
 f=open("BgNames.txt","rU")
 b=eval(f.read()) #Blatantly no security, assume trust
 f.close()
-print "|bg={{#switch:{{{2}}}"
+print>>outfile, "|bg={{#switch:{{{2}}}"
 for id in b:
-    print "|"+id+' = ("'+b[id]+'")'
-print "|#default = }}"
+    print>>outfile, "|"+id+' = ("'+b[id]+'")'
+print>>outfile, "|#default = }}"
 
-print "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>"
-print """
+print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>"
+print>>outfile, """
 
 == About ==
 

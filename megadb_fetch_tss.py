@@ -40,7 +40,9 @@ for arc in utility.specific_section(alldat,"story")["StoryArcs"]:
     for strip in arc['Comics']:
         if os.path.exists("..\\Transcripts\\"+strip['Date']+".txt"):
             #print strip["Date"]
-            transcript=open("..\\Transcripts\\"+strip['Date']+".txt","rU").read()
+            ts_file=open("..\\Transcripts\\"+strip['Date']+".txt","rU").read()
+            transcript=ts_file.read()
+            ts_file.close()
             #Thank goodness for Python mutables
             #I can change strip and it also changes in alldat
             # on account of referencing the same object

@@ -105,18 +105,29 @@ def parse_suddenlaunch(sect):
     return suddenlaunch_db
 
 def open_dbs(sect):
-    date2id=eval(open("Date2Id.txt","rU").read())[sect]
-    metadataegs=eval(open("metadataegs3.txt","rU").read())[sect]
-    dateswork=eval(open("DatesWorkProcessed.txt","rU").read())[sect]
-    classics_db=eval(open(".build/classics_910.txt","rU").read())[sect]
-    lsdir=eval(open("NewFiles.txt","rU").read())[sect]
-    reddit_titles=eval(open(".build/reddit_titles.txt","rU").read())[sect]
-    reddit_links=eval(open(".build/reddit_threads.txt","rU").read())[sect]
-    links_910new=eval(open(".build/910-new.dat","rU").read())[sect]
-    main_db=scour(eval(open_lib(r"Ookii\ComicIndices\egscomicapi_%d.txt"%([None,"story","np","sketch"].index(sect)),"rU").read()))
+    date2id=open("Date2Id.txt","rU")
+    date2id=eval(date2id.read())[sect]
+    metadataegs=open("metadataegs3.txt","rU")
+    metadataegs=eval(metadataegs.read())[sect]
+    dateswork=open("DatesWorkProcessed.txt","rU")
+    dateswork=eval(dateswork.read())[sect]
+    classics_db=open(".build/classics_910.txt","rU")
+    classics_db=eval(classics_db.read())[sect]
+    lsdir=open("NewFiles.txt","rU")
+    lsdir=eval(lsdir.read())[sect]
+    reddit_titles=open(".build/reddit_titles.txt","rU")
+    reddit_titles=eval(reddit_titles.read())[sect]
+    reddit_links=open(".build/reddit_threads.txt","rU")
+    reddit_links=eval(reddit_links.read())[sect]
+    links_910new=open(".build/910-new.dat","rU")
+    links_910new=eval(links_910new.read())[sect]
+    main_db=open_lib(r"Ookii\ComicIndices\egscomicapi_%d.txt"%([None,"story","np","sketch"].index(sect)),"rU")
+    main_db=scour(eval(main_db.read()))
     if sect=="story":
-        haylo_db=eval(open(".build/HayloListMini.txt","rU").read())
-        haylo_additional_hierarchy=eval(open(".build/HayloHierarchyAdditional.txt","rU").read())
+        haylo_db=open(".build/HayloListMini.txt","rU")
+        haylo_db=eval(haylo_db.read())
+        haylo_additional_hierarchy=open(".build/HayloHierarchyAdditional.txt","rU")
+        haylo_additional_hierarchy=eval(haylo_additional_hierarchy.read())
     else:
         haylo_db={}
         haylo_additional_hierarchy=None

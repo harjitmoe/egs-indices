@@ -48,7 +48,7 @@ def get_section(record):
 
 def get_comid(record):
     if record["Id"]>0:#i.e. not an error code
-        return `record["Id"]`
+        return repr(record["Id"])
     else:
         return record["Date"]
 
@@ -77,139 +77,140 @@ def get_couplet(record):
     elif record["RecordType"]=="Database":
         return get_id(record),"Table of Contents:"
 
-def output_html(record,parent=None):
+def output_html(outfile,record,parent=None):
     if record["RecordType"]=="Database":
-        print "<p style='margin: 0 0 1ex 0'><a id='%s'>(anchor)</a></p><h1 style='margin: 0 0 1ex 0'>%s</h1><ol>"%get_couplet(record)
+        print>>outfile, "<p style='margin: 0 0 1ex 0'><a id='%s'>(anchor)</a></p><h1 style='margin: 0 0 1ex 0'>%s</h1><ol>"%get_couplet(record)
         for section in record["Sections"]:
-            print "<li><a href='#%s'>%s</a></li>"%get_couplet(section)
-        print "<li><a href='#end'>End of document</a></li></ol>"
+            print>>outfile, "<li><a href='#%s'>%s</a></li>"%get_couplet(section)
+        print>>outfile, "<li><a href='#end'>End of document</a></li></ol>"
         for section in record["Sections"]:
-            output_html(section,record)
+            output_html(outfile,section,record)
     elif record["RecordType"]=="Section":
-        print reallyspaced
-        print "<p style='margin: 0 0 1ex 0'><a id='%s'>(anchor)</a></p><h1 style='margin: 0 0 1ex 0'>%s</h1>"%get_couplet(record)
-        print "<p style='margin: 0 0 1ex 0'><a href='#%s'>(up one level)</a></p>"%get_id(parent)
+        print>>outfile, reallyspaced
+        print>>outfile, "<p style='margin: 0 0 1ex 0'><a id='%s'>(anchor)</a></p><h1 style='margin: 0 0 1ex 0'>%s</h1>"%get_couplet(record)
+        print>>outfile, "<p style='margin: 0 0 1ex 0'><a href='#%s'>(up one level)</a></p>"%get_id(parent)
         if "Id" not in record["StoryArcs"][0]:
             #Usual
-            print "<ol>"
+            print>>outfile, "<ol>"
             for arc in record["StoryArcs"]:
-                print "<li><a href='#%s'>%s</a></li>"%get_couplet(arc)
-            print "</ol>"
+                print>>outfile, "<li><a href='#%s'>%s</a></li>"%get_couplet(arc)
+            print>>outfile, "</ol>"
         else:
             #Legacy Backgrounds
-            print "<ul>"
+            print>>outfile, "<ul>"
             for arc in record["StoryArcs"]:
-                print ("<li><a href='#%s'>" + ("%04d"%arc["Id"]) + ": %s</a></li>")%get_couplet(arc)
-            print "</ul>"
+                print>>outfile, ("<li><a href='#%s'>" + ("%04d"%arc["Id"]) + ": %s</a></li>")%get_couplet(arc)
+            print>>outfile, "</ul>"
         for arc in record["StoryArcs"]:
-            output_html(arc,record)
+            output_html(outfile,arc,record)
     elif record["RecordType"]=="StoryArc":
-        print reallyspaced
-        print "<p style='margin: 0 0 1ex 0'><a id='%s'>(anchor)</a></p><h2 style='margin: 0 0 1ex 0'>%s</h2>"%get_couplet(record)
-        print "<p style='margin: 0 0 1ex 0'><a href='#%s'>(up one level)</a></p><ol>"%get_id(parent)
+        print>>outfile, reallyspaced
+        print>>outfile, "<p style='margin: 0 0 1ex 0'><a id='%s'>(anchor)</a></p><h2 style='margin: 0 0 1ex 0'>%s</h2>"%get_couplet(record)
+        print>>outfile, "<p style='margin: 0 0 1ex 0'><a href='#%s'>(up one level)</a></p><ol>"%get_id(parent)
         for line in record["StoryLines"]:
-            print "<li><a href='#%s'>%s</a></li>"%get_couplet(line)
-        print "</ol>"
+            print>>outfile, "<li><a href='#%s'>%s</a></li>"%get_couplet(line)
+        print>>outfile, "</ol>"
         for line in record["StoryLines"]:
-            output_html(line,record)
+            output_html(outfile,line,record)
     elif record["RecordType"]=="StoryLine":
-        print reallyspaced
-        print "<p style='margin: 0 0 1ex 0'><a id='%s'>(anchor)</a></p><h3 style='margin: 0 0 1ex 0'>%s</h3>"%get_couplet(record)
-        print "<p style='margin: 0 0 1ex 0'><a href='#%s'>(up one level)</a></p><ul>"%get_id(parent)
+        print>>outfile, reallyspaced
+        print>>outfile, "<p style='margin: 0 0 1ex 0'><a id='%s'>(anchor)</a></p><h3 style='margin: 0 0 1ex 0'>%s</h3>"%get_couplet(record)
+        print>>outfile, "<p style='margin: 0 0 1ex 0'><a href='#%s'>(up one level)</a></p><ul>"%get_id(parent)
         reul_counter=0
         for comic in record["Comics"]:
-            print "<li><a href='#"+get_id(comic)+"'>"+comic["Date"]+": "+get_comid(comic)+": "+utility.get_preferred_title(comic)+"</a></li>"
+            print>>outfile, "<li><a href='#"+get_id(comic)+"'>"+comic["Date"]+": "+get_comid(comic)+": "+utility.get_preferred_title(comic)+"</a></li>"
             #Back-buttoning onto middle of list causes all to appear unbulleted on one line
             #Contain damage by splitting ul into chunks (also why I'm using ul, not ol)
             if reul_counter>=100:
-                print "</ul><ul>"
+                print>>outfile, "</ul><ul>"
                 reul_counter=0
             else:
                 reul_counter+=1
-        print "</ul>"
+        print>>outfile, "</ul>"
         for comic in record["Comics"]:
-            output_html(comic,record)
+            output_html(outfile,comic,record)
     elif record["RecordType"]=="Comic":
-        print reallyspaced
+        print>>outfile, reallyspaced
         comic=record
-        print "<p style='margin: 0 0 1ex 0'><a id='"+get_id(comic)+"'>(anchor)</a></p><h4 style='margin: 0 0 1ex 0'>"+utility.get_preferred_title(comic)+"</h4>"
-        print "<p style='margin: 0 0 1ex 0'><a href='#"+get_id(parent)+"'>(up one level)</a></p>"
+        print>>outfile, "<p style='margin: 0 0 1ex 0'><a id='"+get_id(comic)+"'>(anchor)</a></p><h4 style='margin: 0 0 1ex 0'>"+utility.get_preferred_title(comic)+"</h4>"
+        print>>outfile, "<p style='margin: 0 0 1ex 0'><a href='#"+get_id(parent)+"'>(up one level)</a></p>"
         if comic["DateIndexable"]:
-            print "<p style='margin: 0 0 1ex 0'>Date: <a href='http://egscomics.com/"+utility.ookii2url[comic["Section"]]+"?date="+comic["Date"]+"'>"+comic["Date"]+"</a></p>"
+            print>>outfile, "<p style='margin: 0 0 1ex 0'>Date: <a href='http://egscomics.com/"+utility.ookii2url[comic["Section"]]+"?date="+comic["Date"]+"'>"+comic["Date"]+"</a></p>"
         else:
-            print "<p style='margin: 0 0 1ex 0'>Date: "+comic["Date"]
+            print>>outfile, "<p style='margin: 0 0 1ex 0'>Date: "+comic["Date"]
             if comic['SharedDateIndex']:
-                print "(%d of %d)"%(comic['SharedDateIndex'],(comic['SharedDateTotal'][0] if 'SharedDateTotal' in comic else -1))
-            print "</p>"
+                print>>outfile, "(%d of %d)"%(comic['SharedDateIndex'],(comic['SharedDateTotal'][0] if 'SharedDateTotal' in comic else -1))
+            print>>outfile, "</p>"
         if "DateInBrowserTitle" in comic:
             if comic["DateInBrowserTitle"]:
-                print "<p style='margin: 0 0 1ex 0'>Date given in browser title: "+comic["DateInBrowserTitle"]+"</p>"
+                print>>outfile, "<p style='margin: 0 0 1ex 0'>Date given in browser title: "+comic["DateInBrowserTitle"]+"</p>"
             else:
-                print "<p style='margin: 0 0 1ex 0'>No date given in browser title.</p>"
+                print>>outfile, "<p style='margin: 0 0 1ex 0'>No date given in browser title.</p>"
             if comic["DateStatedAboveComic"]:
-                print "<p style='margin: 0 0 1ex 0'>Date stated above the comic, converted to ISO format: "+comic["DateStatedAboveComic"]+"</p>"
+                print>>outfile, "<p style='margin: 0 0 1ex 0'>Date stated above the comic, converted to ISO format: "+comic["DateStatedAboveComic"]+"</p>"
             else:
-                print "<p style='margin: 0 0 1ex 0'>No date stated above the comic.</p>"
+                print>>outfile, "<p style='margin: 0 0 1ex 0'>No date stated above the comic.</p>"
         if ("SpecialUrl" in comic.keys()) and comic["SpecialUrl"]:
             special_website=comic["SpecialUrl"]
             if special_website.startswith("http://"):
                 special_website=special_website.split("://",1)[1]
             special_website=special_website.split("/")[0]
             if comic["Id"]>0:#i.e. not an error code
-                print "<p style='margin: 0 0 1ex 0'>Archival ID: "+comic["Section"]+" "+`comic["Id"]`+"</p>"
-            print "<p style='margin: 0 0 1ex 0'>Unfortunately absent from current archives, or at least the interface thereof, possibly for technical reasons.  Accessible over "+special_website+" <a href='"+comic["SpecialUrl"]+"'>here</a>.</p>"
+                print>>outfile, "<p style='margin: 0 0 1ex 0'>Archival ID: "+comic["Section"]+" "+`comic["Id"]`+"</p>"
+            print>>outfile, "<p style='margin: 0 0 1ex 0'>Unfortunately absent from current archives, or at least the interface thereof, possibly for technical reasons.  Accessible over "+special_website+" <a href='"+comic["SpecialUrl"]+"'>here</a>.</p>"
         elif comic["Id"]>0:#i.e. not an error code
-            print "<p style='margin: 0 0 1ex 0'>Archival ID: <a href='http://egscomics.com/"+{"Story":"index.php","EGS:NP":"egsnp.php","Sketchbook":"sketchbook.php"}[comic["Section"]]+"?id="+`comic["Id"]`+"'>"+comic["Section"]+" "+`comic["Id"]`+"</a></p>"
+            print>>outfile, "<p style='margin: 0 0 1ex 0'>Archival ID: <a href='http://egscomics.com/"+{"Story":"index.php","EGS:NP":"egsnp.php","Sketchbook":"sketchbook.php"}[comic["Section"]]+"?id="+`comic["Id"]`+"'>"+comic["Section"]+" "+`comic["Id"]`+"</a></p>"
         else:
-            print "<p style='margin: 0 0 1ex 0'>Unable to determine archival ID.  Lookup by date may or may not work.</p>"
+            print>>outfile, "<p style='margin: 0 0 1ex 0'>Unable to determine archival ID.  Lookup by date may or may not work.</p>"
         if comic["OokiiId"]>0:
-            print "<p style='margin: 0 0 1ex 0'>Ookii database ID: "+`comic["OokiiId"]`+"</p>"
+            print>>outfile, "<p style='margin: 0 0 1ex 0'>Ookii database ID: "+`comic["OokiiId"]`+"</p>"
         else:
-            print "<p style='margin: 0 0 1ex 0'>Not in Ookii database as of time of grab.</p>"
+            print>>outfile, "<p style='margin: 0 0 1ex 0'>Not in Ookii database as of time of grab.</p>"
         if ("FileNameTitle" in comic.keys()) and comic["FileNameTitle"]:
-            print "<p style='margin: 0 0 1ex 0'>Meaningful part of original filename: "+comic["FileNameTitle"]+"</p>"
+            print>>outfile, "<p style='margin: 0 0 1ex 0'>Meaningful part of original filename: "+comic["FileNameTitle"]+"</p>"
         if comic['Characters']:
             for authority,chars in comic['Characters'].items():
-                print "<h5 style='margin: 0 0 1ex 0'>Characters per "+authority+":</h5>"
+                print>>outfile, "<h5 style='margin: 0 0 1ex 0'>Characters per "+authority+":</h5>"
                 for ch in chars:
                     if 'CharacterForms' in ch:
-                        print "<p style='margin: 0 0 1ex 0'>Appearance %d of %s in %s, appearing in form(s):"%(ch['AppearanceNumber'],ch['CharacterName'],comic["Section"])
-                        print ", ".join(ch['CharacterForms'])
-                        print "</p>"
+                        print>>outfile, "<p style='margin: 0 0 1ex 0'>Appearance %d of %s in %s, appearing in form(s):"%(ch['AppearanceNumber'],ch['CharacterName'],comic["Section"])
+                        print>>outfile, ", ".join(ch['CharacterForms'])
+                        print>>outfile, "</p>"
                     else:
-                        print "<p style='margin: 0 0 1ex 0'>Appearance %d of %s in %s</p>"%(ch['AppearanceNumber'],ch['CharacterName'],comic["Section"])
+                        print>>outfile, "<p style='margin: 0 0 1ex 0'>Appearance %d of %s in %s</p>"%(ch['AppearanceNumber'],ch['CharacterName'],comic["Section"])
         else:
-            print "<p style='margin: 0 0 1ex 0'>(Ookii character information unavailable)</p>"
+            print>>outfile, "<p style='margin: 0 0 1ex 0'>(Ookii character information unavailable)</p>"
         if ('Transcript' in comic.keys()) and comic['Transcript']:
-            print "<h5 style='margin: 0 0 1ex 0'>Transcript: </h5>"
+            print>>outfile, "<h5 style='margin: 0 0 1ex 0'>Transcript: </h5>"
             ts=utility.clean(comic['Transcript']).strip("\n").replace("\n\n","</p><p style='margin: 0 0 1ex 0'>").replace("\n","<br />")
-            print "<blockquote><p style='margin: 0 0 1ex 0'>"+ts+"</p></blockquote>"
+            print>>outfile, "<blockquote><p style='margin: 0 0 1ex 0'>"+ts+"</p></blockquote>"
         else:
-            print "<p style='margin: 0 0 1ex 0'>(Transcript unavailable)</p>"
+            print>>outfile, "<p style='margin: 0 0 1ex 0'>(Transcript unavailable)</p>"
         if ('ReactionLinks' in comic.keys()) and comic['ReactionLinks']:
-            print "<h5 style='margin: 0 0 1ex 0'>Reaction links: </h5>"
+            print>>outfile, "<h5 style='margin: 0 0 1ex 0'>Reaction links: </h5>"
             for rl,classic in comic['ReactionLinks']:
                 rl=rl.replace("&","&amp;") #XML parsing error?!
-                print "<p style='margin: 0 0 1ex 0'><a href=%r>%s</a>%s</p>"%(rl,rl," (Classics Thread)" if classic else " (Original Thread)")
+                print>>outfile, "<p style='margin: 0 0 1ex 0'><a href=%r>%s</a>%s</p>"%(rl,rl," (Classics Thread)" if classic else " (Original Thread)")
         else:
             if comic["Date"].startswith("2012-09-") or comic["Date"].startswith("2012-08-2") or comic["Date"].startswith("2012-08-3"):
                 pass #"(Note: Threads lost in server crash)" -- Herald Loveall
             elif comic["Section"]=="Backgrounds":
                 pass
             else:
-                print>>sys.stderr,comic["Section"],comic["Date"]
+                print>>sys.stderr, comic["Section"],comic["Date"]
 
 sections=utility.open_alldat()
+outfile=open(".build/index.html","w")
 #HTML 5:
-#print "<!doctype html>"
-#print '<html><head><title>Index of EGS Strips</title><meta charset="UTF-8" /></head>'
+#print>>outfile, "<!doctype html>"
+#print>>outfile, '<html><head><title>Index of EGS Strips</title><meta charset="UTF-8" /></head>'
 #
 #XHTML 1.1:
-print '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">'
-print '<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Index of EGS Strips</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /></head>'
+print>>outfile, '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">'
+print>>outfile, '<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Index of EGS Strips</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /></head>'
 #
-print "<body><h1 style='margin: 0 0 1ex 0'>Index of EGS Strips</h1>"
-output_html({"Sections":sections,"RecordType":"Database"})
-print reallyspaced
-print "<a id='end'></a><h2 style='margin: 0 0 1ex 0'>End of document</h2>" #No, the sketchbook section is NOT footnotes!  This doesn't fix this, use of classic MOBI does IIRC.
-print "<a href='#topmenu'>(back to top)</a><hr /></body></html>"
+print>>outfile, "<body><h1 style='margin: 0 0 1ex 0'>Index of EGS Strips</h1>"
+output_html(outfile,{"Sections":sections,"RecordType":"Database"})
+print>>outfile, reallyspaced
+print>>outfile, "<a id='end'></a><h2 style='margin: 0 0 1ex 0'>End of document</h2>" #No, the sketchbook section is NOT footnotes!  This doesn't fix this, use of classic MOBI does IIRC.
+print>>outfile, "<a href='#topmenu'>(back to top)</a><hr /></body></html>"

@@ -13,88 +13,89 @@
 import sys,os
 import utility
 
-def doit():
-    print "|composite = {{#switch:{{{3}}}",
+def doit(outfile,b):
+    print>>outfile, "|composite = {{#switch:{{{3}}}",
     #Composite, by date
-    print "|date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}"
+    print>>outfile, "|date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}"
     for arc in b:
         for line in (arc["StoryLines"] if arc["RecordType"]=="StoryArc" else (arc,)):
             for comic in line["Comics"]:
                 if not comic["SharedDateIndex"]:
-                    print "|"+comic["Date"]+' = ("'+utility.get_every_sane_title(comic)+'")'
-    print "|#default = }}"
+                    print>>outfile, "|"+comic["Date"]+' = ("'+utility.get_every_sane_title(comic)+'")'
+    print>>outfile, "|#default = }}"
     #Composite, by ID
-    print "|id = {{#switch:{{{4}}}"
+    print>>outfile, "|id = {{#switch:{{{4}}}"
     for arc in b:
         for line in (arc["StoryLines"] if arc["RecordType"]=="StoryArc" else (arc,)):
             for comic in line["Comics"]:
                 if comic["Id"]!=-1:
-                    print "|"+`comic["Id"]`+' = ("'+utility.get_every_sane_title(comic)+'")'
-    print "|#default = }}"
-    print "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}"
+                    print>>outfile, "|"+`comic["Id"]`+' = ("'+utility.get_every_sane_title(comic)+'")'
+    print>>outfile, "|#default = }}"
+    print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}"
     for source in utility.title_sources:
         #Only
-        print "|"+source.lower()+" = {{#switch:{{{3}}}",
+        print>>outfile, "|"+source.lower()+" = {{#switch:{{{3}}}",
         #Only, by date
-        print "|date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}"
+        print>>outfile, "|date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}"
         for arc in b:
             for line in (arc["StoryLines"] if arc["RecordType"]=="StoryArc" else (arc,)):
                 for comic in line["Comics"]:
                     if not comic["SharedDateIndex"]:
                         if source in comic["Titles"]:
-                            print "|"+comic["Date"]+' = ("'+utility.clean(comic["Titles"][source])+'")'
-        print "|#default = }}"
+                            print>>outfile, "|"+comic["Date"]+' = ("'+utility.clean(comic["Titles"][source])+'")'
+        print>>outfile, "|#default = }}"
         #Only, by ID
-        print "|id = {{#switch:{{{4}}}"
+        print>>outfile, "|id = {{#switch:{{{4}}}"
         for arc in b:
             for line in (arc["StoryLines"] if arc["RecordType"]=="StoryArc" else (arc,)):
                 for comic in line["Comics"]:
                     if comic["Id"]!=-1:
                         if source in comic["Titles"]:
-                            print "|"+`comic["Id"]`+' = ("'+utility.clean(comic["Titles"][source])+'")'
-        print "|#default = }}"
-        print "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}"
+                            print>>outfile, "|"+`comic["Id"]`+' = ("'+utility.clean(comic["Titles"][source])+'")'
+        print>>outfile, "|#default = }}"
+        print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}"
         if source in utility.prefers: #Limit size of template
             #Preferred
-            print "|prefer_"+source.lower()+" = {{#switch:{{{3}}}",
+            print>>outfile, "|prefer_"+source.lower()+" = {{#switch:{{{3}}}",
             #Preferred, by date
-            print "|date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}"
+            print>>outfile, "|date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}"
             for arc in b:
                 for line in (arc["StoryLines"] if arc["RecordType"]=="StoryArc" else (arc,)):
                     for comic in line["Comics"]:
                         if not comic["SharedDateIndex"]:
-                            print "|"+comic["Date"]+' = ("'+utility.get_preferred_title_2(comic,source)+'")'
-            print "|#default = }}"
+                            print>>outfile, "|"+comic["Date"]+' = ("'+utility.get_preferred_title_2(comic,source)+'")'
+            print>>outfile, "|#default = }}"
             #Preferred, by ID
-            print "|id = {{#switch:{{{4}}}"
+            print>>outfile, "|id = {{#switch:{{{4}}}"
             for arc in b:
                 for line in (arc["StoryLines"] if arc["RecordType"]=="StoryArc" else (arc,)):
                     for comic in line["Comics"]:
                         if comic["Id"]!=-1:
-                            print "|"+`comic["Id"]`+' = ("'+utility.get_preferred_title_2(comic,source)+'")'
-            print "|#default = }}"
-            print "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}"
-
-print "<includeonly>{{#switch:{{{1}}}"
+                            print>>outfile, "|"+`comic["Id"]`+' = ("'+utility.get_preferred_title_2(comic,source)+'")'
+            print>>outfile, "|#default = }}"
+            print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}"
 
 alldat=utility.open_alldat()
+outfile=open(".build/titles.txt","w")
+
+print>>outfile, "<includeonly>{{#switch:{{{1}}}"
 
 for sect in ("story","sketch","np"):
     b=utility.specific_section(alldat,sect)["StoryArcs"]
-    print "|%s={{#switch:{{{2}}}"%sect
-    doit()
-    print "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}"
+    print>>outfile, "|%s={{#switch:{{{2}}}"%sect
+    doit(outfile,b)
+    print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}"
 
 f=open("BgNames.txt","rU")
 b=eval(f.read()) #Blatantly no security, assume trust
 f.close()
-print "|bg={{#switch:{{{2}}}"
+print>>outfile, "|bg={{#switch:{{{2}}}"
 for id in b:
-    print "|"+id+' = ("'+b[id]+'")'
-print "|#default = }}"
+    print>>outfile, "|"+id+' = ("'+b[id]+'")'
+print>>outfile, "|#default = }}"
 
-print "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>"
-print """
+print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>"
+print>>outfile, """
 
 == About ==
 
