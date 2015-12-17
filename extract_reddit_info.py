@@ -26,53 +26,58 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-initiator='<a class="title may-blank " href="http://www.egscomics.com/'
-init2='<li class="first"><a href="'
+def extract_reddit_info():
+    print (">>> extract_reddit_info")
+    initiator='<a class="title may-blank " href="http://www.egscomics.com/'
+    init2='<li class="first"><a href="'
 
-reddit_titles={"story":{},"sketch":{},"np":{}}
-reddit_links={"story":{},"sketch":{},"np":{}}
+    reddit_titles={"story":{},"sketch":{},"np":{}}
+    reddit_links={"story":{},"sketch":{},"np":{}}
 
-import os
-files=os.listdir("Reddit Titles")
-for file in files:
-    f=open("Reddit Titles/"+file)
-    b=f.read().replace("loggedin ","").replace("&#32;"," ")
-    f.close()
-    b=b.replace("https://","http://")
-    while initiator in b:
-        b=b.split(initiator,1)[1]
-        #Very old links break this
-        if ".jpg" in b.split('"',1)[0]:
-            continue #Cannot parse, forget it.
-        if "?date" in b.split('"',1)[0]:
-            continue #Cannot parse, forget it.
-        type,b=b.split("?id=",1)
-        id,b=b.split('"',1)
-        id=int(id.split("&")[0])
-        type={"egsnp":"np","index":"story","sketchbook":"sketch","filler":"sketch","":"story"}[type.split(".")[0].strip("/")]
-        b=b.split(">",1)[1]
-        title,b=b.split('</a>',1)
-        title=title.replace("&amp;","&")
-        b=b.split(' by <a href="http://www.reddit.com/user/',1)[1]
-        submitter,b=b.split('"',1)
-        if "Comic for" not in title and "Sketchbook for" not in title: #Older links, dates given rather than titles
+    import os
+    files=os.listdir("Reddit Titles")
+    for file in files:
+        f=open("Reddit Titles/"+file)
+        b=f.read().replace("loggedin ","").replace("&#32;"," ")
+        f.close()
+        b=b.replace("https://","http://")
+        while initiator in b:
+            b=b.split(initiator,1)[1]
+            #Very old links break this
+            if ".jpg" in b.split('"',1)[0]:
+                continue #Cannot parse, forget it.
+            if "?date" in b.split('"',1)[0]:
+                continue #Cannot parse, forget it.
+            type,b=b.split("?id=",1)
+            id,b=b.split('"',1)
+            id=int(id.split("&")[0])
+            type={"egsnp":"np","index":"story","sketchbook":"sketch","filler":"sketch","":"story"}[type.split(".")[0].strip("/")]
+            b=b.split(">",1)[1]
+            title,b=b.split('</a>',1)
+            title=title.replace("&amp;","&")
+            b=b.split(' by <a href="http://www.reddit.com/user/',1)[1]
+            submitter,b=b.split('"',1)
+            if "Comic for" not in title and "Sketchbook for" not in title: #Older links, dates given rather than titles
+                if id!=1974: #Haven't time to work out what went badly wrong here
+                    reddit_titles[type][id]=title+" ("+submitter+")"
+            b=b.split(init2,1)[1]
+            link,b=b.split('"',1)
             if id!=1974: #Haven't time to work out what went badly wrong here
-                reddit_titles[type][id]=title+" ("+submitter+")"
-        b=b.split(init2,1)[1]
-        link,b=b.split('"',1)
-        if id!=1974: #Haven't time to work out what went badly wrong here
-            reddit_links[type][id]=(link,False)
-f=open("Megathread.dat")
-iterator=iter(f)
-link=iterator.next().rstrip()
-submitter=iterator.next().rstrip()
-for line in iterator:
-    line=line.rstrip()
-    id,title=line.split(" ",1)
-    id=int(id)
-    reddit_titles["sketch"][id]=title+" ("+submitter+")"
-    reddit_links["sketch"][id]=(link,False)
-f.close()
+                reddit_links[type][id]=(link,False)
+    f=open("Megathread.dat")
+    iterator=iter(f)
+    link=iterator.next().rstrip()
+    submitter=iterator.next().rstrip()
+    for line in iterator:
+        line=line.rstrip()
+        id,title=line.split(" ",1)
+        id=int(id)
+        reddit_titles["sketch"][id]=title+" ("+submitter+")"
+        reddit_links["sketch"][id]=(link,False)
+    f.close()
 
-open(".build/reddit_titles.txt","w").write(repr(reddit_titles))
-open(".build/reddit_threads.txt","w").write(repr(reddit_links))
+    open(".build/reddit_titles.txt","w").write(repr(reddit_titles))
+    open(".build/reddit_threads.txt","w").write(repr(reddit_links))
+
+if __name__=="__main__":
+    extract_reddit_info()

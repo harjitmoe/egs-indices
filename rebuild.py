@@ -34,19 +34,25 @@ def execfile2(fp):
 # Certain details are stored in local mirror of EGS, extract them.
 # This will almost certainly only work on my system, hence
 # files are not stored in build dir.
-# Edit: try to contain damage on fail cases.  I still recommend
-# other users to #-out or delete these though.
-execfile2("extract_date2id.py")
-execfile2("extract_newfiles.py")
-execfile2("extract_bg_title_db.py")
+import extract_date2id
+extract_date2id.extract_date2id()
+import extract_newfiles
+extract_newfiles.extract_newfiles()
+import extract_bg_title_db
+extract_bg_title_db.extract_bg_title_db()
 
 # The HTML sets where processing is actually done
 # in the build process rather than already.
-execfile2("extract_classics_910.py")
-execfile2("extract_reddit_info.py")
-execfile2("extract_threads_new910.py")
-execfile2("extract_haylo_list.py")
-execfile2("extract_haylo_hierarchy.py")
+import extract_classics_910
+extract_classics_910.extract_classics_910()
+import extract_reddit_info
+extract_reddit_info.extract_reddit_info()
+import extract_threads_new910
+extract_threads_new910.extract_threads_new910()
+import extract_haylo_list
+extract_haylo_list.extract_haylo_list()
+import extract_haylo_hierarchy
+extract_haylo_hierarchy.extract_haylo_hierarchy()
 
 # Generate MegaDB
 execfile2("megadb_generate_initial.py")

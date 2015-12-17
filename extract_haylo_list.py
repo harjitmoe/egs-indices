@@ -26,19 +26,24 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import utility
-f=open("HayloList.html")
-b=f.read().replace("www.egscomics.com","egscomics.com").replace("/index.php?","/?")
-f.close()
-#XXX this ignores headings
-b=[i.split("</p>")[0] for i in b.split('<p style="margin-left:10.2em; \n')[1:]]
-lst={}
-order=[]
-for record in b:
-    date=record.split('<a href="http://egscomics.com/?date=')[1].split('"')[0]
-    title=utility.dirty(record.split('<a href="http://egscomics.com/?date='+date+'" >')[2].split('</a')[0])
-    related=[(utility.standardise910link(utility.dirty(i.split('"')[0])),i.split('/res/')[1].startswith("classic")) for i in record.split('<a href="http://egscomics.com/?date='+date+'" >')[2].split('<a href="')[1:]]
-    lst[date]=(date,title,related)
-    order.append(date)
-open(".build/HayloListMini.txt","w").write(repr(lst))
-open(".build/HayloOrderMini.txt","w").write(repr(order))
+def extract_haylo_list():
+    print (">>> extract_haylo_list")
+    import utility
+    f=open("HayloList.html")
+    b=f.read().replace("www.egscomics.com","egscomics.com").replace("/index.php?","/?")
+    f.close()
+    #XXX this ignores headings
+    b=[i.split("</p>")[0] for i in b.split('<p style="margin-left:10.2em; \n')[1:]]
+    lst={}
+    order=[]
+    for record in b:
+        date=record.split('<a href="http://egscomics.com/?date=')[1].split('"')[0]
+        title=utility.dirty(record.split('<a href="http://egscomics.com/?date='+date+'" >')[2].split('</a')[0])
+        related=[(utility.standardise910link(utility.dirty(i.split('"')[0])),i.split('/res/')[1].startswith("classic")) for i in record.split('<a href="http://egscomics.com/?date='+date+'" >')[2].split('<a href="')[1:]]
+        lst[date]=(date,title,related)
+        order.append(date)
+    open(".build/HayloListMini.txt","w").write(repr(lst))
+    open(".build/HayloOrderMini.txt","w").write(repr(order))
+
+if __name__=="__main__":
+    extract_haylo_list()

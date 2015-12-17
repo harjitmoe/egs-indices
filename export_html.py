@@ -199,18 +199,25 @@ def output_html(outfile,record,parent=None):
             else:
                 print>>sys.stderr, comic["Section"],comic["Date"]
 
-sections=utility.open_alldat()
-outfile=open(".build/index.html","w")
-#HTML 5:
-#print>>outfile, "<!doctype html>"
-#print>>outfile, '<html><head><title>Index of EGS Strips</title><meta charset="UTF-8" /></head>'
-#
-#XHTML 1.1:
-print>>outfile, '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">'
-print>>outfile, '<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Index of EGS Strips</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /></head>'
-#
-print>>outfile, "<body><h1 style='margin: 0 0 1ex 0'>Index of EGS Strips</h1>"
-output_html(outfile,{"Sections":sections,"RecordType":"Database"})
-print>>outfile, reallyspaced
-print>>outfile, "<a id='end'></a><h2 style='margin: 0 0 1ex 0'>End of document</h2>" #No, the sketchbook section is NOT footnotes!  This doesn't fix this, use of classic MOBI does IIRC.
-print>>outfile, "<a href='#topmenu'>(back to top)</a><hr /></body></html>"
+
+def export_html(sections,outfile):
+    print (">>> export_html")
+    #HTML 5:
+    #print>>outfile, "<!doctype html>"
+    #print>>outfile, '<html><head><title>Index of EGS Strips</title><meta charset="UTF-8" /></head>'
+    #
+    #XHTML 1.1:
+    print>>outfile, '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">'
+    print>>outfile, '<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Index of EGS Strips</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /></head>'
+    #
+    print>>outfile, "<body><h1 style='margin: 0 0 1ex 0'>Index of EGS Strips</h1>"
+    output_html(outfile,{"Sections":sections,"RecordType":"Database"})
+    print>>outfile, reallyspaced
+    print>>outfile, "<a id='end'></a><h2 style='margin: 0 0 1ex 0'>End of document</h2>" #No, the sketchbook section is NOT footnotes!  This doesn't fix this, use of classic MOBI does IIRC.
+    #Actually, it's anchors ending with numbers that triggers it.
+    print>>outfile, "<a href='#topmenu'>(back to top)</a><hr /></body></html>"
+
+if __name__=="__main__":
+    sections=utility.open_alldat()
+    outfile=open(".build/index.html","w")
+    export_html(sections,outfile)

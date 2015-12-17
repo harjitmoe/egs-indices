@@ -25,40 +25,45 @@
 #
 #  3. The text of this notice must be included, unaltered, with any distribution.
 
-f=open("HayloList.html")
-b=f.read().replace("www.egscomics.com","egscomics.com").replace("/index.php?","/?")
-f.close()
-#XXX this ignores headings
-b=b.split('<em > \n        <strong>')[1:]
-hier=[]
-addhier=[]
-def kasplit(s):
-    o=""
-    h=0
-    for n in s:
-        if n=="<" and not h:
-            h=1
-        if not h:
-            if n in " \t\r\n\v\f":
-                if o[-1]!=" ":
-                    o+=" "
-            else:
-                o+=n
-        if n==">" and h:
-            h=0
-    return o
-counting=0
-for bb in b:
-    title=kasplit(bb.split("</em >")[0]).strip().replace("&quot;",'"').replace("&amp;",'&')
-    if title=="The Dawn - Family Tree":
-        counting=1
-    ba=[i.split("</p>")[0] for i in bb.split('<p style="margin-left:10.2em; \n')[1:]]
-    hier2=[]
-    for record in ba:
-        date=record.split('<a href="http://egscomics.com/?date=')[1].split('"')[0]
-        hier2.append(date)
-    hier.append((title,hier2))
-    if counting:
-        addhier.append((title,hier2))
-open(".build/HayloHierarchyMini.txt","w").write(repr(hier))
-open(".build/HayloHierarchyAdditional.txt","w").write(repr(addhier))
+def extract_haylo_hierarchy():
+    print (">>> extract_haylo_hierarchy")
+    f=open("HayloList.html")
+    b=f.read().replace("www.egscomics.com","egscomics.com").replace("/index.php?","/?")
+    f.close()
+    #XXX this ignores headings
+    b=b.split('<em > \n        <strong>')[1:]
+    hier=[]
+    addhier=[]
+    def kasplit(s):
+        o=""
+        h=0
+        for n in s:
+            if n=="<" and not h:
+                h=1
+            if not h:
+                if n in " \t\r\n\v\f":
+                    if o[-1]!=" ":
+                        o+=" "
+                else:
+                    o+=n
+            if n==">" and h:
+                h=0
+        return o
+    counting=0
+    for bb in b:
+        title=kasplit(bb.split("</em >")[0]).strip().replace("&quot;",'"').replace("&amp;",'&')
+        if title=="The Dawn - Family Tree":
+            counting=1
+        ba=[i.split("</p>")[0] for i in bb.split('<p style="margin-left:10.2em; \n')[1:]]
+        hier2=[]
+        for record in ba:
+            date=record.split('<a href="http://egscomics.com/?date=')[1].split('"')[0]
+            hier2.append(date)
+        hier.append((title,hier2))
+        if counting:
+            addhier.append((title,hier2))
+    open(".build/HayloHierarchyMini.txt","w").write(repr(hier))
+    open(".build/HayloHierarchyAdditional.txt","w").write(repr(addhier))
+
+if __name__=="__main__":
+    extract_haylo_hierarchy()

@@ -12,21 +12,29 @@
 
 import json
 
-db={}
-dbt={}
-ls=["backgrounds_0.html","backgrounds_1.html","backgrounds_2.html","backgrounds_3.html","backgrounds_4.html","backgrounds_5.html","backgrounds_6.html"]
-keyphrase="alt='EGS Background #"
-for cell in ls:
-    f=open("../../egsbg/"+cell,"rU")
-    b=f.read().split(keyphrase)[1:]
-    f.close()
-    for celluolus in b:
-        id=celluolus[:4]
-        title=celluolus.split("<b>",1)[1].split("</b>",1)[0].strip()
-        text=celluolus.split("<br>",3)[3].split("</td>",1)[0].strip()
-        db[id]=title
-        dbt[id]=text
+def extract_bg_title_db():
+    print (">>> extract_bg_title_db")
+    if not os.path.exists(r"..\..\egs\0003 - (Sketchbook and Extras)\0001 - Filler Sketchbook"):
+        print ("Not running on HarJIT's machine, not regenerating Bg*.txt")
+        return
+    db={}
+    dbt={}
+    ls=["backgrounds_0.html","backgrounds_1.html","backgrounds_2.html","backgrounds_3.html","backgrounds_4.html","backgrounds_5.html","backgrounds_6.html"]
+    keyphrase="alt='EGS Background #"
+    for cell in ls:
+        f=open("../../egsbg/"+cell,"rU")
+        b=f.read().split(keyphrase)[1:]
+        f.close()
+        for celluolus in b:
+            id=celluolus[:4]
+            title=celluolus.split("<b>",1)[1].split("</b>",1)[0].strip()
+            text=celluolus.split("<br>",3)[3].split("</td>",1)[0].strip()
+            db[id]=title
+            dbt[id]=text
 
-if db and dbt:
-    open("BgNames.txt","w").write(json.dumps(db))
-    open("BgDescriptions.txt","w").write(json.dumps(dbt))
+    if db and dbt:
+        open("BgNames.txt","w").write(json.dumps(db))
+        open("BgDescriptions.txt","w").write(json.dumps(dbt))
+
+if __name__=="__main__":
+    extract_bg_title_db()

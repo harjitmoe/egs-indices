@@ -146,5 +146,10 @@ def grok(code):
             print i
     return b2
 
-b4={"story":grok("Story"),"sketch":grok("Sketch"),"np":grok("NP")}
-open(".build/910-new.dat","w").write(repr(b4))
+def extract_threads_new910():
+    print (">>> extract_threads_new910")
+    b4={"story":grok("Story"),"sketch":grok("Sketch"),"np":grok("NP")}
+    open(".build/910-new.dat","w").write(repr(b4))
+
+if __name__=="__main__":
+    extract_threads_new910()
