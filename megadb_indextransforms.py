@@ -29,21 +29,11 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import utility
-
-#so as to pass JSON to eval
-null=None
-false=False
-true=True
-
-import os,sys
+import utility, os, sys
 
 #SB2Year
 
-by_year={}
-by_year_order=[]
-
-def handle_strip_record(strip):
+def handle_strip_record(strip, by_year, by_year_order):
     date=strip["Date"]
     year=date[:4]
     if year in by_year_order:
@@ -52,12 +42,19 @@ def handle_strip_record(strip):
         by_year[year]={"Title":year,"Comics":[strip],"RecordType":"StoryLine"}
         by_year_order.append(year)
 
-def handle_arc(arc):
-    map(handle_strip_record,arc["Comics"])
+def arc_handler(by_year, by_year_order):
+    return lambda arc, by_year=by_year, by_year_order=by_year_order: \
+                  map(handle_strip_record,
+                      arc["Comics"],
+                      [by_year] * len(arc["Comics"]),
+                      [by_year_order] * len(arc["Comics"])
+                  )
 
 def megadb_sb2year(main_db):
     print ">>> megadb_sb2year (megadb_indextransforms)"
-    map(handle_arc,utility.specific_section(main_db,"sketch")["StoryArcs"])
+    by_year={}
+    by_year_order=[]
+    map(arc_handler(by_year,by_year_order), utility.specific_section(main_db,"sketch")["StoryArcs"])
     output=[]
     for year in by_year_order:
         output.append(by_year[year])
@@ -66,25 +63,28 @@ def megadb_sb2year(main_db):
 
 #ArcLine
 
-curatitl=""
-arcs=[]
-
-def handle_line(line):
-    global curatitl
+def handle_line(line, arcs, curatitl_p):
     print line["Title"]
     if line["Title"].count(": "):
         atitl,ltitl=line["Title"].split(": ",1)
-        if atitl!=curatitl:
+        if atitl!=curatitl_p[0]:
             arcs.append({"Title":atitl,"StoryLines":[],"RecordType":"StoryArc"})
-            curatitl=atitl
+            curatitl_p[0]=atitl
         arcs[-1]["StoryLines"].append({"Title":ltitl,"Comics":line["Comics"],"RecordType":"StoryLine"})
     else:
-        curatitl=""
+        curatitl_p[0]=""
         arcs.append(line)
 
 def megadb_arcline(main_db):
-    print ">>> megadb_sb2year (megadb_indextransforms)"
-    map(handle_line,utility.specific_section(main_db,"story")["StoryArcs"])
+    print ">>> megadb_arcline (megadb_indextransforms)"
+    arcs=[]
+    curatitl_p=[""] #single-item array functioning as a pointer.
+    arcs_in=utility.specific_section(main_db,"story")["StoryArcs"]
+    map(handle_line,
+        arcs_in,
+        [arcs] * len(arcs_in),
+        [curatitl_p] * len(arcs_in)
+    )
     utility.specific_section(main_db,"story")["StoryArcs"]=arcs
     return main_db
 
