@@ -77,17 +77,17 @@ alldat=megadb_indextransforms.megadb_indextransforms(alldat)
 alldat=megadb_pull_bg.megadb_pull_bg(alldat)
 utility.save_alldat(alldat) #for modules still using the slightly older system.
 
+# Generate the HTML index, make JSON
+import export_json
+import export_html
+export_json.export_json(alldat)
+export_html.export_html(alldat)
+
 # Regenerate Shiveapedia templates and docs
 execfile2("export_titles_template.py")
 execfile2("export_titles_template_lite.py")
 execfile2("export_titles_template_lite2.py")
 execfile2("export_numberdatemaps.py")
-
-# Generate the HTML index, make JSON
-import export_html
-import export_json
-export_html.export_html(alldat)
-export_json.export_json(alldat)
 
 # Enter build dir
 os.chdir(".build")

@@ -225,7 +225,6 @@ def specific_section(all,sect):
 def clean(title):
     #'So Much For Vladia\x19s \x18No Violent Threats\x19 Streak&'
     return title.replace("&","&amp;").replace("\x18","&lsquo;").replace("\x19","&rsquo;").replace('"',"&quot;").replace('\x14',"...").replace("<","&lt;").replace(">","&gt;")
-
 def dirty(title):
     return title.replace("&lsquo;","\x18").replace("&rsquo;","\x19").replace("&#39;","\x19").replace("&quot;",'"').replace("&lt;","<").replace("&gt;",">").replace("&nbsp;"," ").replace("&amp;","&")
 
@@ -239,7 +238,7 @@ def get_every_sane_title(comic):
             if comic["Titles"][ttype]:
                 value.append(comic["Titles"][ttype]+" ("+ttype+")")
     return clean((" / ".join(value)) or "")
-def get_preferred_title(comic): #Artefact function name
+def get_title_aggregate(comic):
     value=[]
     for ttype in title_sources:
         if ttype in comic["Titles"]:
@@ -248,7 +247,7 @@ def get_preferred_title(comic): #Artefact function name
     if (not value) and comic["Titles"]:
         value.extend([i[1]+" ("+i[0]+")" for i in comic["Titles"].items()])
     return clean((" / ".join(value)) or "Untitled.")
-def get_preferred_title_2(comic,pref):
+def get_preferred_title(comic,pref):
     for ttype in (pref,)+title_sources:
         if ttype in comic["Titles"]:
             return clean(comic["Titles"][ttype])

@@ -63,7 +63,7 @@ def doit(outfile,b):
                 for line in (arc["StoryLines"] if arc["RecordType"]=="StoryArc" else (arc,)):
                     for comic in line["Comics"]:
                         if not comic["SharedDateIndex"]:
-                            print>>outfile, "|"+comic["Date"]+' = ("'+utility.get_preferred_title_2(comic,source)+'")'
+                            print>>outfile, "|"+comic["Date"]+' = ("'+utility.get_preferred_title(comic,source)+'")'
             print>>outfile, "|#default = }}"
             #Preferred, by ID
             print>>outfile, "|id = {{#switch:{{{4}}}"
@@ -71,7 +71,7 @@ def doit(outfile,b):
                 for line in (arc["StoryLines"] if arc["RecordType"]=="StoryArc" else (arc,)):
                     for comic in line["Comics"]:
                         if comic["Id"]!=-1:
-                            print>>outfile, "|"+`comic["Id"]`+' = ("'+utility.get_preferred_title_2(comic,source)+'")'
+                            print>>outfile, "|"+`comic["Id"]`+' = ("'+utility.get_preferred_title(comic,source)+'")'
             print>>outfile, "|#default = }}"
             print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}"
 

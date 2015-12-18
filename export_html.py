@@ -62,7 +62,7 @@ def get_id(record):
 
 def get_couplet(record):
     if record["RecordType"]=="Comic":
-        return get_id(record),utility.get_preferred_title(record)
+        return get_id(record),utility.get_title_aggregate(record)
     elif record["RecordType"]=="StoryLine":
         return get_id(record),utility.clean(record["Title"])
     elif record["RecordType"]=="StoryArc":
@@ -113,7 +113,7 @@ def output_html(outfile,record,parent=None):
         print>>outfile, "<p style='margin: 0 0 1ex 0'><a href='#%s'>(up one level)</a></p><ul>"%get_id(parent)
         reul_counter=0
         for comic in record["Comics"]:
-            print>>outfile, "<li><a href='#"+get_id(comic)+"'>"+comic["Date"]+": "+get_comid(comic)+": "+utility.get_preferred_title(comic)+"</a></li>"
+            print>>outfile, "<li><a href='#"+get_id(comic)+"'>"+comic["Date"]+": "+get_comid(comic)+": "+utility.get_title_aggregate(comic)+"</a></li>"
             #Back-buttoning onto middle of list causes all to appear unbulleted on one line
             #Contain damage by splitting ul into chunks (also why I'm using ul, not ol)
             if reul_counter>=100:
@@ -127,7 +127,7 @@ def output_html(outfile,record,parent=None):
     elif record["RecordType"]=="Comic":
         print>>outfile, reallyspaced
         comic=record
-        print>>outfile, "<p style='margin: 0 0 1ex 0'><a id='"+get_id(comic)+"'>(anchor)</a></p><h4 style='margin: 0 0 1ex 0'>"+utility.get_preferred_title(comic)+"</h4>"
+        print>>outfile, "<p style='margin: 0 0 1ex 0'><a id='"+get_id(comic)+"'>(anchor)</a></p><h4 style='margin: 0 0 1ex 0'>"+utility.get_title_aggregate(comic)+"</h4>"
         print>>outfile, "<p style='margin: 0 0 1ex 0'><a href='#"+get_id(parent)+"'>(up one level)</a></p>"
         if comic["DateIndexable"]:
             print>>outfile, "<p style='margin: 0 0 1ex 0'>Date: <a href='http://egscomics.com/"+utility.ookii2url[comic["Section"]]+"?date="+comic["Date"]+"'>"+comic["Date"]+"</a></p>"
