@@ -26,11 +26,6 @@ try:
 except:
     pass
 
-def execfile2(fp):
-    print>>sys.stderr, "\n"+os.getcwd()+">\""+sys.executable+"\" \""+fp+"\""
-    module=type(shutil)("__main__") #if __name__=="__main__" checks
-    execfile(fp, module.__dict__)
-
 # Certain details are stored in local mirror of EGS, extract them.
 # This will almost certainly only work on my system, hence
 # files are not stored in build dir.
@@ -84,10 +79,14 @@ export_json.export_json(alldat)
 export_html.export_html(alldat)
 
 # Regenerate Shiveapedia templates and docs
-execfile2("export_titles_template.py")
-execfile2("export_titles_template_lite.py")
-execfile2("export_titles_template_lite2.py")
-execfile2("export_numberdatemaps.py")
+import export_titles_template
+import export_titles_template_lite
+import export_titles_template_lite2
+import export_numberdatemaps
+export_titles_template.export_titles_template(alldat)
+export_titles_template_lite.export_titles_template_lite(alldat)
+export_titles_template_lite2.export_titles_template_lite2(alldat)
+export_numberdatemaps.export_numberdatemaps(alldat)
 
 # Enter build dir
 os.chdir(".build")
