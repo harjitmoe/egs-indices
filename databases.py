@@ -29,18 +29,18 @@
 import json, tarfile
 
 _ookii=tarfile.open("Ookii.dat","r:")
-def open_lib(path,mode="r",*args):
+def open_lib(path):
     return _ookii.extractfile(path.replace("\\","/"))
 
 def scour(obj): #MSLatin1 to UTF-8, works properly on Python 2 only
-    if type(obj)==type({}):
+    if isinstance(obj, type({})):
         d={}
         for k,v in obj.items():
             d[scour(k)]=scour(v)
         return d
-    elif type(obj)==type([]):
+    elif isinstance(obj, type([])):
         return map(scour,obj)
-    elif type(obj)==type(()):
+    elif isinstance(obj,type(())):
         return map(scour,obj)
     elif type(obj)==type(""):
         if "\x9d" in obj:
@@ -51,7 +51,7 @@ def scour(obj): #MSLatin1 to UTF-8, works properly on Python 2 only
         return obj
 
 def parse_suddenlaunch(sect):
-    suddenlaunch_db={}
+    sdb={}
     f=open("suddenlaunch.dat","rU")
     b=f.read().split("\n")
     f.close()
@@ -60,8 +60,8 @@ def parse_suddenlaunch(sect):
         if section in {"sketch":("Filler",),"story":("Story","Comic")}[sect]:
             month,day,year=date.split("/") #MM/DD/YYYY (middle endian)
             date="-".join((year,month,day)) #YYYY-MM-DD (big endian)
-            suddenlaunch_db[date]=url
-    return suddenlaunch_db
+            sdb[date]=url
+    return sdb
 
 def fakejsonloads(dat):
     null=None
@@ -69,16 +69,24 @@ def fakejsonloads(dat):
     false=False
     return eval(dat,locals())
 
+def load_ookii_record(strip):
+    """Load the full Ookii record given the index card."""
+    specific_db=open_lib(r"Ookii\ComicRecords\egscomicapi_%d.txt"%strip["OokiiId"]).read()
+    if not specific_db:
+        print>>sys.stderr,"DEAD DOOR",strip["Date"],strip["OokiiId"]
+    else:
+        strip.update(scour(fakejsonloads(specific_db)))
+
 date2id=open("Date2Id.txt","rU")
 date2id=json.loads(date2id.read())
+lsdir=open("NewFiles.txt","rU")
+lsdir=json.loads(lsdir.read())
+
 metadataegs=open("metadataegs3.txt","rU")
 metadataegs=eval(metadataegs.read())
 dateswork=open("DatesWorkProcessed.txt","rU")
 dateswork=eval(dateswork.read())
-classics_db=open(".build/classics_910.txt","rU")
-classics_db=eval(classics_db.read())
-lsdir=open("NewFiles.txt","rU")
-lsdir=json.loads(lsdir.read())
+
 reddit_titles=open(".build/reddit_titles.txt","rU")
 reddit_titles=eval(reddit_titles.read())
 reddit_links=open(".build/reddit_threads.txt","rU")
@@ -88,8 +96,9 @@ links_910new=eval(links_910new.read())
 
 main_db={}
 for sect in ("story","sketch","np"):
-    main_db[sect]=open_lib(r"Ookii\ComicIndices\egscomicapi_%d.txt"%([None,"story","np","sketch"].index(sect)),"rU")
+    main_db[sect]=open_lib(r"Ookii\ComicIndices\egscomicapi_%d.txt"%([None,"story","np","sketch"].index(sect)))
     main_db[sect]=scour(fakejsonloads(main_db[sect].read()))
+del sect
 
 haylo_db={}
 haylo_db["story"]=open(".build/HayloListMini.txt","rU")
@@ -102,9 +111,13 @@ haylo_additional_hierarchy["story"]=eval(haylo_additional_hierarchy["story"].rea
 haylo_additional_hierarchy["sketch"]=None
 haylo_additional_hierarchy["np"]=None
 
+classics_db=open(".build/classics_910.txt","rU")
+classics_db=eval(classics_db.read())
 suddenlaunch_db={}
 suddenlaunch_db["story"]=parse_suddenlaunch("story")
 suddenlaunch_db["sketch"]=parse_suddenlaunch("sketch")
 suddenlaunch_db["np"]={}
 
+titlebank=open("titlebank.dat","rU")
+titlebank=eval(titlebank.read())
 

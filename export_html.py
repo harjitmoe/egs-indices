@@ -26,20 +26,20 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import binascii,sys,urllib,utility
+import sys,utility
 
 reallyspaced="<hr /><hr style='page-break-before:always;' />"
 
 def get_section(record):
-    map={"Story":1,"EGS:NP":2,"Sketchbook":3,"Backgrounds":4}
+    mapp={"Story":1,"EGS:NP":2,"Sketchbook":3,"Backgrounds":4}
     if record["RecordType"]=="Comic":
-        return map[record["Section"]]
+        return mapp[record["Section"]]
     elif record["RecordType"]=="StoryLine":
-        return map[record["Comics"][0]["Section"]]
+        return mapp[record["Comics"][0]["Section"]]
     elif record["RecordType"]=="StoryArc":
-        return map[record["StoryLines"][0]["Comics"][0]["Section"]]
+        return mapp[record["StoryLines"][0]["Comics"][0]["Section"]]
     elif record["RecordType"]=="Section":
-        return map[record["Title"]]
+        return mapp[record["Title"]]
 
 def get_comid(record):
     if record["Id"]>0:#i.e. not an error code

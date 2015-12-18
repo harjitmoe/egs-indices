@@ -29,7 +29,7 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import utility, os, sys
+import utility
 
 #SB2Year
 
@@ -42,19 +42,16 @@ def handle_strip_record(strip, by_year, by_year_order):
         by_year[year]={"Title":year,"Comics":[strip],"RecordType":"StoryLine"}
         by_year_order.append(year)
 
-def arc_handler(by_year, by_year_order):
-    return lambda arc, by_year=by_year, by_year_order=by_year_order: \
-                  map(handle_strip_record,
-                      arc["Comics"],
-                      [by_year] * len(arc["Comics"]),
-                      [by_year_order] * len(arc["Comics"])
-                  )
+def handle_arc(arc, by_year, by_year_order):
+    for i in arc["Comics"]:
+        handle_strip_record(i,by_year,by_year_order)
 
 def megadb_sb2year(main_db):
     print ">>> megadb_sb2year (megadb_indextransforms)"
     by_year={}
     by_year_order=[]
-    map(arc_handler(by_year,by_year_order), utility.specific_section(main_db,"sketch")["StoryArcs"])
+    for arc in utility.specific_section(main_db,"sketch")["StoryArcs"]:
+        handle_arc(arc, by_year, by_year_order)
     output=[]
     for year in by_year_order:
         output.append(by_year[year])
@@ -80,11 +77,8 @@ def megadb_arcline(main_db):
     arcs=[]
     curatitl_p=[""] #single-item array functioning as a pointer.
     arcs_in=utility.specific_section(main_db,"story")["StoryArcs"]
-    map(handle_line,
-        arcs_in,
-        [arcs] * len(arcs_in),
-        [curatitl_p] * len(arcs_in)
-    )
+    for arc in arcs_in:
+        handle_line(arc,arcs,curatitl_p)
     utility.specific_section(main_db,"story")["StoryArcs"]=arcs
     return main_db
 

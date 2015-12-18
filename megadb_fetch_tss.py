@@ -30,10 +30,7 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 
 import os, utility
-from titleharjit import *
-from titlebank import * #Must be imported after utility
-from databases import *
-import databases, titlebank, titleharjit
+import databases, titleharjit
 
 def megadb_fetch_tss(alldat):
     print (">>> megadb_fetch_tss")
@@ -52,12 +49,12 @@ def megadb_fetch_tss(alldat):
                 #print strip['Date']
                 strip["Transcript"]=None
             if ("Official" not in strip['Titles']):
-                if strip['Id'] in megatitles:
-                    strip['Titles']["Official"]=megatitles[strip['Id']]
-                if strip['Id'] in mytitles:
-                    strip['Titles']["HarJIT"]=mytitles[strip['Id']]
-                if strip['Id'] in titles:
-                    strip['Titles']["Tumblr"]=titles[strip['Id']]
+                if strip['Id'] in databases.titlebank["megatitles"]:
+                    strip['Titles']["Official"]=databases.titlebank["megatitles"][strip['Id']]
+                if strip['Id'] in titleharjit.mytitles:
+                    strip['Titles']["HarJIT"]=titleharjit.mytitles[strip['Id']]
+                if strip['Id'] in databases.titlebank["titles"]:
+                    strip['Titles']["Tumblr"]=databases.titlebank["titles"][strip['Id']]
     marker="<strong>Requested by"
     marker2="<strong><a href=\"http://www.patreon.com/egscomics\">Requested</a> by"
     marker3="<strong><a href=\"http://www.patreon.com/egscomics\"> Requested</a> by"
@@ -65,12 +62,12 @@ def megadb_fetch_tss(alldat):
     for arc in utility.specific_section(alldat,"sketch")["StoryArcs"]:
         for strip in arc['Comics']:        
             if ("Official" not in strip['Titles']):
-                if strip['Id'] in sbmytitles:
-                    strip['Titles']["HarJIT"]=sbmytitles[strip['Id']]
-                if strip['Id'] in sbmegatitles: #NOT elif
-                    strip['Titles']["Official"]=sbmegatitles[strip['Id']]
-                elif strip['Id'] in metadataegs["sketch"]: #YES elif
-                    c=utility.dirty(metadataegs["sketch"][strip['Id']]["Commentary"])
+                if strip['Id'] in titleharjit.sbmytitles:
+                    strip['Titles']["HarJIT"]=titleharjit.sbmytitles[strip['Id']]
+                if strip['Id'] in databases.titlebank["sbmegatitles"]: #NOT elif
+                    strip['Titles']["Official"]=databases.titlebank["sbmegatitles"][strip['Id']]
+                elif strip['Id'] in databases.metadataegs["sketch"]: #YES elif
+                    c=utility.dirty(databases.metadataegs["sketch"][strip['Id']]["Commentary"])
                     if c.count(marker):
                         strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker,1)[1].split("</p>",1)[0].split("<br />",1)[0])
                     elif c.count(marker2):

@@ -29,19 +29,28 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import utility
-
+import utility,databases
 import os,sys
 
 #XXX the possibility of an ID irregularity across a boundary is not
 #considered (and *presently* unheard of, *presently*)
-from titlebank import modes
 from databases import *
+
+def shared_date(strip_obj,djv,source_strip):
+    if source_strip[0] in djv:
+        djv[source_strip[0]]["SharedDateIndex"]=1
+        djv[source_strip[0]]["SharedDateTotal"][0]+=1
+        strip_obj["SharedDateIndex"]=djv[source_strip[0]]["SharedDateTotal"][0]
+        strip_obj["SharedDateTotal"]=djv[source_strip[0]]["SharedDateTotal"]
+    else:
+        strip_obj["SharedDateIndex"]=0
+        strip_obj["SharedDateTotal"]=[1] #1-list approximating a pointer.
+        djv[source_strip[0]]=strip_obj
 
 def megadb_fetch_newfiles(alldat):
     print (">>> megadb_fetch_newfiles")
     for sect in ("story","np","sketch"):
-        mode=modes[sect]
+        mode=databases.titlebank["modes"][sect]
         arcs=[]
         for number,name in mode:
             newark={"Title":name,"Comics":[],"RecordType":"StoryLine"}
@@ -56,7 +65,7 @@ def megadb_fetch_newfiles(alldat):
             if (mode[0][0]) and (source_strip[1]<mode[0][0]):
                 continue
             strip_obj={}
-            utility.shared_date(strip_obj,djv,source_strip)
+            shared_date(strip_obj,djv,source_strip)
             strip_obj["Date"]=source_strip[0]
             strip_obj["Id"]=source_strip[1]
             if strip_obj["Id"] in metadataegs[sect]:

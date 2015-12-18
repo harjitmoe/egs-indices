@@ -15,7 +15,7 @@
 # to work or you'll break the output).  Generally no attempt at 
 # 3k compatibility has been made.
 
-import sys, os, shutil, json, utility
+import sys, os, shutil, utility
 
 # Remove build dir so existing files do not mess up regen process
 shutil.rmtree(".build")

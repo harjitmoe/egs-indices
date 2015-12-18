@@ -66,7 +66,7 @@ def megadb_fetch_zorua(alldat):
             line=line[len("(NON-CANON): "):]
         title=""
         date=None
-        if re.match("\(?[0123456789][0123456789]?/[0123456789][0123456789]?/[0123456789][0123456789]?\)?", line):
+        if re.match(r"\(?[0123456789][0123456789]?/[0123456789][0123456789]?/[0123456789][0123456789]?\)?", line):
             date,line=line.split(" ",1)
             if date[0]=="(":
                 date=date[1:-1]
