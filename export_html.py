@@ -198,7 +198,7 @@ def output_html(outfile,record,parent=None):
 
 def export_html(sections):
     print (">>> export_html")
-    outfile=open(".build/index.html","w")
+    outfile=open(".build/index.html","wb")
     #HTML 5:
     #print>>outfile, "<!doctype html>"
     #print>>outfile, '<html><head><title>Index of EGS Strips</title><meta charset="UTF-8" /></head>'
