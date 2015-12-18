@@ -26,17 +26,15 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import utility
-import os,sys
-from databases import *
+import sys,utility,databases
 
 def megadb_fetch_haylonew(main_db):
     print (">>> megadb_fetch_haylonew")
-    for name,dates in haylo_additional_hierarchy["story"]:
+    for name,dates in databases.haylo_additional_hierarchy["story"]:
         db={"Title":": ".join(name.split(" - ",1)),"RecordType":"StoryLine"}
         comics=[]
         for date in dates:
-            date,title,fora=haylo_db["story"][date]
+            date,title,fora=databases.haylo_db["story"][date]
             strip={}
             if title.split("-")[-1].strip():
                 #Would rather \x96 but...
@@ -45,27 +43,18 @@ def megadb_fetch_haylonew(main_db):
                 strip["Titles"]={}
             strip["Date"]=date
             try:
-                strip["Id"]=date2id["story"][date]
+                strip["Id"]=databases.date2id["story"][date]
             except:
                 strip["Id"]=-1#i.e. error
                 print>>sys.stderr,"Error: cannot find date-id mapping for %s"%date
             strip["OokiiId"]=-1
             strip["ReactionLinks"]=fora
-            if strip["Date"] in links_910new["story"]:
-                utility.merge_reactions(strip["ReactionLinks"],links_910new["story"][strip["Date"]])
-            #Date indexing
-            strip["DateIndexable"]=False
-            if strip["Id"] in dateswork["story"]:
-                dsi=dateswork["story"][strip["Id"]]
-                for crit in ('WorksInternal','WorksExternal'):
-                    if crit in dsi.keys():
-                        works,date=dsi[crit]
-                        if works:
-                            if date!=strip["Date"]:
-                                raise AssertionError
-                            strip["DateIndexable"]=True
-            if strip["Id"] in metadataegs["story"]:
-                strip.update(metadataegs["story"][strip["Id"]])
+            if strip["Date"] in databases.links_910new["story"]:
+                utility.merge_reactions(strip["ReactionLinks"],databases.links_910new["story"][strip["Date"]])
+            #Date indexing (XXX)
+            utility.dates_index(strip,databases.dateswork["story"])
+            if strip["Id"] in databases.metadataegs["story"]:
+                strip.update(databases.metadataegs["story"][strip["Id"]])
             strip["SharedDateIndex"]=0
             strip["FileNameTitle"]=None
             strip["Section"]="Story"
