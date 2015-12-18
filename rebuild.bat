@@ -16,7 +16,7 @@
 @rem 3k compatibility has been made.
 
 set PYINTER=C:\python27\python -i
-rem set PYINTER=ipy
+set PYINTER=ipy -i
 
 @echo off
 %PYINTER% rebuild.py

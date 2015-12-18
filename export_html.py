@@ -164,7 +164,8 @@ def output_html(outfile,record,parent=None):
         if ("FileNameTitle" in comic.keys()) and comic["FileNameTitle"]:
             print>>outfile, "<p style='margin: 0 0 1ex 0'>Meaningful part of original filename: "+comic["FileNameTitle"]+"</p>"
         if comic['Characters']:
-            for authority,chars in comic['Characters'].items():
+            for authority in sorted(comic['Characters'].keys()):
+                chars=comic['Characters'][authority]
                 print>>outfile, "<h5 style='margin: 0 0 1ex 0'>Characters per "+authority+":</h5>"
                 for ch in chars:
                     if 'CharacterForms' in ch:
@@ -183,7 +184,7 @@ def output_html(outfile,record,parent=None):
             print>>outfile, "<p style='margin: 0 0 1ex 0'>(Transcript unavailable)</p>"
         if ('ReactionLinks' in comic.keys()) and comic['ReactionLinks']:
             print>>outfile, "<h5 style='margin: 0 0 1ex 0'>Reaction links: </h5>"
-            for rl,classic in comic['ReactionLinks']:
+            for rl,classic in sorted(comic['ReactionLinks']):
                 rl=rl.replace("&","&amp;") #XML parsing error?!
                 print>>outfile, "<p style='margin: 0 0 1ex 0'><a href=%r>%s</a>%s</p>"%(rl,rl," (Classics Thread)" if classic else " (Original Thread)")
         else:
