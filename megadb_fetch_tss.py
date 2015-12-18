@@ -2,7 +2,6 @@
 # -*- python -*-
 """fetch transcripts, fix titles"""
 
-
 # Copyright (c) HarJIT 2014, 2015.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
@@ -30,10 +29,11 @@
 #
 #  3. The text of this notice must be included, unaltered, with any distribution.
 
-from titleharjit import *
-
 import os, utility
+from titleharjit import *
 from titlebank import * #Must be imported after utility
+from databases import *
+import databases, titlebank, titleharjit
 
 def megadb_fetch_tss(alldat):
     print (">>> megadb_fetch_tss")
@@ -47,7 +47,7 @@ def megadb_fetch_tss(alldat):
                 #Thank goodness for Python mutables
                 #I can change strip and it also changes in alldat
                 # on account of referencing the same object
-                strip["Transcript"]=utility.scour(transcript.rstrip("\n")+"\n\n")
+                strip["Transcript"]=databases.scour(transcript.rstrip("\n")+"\n\n")
             else:
                 #print strip['Date']
                 strip["Transcript"]=None
@@ -58,7 +58,6 @@ def megadb_fetch_tss(alldat):
                     strip['Titles']["HarJIT"]=mytitles[strip['Id']]
                 if strip['Id'] in titles:
                     strip['Titles']["Tumblr"]=titles[strip['Id']]
-    globals().update(utility.open_dbs("sketch")) #Must be globals - darn you Nested Scopes!
     marker="<strong>Requested by"
     marker2="<strong><a href=\"http://www.patreon.com/egscomics\">Requested</a> by"
     marker3="<strong><a href=\"http://www.patreon.com/egscomics\"> Requested</a> by"
@@ -70,8 +69,8 @@ def megadb_fetch_tss(alldat):
                     strip['Titles']["HarJIT"]=sbmytitles[strip['Id']]
                 if strip['Id'] in sbmegatitles: #NOT elif
                     strip['Titles']["Official"]=sbmegatitles[strip['Id']]
-                elif strip['Id'] in metadataegs: #YES elif
-                    c=utility.dirty(metadataegs[strip['Id']]["Commentary"])
+                elif strip['Id'] in metadataegs["sketch"]: #YES elif
+                    c=utility.dirty(metadataegs["sketch"][strip['Id']]["Commentary"])
                     if c.count(marker):
                         strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker,1)[1].split("</p>",1)[0].split("<br />",1)[0])
                     elif c.count(marker2):

@@ -35,23 +35,23 @@ def execfile2(fp):
 # This will almost certainly only work on my system, hence
 # files are not stored in build dir.
 import extract_date2id
-extract_date2id.extract_date2id()
 import extract_newfiles
-extract_newfiles.extract_newfiles()
 import extract_bg_title_db
+extract_date2id.extract_date2id()
+extract_newfiles.extract_newfiles()
 extract_bg_title_db.extract_bg_title_db()
 
 # The HTML sets where processing is actually done
 # in the build process rather than already.
 import extract_classics_910
-extract_classics_910.extract_classics_910()
 import extract_reddit_info
-extract_reddit_info.extract_reddit_info()
 import extract_threads_new910
-extract_threads_new910.extract_threads_new910()
 import extract_haylo_list
-extract_haylo_list.extract_haylo_list()
 import extract_haylo_hierarchy
+extract_classics_910.extract_classics_910()
+extract_reddit_info.extract_reddit_info()
+extract_threads_new910.extract_threads_new910()
+extract_haylo_list.extract_haylo_list()
 extract_haylo_hierarchy.extract_haylo_hierarchy()
 
 # Generate MegaDB
@@ -60,20 +60,20 @@ alldat=megadb_generate_initial.megadb_generate_initial()
 
 # Add new strips
 import megadb_fetch_haylonew
-alldat=megadb_fetch_haylonew.megadb_fetch_haylonew(alldat)
 import megadb_fetch_newfiles
+alldat=megadb_fetch_haylonew.megadb_fetch_haylonew(alldat)
 alldat=megadb_fetch_newfiles.megadb_fetch_newfiles(alldat)
 
 # Fetch transcripts whilst adding new titles and appearance data
 import megadb_fetch_tss
-alldat=megadb_fetch_tss.megadb_fetch_tss(alldat)
 import megadb_fetch_zorua
+alldat=megadb_fetch_tss.megadb_fetch_tss(alldat)
 alldat=megadb_fetch_zorua.megadb_fetch_zorua(alldat)
 
 # Divide Sketchbook by ID, introduce true-arc records, pull BG
 import megadb_indextransforms
-alldat=megadb_indextransforms.megadb_indextransforms(alldat)
 import megadb_pull_bg
+alldat=megadb_indextransforms.megadb_indextransforms(alldat)
 alldat=megadb_pull_bg.megadb_pull_bg(alldat)
 utility.save_alldat(alldat) #for modules still using the slightly older system.
 
@@ -85,8 +85,9 @@ execfile2("export_numberdatemaps.py")
 
 # Generate the HTML index, make JSON
 import export_html
+import export_json
 export_html.export_html(alldat)
-execfile2("megadb_jsonise.py")
+export_json.export_json(alldat)
 
 # Enter build dir
 os.chdir(".build")

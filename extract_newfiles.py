@@ -10,7 +10,9 @@
 # different terms.  This note is not part of the above notice.
 #
 
-import os
+# Another note that this code is an absolute eyesore.
+
+import os, json
 
 def extract_newfiles():
     print (">>> extract_newfiles")
@@ -45,7 +47,7 @@ def extract_newfiles():
     lsdir=dict(map(getdate,filter(lambda i:i.startswith("NP-") and not i.lower().count("-original") and not i.lower().count("-remastered-sb") and not i.lower().count("-colour-official"),lsdir)))
 
     if stmap and lsdir and sbmap:
-        open("NewFiles.txt","w").write(repr({"story":stmap,"sketch":sbmap,"np":lsdir}))
+        open("NewFiles.txt","w").write(json.dumps({"story":stmap,"sketch":sbmap,"np":lsdir}))
 
 if __name__=="__main__":
     extract_newfiles()

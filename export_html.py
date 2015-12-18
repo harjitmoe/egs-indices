@@ -26,14 +26,9 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import binascii,sys,urllib
-import utility
-reallyspaced="<hr /><hr style='page-break-before:always;' />"
+import binascii,sys,urllib,utility
 
-#so as to pass JSON to eval
-null=None
-false=False
-true=True
+reallyspaced="<hr /><hr style='page-break-before:always;' />"
 
 def get_section(record):
     map={"Story":1,"EGS:NP":2,"Sketchbook":3,"Backgrounds":4}

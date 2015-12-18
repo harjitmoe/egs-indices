@@ -30,10 +30,10 @@ def extract_reddit_info():
     print (">>> extract_reddit_info")
     initiator='<a class="title may-blank " href="http://www.egscomics.com/'
     init2='<li class="first"><a href="'
-
+    #
     reddit_titles={"story":{},"sketch":{},"np":{}}
     reddit_links={"story":{},"sketch":{},"np":{}}
-
+    #
     import os
     files=os.listdir("Reddit Titles")
     for file in files:
@@ -75,7 +75,7 @@ def extract_reddit_info():
         reddit_titles["sketch"][id]=title+" ("+submitter+")"
         reddit_links["sketch"][id]=(link,False)
     f.close()
-
+    #
     open(".build/reddit_titles.txt","w").write(repr(reddit_titles))
     open(".build/reddit_threads.txt","w").write(repr(reddit_links))
 

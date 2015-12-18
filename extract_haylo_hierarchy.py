@@ -25,6 +25,22 @@
 #
 #  3. The text of this notice must be included, unaltered, with any distribution.
 
+def kasplit(s):
+    o=""
+    h=0
+    for n in s:
+        if n=="<" and not h:
+            h=1
+        if not h:
+            if n in " \t\r\n\v\f":
+                if o[-1]!=" ":
+                    o+=" "
+            else:
+                o+=n
+        if n==">" and h:
+            h=0
+    return o
+
 def extract_haylo_hierarchy():
     print (">>> extract_haylo_hierarchy")
     f=open("HayloList.html")
@@ -34,21 +50,6 @@ def extract_haylo_hierarchy():
     b=b.split('<em > \n        <strong>')[1:]
     hier=[]
     addhier=[]
-    def kasplit(s):
-        o=""
-        h=0
-        for n in s:
-            if n=="<" and not h:
-                h=1
-            if not h:
-                if n in " \t\r\n\v\f":
-                    if o[-1]!=" ":
-                        o+=" "
-                else:
-                    o+=n
-            if n==">" and h:
-                h=0
-        return o
     counting=0
     for bb in b:
         title=kasplit(bb.split("</em >")[0]).strip().replace("&quot;",'"').replace("&amp;",'&')

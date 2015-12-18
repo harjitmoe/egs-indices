@@ -27,6 +27,7 @@
 #
 
 import utility
+
 class Gazza(dict):
     """Subclass dict to allow b[i].append without having to check if
     b[i] exists yet thus allowing cleaner code in general."""
@@ -37,6 +38,7 @@ class Gazza(dict):
             self[k]=[]
             return self[k]
 date2str=Gazza()
+
 def parse_date(s):
     os=s
     #Correcting missing years (yeah) and months (whut?)
@@ -114,6 +116,7 @@ def parse_date(s):
         return None
     date2str["%04d-%02d-%02d"%(year,month,day)].append(os)
     return "%04d-%02d-%02d"%(year,month,day)
+
 def grok(code):
     b3={}
     import os

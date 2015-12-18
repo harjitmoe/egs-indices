@@ -29,33 +29,33 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import utility
+import utility, os, sys
 
-import os,sys
+from databases import *
 
-def handle_strip_record(strip):
+def handle_strip_record(strip,sect):
     date=strip["Date"]
     #Administrivia about dates and IDs
     utility.find_eid_ookii(strip,sect,date2id)
     #Reactions
     strip["ReactionLinks"]=[]
-    if date in classics_db.keys():
-        strip["ReactionLinks"].append(classics_db[date])
-    if date in suddenlaunch_db.keys():
-        strip["ReactionLinks"].append((suddenlaunch_db[date],0))
+    if date in classics_db[sect].keys():
+        strip["ReactionLinks"].append(classics_db[sect][date])
+    if date in suddenlaunch_db[sect].keys():
+        strip["ReactionLinks"].append((suddenlaunch_db[sect][date],0))
     #Handle title list
     utility.handle_titles_ookii(strip,sect)
     #Haylo record if applicable
-    utility.merge_haylo(strip,haylo_db)
+    utility.merge_haylo(strip,haylo_db[sect])
     #Et cetera
     if strip["DateIndexable"]:
-        utility.dates_index(strip,dateswork)
-    if strip["Id"] in metadataegs:
-        strip.update(metadataegs[strip["Id"]])
-    if strip["Id"] in reddit_links:
-        strip["ReactionLinks"].append(reddit_links[strip["Id"]])
-    if strip["Date"] in links_910new:
-        utility.merge_reactions(strip["ReactionLinks"],links_910new[strip["Date"]])
+        utility.dates_index(strip,dateswork[sect])
+    if strip["Id"] in metadataegs[sect]:
+        strip.update(metadataegs[sect][strip["Id"]])
+    if strip["Id"] in reddit_links[sect]:
+        strip["ReactionLinks"].append(reddit_links[sect][strip["Id"]])
+    if strip["Date"] in links_910new[sect]:
+        utility.merge_reactions(strip["ReactionLinks"],links_910new[sect][strip["Date"]])
     strip["SharedDateIndex"]=0
     #Load specific Ookii DB (i.e. beyond the index card)
     utility.load_ookii_record(strip)
@@ -66,17 +66,17 @@ def handle_strip_record(strip):
         strip["Characters"]={}
     strip["RecordType"]="Comic"
 
-def handle_line(line):
-    map(handle_strip_record,line["Comics"])
+def handle_line(line,sect):
+    map(handle_strip_record,line["Comics"],[sect]*len(line["Comics"]))
     line["RecordType"]="StoryLine"
 
 def megadb_generate_initial():
     print (">>> megadb_generate_initial")
     output=[]
     for sect in ("story","np","sketch"):
-        globals().update(utility.open_dbs(sect)) #Must be globals - darn you Nested Scopes!
-        map(handle_line,main_db)
-        output.append({"Title":utility.egslink2ookii[sect],"StoryArcs":main_db,"RecordType":"Section"})
+        dat=main_db[sect]
+        map(handle_line,dat,[sect]*len(dat))
+        output.append({"Title":utility.egslink2ookii[sect],"StoryArcs":dat,"RecordType":"Section"})
     return output
 
 if __name__=="__main__":

@@ -26,12 +26,12 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import sys,os
-
 #so as to pass JSON to eval
 null=None
 false=False
 true=True
+
+import sys,os
 
 class SimpleNamespace(object): pass
 
@@ -53,35 +53,6 @@ def save_alldat(b):
     f.close()
     return b
 
-#Use a tarfile: due to the sheer number of small files, the Ookii subdirectory was taking a
-#disproportionately long time (for its file size) to copy to backup, and taking a disproportionate
-#drive footprint.  Using a tarfile fixes this problem.
-import tarfile
-ookii=tarfile.open("Ookii.dat","r:")
-def open_lib(path,mode="r",*args):
-    if path.replace("\\","/").startswith("Ookii/"):
-        if mode.startswith("r"):
-            return ookii.extractfile(path.replace("\\","/"))
-    return open(path,mode,*args)
-
-def scour(obj): #MSLatin1 to UTF-8, works properly on Python 2 only
-    if type(obj)==type({}):
-        d={}
-        for k,v in obj.items():
-            d[scour(k)]=scour(v)
-        return d
-    elif type(obj)==type([]):
-        return map(scour,obj)
-    elif type(obj)==type(()):
-        return map(scour,obj)
-    elif type(obj)==type(""):
-        if "\x9d" in obj:
-            return obj
-        else:
-            return obj.decode("cp1252").encode("utf8").replace("\xc3\x83\xc2\xbc","\xc3\xbc")
-    else:
-        return obj
-
 def month2number(month):
     #Just a TAD NEUROTIC?
     if month[:3]=="Qui": month="Jul" #Quinctilis=July
@@ -90,52 +61,6 @@ def month2number(month):
 
 def number2month(month):
     return [None,"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][int(month)]
-
-def parse_suddenlaunch(sect):
-    suddenlaunch_db={}
-    f=open("suddenlaunch.dat","rU")
-    b=f.read().split("\n")
-    f.close()
-    for record in b:
-        url,section,date=record.split(" ")
-        if section in {"sketch":("Filler",),"story":("Story","Comic")}[sect]:
-            month,day,year=date.split("/") #MM/DD/YYYY (middle endian)
-            date="-".join((year,month,day)) #YYYY-MM-DD (big endian)
-            suddenlaunch_db[date]=url
-    return suddenlaunch_db
-
-def open_dbs(sect):
-    date2id=open("Date2Id.txt","rU")
-    date2id=eval(date2id.read())[sect]
-    metadataegs=open("metadataegs3.txt","rU")
-    metadataegs=eval(metadataegs.read())[sect]
-    dateswork=open("DatesWorkProcessed.txt","rU")
-    dateswork=eval(dateswork.read())[sect]
-    classics_db=open(".build/classics_910.txt","rU")
-    classics_db=eval(classics_db.read())[sect]
-    lsdir=open("NewFiles.txt","rU")
-    lsdir=eval(lsdir.read())[sect]
-    reddit_titles=open(".build/reddit_titles.txt","rU")
-    reddit_titles=eval(reddit_titles.read())[sect]
-    reddit_links=open(".build/reddit_threads.txt","rU")
-    reddit_links=eval(reddit_links.read())[sect]
-    links_910new=open(".build/910-new.dat","rU")
-    links_910new=eval(links_910new.read())[sect]
-    main_db=open_lib(r"Ookii\ComicIndices\egscomicapi_%d.txt"%([None,"story","np","sketch"].index(sect)),"rU")
-    main_db=scour(eval(main_db.read()))
-    if sect=="story":
-        haylo_db=open(".build/HayloListMini.txt","rU")
-        haylo_db=eval(haylo_db.read())
-        haylo_additional_hierarchy=open(".build/HayloHierarchyAdditional.txt","rU")
-        haylo_additional_hierarchy=eval(haylo_additional_hierarchy.read())
-    else:
-        haylo_db={}
-        haylo_additional_hierarchy=None
-    if sect in ("story", "sketch"):
-        suddenlaunch_db=parse_suddenlaunch(sect)
-    else:
-        suddenlaunch_db={}
-    return locals()
 
 def standardise910link(l):
     #http://community.910cmx.com/?showtopic=7761
@@ -213,11 +138,12 @@ def dates_index(strip,dateswork):
 
 def load_ookii_record(strip):
     """Load the full Ookii record given the index card."""
-    specific_db=open_lib(r"Ookii\ComicRecords\egscomicapi_%d.txt"%strip["OokiiId"],"rU").read()
+    import databases
+    specific_db=databases.open_lib(r"Ookii\ComicRecords\egscomicapi_%d.txt"%strip["OokiiId"],"rU").read()
     if not specific_db:
         print>>sys.stderr,"DEAD DOOR",strip["Date"],strip["OokiiId"]
     else:
-        strip.update(scour(eval(specific_db)))
+        strip.update(databases.scour(eval(specific_db)))
 
 from titlebank import datitles, haylo_errorlinks
 
@@ -245,14 +171,15 @@ def merge_haylo(strip,haylo_db):
             strip["Titles"]["Haylo"]=title2.split("-")[-1].strip()
 
 def find_eid_ookii(strip,sect,date2id):
+    import databases
     if (sect=="np") and (strip["Date"]=="2005-08-15"):
         strip["Date"]="2005-08-16" #Error somewhere? It's 16
     strip["OokiiId"]=strip["Id"]
     strip["SpecialUrl"]=None
     strip["DateIndexable"]=1
     try:
-        strip["Id"]=date2id[strip["Date"]]
-    except:
+        strip["Id"]=databases.date2id[sect][strip["Date"]]
+    except KeyError:
         strip["Id"]=-1#i.e. error
         if (sect=="sketch") and (strip["Date"] in ("2007-06-26","2007-06-28","2007-06-30")):
             #Dead multi-image entries which did not transfer off Keenspot and have no

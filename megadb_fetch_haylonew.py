@@ -27,22 +27,16 @@
 #
 
 import utility
-
-#so as to pass JSON to eval
-null=None
-false=False
-true=True
-
 import os,sys
+from databases import *
 
 def megadb_fetch_haylonew(main_db):
     print (">>> megadb_fetch_haylonew")
-    globals().update(utility.open_dbs("story")) #Must be globals - darn you Nested Scopes!
-    for name,dates in haylo_additional_hierarchy:
+    for name,dates in haylo_additional_hierarchy["story"]:
         db={"Title":": ".join(name.split(" - ",1)),"RecordType":"StoryLine"}
         comics=[]
         for date in dates:
-            date,title,fora=haylo_db[date]
+            date,title,fora=haylo_db["story"][date]
             strip={}
             if title.split("-")[-1].strip():
                 #Would rather \x96 but...
@@ -51,18 +45,18 @@ def megadb_fetch_haylonew(main_db):
                 strip["Titles"]={}
             strip["Date"]=date
             try:
-                strip["Id"]=date2id[date]
+                strip["Id"]=date2id["story"][date]
             except:
                 strip["Id"]=-1#i.e. error
                 print>>sys.stderr,"Error: cannot find date-id mapping for %s"%date
             strip["OokiiId"]=-1
             strip["ReactionLinks"]=fora
-            if strip["Date"] in links_910new:
-                utility.merge_reactions(strip["ReactionLinks"],links_910new[strip["Date"]])
+            if strip["Date"] in links_910new["story"]:
+                utility.merge_reactions(strip["ReactionLinks"],links_910new["story"][strip["Date"]])
             #Date indexing
             strip["DateIndexable"]=False
-            if strip["Id"] in dateswork:
-                dsi=dateswork[strip["Id"]]
+            if strip["Id"] in dateswork["story"]:
+                dsi=dateswork["story"][strip["Id"]]
                 for crit in ('WorksInternal','WorksExternal'):
                     if crit in dsi.keys():
                         works,date=dsi[crit]
@@ -70,8 +64,8 @@ def megadb_fetch_haylonew(main_db):
                             if date!=strip["Date"]:
                                 raise AssertionError
                             strip["DateIndexable"]=True
-            if strip["Id"] in metadataegs:
-                strip.update(metadataegs[strip["Id"]])
+            if strip["Id"] in metadataegs["story"]:
+                strip.update(metadataegs["story"][strip["Id"]])
             strip["SharedDateIndex"]=0
             strip["FileNameTitle"]=None
             strip["Section"]="Story"
