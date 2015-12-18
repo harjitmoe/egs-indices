@@ -51,7 +51,7 @@ f=open("BgNames.txt","rU")
 b=eval(f.read()) #Blatantly no security, assume trust
 f.close()
 print>>outfile, "|bg={{#switch:{{{2}}}"
-for id in b:
+for id in sorted(b.keys()):
     print>>outfile, "|"+id+' = '+b[id]
 print>>outfile, "|#default = }}"
 

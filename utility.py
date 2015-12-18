@@ -196,7 +196,8 @@ def alphabetical_id(string):
 
 #### Unsorted:
 
-egslink2ookii={"story":"Story","sketch":"Sketchbook","np":"EGS:NP"}
+#"Backgrounds" is an extension used by megadb_pull_bg
+egslink2ookii={"story":"Story","sketch":"Sketchbook","np":"EGS:NP","bg":"Backgrounds"}
 ookii2egslink=dict(zip(*zip(*egslink2ookii.items())[::-1]))
 ookii2url={"Story":"index.php","EGS:NP":"egsnp.php","Sketchbook":"sketchbook.php"}
 

@@ -15,8 +15,8 @@
 @rem to work or you'll break the output).  Generally no attempt at 
 @rem 3k compatibility has been made.
 
-set PYINTER=C:\python27\python
+set PYINTER=C:\python27\python -i
 rem set PYINTER=ipy
 
 @echo off
-%PYINTER% -i rebuild.py
+%PYINTER% rebuild.py
