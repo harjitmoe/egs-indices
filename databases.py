@@ -98,5 +98,5 @@ suddenlaunch_db["sketch"]=_parse_suddenlaunch("sketch")
 suddenlaunch_db["np"]={}
 
 titlebank=open("titlebank.dat","rU")
-titlebank=eval(titlebank.read())
+titlebank=eval(titlebank.read()) #JSON apparently does not support numerical keys.
 
