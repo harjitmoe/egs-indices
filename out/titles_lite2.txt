@@ -2727,6 +2727,8 @@
 |855 = Requested by Brian - 120% sized Tedd with 75% sized Sarah and an assortment of other various morphs
 |857 = Book Thief
 |858 = Susan The Hedgehog
+|861 = Wizard Sarah 2
+|862 = Chrono Grace
 |863 = Link Grace
 |864 = Sort of Elliot
 |865 = Stay A While
