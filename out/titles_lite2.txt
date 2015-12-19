@@ -2054,8 +2054,8 @@
 |1822 = Previous Summer Moments #4 - A Perfect Plan
 |1823 = Previous Summer Moments #5 - Hazards Of Clone Form Pranking
 |#default = }}
-|#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}' (only official supported in this version)</span>}}
-|#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}
+|#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
+|#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
 |sketch={{#switch:{{{2}}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
 |2002-07-01 = Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.
@@ -2738,8 +2738,8 @@
 |870 = Requested by J. L. Schultz - Raven as Swain from League of Legends
 |874 = Requested by Yakaru - My Avatar, Nanase, Ellen, Grace, Tedd celebrating new years
 |#default = }}
-|#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}' (only official supported in this version)</span>}}
-|#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}
+|#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
+|#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
 |np={{#switch:{{{2}}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
 |2004-02-24 = Tedd Forgot To Do Something - Part I
@@ -3035,8 +3035,8 @@
 |155 = Oblivious Wand Waving - Part 14
 |156 = Oblivious Wand Waving - Part 15
 |#default = }}
-|#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}' (only official supported in this version)</span>}}
-|#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}
+|#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
+|#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
 |bg={{#switch:{{{2}}}
 |0000 = Fairy Nanase
 |0001 = Nioi & Grace

@@ -61,7 +61,7 @@ def doit(outfile,b):
                     if source in comic["Titles"]:
                         print>>outfile, "|"+`comic["Id"]`+' = '+utility.clean(comic["Titles"][source])
     print>>outfile, "|#default = }}"
-    print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}' (only official supported in this version)</span>}}"
+    print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}"
 
 def export_titles_template_lite2(alldat):
     print (">>> export_titles_template_lite2")
@@ -71,7 +71,7 @@ def export_titles_template_lite2(alldat):
         b=utility.specific_section(alldat,sect)["StoryArcs"]
         print>>outfile, "|%s={{#switch:{{{2}}}"%sect
         doit(outfile,b)
-        print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}"
+        print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}"
     f=open("BgNames.txt","rU")
     b=eval(f.read()) #Blatantly no security, assume trust
     f.close()
