@@ -75,9 +75,9 @@ def extract_reddit_info():
         reddit_titles["sketch"][id]=title+" ("+submitter+")"
         reddit_links["sketch"][id]=(link,False)
     f.close()
-    #
-    open(".build/reddit_titles.txt","w").write(repr(reddit_titles))
-    open(".build/reddit_threads.txt","w").write(repr(reddit_links))
+    return reddit_titles,reddit_links
 
 if __name__=="__main__":
-    extract_reddit_info()
+    reddit_titles,reddit_links = extract_reddit_info()
+    open(".build/reddit_titles.txt","w").write(repr(reddit_titles))
+    open(".build/reddit_threads.txt","w").write(repr(reddit_links))

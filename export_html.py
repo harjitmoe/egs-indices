@@ -198,7 +198,7 @@ def output_html(outfile,record,parent=None):
 
 def export_html(sections):
     print (">>> export_html")
-    outfile=open(".build/index.html","wb")
+    outfile=open(".build/index.html","w")
     #HTML 5:
     #print>>outfile, "<!doctype html>"
     #print>>outfile, '<html><head><title>Index of EGS Strips</title><meta charset="UTF-8" /></head>'
@@ -213,6 +213,7 @@ def export_html(sections):
     print>>outfile, "<a id='end'></a><h2 style='margin: 0 0 1ex 0'>End of document</h2>" #No, the sketchbook section is NOT footnotes!  This doesn't fix this, use of classic MOBI does IIRC.
     #Actually, it's anchors ending with numbers that triggers it.
     print>>outfile, "<a href='#topmenu'>(back to top)</a><hr /></body></html>"
+    outfile.close() #IronPython grumble grumble
 
 if __name__=="__main__":
     sections=utility.open_alldat()

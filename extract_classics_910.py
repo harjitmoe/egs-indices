@@ -54,8 +54,7 @@ def extract_classics_910():
                         classic=(int(b7)<2009) or ((int(b7)==2009) and (int(b5)<2))
                         b2.append((b4,(utility.standardise910link(b3),classic)))
         classics_db[stype]=dict(b2)
-
-    open(".build/classics_910.txt","w").write(repr(classics_db))
+    return classics_db
 
 if __name__=="__main__":
-    extract_classics_910()
+    open(".build/classics_910.txt","w").write(repr(extract_classics_910()))

@@ -46,7 +46,7 @@ def shared_date(strip_obj,djv,source_strip):
         strip_obj["SharedDateTotal"]=[1] #1-list approximating a pointer.
         djv[source_strip[0]]=strip_obj
 
-def megadb_fetch_newfiles(alldat):
+def megadb_fetch_newfiles(alldat,reddit_titles,reddit_links,links_910new):
     print (">>> megadb_fetch_newfiles")
     for sect in ("story","np","sketch"):
         mode=databases.titlebank["modes"][sect]
@@ -74,18 +74,18 @@ def megadb_fetch_newfiles(alldat):
             strip_obj["Section"]=utility.egslink2ookii[sect]
             strip_obj["Characters"]={}
             strip_obj["ReactionLinks"]=[]
-            if strip_obj["Id"] in databases.reddit_links[sect]:
-                strip_obj["ReactionLinks"].append(databases.reddit_links[sect][strip_obj["Id"]])
-            if strip_obj["Date"] in databases.links_910new[sect]:
-                utility.merge_reactions(strip_obj["ReactionLinks"],databases.links_910new[sect][strip_obj["Date"]])
+            if strip_obj["Id"] in reddit_links[sect]:
+                strip_obj["ReactionLinks"].append(reddit_links[sect][strip_obj["Id"]])
+            if strip_obj["Date"] in links_910new[sect]:
+                utility.merge_reactions(strip_obj["ReactionLinks"],links_910new[sect][strip_obj["Date"]])
             utility.dates_index(strip_obj,databases.dateswork[sect])
-            if source_strip[1] not in databases.reddit_titles[sect]:
+            if source_strip[1] not in reddit_titles[sect]:
                 strip_obj["Titles"]={"Filename":strip_obj["FileNameTitle"]} #For now
             else:
-                if utility.alphabetical_id(strip_obj["FileNameTitle"])==utility.alphabetical_id(databases.reddit_titles[sect][source_strip[1]][::-1].split("( ",1)[1][::-1]):
-                    strip_obj["Titles"]={"Reddit":databases.reddit_titles[sect][source_strip[1]][:-1]+", based on filename)"}
+                if utility.alphabetical_id(strip_obj["FileNameTitle"])==utility.alphabetical_id(reddit_titles[sect][source_strip[1]][::-1].split("( ",1)[1][::-1]):
+                    strip_obj["Titles"]={"Reddit":reddit_titles[sect][source_strip[1]][:-1]+", based on filename)"}
                 else:
-                    strip_obj["Titles"]={"Reddit":databases.reddit_titles[sect][source_strip[1]]}
+                    strip_obj["Titles"]={"Reddit":reddit_titles[sect][source_strip[1]]}
             if ("HtmlComicTitle" in strip_obj) and strip_obj["HtmlComicTitle"]:
                 strip_obj["Titles"]["Official"]=strip_obj["HtmlComicTitle"]
             strip_obj["RecordType"]="Comic"
@@ -99,5 +99,11 @@ def megadb_fetch_newfiles(alldat):
     return alldat
 
 if __name__=="__main__":
-    utility.save_alldat(megadb_fetch_newfiles(utility.open_alldat()))
+    reddit_titles=open(".build/reddit_titles.txt","rU")
+    reddit_titles=eval(reddit_titles.read())
+    reddit_links=open(".build/reddit_threads.txt","rU")
+    reddit_links=eval(reddit_links.read())
+    links_910new=open(".build/910-new.dat","rU")
+    links_910new=eval(links_910new.read())
+    utility.save_alldat(megadb_fetch_newfiles(utility.open_alldat(),reddit_titles,reddit_links,links_910new))
 

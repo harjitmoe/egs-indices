@@ -42,8 +42,9 @@ def extract_haylo_list():
         related=[(utility.standardise910link(utility.dirty(i.split('"')[0])),i.split('/res/')[1].startswith("classic")) for i in record.split('<a href="http://egscomics.com/?date='+date+'" >')[2].split('<a href="')[1:]]
         lst[date]=(date,title,related)
         order.append(date)
-    open(".build/HayloListMini.txt","w").write(repr(lst))
-    open(".build/HayloOrderMini.txt","w").write(repr(order))
+    return lst,order
 
 if __name__=="__main__":
-    extract_haylo_list()
+    haylo_db,haylo_order=extract_haylo_list()
+    open(".build/HayloListMini.txt","w").write(repr(haylo_db))
+    open(".build/HayloOrderMini.txt","w").write(repr(haylo_order))

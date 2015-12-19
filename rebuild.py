@@ -38,26 +38,26 @@ extract_bg_title_db.extract_bg_title_db()
 
 # The HTML sets where processing is actually done
 # in the build process rather than already.
-import extract_classics_910
-import extract_reddit_info
-import extract_threads_new910
-import extract_haylo_list
-import extract_haylo_hierarchy
-extract_classics_910.extract_classics_910()
-extract_reddit_info.extract_reddit_info()
-extract_threads_new910.extract_threads_new910()
-extract_haylo_list.extract_haylo_list()
-extract_haylo_hierarchy.extract_haylo_hierarchy()
+from extract_classics_910 import extract_classics_910 
+from extract_reddit_info import extract_reddit_info 
+from extract_threads_new910 import extract_threads_new910 
+from extract_haylo_list import extract_haylo_list 
+from extract_haylo_hierarchy import extract_haylo_hierarchy 
+classics_db = extract_classics_910()
+reddit_titles,reddit_links = extract_reddit_info()
+links_910new = extract_threads_new910()
+haylo_db,haylo_order = extract_haylo_list()
+haylo_mini_hierarchy,haylo_additional_hierarchy = extract_haylo_hierarchy()
 
 # Generate MegaDB
-import megadb_generate_initial
-alldat=megadb_generate_initial.megadb_generate_initial()
+from megadb_generate_initial import megadb_generate_initial
+alldat = megadb_generate_initial(classics_db,haylo_db,reddit_links,links_910new)
 
 # Add new strips
-import megadb_fetch_haylonew
-import megadb_fetch_newfiles
-alldat=megadb_fetch_haylonew.megadb_fetch_haylonew(alldat)
-alldat=megadb_fetch_newfiles.megadb_fetch_newfiles(alldat)
+from megadb_fetch_haylonew import megadb_fetch_haylonew
+from megadb_fetch_newfiles import megadb_fetch_newfiles
+alldat = megadb_fetch_haylonew(alldat,haylo_additional_hierarchy,haylo_db,links_910new)
+alldat = megadb_fetch_newfiles(alldat,reddit_titles,reddit_links,links_910new)
 
 # Fetch transcripts whilst adding new titles and appearance data
 import megadb_fetch_tss
@@ -70,7 +70,6 @@ import megadb_indextransforms
 import megadb_pull_bg
 alldat=megadb_indextransforms.megadb_indextransforms(alldat)
 alldat=megadb_pull_bg.megadb_pull_bg(alldat)
-utility.save_alldat(alldat) #for modules still using the slightly older system.
 
 # Generate the HTML index, make JSON
 import export_json

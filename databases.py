@@ -50,20 +50,7 @@ def scour(obj): #MSLatin1 to UTF-8, works properly on Python 2 only
     else:
         return obj
 
-def parse_suddenlaunch(sect):
-    sdb={}
-    f=open("suddenlaunch.dat","rU")
-    b=f.read().split("\n")
-    f.close()
-    for record in b:
-        url,section,date=record.split(" ")
-        if section in {"sketch":("Filler",),"story":("Story","Comic")}[sect]:
-            month,day,year=date.split("/") #MM/DD/YYYY (middle endian)
-            date="-".join((year,month,day)) #YYYY-MM-DD (big endian)
-            sdb[date]=url
-    return sdb
-
-def fakejsonloads(dat):
+def _fakejsonloads(dat):
     null=None
     true=True
     false=False
@@ -75,7 +62,7 @@ def load_ookii_record(strip):
     if not specific_db:
         print>>sys.stderr,"DEAD DOOR",strip["Date"],strip["OokiiId"]
     else:
-        strip.update(scour(fakejsonloads(specific_db)))
+        strip.update(scour(_fakejsonloads(specific_db)))
 
 date2id=open("Date2Id.txt","rU")
 date2id=json.loads(date2id.read())
@@ -87,35 +74,27 @@ metadataegs=eval(metadataegs.read())
 dateswork=open("DatesWorkProcessed.txt","rU")
 dateswork=eval(dateswork.read())
 
-reddit_titles=open(".build/reddit_titles.txt","rU")
-reddit_titles=eval(reddit_titles.read())
-reddit_links=open(".build/reddit_threads.txt","rU")
-reddit_links=eval(reddit_links.read())
-links_910new=open(".build/910-new.dat","rU")
-links_910new=eval(links_910new.read())
-
 main_db={}
 for sect in ("story","sketch","np"):
     main_db[sect]=open_lib(r"Ookii\ComicIndices\egscomicapi_%d.txt"%([None,"story","np","sketch"].index(sect)))
-    main_db[sect]=scour(fakejsonloads(main_db[sect].read()))
+    main_db[sect]=scour(_fakejsonloads(main_db[sect].read()))
 del sect
 
-haylo_db={}
-haylo_db["story"]=open(".build/HayloListMini.txt","rU")
-haylo_db["story"]=eval(haylo_db["story"].read())
-haylo_db["sketch"]={}
-haylo_db["np"]={}
-haylo_additional_hierarchy={}
-haylo_additional_hierarchy["story"]=open(".build/HayloHierarchyAdditional.txt","rU")
-haylo_additional_hierarchy["story"]=eval(haylo_additional_hierarchy["story"].read())
-haylo_additional_hierarchy["sketch"]=None
-haylo_additional_hierarchy["np"]=None
-
-classics_db=open(".build/classics_910.txt","rU")
-classics_db=eval(classics_db.read())
+def _parse_suddenlaunch(sect):
+    sdb={}
+    f=open("suddenlaunch.dat","rU")
+    b=f.read().split("\n")
+    f.close()
+    for record in b:
+        url,section,date=record.split(" ")
+        if section in {"sketch":("Filler",),"story":("Story","Comic")}[sect]:
+            month,day,year=date.split("/") #MM/DD/YYYY (middle endian)
+            date="-".join((year,month,day)) #YYYY-MM-DD (big endian)
+            sdb[date]=url
+    return sdb
 suddenlaunch_db={}
-suddenlaunch_db["story"]=parse_suddenlaunch("story")
-suddenlaunch_db["sketch"]=parse_suddenlaunch("sketch")
+suddenlaunch_db["story"]=_parse_suddenlaunch("story")
+suddenlaunch_db["sketch"]=_parse_suddenlaunch("sketch")
 suddenlaunch_db["np"]={}
 
 titlebank=open("titlebank.dat","rU")

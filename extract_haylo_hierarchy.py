@@ -63,8 +63,9 @@ def extract_haylo_hierarchy():
         hier.append((title,hier2))
         if counting:
             addhier.append((title,hier2))
-    open(".build/HayloHierarchyMini.txt","w").write(repr(hier))
-    open(".build/HayloHierarchyAdditional.txt","w").write(repr(addhier))
+    return hier,addhier
 
 if __name__=="__main__":
-    extract_haylo_hierarchy()
+    haylo_mini_hierarchy,haylo_additional_hierarchy=extract_haylo_hierarchy()
+    open(".build/HayloHierarchyMini.txt","w").write(repr(haylo_mini_hierarchy))
+    open(".build/HayloHierarchyAdditional.txt","w").write(repr(haylo_additional_hierarchy))

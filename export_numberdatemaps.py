@@ -116,7 +116,7 @@ def export_numberdatemaps(alldat):
         print>>nom, "|}\n\n"
         print>>dim, "|}\n\n"
         print>>dfm, "|}\n\n"
-    map(file.close,(nem,nom,dim,dfm))
+    map(file.close,(nem,nom,dim,dfm)) #IronPython grumble grumble
 
 if __name__=="__main__":
     alldat=utility.open_alldat()

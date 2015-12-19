@@ -81,7 +81,7 @@ def export_titles_template_lite(alldat):
     print>>outfile, "|#default = }}"
     print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>"
     print>>outfile, docs
-    outfile.close()
+    outfile.close() #IronPython grumble grumble
 
 if __name__=="__main__":
     alldat=utility.open_alldat()

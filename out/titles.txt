@@ -2131,6 +2131,9 @@
 |2015-12-07 = ("")
 |2015-12-09 = ("")
 |2015-12-11 = ("")
+|2015-12-14 = ("")
+|2015-12-16 = ("")
+|2015-12-18 = ("")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic (Official)")
@@ -4263,6 +4266,9 @@
 |2131 = ("")
 |2132 = ("")
 |2133 = ("")
+|2134 = ("")
+|2135 = ("")
+|2136 = ("")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -9944,6 +9950,9 @@
 |2015-12-07 = ("cantbabysitus")
 |2015-12-09 = ("awkwardcheer")
 |2015-12-11 = ("cheerwha")
+|2015-12-14 = ("windmills")
+|2015-12-16 = ("flex")
+|2015-12-18 = ("itsfineallfine")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -12076,6 +12085,9 @@
 |2131 = ("cantbabysitus")
 |2132 = ("awkwardcheer")
 |2133 = ("cheerwha")
+|2134 = ("windmills")
+|2135 = ("flex")
+|2136 = ("itsfineallfine")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -15398,6 +15410,9 @@
 |2015-12-07 = ("cantbabysitus")
 |2015-12-09 = ("awkwardcheer")
 |2015-12-11 = ("cheerwha")
+|2015-12-14 = ("windmills")
+|2015-12-16 = ("flex")
+|2015-12-18 = ("itsfineallfine")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -17530,6 +17545,9 @@
 |2131 = ("cantbabysitus")
 |2132 = ("awkwardcheer")
 |2133 = ("cheerwha")
+|2134 = ("windmills")
+|2135 = ("flex")
+|2136 = ("itsfineallfine")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -19668,6 +19686,9 @@
 |2015-12-07 = ("cantbabysitus")
 |2015-12-09 = ("awkwardcheer")
 |2015-12-11 = ("cheerwha")
+|2015-12-14 = ("windmills")
+|2015-12-16 = ("flex")
+|2015-12-18 = ("itsfineallfine")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -21800,6 +21821,9 @@
 |2131 = ("cantbabysitus")
 |2132 = ("awkwardcheer")
 |2133 = ("cheerwha")
+|2134 = ("windmills")
+|2135 = ("flex")
+|2136 = ("itsfineallfine")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -31680,6 +31704,8 @@
 |2015-12-07 = ("")
 |2015-12-09 = ("")
 |2015-12-11 = ("")
+|2015-12-14 = ("")
+|2015-12-16 = ("")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)")
@@ -32073,6 +32099,8 @@
 |391 = ("")
 |392 = ("")
 |393 = ("")
+|394 = ("")
+|395 = ("")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -32777,6 +32805,8 @@
 |2015-12-07 = ("sinceyouasked")
 |2015-12-09 = ("5andahalfisaverage")
 |2015-12-11 = ("awkardnessabounds")
+|2015-12-14 = ("friendshipishot")
+|2015-12-16 = ("veryhot")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -33170,6 +33200,8 @@
 |391 = ("sinceyouasked")
 |392 = ("5andahalfisaverage")
 |393 = ("awkardnessabounds")
+|394 = ("friendshipishot")
+|395 = ("veryhot")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -33637,6 +33669,8 @@
 |2015-12-07 = ("sinceyouasked")
 |2015-12-09 = ("5andahalfisaverage")
 |2015-12-11 = ("awkardnessabounds")
+|2015-12-14 = ("friendshipishot")
+|2015-12-16 = ("veryhot")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -34030,6 +34064,8 @@
 |391 = ("sinceyouasked")
 |392 = ("5andahalfisaverage")
 |393 = ("awkardnessabounds")
+|394 = ("friendshipishot")
+|395 = ("veryhot")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -34837,6 +34873,8 @@
 |2015-12-07 = ("sinceyouasked")
 |2015-12-09 = ("5andahalfisaverage")
 |2015-12-11 = ("awkardnessabounds")
+|2015-12-14 = ("friendshipishot")
+|2015-12-16 = ("veryhot")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("XYC")
@@ -35230,6 +35268,8 @@
 |391 = ("sinceyouasked")
 |392 = ("5andahalfisaverage")
 |393 = ("awkardnessabounds")
+|394 = ("friendshipishot")
+|395 = ("veryhot")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}

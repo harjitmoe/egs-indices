@@ -79,29 +79,30 @@ def find_eid_ookii(strip,sect,date2id):
         else:
             print>>sys.stderr,"Error: cannot find date-id mapping for %s"%strip["Date"]
 
-def handle_strip_record(strip,sect):
+def handle_strip_record(strip,sect,classics_db,haylo_db,reddit_links,links_910new):
     date=strip["Date"]
     #Administrivia about dates and IDs
     find_eid_ookii(strip,sect,databases.date2id)
     #Reactions
     strip["ReactionLinks"]=[]
-    if date in databases.classics_db[sect].keys():
-        strip["ReactionLinks"].append(databases.classics_db[sect][date])
+    if date in classics_db[sect].keys():
+        strip["ReactionLinks"].append(classics_db[sect][date])
     if date in databases.suddenlaunch_db[sect].keys():
         strip["ReactionLinks"].append((databases.suddenlaunch_db[sect][date],0))
     #Handle title list
     handle_titles_ookii(strip,sect)
     #Haylo record if applicable
-    merge_haylo(strip,databases.haylo_db[sect])
+    if sect=="story":
+        merge_haylo(strip,haylo_db)
     #Et cetera
     if strip["DateIndexable"]:
         utility.dates_index(strip,databases.dateswork[sect])
     if strip["Id"] in databases.metadataegs[sect]:
         strip.update(databases.metadataegs[sect][strip["Id"]])
-    if strip["Id"] in databases.reddit_links[sect]:
-        strip["ReactionLinks"].append(databases.reddit_links[sect][strip["Id"]])
-    if strip["Date"] in databases.links_910new[sect]:
-        utility.merge_reactions(strip["ReactionLinks"],databases.links_910new[sect][strip["Date"]])
+    if strip["Id"] in reddit_links[sect]:
+        strip["ReactionLinks"].append(reddit_links[sect][strip["Id"]])
+    if strip["Date"] in links_910new[sect]:
+        utility.merge_reactions(strip["ReactionLinks"],links_910new[sect][strip["Date"]])
     strip["SharedDateIndex"]=0
     #Load specific Ookii DB (i.e. beyond the index card)
     databases.load_ookii_record(strip)
@@ -112,20 +113,24 @@ def handle_strip_record(strip,sect):
         strip["Characters"]={}
     strip["RecordType"]="Comic"
 
-def handle_line(line,sect):
+def handle_line(line,sect,classics_db,haylo_db,reddit_links,links_910new):
     for comic in line["Comics"]:
-        handle_strip_record(comic,sect)
+        handle_strip_record(comic,sect,classics_db,haylo_db,reddit_links,links_910new)
     line["RecordType"]="StoryLine"
 
-def megadb_generate_initial():
+def megadb_generate_initial(classics_db,haylo_db,reddit_links,links_910new):
     print (">>> megadb_generate_initial")
     output=[]
     for sect in ("story","np","sketch"):
         dat=databases.main_db[sect]
         for line in dat:
-            handle_line(line,sect)
+            handle_line(line,sect,classics_db,haylo_db,reddit_links,links_910new)
         output.append({"Title":utility.egslink2ookii[sect],"StoryArcs":dat,"RecordType":"Section"})
     return output
 
 if __name__=="__main__":
-    utility.save_alldat(megadb_generate_initial())
+    classics_db=open(".build/classics_910.txt","rU")
+    classics_db=eval(classics_db.read())
+    links_910new=open(".build/910-new.dat","rU")
+    links_910new=eval(links_910new.read())
+    utility.save_alldat(megadb_generate_initial(classics_db,haylo_db,reddit_links,links_910new))

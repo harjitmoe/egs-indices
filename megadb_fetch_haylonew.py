@@ -28,13 +28,13 @@
 
 import sys,utility,databases
 
-def megadb_fetch_haylonew(main_db):
+def megadb_fetch_haylonew(main_db,haylo_additional_hierarchy,haylo_db,links_910new):
     print (">>> megadb_fetch_haylonew")
-    for name,dates in databases.haylo_additional_hierarchy["story"]:
+    for name,dates in haylo_additional_hierarchy:
         db={"Title":": ".join(name.split(" - ",1)),"RecordType":"StoryLine"}
         comics=[]
         for date in dates:
-            date,title,fora=databases.haylo_db["story"][date]
+            date,title,fora=haylo_db[date]
             strip={}
             if title.split("-")[-1].strip():
                 #Would rather \x96 but...
@@ -49,8 +49,8 @@ def megadb_fetch_haylonew(main_db):
                 print>>sys.stderr,"Error: cannot find date-id mapping for %s"%date
             strip["OokiiId"]=-1
             strip["ReactionLinks"]=fora
-            if strip["Date"] in databases.links_910new["story"]:
-                utility.merge_reactions(strip["ReactionLinks"],databases.links_910new["story"][strip["Date"]])
+            if strip["Date"] in links_910new["story"]:
+                utility.merge_reactions(strip["ReactionLinks"],links_910new["story"][strip["Date"]])
             #Date indexing (XXX)
             utility.dates_index(strip,databases.dateswork["story"])
             if strip["Id"] in databases.metadataegs["story"]:
@@ -66,5 +66,11 @@ def megadb_fetch_haylonew(main_db):
     return main_db
 
 if __name__=="__main__":
-    utility.save_alldat(megadb_fetch_haylonew(utility.open_alldat()))
+    links_910new=open(".build/910-new.dat","rU")
+    links_910new=eval(links_910new.read())
+    haylo_db=open(".build/HayloListMini.txt","rU")
+    haylo_db=eval(haylo_db.read())
+    haylo_additional_hierarchy=open(".build/HayloHierarchyAdditional.txt","rU")
+    haylo_additional_hierarchy=eval(haylo_additional_hierarchy.read())
+    utility.save_alldat(megadb_fetch_haylonew(utility.open_alldat(),haylo_additional_hierarchy,haylo_db,links_910new))
 

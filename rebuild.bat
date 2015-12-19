@@ -20,3 +20,6 @@ set PYINTER=ipy
 
 @echo off
 %PYINTER% rebuild.py
+
+echo -
+cmd
