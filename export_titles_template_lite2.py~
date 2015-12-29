@@ -16,7 +16,7 @@ docs="""
 
 {{templatenotice}}
 
-Gene""" """rated template for obtaining strip titles from dates or IDs.  
+Gener""" """ated template for obtaining strip titles from dates or IDs.  
 
 Official titles are mostly identified in and weeded out from the Ookii or Haylo databases.  Some of these represent titles on the strips themselves, others represent official titles which may remain on egscomics.com in the commentary section, '''or which may have been originally from the official site but lost, apparently in the move to 910CMX'''.  Some newer official titles have been identified and added; amongst the newer titles, some were isolated from the HTML browser (tab) titles.  Previous Summer Moments are recovered from the strips themselves.    
 

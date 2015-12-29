@@ -16,7 +16,7 @@ docs="""
 
 {{templatenotice}}
 
-Gene""" """rated template for obtaining strip titles from dates or IDs.  
+Gener""" """ated template for obtaining strip titles from dates or IDs.  
 
 Official titles are mostly identified in and weeded out from the Ookii or Haylo databases.  Some of these represent titles on the strips themselves, others represent official titles which may remain on egscomics.com in the commentary section, '''or which may have been originally from the official site but lost, apparently in the move to 910CMX'''.  Some newer official titles have been identified and added; amongst the newer titles, some were isolated from the HTML browser (tab) titles.  Previous Summer Moments are recovered from the strips themselves.    
 
@@ -52,7 +52,7 @@ def doit(outfile,b):
             for comic in line["Comics"]:
                 if not comic["SharedDateIndex"]:
                     if source in comic["Titles"]:
-                        print>>outfile, "|"+comic["Date"]+' = '+utility.clean(comic["Titles"][source])
+                        print>>outfile, "|"+comic["Date"]+' = ("'+utility.clean(comic["Titles"][source])+'")'
     print>>outfile, "|#default = }}"
     #Only, by ID
     print>>outfile, "|id = {{#switch:{{{4}}}"
@@ -61,13 +61,13 @@ def doit(outfile,b):
             for comic in line["Comics"]:
                 if comic["Id"]!=-1:
                     if source in comic["Titles"]:
-                        print>>outfile, "|"+`comic["Id"]`+' = '+utility.clean(comic["Titles"][source])
+                        print>>outfile, "|"+`comic["Id"]`+' = ("'+utility.clean(comic["Titles"][source])+'")'
     print>>outfile, "|#default = }}"
     print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}"
 
-def export_titles_template_lite2(alldat):
-    print (">>> export_titles_template_lite2")
-    outfile=open(".build/titles_lite2.txt","w")
+def export_titles_template_lite(alldat):
+    print (">>> export_titles_template_lite")
+    outfile=open(".build/titles_lite.txt","w")
     print>>outfile, "<includeonly>{{#switch:{{{1}}}"
     for sect in ("story","sketch","np"):
         b=utility.specific_section(alldat,sect)["StoryArcs"]
@@ -79,7 +79,7 @@ def export_titles_template_lite2(alldat):
     f.close()
     print>>outfile, "|bg={{#switch:{{{2}}}"
     for id in sorted(b.keys()):
-        print>>outfile, "|"+id+' = '+b[id]
+        print>>outfile, "|"+id+' = ("'+b[id]+'")'
     print>>outfile, "|#default = }}"
     print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>"
     print>>outfile, docs
@@ -87,5 +87,5 @@ def export_titles_template_lite2(alldat):
 
 if __name__=="__main__":
     alldat=utility.open_alldat()
-    export_titles_template_lite2(alldat)
+    export_titles_template_lite(alldat)
 
