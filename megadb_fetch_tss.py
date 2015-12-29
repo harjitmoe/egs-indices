@@ -14,20 +14,21 @@
 #  POSSIBILITY OF SUCH DAMAGE.
 #
 #  Permission is granted to anyone to use this work for any purpose, including
-#  commercial applications, and to alter and/or distribute it freely in any form,
-#  with or without modification, provided that the following conditions are met:
+#  commercial applications, and to alter it and/or redistribute it freely in any
+#  form, with or without modification, subject to the following restrictions:
 #
 #  1. The origin of this work must not be misrepresented; you must not claim that
 #     you authored the original work. If you use this work in a product, an
 #     acknowledgment in the product documentation would be appreciated but is not
 #     required.
 #
-#  2. Altered versions in any form may not be misrepresented as being the original
-#     work, and neither the name of HarJIT nor the names of authors or
+#  2. Altered versions in any form must not be misrepresented as being the 
+#     original work, and neither the name of HarJIT nor the names of authors or
 #     contributors may be used to endorse or promote products derived from this
 #     work without specific prior written permission.
 #
 #  3. The text of this notice must be included, unaltered, with any distribution.
+#
 
 import os, utility
 import databases, titleharjit

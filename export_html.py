@@ -10,16 +10,16 @@
 #  POSSIBILITY OF SUCH DAMAGE.
 #
 #  Permission is granted to anyone to use this work for any purpose, including
-#  commercial applications, and to alter and/or distribute it freely in any form,
-#  with or without modification, provided that the following conditions are met:
+#  commercial applications, and to alter it and/or redistribute it freely in any
+#  form, with or without modification, subject to the following restrictions:
 #
 #  1. The origin of this work must not be misrepresented; you must not claim that
 #     you authored the original work. If you use this work in a product, an
 #     acknowledgment in the product documentation would be appreciated but is not
 #     required.
 #
-#  2. Altered versions in any form may not be misrepresented as being the original
-#     work, and neither the name of HarJIT nor the names of authors or
+#  2. Altered versions in any form must not be misrepresented as being the 
+#     original work, and neither the name of HarJIT nor the names of authors or
 #     contributors may be used to endorse or promote products derived from this
 #     work without specific prior written permission.
 #
@@ -202,6 +202,10 @@ def export_html(sections):
     #HTML 5:
     #print>>outfile, "<!doctype html>"
     #print>>outfile, '<html><head><title>Index of EGS Strips</title><meta charset="UTF-8" /></head>'
+    #
+    #XHTML 5:
+    #print>>outfile, '<!DOCTYPE html SYSTEM "about:legacy-compat">'
+    #print>>outfile, '<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Index of EGS Strips</title><meta charset="UTF-8" /></head>'
     #
     #XHTML 1.1:
     print>>outfile, '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">'
