@@ -185,7 +185,6 @@ def output_html(outfile,record,parent=None):
         if ('ReactionLinks' in comic.keys()) and comic['ReactionLinks']:
             print>>outfile, "<h5 style='margin: 0 0 1ex 0'>Reaction links: </h5>"
             for rl,classic in sorted(comic['ReactionLinks']):
-                rl=rl.replace("&","&amp;") #XML parsing error?!
                 print>>outfile, "<p style='margin: 0 0 1ex 0'><a href=%r>%s</a>%s</p>"%(rl,rl," (Classics Thread)" if classic else " (Original Thread)")
         else:
             if comic["Date"].startswith("2012-09-") or comic["Date"].startswith("2012-08-2") or comic["Date"].startswith("2012-08-3"):

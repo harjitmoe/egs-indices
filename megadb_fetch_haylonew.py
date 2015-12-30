@@ -38,7 +38,7 @@ def megadb_fetch_haylonew(main_db,haylo_additional_hierarchy,haylo_db,links_910n
             strip={}
             if title.split("-")[-1].strip():
                 #Would rather \x96 but...
-                strip["Titles"]={"Haylo":title.split("-")[-1].strip().replace("&ndash;","-")}
+                strip["Titles"]={"Haylo":title.split("-")[-1].strip()}
             else:
                 strip["Titles"]={}
             strip["Date"]=date

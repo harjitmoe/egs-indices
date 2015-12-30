@@ -26,6 +26,8 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
+import utility
+
 def kasplit(s):
     o=""
     h=0
@@ -46,6 +48,7 @@ def extract_haylo_hierarchy():
     print (">>> extract_haylo_hierarchy")
     f=open("HayloList.html")
     b=f.read().replace("www.egscomics.com","egscomics.com").replace("/index.php?","/?")
+    b=utility.deentity(b,3)
     f.close()
     #XXX this ignores headings
     b=b.split('<em > \n        <strong>')[1:]
@@ -53,7 +56,7 @@ def extract_haylo_hierarchy():
     addhier=[]
     counting=0
     for bb in b:
-        title=kasplit(bb.split("</em >")[0]).strip().replace("&quot;",'"').replace("&amp;",'&')
+        title=utility.deentity(kasplit(bb.split("</em >")[0]).strip(),2)
         if title=="The Dawn - Family Tree":
             counting=1
         ba=[i.split("</p>")[0] for i in bb.split('<p style="margin-left:10.2em; \n')[1:]]

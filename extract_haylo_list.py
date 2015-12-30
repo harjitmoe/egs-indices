@@ -31,6 +31,7 @@ def extract_haylo_list():
     import utility
     f=open("HayloList.html")
     b=f.read().replace("www.egscomics.com","egscomics.com").replace("/index.php?","/?")
+    b=utility.deentity(b,3)
     f.close()
     #XXX this ignores headings
     b=[i.split("</p>")[0] for i in b.split('<p style="margin-left:10.2em; \n')[1:]]
@@ -38,8 +39,8 @@ def extract_haylo_list():
     order=[]
     for record in b:
         date=record.split('<a href="http://egscomics.com/?date=')[1].split('"')[0]
-        title=utility.dirty(record.split('<a href="http://egscomics.com/?date='+date+'" >')[2].split('</a')[0])
-        related=[(utility.standardise910link(utility.dirty(i.split('"')[0])),i.split('/res/')[1].startswith("classic")) for i in record.split('<a href="http://egscomics.com/?date='+date+'" >')[2].split('<a href="')[1:]]
+        title=utility.deentity(record.split('<a href="http://egscomics.com/?date='+date+'" >')[2].split('</a')[0],2)
+        related=[(utility.standardise910link(utility.deentity(i.split('"')[0],2)),i.split('/res/')[1].startswith("classic")) for i in record.split('<a href="http://egscomics.com/?date='+date+'" >')[2].split('<a href="')[1:]]
         lst[date]=(date,title,related)
         order.append(date)
     return lst,order

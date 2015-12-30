@@ -26,6 +26,8 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
+import utility
+
 def extract_reddit_info():
     print (">>> extract_reddit_info")
     initiator='<a class="title may-blank " href="http://www.egscomics.com/'
@@ -39,6 +41,7 @@ def extract_reddit_info():
     for file in files:
         f=open("Reddit Titles/"+file)
         b=f.read().replace("loggedin ","").replace("&#32;"," ")
+        b=utility.deentity(b,3)
         f.close()
         b=b.replace("https://","http://")
         while initiator in b:
@@ -54,7 +57,7 @@ def extract_reddit_info():
             type={"egsnp":"np","index":"story","sketchbook":"sketch","filler":"sketch","":"story"}[type.split(".")[0].strip("/")]
             b=b.split(">",1)[1]
             title,b=b.split('</a>',1)
-            title=title.replace("&amp;","&")
+            title=utility.deentity(title,2)
             b=b.split(' by <a href="http://www.reddit.com/user/',1)[1]
             submitter,b=b.split('"',1)
             if "Comic for" not in title and "Sketchbook for" not in title: #Older links, dates given rather than titles

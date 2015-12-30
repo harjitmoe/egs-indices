@@ -32,7 +32,7 @@ _ookii=tarfile.open("Ookii.dat","r:")
 def open_lib(path):
     return _ookii.extractfile(path.replace("\\","/"))
 
-def scour(obj): #MSLatin1 to UTF-8, works properly on Python 2 only
+def scour(obj): #MSLatin1 (ish..., Ookii-style) to UTF-8, works properly on Python 2 only
     if isinstance(obj, type({})):
         d={}
         for k,v in obj.items():
@@ -46,7 +46,7 @@ def scour(obj): #MSLatin1 to UTF-8, works properly on Python 2 only
         if "\x9d" in obj:
             return obj
         else:
-            return obj.decode("cp1252").encode("utf8").replace("\xc3\x83\xc2\xbc","\xc3\xbc")
+            return obj.replace("\x14","\x85").replace("\x18","\x91").replace("\x19","\x92").decode("cp1252").encode("utf8").replace("\xc3\x83\xc2\xbc","\xc3\xbc")
     else:
         return obj
 

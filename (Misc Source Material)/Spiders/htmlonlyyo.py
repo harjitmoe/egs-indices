@@ -49,23 +49,12 @@
 #
 
 import re, os, time
-from htmlentitydefs import name2codepoint,codepoint2name
 
 i = 1
 dab={}
 #wget="..\\..\\..\\Tools\\wget.exe"
 wget="wget-gnu"
 names={"index":"story","egsnp":"np","sketchbook":"sketch"}
-
-def deentity(data):
-    for name in name2codepoint.keys():
-        if name!="amp":
-            data=data.replace("&"+name+";",unichr(name2codepoint[name]).encode("utf8"))
-    for number in range(0x100):
-        name="#"+str(number)
-        data=data.replace("&"+name+";",unichr(number).encode("utf8"))
-    data=data.replace("&amp;","&")
-    return data
 
 def strip_comments(data):
     try:

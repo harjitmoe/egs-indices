@@ -131,11 +131,40 @@ def detag(s):
             o+=c
     assert a,"partial tag?"
     return o
-def clean(title):
-    #'So Much For Vladia\x19s \x18No Violent Threats\x19 Streak&'
-    return title.replace("&","&amp;").replace("\x18","&lsquo;").replace("\x19","&rsquo;").replace('"',"&quot;").replace('\x14',"...").replace("<","&lt;").replace(">","&gt;")
-def dirty(title):
-    return title.replace("&lsquo;","\x18").replace("&rsquo;","\x19").replace("&#39;","\x19").replace("&quot;",'"').replace("&lt;","<").replace("&gt;",">").replace("&nbsp;"," ").replace("&amp;","&")
+def clean(data):
+    # The level of overhead which results from inefficiencies in this function is phenomenal.
+    from htmlentitydefs import name2codepoint,codepoint2name
+    data=data.decode("utf-8").replace(u"&",u"&amp;")
+    for name in (u'lt', u'gt', u'quot', u'nbsp', u'lsquo', u'rsquo', u'ldquo', u'rdquo', u'ndash', u'hellip'):
+        data=data.replace(unichr(name2codepoint[name]),u"&"+name+u";")
+    return data.encode("utf-8")
+def deentity(data,mode=0):
+    # The level of overhead which results from inefficiencies in this function is phenomenal.
+    from htmlentitydefs import name2codepoint,codepoint2name
+    #0: Fast, 1: Comprehensive, 2: Syntax-critical only, 3: Whole-file mode (skip syntax-critical)
+    #
+    data=data.decode("utf-8")
+    if mode==0:
+        foci=(u'lt', u'gt', u'quot', u'nbsp', u'lsquo', u'rsquo', u'ldquo', u'rdquo', u'ndash', u'hellip')
+    elif mode==1:
+        foci=name2codepoint.keys()
+    elif mode==2:
+        foci=(u'lt',u'gt')
+    elif mode==3:
+        foci=name2codepoint.keys()
+    for name in foci:
+        if name!=u"amp":
+            if (mode!=3) or (name not in (u'lt',u'gt')):
+                data=data.replace(u"&"+name+u";",unichr(name2codepoint[name]))
+    if mode in (0,2):
+        data=data.replace(u"&#39;",unichr(39))
+    elif mode in (1,3):
+        for number in range(0x100):
+            name=u"#"+str(number).decode("latin1")
+            data=data.replace(u"&"+name+u";",unichr(number))
+    if mode!=3:
+        data=data.replace(u"&amp;",u"&")
+    return data.encode("utf-8")
 
 ##############################################
 ##### Reaction link duplicity regulation #####
