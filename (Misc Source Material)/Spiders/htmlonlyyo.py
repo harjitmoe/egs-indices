@@ -49,8 +49,13 @@
 #
 
 import re, os, time
-
 from htmlentitydefs import name2codepoint,codepoint2name
+
+i = 1
+dab={}
+#wget="..\\..\\..\\Tools\\wget.exe"
+wget="wget-gnu"
+names={"index":"story","egsnp":"np","sketchbook":"sketch"}
 
 def deentity(data):
     for name in name2codepoint.keys():
@@ -81,12 +86,6 @@ def strip_style(data):
         global foo
         foo=data
         raise
-
-i = 1
-dab={}
-#wget="..\\wget.exe"
-wget="wget-gnu"
-names={"index":"story","egsnp":"np","sketchbook":"sketch"}
 
 if os.path.exists("a.txt"):
     f=open("a.txt")

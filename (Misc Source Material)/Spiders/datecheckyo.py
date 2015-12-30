@@ -56,7 +56,7 @@ if os.path.exists("b.txt"):
     f=open("b.txt","rU")
     dab=eval(f.read())
     f.close()
-#wget="..\\wget.exe"
+#wget="..\\..\\..\\Tools\\wget.exe"
 wget="wget-gnu"
 names={"index":"story","egsnp":"np","sketchbook":"sketch"}
 
