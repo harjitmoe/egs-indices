@@ -50,6 +50,38 @@
 
 import re, os, time
 
+from htmlentitydefs import name2codepoint,codepoint2name
+
+def deentity(data):
+    for name in name2codepoint.keys():
+        if name!="amp":
+            data=data.replace("&"+name+";",unichr(name2codepoint[name]).encode("utf8"))
+    for number in range(0x100):
+        name="#"+str(number)
+        data=data.replace("&"+name+";",unichr(number).encode("utf8"))
+    data=data.replace("&amp;","&")
+    return data
+
+def strip_comments(data):
+    try:
+        data="".join([i.split("-->",1)[1] for i in ("-->"+data+"-->").split("<!--")])
+        if data.endswith("-->"):
+            data=data[:-3]
+        return data
+    except:
+        global foo
+        foo=data
+        raise
+
+def strip_style(data):
+    try:
+        data="".join([i.split('"',1)[1] for i in ('"'+data).split(' style="')])
+        return data
+    except:
+        global foo
+        foo=data
+        raise
+
 i = 1
 dab={}
 #wget="..\\wget.exe"
@@ -64,9 +96,12 @@ if os.path.exists("a.txt"):
 for interface in ("index","egsnp","sketchbook"):
     fs=0
     print "I",interface
+    prefix = names[interface]
+    if prefix not in dab.keys():
+        dab[prefix]={}
     while 1:
         try:
-            if names[interface]+"-"+str(i) not in dab.keys():
+            if i not in dab[prefix].keys():
                 url = "http://www.egscomics.com/"+interface+".php?id="+str(i)
                 #time.sleep(0.5)
                 os.system(wget+" -O \""+interface+".php@id="+str(i)+"\" \""+url+"\" >> wgetlog.txt 2>&1")
@@ -90,32 +125,50 @@ for interface in ("index","egsnp","sketchbook"):
                         continue
                 else:
                     fs=0
-                comment=data.split('<div id="newsarea">',1)[1].split('<div id="boxad">',1)[0]
-                date1=""
+                dat4=data.split('<div id="newsarea">',1)[1].split('<div id="boxad">',1)[0]
+                dat0=""
                 if res:
-                    date1=res.group()[:-8]
-                title=""
-                date2=""
+                    dat0=res.group()[:-8]
+                dat1=""
+                dat3=""
                 if 'title="' in data:
-                    date2,title=(data.split('title="',1)[1].split('"',1)[0]+"-").split("-",1)
-                    date2=date2.strip()
-                    title=title.strip().rstrip("-")
-                date3=""
+                    dat1,dat3=(data.split('title="',1)[1].split('"',1)[0]+"-").split("-",1)
+                    dat1=dat1.strip()
+                    dat3=dat3.strip().rstrip("-")
+                dat2=""
                 if '">Comic for ' in data:
-                    date3=data.split('">Comic for ',1)[1].split("</div>",1)[0].split(", ",1)[1]
-                    date3=date3.replace(", "," ")
-                    month,day,year=date3.split(" ",3)
+                    dat2=data.split('">Comic for ',1)[1].split("</div>",1)[0].split(", ",1)[1]
+                    dat2=dat2.replace(", "," ")
+                    month,day,year=dat2.split(" ",3)
                     month="%02d"%([None,"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"].index(month[:3]))
                     day="%02d"%int(day)
-                    date3=year+"-"+month+"-"+day
-                dab[names[interface]+"-"+str(i)]=(date1,date2,date3,title,comment)
+                    dat2=year+"-"+month+"-"+day
+                date1=dat0
+                date2,title=(dat1+"-"+dat3+" ").split(" ",1)
+                title=title.strip(" -")
+                date2=date2.strip(" -")
+                date3=dat2
+                if date2[0] not in "0123456789":
+                    title=date2+" "+title
+                    date2=""
+                if title and title[0] in "0123456789":
+                    date2=date2+" "+title
+                    title=""
+                if not date1:
+                    date1=date2
+                if date1!=date2:
+                    raise AssertionError
+                if " - " in date1:
+                    date1,title=date1.split(" - ",1)
+                commentary=strip_style(strip_comments(dat4)).replace(' target="_blank"','').replace('<div id="newsheader"></div>',"").replace("<div>","<br />").replace("</div>","").strip()
+                dab[prefix][i]={"Commentary":commentary,"Id":i,"DateStatedAboveComic":(date3 or None),"DateInBrowserTitle":(date1 or None),"HtmlComicTitle":(title or None)}
             else:
                 fs=0
         except Exception,e:
             print "Pfail",i,str(e)
         i += 1
 
-f=open("metadataegs2.txt","w")
+f=open("metadataegs3.txt","w")
 f.write(`dab`)
 f.close()
 
