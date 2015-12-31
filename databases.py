@@ -26,12 +26,13 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import json, tarfile
+import json, tarfile, re
 
 _ookii=tarfile.open("Ookii.dat","r:")
 def open_lib(path):
     return _ookii.extractfile(path.replace("\\","/"))
 
+_ampersand_quasi_ellipsis = re.compile(r"(?<!\S)&(?=\S)|(?<=\S)&(?!\S)")
 def to_utf8(obj):
     if isinstance(obj, type({})):
         d={}
@@ -46,7 +47,7 @@ def to_utf8(obj):
         if "\x9d" in obj:
             return obj
         else:
-            return obj.replace("\x14","\x85").replace("\x18","\x91").replace("\x19","\x92").decode("cp1252").encode("utf8").replace("\xc3\x83\xc2\xbc","\xc3\xbc")
+            return "\x85".join(_ampersand_quasi_ellipsis.split(obj.replace("\x14","\x85").replace("\x18","\x91").replace("\x19","\x92"))).decode("cp1252").encode("utf8").replace("\xc3\x83\xc2\xbc","\xc3\xbc")
     else:
         return obj
 

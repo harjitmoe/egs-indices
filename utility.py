@@ -138,7 +138,7 @@ def deentity(data,mode=0):
     # 0: Fast, 1: Comprehensive, 2: Syntax-critical only, 3: Whole-file mode (skip syntax-critical)
     data=data.decode("utf-8")
     if mode==0:
-        foci=(u'lt', u'gt', u'quot', u'nbsp', u'lsquo', u'rsquo', u'ldquo', u'rdquo', u'ndash', u'hellip')
+        foci=(u'lt', u'gt', u'quot', u'nbsp', u'lsquo', u'rsquo', u'ldquo', u'rdquo', u'ndash', u'hellip', u'eacute')
     elif mode in (1,3):
         foci=name2codepoint.keys()
     elif mode==2:
@@ -160,7 +160,7 @@ def entity_escape(data):
     # The level of overhead which results from inefficiencies in this function is phenomenal.
     from htmlentitydefs import name2codepoint,codepoint2name
     data=data.decode("utf-8").replace(u"&",u"&amp;")
-    for name in (u'lt', u'gt', u'quot', u'nbsp', u'lsquo', u'rsquo', u'ldquo', u'rdquo', u'ndash', u'hellip'):
+    for name in (u'lt', u'gt', u'quot', u'nbsp', u'lsquo', u'rsquo', u'ldquo', u'rdquo', u'ndash', u'hellip', u'eacute'):
         data=data.replace(unichr(name2codepoint[name]),u"&"+name+u";")
     return data.encode("utf-8")
 
