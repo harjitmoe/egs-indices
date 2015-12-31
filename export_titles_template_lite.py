@@ -52,7 +52,7 @@ def doit(outfile,b):
             for comic in line["Comics"]:
                 if not comic["SharedDateIndex"]:
                     if source in comic["Titles"]:
-                        print>>outfile, "|"+comic["Date"]+' = ("'+utility.clean(comic["Titles"][source])+'")'
+                        print>>outfile, "|"+comic["Date"]+' = ("'+utility.entity_escape(comic["Titles"][source])+'")'
     print>>outfile, "|#default = }}"
     #Only, by ID
     print>>outfile, "|id = {{#switch:{{{4}}}"
@@ -61,7 +61,7 @@ def doit(outfile,b):
             for comic in line["Comics"]:
                 if comic["Id"]!=-1:
                     if source in comic["Titles"]:
-                        print>>outfile, "|"+`comic["Id"]`+' = ("'+utility.clean(comic["Titles"][source])+'")'
+                        print>>outfile, "|"+`comic["Id"]`+' = ("'+utility.entity_escape(comic["Titles"][source])+'")'
     print>>outfile, "|#default = }}"
     print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}"
 

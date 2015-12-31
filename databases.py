@@ -32,16 +32,16 @@ _ookii=tarfile.open("Ookii.dat","r:")
 def open_lib(path):
     return _ookii.extractfile(path.replace("\\","/"))
 
-def scour(obj): #MSLatin1 (ish..., Ookii-style) to UTF-8, works properly on Python 2 only
+def to_utf8(obj):
     if isinstance(obj, type({})):
         d={}
         for k,v in obj.items():
-            d[scour(k)]=scour(v)
+            d[to_utf8(k)]=to_utf8(v)
         return d
     elif isinstance(obj, type([])):
-        return map(scour,obj)
+        return map(to_utf8,obj)
     elif isinstance(obj,type(())):
-        return map(scour,obj)
+        return map(to_utf8,obj)
     elif type(obj)==type(""):
         if "\x9d" in obj:
             return obj
@@ -62,7 +62,7 @@ def load_ookii_record(strip):
     if not specific_db:
         print>>sys.stderr,"DEAD DOOR",strip["Date"],strip["OokiiId"]
     else:
-        strip.update(scour(_fakejsonloads(specific_db)))
+        strip.update(to_utf8(_fakejsonloads(specific_db)))
 
 date2id=open("Date2Id.txt","rU")
 date2id=json.loads(date2id.read())
@@ -77,7 +77,7 @@ dateswork=eval(dateswork.read())
 main_db={}
 for sect in ("story","sketch","np"):
     main_db[sect]=open_lib(r"Ookii\ComicIndices\egscomicapi_%d.txt"%([None,"story","np","sketch"].index(sect)))
-    main_db[sect]=scour(_fakejsonloads(main_db[sect].read()))
+    main_db[sect]=to_utf8(_fakejsonloads(main_db[sect].read()))
 del sect
 
 def _parse_suddenlaunch(sect):

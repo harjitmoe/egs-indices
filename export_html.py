@@ -64,11 +64,11 @@ def get_couplet(record):
     if record["RecordType"]=="Comic":
         return get_id(record),utility.get_title_aggregate(record)
     elif record["RecordType"]=="StoryLine":
-        return get_id(record),utility.clean(record["Title"])
+        return get_id(record),utility.entity_escape(record["Title"])
     elif record["RecordType"]=="StoryArc":
-        return get_id(record),utility.clean(record["Title"])
+        return get_id(record),utility.entity_escape(record["Title"])
     elif record["RecordType"]=="Section":
-        return get_id(record),utility.clean(record["Title"])
+        return get_id(record),utility.entity_escape(record["Title"])
     elif record["RecordType"]=="Database":
         return get_id(record),"Table of Contents:"
 
@@ -178,13 +178,14 @@ def output_html(outfile,record,parent=None):
             print>>outfile, "<p style='margin: 0 0 1ex 0'>(Ookii character information unavailable)</p>"
         if ('Transcript' in comic.keys()) and comic['Transcript']:
             print>>outfile, "<h5 style='margin: 0 0 1ex 0'>Transcript: </h5>"
-            ts=utility.clean(comic['Transcript']).strip("\n").replace("\n\n","</p><p style='margin: 0 0 1ex 0'>").replace("\n","<br />")
+            ts=utility.entity_escape(comic['Transcript']).strip("\n").replace("\n\n","</p><p style='margin: 0 0 1ex 0'>").replace("\n","<br />")
             print>>outfile, "<blockquote><p style='margin: 0 0 1ex 0'>"+ts+"</p></blockquote>"
         else:
             print>>outfile, "<p style='margin: 0 0 1ex 0'>(Transcript unavailable)</p>"
         if ('ReactionLinks' in comic.keys()) and comic['ReactionLinks']:
             print>>outfile, "<h5 style='margin: 0 0 1ex 0'>Reaction links: </h5>"
             for rl,classic in sorted(comic['ReactionLinks']):
+                rl=utility.entity_escape(rl) #XML parsing
                 print>>outfile, "<p style='margin: 0 0 1ex 0'><a href=%r>%s</a>%s</p>"%(rl,rl," (Classics Thread)" if classic else " (Original Thread)")
         else:
             if comic["Date"].startswith("2012-09-") or comic["Date"].startswith("2012-08-2") or comic["Date"].startswith("2012-08-3"):

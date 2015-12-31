@@ -131,27 +131,18 @@ def detag(s):
             o+=c
     assert a,"partial tag?"
     return o
-def clean(data):
-    # The level of overhead which results from inefficiencies in this function is phenomenal.
-    from htmlentitydefs import name2codepoint,codepoint2name
-    data=data.decode("utf-8").replace(u"&",u"&amp;")
-    for name in (u'lt', u'gt', u'quot', u'nbsp', u'lsquo', u'rsquo', u'ldquo', u'rdquo', u'ndash', u'hellip'):
-        data=data.replace(unichr(name2codepoint[name]),u"&"+name+u";")
-    return data.encode("utf-8")
 def deentity(data,mode=0):
     # The level of overhead which results from inefficiencies in this function is phenomenal.
     from htmlentitydefs import name2codepoint,codepoint2name
-    #0: Fast, 1: Comprehensive, 2: Syntax-critical only, 3: Whole-file mode (skip syntax-critical)
     #
+    # 0: Fast, 1: Comprehensive, 2: Syntax-critical only, 3: Whole-file mode (skip syntax-critical)
     data=data.decode("utf-8")
     if mode==0:
         foci=(u'lt', u'gt', u'quot', u'nbsp', u'lsquo', u'rsquo', u'ldquo', u'rdquo', u'ndash', u'hellip')
-    elif mode==1:
+    elif mode in (1,3):
         foci=name2codepoint.keys()
     elif mode==2:
         foci=(u'lt',u'gt')
-    elif mode==3:
-        foci=name2codepoint.keys()
     for name in foci:
         if name!=u"amp":
             if (mode!=3) or (name not in (u'lt',u'gt')):
@@ -164,6 +155,13 @@ def deentity(data,mode=0):
             data=data.replace(u"&"+name+u";",unichr(number))
     if mode!=3:
         data=data.replace(u"&amp;",u"&")
+    return data.encode("utf-8")
+def entity_escape(data):
+    # The level of overhead which results from inefficiencies in this function is phenomenal.
+    from htmlentitydefs import name2codepoint,codepoint2name
+    data=data.decode("utf-8").replace(u"&",u"&amp;")
+    for name in (u'lt', u'gt', u'quot', u'nbsp', u'lsquo', u'rsquo', u'ldquo', u'rdquo', u'ndash', u'hellip'):
+        data=data.replace(unichr(name2codepoint[name]),u"&"+name+u";")
     return data.encode("utf-8")
 
 ##############################################
@@ -203,7 +201,7 @@ def get_every_sane_title(comic):
         if ttype in comic["Titles"]:
             if comic["Titles"][ttype]:
                 value.append(comic["Titles"][ttype]+" ("+ttype+")")
-    return clean((" / ".join(value)) or "")
+    return entity_escape((" / ".join(value)) or "")
 def get_title_aggregate(comic):
     value=[]
     for ttype in title_sources:
@@ -212,13 +210,13 @@ def get_title_aggregate(comic):
                 value.append(comic["Titles"][ttype]+" ("+ttype+")")
     if (not value) and comic["Titles"]:
         value.extend([i[1]+" ("+i[0]+")" for i in comic["Titles"].items()])
-    return clean((" / ".join(value)) or "Untitled.")
-def get_preferred_title(comic,pref):
+    return entity_escape((" / ".join(value)) or "Untitled.")
+def get_title_preferring(comic,pref):
     for ttype in (pref,)+title_sources:
         if ttype in comic["Titles"]:
-            return clean(comic["Titles"][ttype])
+            return entity_escape(comic["Titles"][ttype])
     if comic["Titles"]:
-        return clean(comic["Titles"][comic["Titles"].keys()[0]])
+        return entity_escape(comic["Titles"][comic["Titles"].keys()[0]])
     return "Untitled."
 def alphabetical_id(string):
     return tuple(filter(lambda i:i in "qwertyuiopasdfghjklzxcvbnm",string.lower()))

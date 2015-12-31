@@ -30,7 +30,7 @@ import utility
 
 class Gazza(dict):
     """Subclass dict to allow b[i].append without having to check if
-    b[i] exists yet thus allowing cleaner code in general."""
+    b[i] exists yet thus allowing entity_escapeer code in general."""
     def __getitem__(self,k):
         try:
             return dict.__getitem__(self,k)
@@ -82,7 +82,7 @@ def parse_date(s):
     month=None
     day=None
     dow=None
-    from difflib import get_close_matches as gcm
+    from difflib import get_close_matches
     s=s.replace(","," ")
     while "  " in s:
         s=s.replace("  "," ")
@@ -90,11 +90,7 @@ def parse_date(s):
     months=["january","february","march","april","may","june","july","quinctilis","august","sextilis","september","october","november","december"]
     months.extend([i[:3] for i in months])
     for j in s[:]:
-        i=gcm(j,months,1,0.6)
-        if i:
-            month=int(utility.month2number(i[0].title()),10)
-            s.remove(j)
-        elif j in ("2015","2014","2013","2012","2011","2010","2009"):
+        if j in ("2015","2014","2013","2012","2011","2010","2009"):
             year=int(j,10)
             s.remove(j)
         elif (len(j.rstrip("."))<=2) and (j[0] in "0123456789") and (not j.endswith(")")):
@@ -111,6 +107,12 @@ def parse_date(s):
             else:
                 print year,month,day,dow,s
                 return None
+        else:
+            # get_close_matches() is an expensive process in cumulative terms: do not use flippantly
+            i=([j] if j in months else get_close_matches(j,months,1,0.6))
+            if i:
+                month=int(utility.month2number(i[0].title()),10)
+                s.remove(j)
     if not year or not month or not day:
         print year,month,day,dow,s
         return None

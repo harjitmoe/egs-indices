@@ -15,7 +15,7 @@ import json, utility
 def export_json(dat):
     print (">>> export_json")
     f=open(".build/AllMegaDb.txt","w")
-    f.write(json.dumps(dat))
+    json.dump(dat,f)
     f.close()
 
 if __name__=="__main__":

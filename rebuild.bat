@@ -10,13 +10,12 @@
 @rem different terms.  This note is not part of the above notice.
 @rem
 
-@rem The version supported is Python 2.7.  Some (not all) of the 
-@rem system supports Python 2.5 (which isn't much use as it all has 
-@rem to work or you'll break the output).  Generally no attempt at 
-@rem 3k compatibility has been made.
+@rem The version supported is Python 2.7.  Generally no attempt at 
+@rem 3k compatibility has been made.  Python 2.5 requires the
+@rem simplejson extension but is likely to work.
 
 set PYINTER=C:\python27\python -i
-rem set PYINTER=ipy
+set PYINTER=ipy
 
 @echo off
 %PYINTER% rebuild.py

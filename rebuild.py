@@ -10,12 +10,17 @@
 # different terms.  This note is not part of the above notice.
 #
 
-# The version supported is Python 2.7.  Some (not all) of the 
-# system supports Python 2.5 (which isn't much use as it all has 
-# to work or you'll break the output).  Generally no attempt at 
-# 3k compatibility has been made.
+# The version supported is Python 2.7.  Generally no attempt at 
+# 3k compatibility has been made.  Python 2.5 requires the
+# simplejson extension but is likely to work.
 
 import sys, os, shutil, utility
+
+try:
+    import json
+except ImportError:
+    import simplejson as json
+    sys.modules["json"]=json
 
 # Remove build dir so existing files do not mess up regen process
 shutil.rmtree(".build")

@@ -45,7 +45,7 @@ def megadb_fetch_tss(alldat):
                 #Thank goodness for Python mutables
                 #I can change strip and it also changes in alldat
                 # on account of referencing the same object
-                strip["Transcript"]=databases.scour(transcript.rstrip("\n")+"\n\n")
+                strip["Transcript"]=databases.to_utf8(transcript.rstrip("\n")+"\n\n")
             else:
                 #print strip['Date']
                 strip["Transcript"]=None
