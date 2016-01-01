@@ -55,6 +55,8 @@ def parse_date(s):
         s="Story: Mon March 18 2013"
     elif s=="Story Friday December 6th":
         s="Story Friday December 6th 2013"
+    elif s=="Story: Monday 23, 2013":
+        s="Story: Monday December 23, 2013"
     elif s=="Sketchbook Wednesday December 31th":
         s="Sketchbook Wednesday December 31th 2014"
     elif s=="Sketchbook: Thursday, September 4":
@@ -64,7 +66,9 @@ def parse_date(s):
     elif s=='NP Wednesday August 27th':
         s='NP Wednesday August 27th 2014'
     elif s=='NP, Jan 22':
-        s='NP, Jan 22 2010'
+        s='NP, Jan 21 2010' #dated 22 but actually 21
+    elif s=='NP January 25, 2010':
+        return None #was a v.short mistaken thread which lingers
     #
     #Corrected here as would clash with the actual 4th.
     #Not distinguishable beyond this point as WD discarded.
@@ -112,7 +116,7 @@ def parse_date(s):
             else:
                 print year,month,day,dow,s
                 return None
-        elif j in ("and",): #Detected as months but are not
+        elif j in ("and","monday","sarah"): #Detected as months but are not
             continue
         else:
             # get_close_matches() is an expensive process in cumulative terms: do not use flippantly
@@ -129,7 +133,7 @@ def parse_date(s):
 def grok(code):
     b3={}
     import os
-    checkdb=None
+    checkdb=None #Integration with test_get_all_dates
     checkdbp="alldates-%s.txt"%code.lower()
     if os.path.exists(checkdbp):
         #Insecure
@@ -151,7 +155,7 @@ def grok(code):
         if j:
             j=utility.datefix_910(j,code.lower())
             if checkdb and (j not in checkdb):
-                print "anomoly",code,j
+                print "anomaly",code,j
             #XXX do what with 2014-12-08?
             b2[j].append((utility.standardise910link(b3[i]),False))
         else:

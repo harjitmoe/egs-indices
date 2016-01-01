@@ -89,6 +89,16 @@ def datefix_910(date,sect):
         return "2012-08-15" #Confirmed
     if date=="2012-12-16" and sect=="story":
         return "2012-12-17" #Confirmed
+    if date=="2013-01-20" and sect=="story":
+        return "2014-01-20" #Fixed
+    if date=="2015-08-05" and sect=="story":
+        return "2015-08-04" #Added
+    if date=="2012-10-05" and sect=="sketch":
+        return "2012-11-05" #Added
+    if date=="2012-10-06" and sect=="sketch":
+        return "2012-11-06" #Added
+    if date=="2013-01-26" and sect=="sketch":
+        return "2014-01-26" #Added
     if date=="2013-02-15" and sect=="sketch":
         return "2014-02-15" #Amended (was correcting to 2013-02-20)
     if date=="2015-01-16" and sect=="sketch":

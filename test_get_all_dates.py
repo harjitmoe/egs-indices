@@ -25,6 +25,7 @@
 #
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
+"""Integrates with extract_theads_new910 for anomaly detection by the latter."""
 
 try:
     import json
