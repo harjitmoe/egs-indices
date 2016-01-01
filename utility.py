@@ -79,41 +79,34 @@ def datefix_910(date,sect):
     where precise date is disputable."""
     # Much of this was written during a 910 outage.
     # Much of this is in need of verification.
+    if date=="2012-03-29" and sect=="story":
+        return "2013-03-29" #Confirmed
+    if date=="2013-08-04" and sect=="story": #Amended (was correcting from 2012)
+        return "2013-08-05" #Confirmed
     if date=="2012-08-12" and sect=="story":
         return "2012-08-13" #Confirmed by Loveall
     if date=="2012-08-16" and sect=="story":
-        return "2012-08-15"
+        return "2012-08-15" #Confirmed
     if date=="2012-12-16" and sect=="story":
-        return "2012-12-17"
-    if date=="2013-02-03" and sect=="story":
-        return "2013-02-04"
-    #Not safe to double call
-    if date=="2013-02-04" and sect=="story":
-        return "2013-02-05"
-    if date=="2012-03-29" and sect=="story":
-        return "2013-03-29" #probably
-    if date=="2012-08-04" and sect=="story":
-        return "2013-08-05"
-    if date=="2015-08-05" and sect=="sketch":
-        return "2015-08-04"
-    if date=="2015-01-16" and sect=="sketch":
-        return "2015-01-15"
-    if date=="2015-12-07" and sect=="sketch":
-        return "2015-12-08"
+        return "2012-12-17" #Confirmed
     if date=="2013-02-15" and sect=="sketch":
-        return "2013-02-20"
+        return "2014-02-15" #Amended (was correcting to 2013-02-20)
+    if date=="2015-01-16" and sect=="sketch":
+        return "2015-01-15" #Confirmed
+    if date=="2014-12-07" and sect=="sketch":
+        return "2014-12-08"
     if date=="2014-08-15" and sect=="np":
         return "2014-08-14"
+    if date=="2014-08-20" and sect=="np":
+        return "2014-08-19"
     if date=="2014-08-27" and sect=="np":
         return "2014-08-26"
+    if date=="2015-01-14" and sect=="np":
+        return "2015-01-15"
     if date=="2015-04-29" and sect=="np":
         return "2015-04-28"
     if date=="2015-07-17" and sect=="np":
         return "2015-07-16"
-    if date=="2015-01-14" and sect=="np":
-        return "2015-01-15"
-    if date=="2014-08-20" and sect=="np":
-        return "2014-08-19"
     return date
 
 ##################################################

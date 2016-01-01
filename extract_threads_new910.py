@@ -44,7 +44,7 @@ def parse_date(s):
     #Correcting missing years (yeah) and months (whut?)
     #and wrong dates in general
     if s=="Story: Friday 14, 2012":
-        s="Story: Friday December 14, 2012"
+        s="Story: Friday December 14, 2012" #Confirmed
     elif s=="Story Friday January 3rd":
         s="Story Friday January 3rd, 2014"
     elif s=="Story Tuesday April 16th":
@@ -59,21 +59,26 @@ def parse_date(s):
         s="Sketchbook Wednesday December 31th 2014"
     elif s=="Sketchbook: Thursday, September 4":
         s="Sketchbook: Thursday, September 4 2014"
-    elif s=='Story: Monday, 4th February 2013':
-        s='Story: Monday, 3rd February 2013'
     elif s=='NP, December 17th':
         s='NP, December 17th 2009'
     elif s=='NP Wednesday August 27th':
         s='NP Wednesday August 27th 2014'
     elif s=='NP, Jan 22':
         s='NP, Jan 22 2010'
+    #
+    #Corrected here as would clash with the actual 4th.
+    #Not distinguishable beyond this point as WD discarded.
+    elif s=='Story: Tuesday, 4 February 2013':
+        s='Story: Tuesday, 5th February 2013'
+    #
+    #The odd one without a date???
     elif s=='Power glove, power glove, power glove!':
-        #Apparently a secondary thread for this?
-        s='Story, Jan 21 2013'
+        return None #An abortive misplaced GD thread
     elif s=='Zoinks!':
         s='NP, Jan 5th 2010'
     elif s=='Gods of Curling':
         s='NP, Feb 19th 2010'
+    #
     #Remove annotations which confuse the gestalt matcher
     if s.startswith("Story Friday October 17, 2014"):
         s="Story Friday October 17, 2014"
@@ -107,6 +112,8 @@ def parse_date(s):
             else:
                 print year,month,day,dow,s
                 return None
+        elif j in ("and",): #Detected as months but are not
+            continue
         else:
             # get_close_matches() is an expensive process in cumulative terms: do not use flippantly
             i=([j] if j in months else get_close_matches(j,months,1,0.6))
