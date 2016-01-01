@@ -14,8 +14,9 @@
 @rem 3k compatibility has been made.  Python 2.5 requires the
 @rem simplejson extension but is likely to work.
 
-set PYINTER=C:\python27\python -i
-set PYINTER=ipy
+@rem set PYINTER=C:\python27\python -i
+@rem set PYINTER=ipy
+set PYINTER=pypy
 
 @echo off
 %PYINTER% rebuild.py

@@ -2134,10 +2134,10 @@
 |2015-12-14 = ("Windmills (m2pt5, based on filename) (Reddit)")
 |2015-12-16 = ("Flex (jstutter, based on filename) (Reddit)")
 |2015-12-18 = ("It's fine. All fine. (m2pt5, based on filename) (Reddit)")
-|2015-12-21 = ("")
-|2015-12-23 = ("")
-|2015-12-28 = ("")
-|2015-12-30 = ("")
+|2015-12-21 = ("Cat Out Of The Bag (m2pt5, based on filename) (Reddit)")
+|2015-12-23 = ("It's fine (jstutter, based on filename) (Reddit)")
+|2015-12-28 = ("Quest for Exposition (MonoGreenControl) (Reddit)")
+|2015-12-30 = ("Ask! Darn you! (jstutter, based on filename) (Reddit)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic (Official)")
@@ -4273,10 +4273,10 @@
 |2134 = ("Windmills (m2pt5, based on filename) (Reddit)")
 |2135 = ("Flex (jstutter, based on filename) (Reddit)")
 |2136 = ("It's fine. All fine. (m2pt5, based on filename) (Reddit)")
-|2137 = ("")
-|2138 = ("")
-|2139 = ("")
-|2140 = ("")
+|2137 = ("Cat Out Of The Bag (m2pt5, based on filename) (Reddit)")
+|2138 = ("It's fine (jstutter, based on filename) (Reddit)")
+|2139 = ("Quest for Exposition (MonoGreenControl) (Reddit)")
+|2140 = ("Ask! Darn you! (jstutter, based on filename) (Reddit)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -9961,10 +9961,10 @@
 |2015-12-14 = ("Windmills (m2pt5, based on filename)")
 |2015-12-16 = ("Flex (jstutter, based on filename)")
 |2015-12-18 = ("It's fine. All fine. (m2pt5, based on filename)")
-|2015-12-21 = ("catoutofthebag")
-|2015-12-23 = ("itsfine")
-|2015-12-28 = ("quest4exposition")
-|2015-12-30 = ("askdarnyou")
+|2015-12-21 = ("Cat Out Of The Bag (m2pt5, based on filename)")
+|2015-12-23 = ("It's fine (jstutter, based on filename)")
+|2015-12-28 = ("Quest for Exposition (MonoGreenControl)")
+|2015-12-30 = ("Ask! Darn you! (jstutter, based on filename)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -12100,10 +12100,10 @@
 |2134 = ("Windmills (m2pt5, based on filename)")
 |2135 = ("Flex (jstutter, based on filename)")
 |2136 = ("It's fine. All fine. (m2pt5, based on filename)")
-|2137 = ("catoutofthebag")
-|2138 = ("itsfine")
-|2139 = ("quest4exposition")
-|2140 = ("askdarnyou")
+|2137 = ("Cat Out Of The Bag (m2pt5, based on filename)")
+|2138 = ("It's fine (jstutter, based on filename)")
+|2139 = ("Quest for Exposition (MonoGreenControl)")
+|2140 = ("Ask! Darn you! (jstutter, based on filename)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -15429,10 +15429,10 @@
 |2015-12-14 = ("Windmills (m2pt5, based on filename)")
 |2015-12-16 = ("Flex (jstutter, based on filename)")
 |2015-12-18 = ("It's fine. All fine. (m2pt5, based on filename)")
-|2015-12-21 = ("catoutofthebag")
-|2015-12-23 = ("itsfine")
-|2015-12-28 = ("quest4exposition")
-|2015-12-30 = ("askdarnyou")
+|2015-12-21 = ("Cat Out Of The Bag (m2pt5, based on filename)")
+|2015-12-23 = ("It's fine (jstutter, based on filename)")
+|2015-12-28 = ("Quest for Exposition (MonoGreenControl)")
+|2015-12-30 = ("Ask! Darn you! (jstutter, based on filename)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -17568,10 +17568,10 @@
 |2134 = ("Windmills (m2pt5, based on filename)")
 |2135 = ("Flex (jstutter, based on filename)")
 |2136 = ("It's fine. All fine. (m2pt5, based on filename)")
-|2137 = ("catoutofthebag")
-|2138 = ("itsfine")
-|2139 = ("quest4exposition")
-|2140 = ("askdarnyou")
+|2137 = ("Cat Out Of The Bag (m2pt5, based on filename)")
+|2138 = ("It's fine (jstutter, based on filename)")
+|2139 = ("Quest for Exposition (MonoGreenControl)")
+|2140 = ("Ask! Darn you! (jstutter, based on filename)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -19713,10 +19713,10 @@
 |2015-12-14 = ("Windmills (m2pt5, based on filename)")
 |2015-12-16 = ("Flex (jstutter, based on filename)")
 |2015-12-18 = ("It's fine. All fine. (m2pt5, based on filename)")
-|2015-12-21 = ("catoutofthebag")
-|2015-12-23 = ("itsfine")
-|2015-12-28 = ("quest4exposition")
-|2015-12-30 = ("askdarnyou")
+|2015-12-21 = ("Cat Out Of The Bag (m2pt5, based on filename)")
+|2015-12-23 = ("It's fine (jstutter, based on filename)")
+|2015-12-28 = ("Quest for Exposition (MonoGreenControl)")
+|2015-12-30 = ("Ask! Darn you! (jstutter, based on filename)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -21852,10 +21852,10 @@
 |2134 = ("Windmills (m2pt5, based on filename)")
 |2135 = ("Flex (jstutter, based on filename)")
 |2136 = ("It's fine. All fine. (m2pt5, based on filename)")
-|2137 = ("catoutofthebag")
-|2138 = ("itsfine")
-|2139 = ("quest4exposition")
-|2140 = ("askdarnyou")
+|2137 = ("Cat Out Of The Bag (m2pt5, based on filename)")
+|2138 = ("It's fine (jstutter, based on filename)")
+|2139 = ("Quest for Exposition (MonoGreenControl)")
+|2140 = ("Ask! Darn you! (jstutter, based on filename)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -22268,6 +22268,10 @@
 |2015-12-14 = ("Windmills (m2pt5, based on filename)")
 |2015-12-16 = ("Flex (jstutter, based on filename)")
 |2015-12-18 = ("It's fine. All fine. (m2pt5, based on filename)")
+|2015-12-21 = ("Cat Out Of The Bag (m2pt5, based on filename)")
+|2015-12-23 = ("It's fine (jstutter, based on filename)")
+|2015-12-28 = ("Quest for Exposition (MonoGreenControl)")
+|2015-12-30 = ("Ask! Darn you! (jstutter, based on filename)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1890 = ("Today's comic is gay (riking27)")
@@ -22508,6 +22512,10 @@
 |2134 = ("Windmills (m2pt5, based on filename)")
 |2135 = ("Flex (jstutter, based on filename)")
 |2136 = ("It's fine. All fine. (m2pt5, based on filename)")
+|2137 = ("Cat Out Of The Bag (m2pt5, based on filename)")
+|2138 = ("It's fine (jstutter, based on filename)")
+|2139 = ("Quest for Exposition (MonoGreenControl)")
+|2140 = ("Ask! Darn you! (jstutter, based on filename)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}
@@ -31761,11 +31769,11 @@
 |2015-12-14 = ("Friendship is Hot (PthariensFlame, based on filename) (Reddit)")
 |2015-12-16 = ("The Blush to End All Blushes (restfulnight) (Reddit)")
 |2015-12-18 = ("Big Booty Blushes (restfulnight) (Reddit)")
-|2015-12-21 = ("")
-|2015-12-23 = ("")
-|2015-12-25 = ("")
-|2015-12-28 = ("")
-|2015-12-30 = ("")
+|2015-12-21 = ("Scales (jstutter, based on filename) (Reddit)")
+|2015-12-23 = ("Heart to heart (jstutter) (Reddit)")
+|2015-12-25 = ("Christmaaaaas (PthariensFlame, based on filename) (Reddit)")
+|2015-12-28 = ("Of course not (jstutter, based on filename) (Reddit)")
+|2015-12-30 = ("Had a Chat (PthariensFlame, based on filename) (Reddit)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)")
@@ -32164,11 +32172,11 @@
 |394 = ("Friendship is Hot (PthariensFlame, based on filename) (Reddit)")
 |395 = ("The Blush to End All Blushes (restfulnight) (Reddit)")
 |396 = ("Big Booty Blushes (restfulnight) (Reddit)")
-|397 = ("")
-|398 = ("")
-|399 = ("")
-|400 = ("")
-|401 = ("")
+|397 = ("Scales (jstutter, based on filename) (Reddit)")
+|398 = ("Heart to heart (jstutter) (Reddit)")
+|399 = ("Christmaaaaas (PthariensFlame, based on filename) (Reddit)")
+|400 = ("Of course not (jstutter, based on filename) (Reddit)")
+|401 = ("Had a Chat (PthariensFlame, based on filename) (Reddit)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -32878,11 +32886,11 @@
 |2015-12-14 = ("Friendship is Hot (PthariensFlame, based on filename)")
 |2015-12-16 = ("The Blush to End All Blushes (restfulnight)")
 |2015-12-18 = ("Big Booty Blushes (restfulnight)")
-|2015-12-21 = ("scales")
-|2015-12-23 = ("heart2heart")
-|2015-12-25 = ("christmaaaaas")
-|2015-12-28 = ("ofcoursenot")
-|2015-12-30 = ("hadachat")
+|2015-12-21 = ("Scales (jstutter, based on filename)")
+|2015-12-23 = ("Heart to heart (jstutter)")
+|2015-12-25 = ("Christmaaaaas (PthariensFlame, based on filename)")
+|2015-12-28 = ("Of course not (jstutter, based on filename)")
+|2015-12-30 = ("Had a Chat (PthariensFlame, based on filename)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -33281,11 +33289,11 @@
 |394 = ("Friendship is Hot (PthariensFlame, based on filename)")
 |395 = ("The Blush to End All Blushes (restfulnight)")
 |396 = ("Big Booty Blushes (restfulnight)")
-|397 = ("scales")
-|398 = ("heart2heart")
-|399 = ("christmaaaaas")
-|400 = ("ofcoursenot")
-|401 = ("hadachat")
+|397 = ("Scales (jstutter, based on filename)")
+|398 = ("Heart to heart (jstutter)")
+|399 = ("Christmaaaaas (PthariensFlame, based on filename)")
+|400 = ("Of course not (jstutter, based on filename)")
+|401 = ("Had a Chat (PthariensFlame, based on filename)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -33758,11 +33766,11 @@
 |2015-12-14 = ("Friendship is Hot (PthariensFlame, based on filename)")
 |2015-12-16 = ("The Blush to End All Blushes (restfulnight)")
 |2015-12-18 = ("Big Booty Blushes (restfulnight)")
-|2015-12-21 = ("scales")
-|2015-12-23 = ("heart2heart")
-|2015-12-25 = ("christmaaaaas")
-|2015-12-28 = ("ofcoursenot")
-|2015-12-30 = ("hadachat")
+|2015-12-21 = ("Scales (jstutter, based on filename)")
+|2015-12-23 = ("Heart to heart (jstutter)")
+|2015-12-25 = ("Christmaaaaas (PthariensFlame, based on filename)")
+|2015-12-28 = ("Of course not (jstutter, based on filename)")
+|2015-12-30 = ("Had a Chat (PthariensFlame, based on filename)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -34161,11 +34169,11 @@
 |394 = ("Friendship is Hot (PthariensFlame, based on filename)")
 |395 = ("The Blush to End All Blushes (restfulnight)")
 |396 = ("Big Booty Blushes (restfulnight)")
-|397 = ("scales")
-|398 = ("heart2heart")
-|399 = ("christmaaaaas")
-|400 = ("ofcoursenot")
-|401 = ("hadachat")
+|397 = ("Scales (jstutter, based on filename)")
+|398 = ("Heart to heart (jstutter)")
+|399 = ("Christmaaaaas (PthariensFlame, based on filename)")
+|400 = ("Of course not (jstutter, based on filename)")
+|401 = ("Had a Chat (PthariensFlame, based on filename)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -34978,11 +34986,11 @@
 |2015-12-14 = ("Friendship is Hot (PthariensFlame, based on filename)")
 |2015-12-16 = ("The Blush to End All Blushes (restfulnight)")
 |2015-12-18 = ("Big Booty Blushes (restfulnight)")
-|2015-12-21 = ("scales")
-|2015-12-23 = ("heart2heart")
-|2015-12-25 = ("christmaaaaas")
-|2015-12-28 = ("ofcoursenot")
-|2015-12-30 = ("hadachat")
+|2015-12-21 = ("Scales (jstutter, based on filename)")
+|2015-12-23 = ("Heart to heart (jstutter)")
+|2015-12-25 = ("Christmaaaaas (PthariensFlame, based on filename)")
+|2015-12-28 = ("Of course not (jstutter, based on filename)")
+|2015-12-30 = ("Had a Chat (PthariensFlame, based on filename)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("XYC")
@@ -35381,11 +35389,11 @@
 |394 = ("Friendship is Hot (PthariensFlame, based on filename)")
 |395 = ("The Blush to End All Blushes (restfulnight)")
 |396 = ("Big Booty Blushes (restfulnight)")
-|397 = ("scales")
-|398 = ("heart2heart")
-|399 = ("christmaaaaas")
-|400 = ("ofcoursenot")
-|401 = ("hadachat")
+|397 = ("Scales (jstutter, based on filename)")
+|398 = ("Heart to heart (jstutter)")
+|399 = ("Christmaaaaas (PthariensFlame, based on filename)")
+|400 = ("Of course not (jstutter, based on filename)")
+|401 = ("Had a Chat (PthariensFlame, based on filename)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -35610,6 +35618,11 @@
 |2015-12-14 = ("Friendship is Hot (PthariensFlame, based on filename)")
 |2015-12-16 = ("The Blush to End All Blushes (restfulnight)")
 |2015-12-18 = ("Big Booty Blushes (restfulnight)")
+|2015-12-21 = ("Scales (jstutter, based on filename)")
+|2015-12-23 = ("Heart to heart (jstutter)")
+|2015-12-25 = ("Christmaaaaas (PthariensFlame, based on filename)")
+|2015-12-28 = ("Of course not (jstutter, based on filename)")
+|2015-12-30 = ("Had a Chat (PthariensFlame, based on filename)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |180 = ("Farewell Gods of Curling! (ScorpSt)")
@@ -35828,6 +35841,11 @@
 |394 = ("Friendship is Hot (PthariensFlame, based on filename)")
 |395 = ("The Blush to End All Blushes (restfulnight)")
 |396 = ("Big Booty Blushes (restfulnight)")
+|397 = ("Scales (jstutter, based on filename)")
+|398 = ("Heart to heart (jstutter)")
+|399 = ("Christmaaaaas (PthariensFlame, based on filename)")
+|400 = ("Of course not (jstutter, based on filename)")
+|401 = ("Had a Chat (PthariensFlame, based on filename)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}

@@ -26,7 +26,7 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import utility
+import utility, re
 
 class Gazza(dict):
     """Subclass dict to allow b[i].append without having to check if
@@ -67,21 +67,27 @@ def parse_date(s):
         s='NP Wednesday August 27th 2014'
     elif s=='NP, Jan 22':
         s='NP, Jan 21 2010' #dated 22 but actually 21
-    elif s=='NP January 25, 2010':
-        return None #was a v.short mistaken thread which lingers
+    elif s=='NP Wed 9/2/2015': #(ambiguous to endian-agnostic parser)
+        s='NP Wed Sept 2 2015'
+    elif s=='NP: Wednesday, October 28, 2105':
+        s='NP: Wednesday, October 28, 2015'
     #
-    #Corrected here as would clash with the actual 4th.
+    #Corrected here as would otherwise clash with the actual 4th.
     #Not distinguishable beyond this point as WD discarded.
     elif s=='Story: Tuesday, 4 February 2013':
         s='Story: Tuesday, 5th February 2013'
     #
     #The odd one without a date???
-    elif s=='Power glove, power glove, power glove!':
-        return None #An abortive misplaced GD thread
     elif s=='Zoinks!':
         s='NP, Jan 5th 2010'
     elif s=='Gods of Curling':
         s='NP, Feb 19th 2010'
+    #
+    #Mistaken threads to ignore
+    elif s=='Power glove, power glove, power glove!':
+        return None #An abortive misplaced GD thread
+    elif s=='NP January 25, 2010':
+        return None #was a v.short mistaken thread which lingers
     #
     #Remove annotations which confuse the gestalt matcher
     if s.startswith("Story Friday October 17, 2014"):
@@ -130,6 +136,7 @@ def parse_date(s):
     date2str["%04d-%02d-%02d"%(year,month,day)].append(os)
     return "%04d-%02d-%02d"%(year,month,day)
 
+_re_1=re.compile('<a itemprop="url" id="[^"]+?" href="')
 def grok(code):
     b3={}
     import os
@@ -143,10 +150,17 @@ def grok(code):
             f=open(os.path.join("910 Raw DBs/"+code,f),"rU")
             b=f.read()
             f.close()
-            b=b.split('<div class="rowContent">')[1:]
-            b=[i.split('<a href="',1)[1] for i in b]
-            b=[i.split('</a>',1)[0] for i in b]
-            b=[i.split('" class="topic_title title">',1)[::-1] for i in b]
+            if '<div class="rowContent">' in b:
+                b=b.split('<div class="rowContent">')[1:]
+                b=[i.split('<a href="',1)[1] for i in b]
+                b=[i.split('</a>',1)[0] for i in b]
+                b=[i.split('" class="topic_title title">',1)[::-1] for i in b]
+            else:
+                b=b.split("<td class='col_f_content '>")[1:]
+                b=[_re_1.split(i,1)[1] for i in b]
+                b=[i.split(' - started ',1)[0] for i in b]
+                b=[i.split("\" title='",1)[::-1] for i in b]
+                #print b
             b=dict(b)
             b3.update(b)
     b2=Gazza()
