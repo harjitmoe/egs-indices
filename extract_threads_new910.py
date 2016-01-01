@@ -57,6 +57,8 @@ def parse_date(s):
         s="Story Friday December 6th 2013"
     elif s=="Story: Monday 23, 2013":
         s="Story: Monday December 23, 2013"
+    elif s=='Story Wednesday September 2nd':
+        s='Story Wednesday September 2nd 2015'
     elif s=="Sketchbook Wednesday December 31th":
         s="Sketchbook Wednesday December 31th 2014"
     elif s=="Sketchbook: Thursday, September 4":
@@ -71,6 +73,8 @@ def parse_date(s):
         s='NP Wed Sept 2 2015'
     elif s=='NP: Wednesday, October 28, 2105':
         s='NP: Wednesday, October 28, 2015'
+    elif s=='Pinup Sunday Nov 29':
+        s='Pinup Sunday Nov 29 2015'
     #
     #Corrected here as would otherwise clash with the actual 4th.
     #Not distinguishable beyond this point as WD discarded.
@@ -85,8 +89,10 @@ def parse_date(s):
     #
     #Mistaken threads to ignore
     elif s=='Power glove, power glove, power glove!':
+        print "  mistaken thread"
         return None #An abortive misplaced GD thread
     elif s=='NP January 25, 2010':
+        print "  mistaken thread"
         return None #was a v.short mistaken thread which lingers
     #
     #Remove annotations which confuse the gestalt matcher
@@ -98,14 +104,14 @@ def parse_date(s):
     day=None
     dow=None
     from difflib import get_close_matches
-    s=s.replace(","," ")
+    s=s.replace(","," ").replace("."," ").replace("/"," ")
     while "  " in s:
         s=s.replace("  "," ")
     s=s.lower().strip("[]").split()
     months=["january","february","march","april","may","june","july","quinctilis","august","sextilis","september","october","november","december"]
     months.extend([i[:3] for i in months])
     for j in s[:]:
-        if j in ("2015","2014","2013","2012","2011","2010","2009"):
+        if j in ("2017","2016","2015","2014","2013","2012","2011","2010","2009"):
             year=int(j,10)
             s.remove(j)
         elif (len(j.rstrip("."))<=2) and (j[0] in "0123456789") and (not j.endswith(")")):
@@ -113,14 +119,14 @@ def parse_date(s):
                 day=int(j.rstrip("."),10)
                 s.remove(j)
             else:
-                print year,month,day,dow,s
+                print " ",year,month,day,dow,s
                 return None
         elif (j.endswith("th") or j.endswith("nd") or j.endswith("st") or j.endswith("rd")) and (j[0] in "0123456789"):
             if day==None:
                 day=int(j[:-2],10)
                 s.remove(j)
             else:
-                print year,month,day,dow,s
+                print " ",year,month,day,dow,s
                 return None
         elif j in ("and","monday","sarah"): #Detected as months but are not
             continue
@@ -131,7 +137,7 @@ def parse_date(s):
                 month=int(utility.month2number(i[0].title()),10)
                 s.remove(j)
     if not year or not month or not day:
-        print year,month,day,dow,s
+        print " ",year,month,day,dow,s
         return None
     date2str["%04d-%02d-%02d"%(year,month,day)].append(os)
     return "%04d-%02d-%02d"%(year,month,day)
