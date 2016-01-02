@@ -52,8 +52,8 @@ import re, os, time
 
 i = 1
 dab={}
-#wget="..\\..\\..\\Tools\\wget.exe"
-wget="wget-gnu"
+wget="..\\..\\..\\Tools\\wget.exe"
+#wget="wget-gnu"
 names={"index":"story","egsnp":"np","sketchbook":"sketch"}
 
 def strip_comments(data):

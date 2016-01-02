@@ -50,14 +50,20 @@
 
 import re, os, time
 
+print """
+***
+Note that there must have been a large number of intervening comics since the last run for this to behave reliably.
+***
+"""
+
 i = 1
 dab={}
 if os.path.exists("b.txt"):
     f=open("b.txt","rU")
     dab=eval(f.read())
     f.close()
-#wget="..\\..\\..\\Tools\\wget.exe"
-wget="wget-gnu"
+wget="..\\..\\..\\Tools\\wget.exe"
+#wget="wget-gnu"
 names={"index":"story","egsnp":"np","sketchbook":"sketch"}
 
 f=open("metadataegs3.txt")
