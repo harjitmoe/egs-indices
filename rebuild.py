@@ -98,12 +98,12 @@ os.chdir(".build")
 # Generate a combined MOBI-KF8 and then immediately split
 # into MOBI (kept alone) and KF8 (converted to EPUB)
 # Requires Kindlegen and KindleUnpack.
-#import subprocess
-#print ">>> kindlegen"
-#subprocess.call(["../../Tools/kindlegen_win32_v2_9\kindlegen.exe", "index.html", "-c1", "-o", "index.azw3"])
-#print ">>> kindleunpack"
-#subprocess.call([sys.executable, "../../Tools/KindleUnpack_v073/lib/kindleunpack.py", "-s", "index.azw3", "."])
-#os.rename("mobi7-index.mobi", "index.mobi")
+import subprocess
+print ">>> kindlegen"
+subprocess.call(["../../Tools/kindlegen_win32_v2_9\kindlegen.exe", "index.html", "-c1", "-o", "index.azw3"])
+print ">>> kindleunpack"
+subprocess.call([sys.executable, "../../Tools/KindleUnpack_v073/lib/kindleunpack.py", "-s", "index.azw3", "."])
+os.rename("mobi7-index.mobi", "index.mobi")
 
 # Copy files into output dir
 def export(fp):
