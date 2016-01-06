@@ -1,4 +1,4 @@
-# Copyright (c) HarJIT 2014, 2015.
+# Copyright (c) HarJIT 2014, 2015, 2016.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -31,13 +31,14 @@ import sys
 ####################################################################
 ##### Support for the current incarnation of the Script System #####
 
-import pickle
 def open_alldat():
+    import pickle
     f=open(".build/AllMegaDb.pickle","rb")
     b=pickle.load(f)
     f.close()
     return b
 def save_alldat(b):
+    import pickle
     f=open(".build/AllMegaDb.pickle","wb")
     pickle.dump(b,f)
     f.close()

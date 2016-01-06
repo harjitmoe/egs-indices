@@ -1,20 +1,71 @@
-# Written in 2014, 2015 by HarJIT
+# Written in 2014, 2015, 2016 by HarJIT.
+# Portions copyright (c) HarJIT 2016.
 #
-# This file is made available under the CC0 Public Domain Dedication.  To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights to this file to the public domain worldwide. This file is distributed without any warranty.
+#  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
+#  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+#  FITNESS FOR A PARTICULAR PURPOSE.  IN NO EVENT WILL THE AUTHORS OR CONTRIBUTORS
+#  BE HELD LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+#  CONSEQUENTIAL DAMAGES HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+#  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE),
+#  ARISING IN ANY WAY OUT OF THE USE OF THIS WORK, EVEN IF ADVISED OF THE
+#  POSSIBILITY OF SUCH DAMAGE.
 #
-# You may have received a copy of the CC0 Public Domain Dedication along with this file. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>. 
+#  Permission is granted to anyone to use this work for any purpose, including
+#  commercial applications, and to alter it and/or redistribute it freely in any
+#  form, with or without modification, subject to the following restrictions:
 #
-# -----------------------------------------------------------------
+#  1. The origin of this work must not be misrepresented; you must not claim that
+#     you authored the original work. If you use this work in a product, an
+#     acknowledgment in the product documentation would be appreciated but is not
+#     required.
 #
-# Note: the above notice applies to this file specifically.  Other files may use
-# different terms.  This note is not part of the above notice.
+#  2. Altered versions in any form must not be misrepresented as being the 
+#     original work, and neither the name of HarJIT nor the names of authors or
+#     contributors may be used to endorse or promote products derived from this
+#     work without specific prior written permission.
+#
+#  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
 # The version supported is Python 2.7.  Generally no attempt at 
 # 3k compatibility has been made.  Python 2.5 requires the
 # simplejson extension but is likely to work.
 
-import sys, os, shutil, utility
+import __builtin__,os
+
+modules=set()
+_real_import=__import__
+_raels=os.listdir(".")
+class ModuleWarper(object):
+    def __init__(self,nom,mod):
+        object.__setattr__(self,"nom",nom)
+        object.__setattr__(self,"mod",mod)
+    def __getattribute__(self,attr):
+        if attr.startswith("__") and attr.endswith("__") \
+                and (attr not in ("__all__","__dict__")):
+            return object.__getattribute__(self,attr)
+        nom=object.__getattribute__(self,"nom")
+        mod=object.__getattribute__(self,"mod")
+        if (nom not in modules) and (nom+".py" not in _raels):
+            modules.add(nom)
+        return getattr(mod,attr)
+    def __setattr__(self,attr,val):
+        nom=object.__getattribute__(self,"nom")
+        mod=object.__getattribute__(self,"mod")
+        if (nom not in modules) and (nom+".py" not in _raels):
+            modules.add(nom)
+        return setattr(mod,attr,val)
+    def __delattr__(self,attr):
+        nom=object.__getattribute__(self,"nom")
+        mod=object.__getattribute__(self,"mod")
+        if (nom not in modules) and (nom+".py" not in _raels):
+            modules.add(nom)
+        delattr(mod,attr)
+def __import__(nom,*args,**kw):
+    return ModuleWarper(nom,_real_import(nom,*args,**kw))
+__builtin__.__import__=__import__
+
+import sys, os, shutil, utility, __builtin__
 
 try:
     import json
@@ -98,12 +149,14 @@ os.chdir(".build")
 # Generate a combined MOBI-KF8 and then immediately split
 # into MOBI (kept alone) and KF8 (converted to EPUB)
 # Requires Kindlegen and KindleUnpack.
-import subprocess
-print ">>> kindlegen"
-subprocess.call(["../../Tools/kindlegen_win32_v2_9\kindlegen.exe", "index.html", "-c1", "-o", "index.azw3"])
-print ">>> kindleunpack"
-subprocess.call([sys.executable, "../../Tools/KindleUnpack_v073/lib/kindleunpack.py", "-s", "index.azw3", "."])
-os.rename("mobi7-index.mobi", "index.mobi")
+def ebooks():
+    import subprocess
+    print ">>> kindlegen"
+    subprocess.call(["../../Tools/kindlegen_win32_v2_9\kindlegen.exe", "index.html", "-c1", "-o", "index.azw3"])
+    print ">>> kindleunpack"
+    subprocess.call([sys.executable, "../../Tools/KindleUnpack_v073/lib/kindleunpack.py", "-s", "index.azw3", "."])
+    os.rename("mobi7-index.mobi", "index.mobi")
+#ebooks()
 
 # Copy files into output dir
 def export(fp):
@@ -129,3 +182,5 @@ export("datefakemap.txt")
 
 # Leave build dir
 os.chdir("..")
+
+print "Used external modules:",sorted(list(modules))
