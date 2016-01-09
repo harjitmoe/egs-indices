@@ -2138,6 +2138,9 @@
 |2015-12-23 = ("It's fine (jstutter, based on filename) (Reddit)")
 |2015-12-28 = ("Quest for Exposition (MonoGreenControl) (Reddit)")
 |2015-12-30 = ("Ask! Darn you! (jstutter, based on filename) (Reddit)")
+|2016-01-04 = ("")
+|2016-01-06 = ("")
+|2016-01-08 = ("")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic (Official)")
@@ -4277,6 +4280,9 @@
 |2138 = ("It's fine (jstutter, based on filename) (Reddit)")
 |2139 = ("Quest for Exposition (MonoGreenControl) (Reddit)")
 |2140 = ("Ask! Darn you! (jstutter, based on filename) (Reddit)")
+|2141 = ("")
+|2142 = ("")
+|2143 = ("")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -9965,6 +9971,9 @@
 |2015-12-23 = ("It's fine (jstutter, based on filename)")
 |2015-12-28 = ("Quest for Exposition (MonoGreenControl)")
 |2015-12-30 = ("Ask! Darn you! (jstutter, based on filename)")
+|2016-01-04 = ("everythingsfine")
+|2016-01-06 = ("griffingarbage")
+|2016-01-08 = ("toofar")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -12104,6 +12113,9 @@
 |2138 = ("It's fine (jstutter, based on filename)")
 |2139 = ("Quest for Exposition (MonoGreenControl)")
 |2140 = ("Ask! Darn you! (jstutter, based on filename)")
+|2141 = ("everythingsfine")
+|2142 = ("griffingarbage")
+|2143 = ("toofar")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -15433,6 +15445,9 @@
 |2015-12-23 = ("It's fine (jstutter, based on filename)")
 |2015-12-28 = ("Quest for Exposition (MonoGreenControl)")
 |2015-12-30 = ("Ask! Darn you! (jstutter, based on filename)")
+|2016-01-04 = ("everythingsfine")
+|2016-01-06 = ("griffingarbage")
+|2016-01-08 = ("toofar")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -17572,6 +17587,9 @@
 |2138 = ("It's fine (jstutter, based on filename)")
 |2139 = ("Quest for Exposition (MonoGreenControl)")
 |2140 = ("Ask! Darn you! (jstutter, based on filename)")
+|2141 = ("everythingsfine")
+|2142 = ("griffingarbage")
+|2143 = ("toofar")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -19717,6 +19735,9 @@
 |2015-12-23 = ("It's fine (jstutter, based on filename)")
 |2015-12-28 = ("Quest for Exposition (MonoGreenControl)")
 |2015-12-30 = ("Ask! Darn you! (jstutter, based on filename)")
+|2016-01-04 = ("everythingsfine")
+|2016-01-06 = ("griffingarbage")
+|2016-01-08 = ("toofar")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -21856,6 +21877,9 @@
 |2138 = ("It's fine (jstutter, based on filename)")
 |2139 = ("Quest for Exposition (MonoGreenControl)")
 |2140 = ("Ask! Darn you! (jstutter, based on filename)")
+|2141 = ("everythingsfine")
+|2142 = ("griffingarbage")
+|2143 = ("toofar")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -31776,6 +31800,8 @@
 |2015-12-30 = ("Had a Chat (PthariensFlame, based on filename) (Reddit)")
 |2016-01-01 = ("")
 |2016-01-04 = ("")
+|2016-01-06 = ("")
+|2016-01-08 = ("")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)")
@@ -32181,6 +32207,8 @@
 |401 = ("Had a Chat (PthariensFlame, based on filename) (Reddit)")
 |402 = ("")
 |403 = ("")
+|404 = ("")
+|405 = ("")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -32897,6 +32925,8 @@
 |2015-12-30 = ("Had a Chat (PthariensFlame, based on filename)")
 |2016-01-01 = ("movingon")
 |2016-01-04 = ("tweet")
+|2016-01-06 = ("maybetweet")
+|2016-01-08 = ("conflicted")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -33302,6 +33332,8 @@
 |401 = ("Had a Chat (PthariensFlame, based on filename)")
 |402 = ("movingon")
 |403 = ("tweet")
+|404 = ("maybetweet")
+|405 = ("conflicted")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -33781,6 +33813,8 @@
 |2015-12-30 = ("Had a Chat (PthariensFlame, based on filename)")
 |2016-01-01 = ("movingon")
 |2016-01-04 = ("tweet")
+|2016-01-06 = ("maybetweet")
+|2016-01-08 = ("conflicted")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -34186,6 +34220,8 @@
 |401 = ("Had a Chat (PthariensFlame, based on filename)")
 |402 = ("movingon")
 |403 = ("tweet")
+|404 = ("maybetweet")
+|405 = ("conflicted")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -35005,6 +35041,8 @@
 |2015-12-30 = ("Had a Chat (PthariensFlame, based on filename)")
 |2016-01-01 = ("movingon")
 |2016-01-04 = ("tweet")
+|2016-01-06 = ("maybetweet")
+|2016-01-08 = ("conflicted")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("XYC")
@@ -35410,6 +35448,8 @@
 |401 = ("Had a Chat (PthariensFlame, based on filename)")
 |402 = ("movingon")
 |403 = ("tweet")
+|404 = ("maybetweet")
+|405 = ("conflicted")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
