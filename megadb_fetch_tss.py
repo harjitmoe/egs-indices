@@ -2,7 +2,7 @@
 # -*- python -*-
 """fetch transcripts, fix titles"""
 
-# Copyright (c) HarJIT 2014, 2015.
+# Copyright (c) HarJIT 2015.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
