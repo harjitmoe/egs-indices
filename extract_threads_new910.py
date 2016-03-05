@@ -30,7 +30,7 @@ import utility, re
 
 class Gazza(dict):
     """Subclass dict to allow b[i].append without having to check if
-    b[i] exists yet thus allowing entity_escapeer code in general."""
+    b[i] exists yet thus allowing cleaner code in general."""
     def __getitem__(self,k):
         try:
             return dict.__getitem__(self,k)
