@@ -34,6 +34,7 @@
 import __builtin__,os
 
 modules=set()
+importstar=set()
 _real_import=__import__
 _raels=os.listdir(".")
 class ModuleWarper(object):
@@ -47,6 +48,8 @@ class ModuleWarper(object):
         nom=object.__getattribute__(self,"nom")
         mod=object.__getattribute__(self,"mod")
         if (nom not in modules) and (nom+".py" not in _raels):
+            if attr=="__all__":
+                importstar.add(nom)
             modules.add(nom)
         return getattr(mod,attr)
     def __setattr__(self,attr,val):
@@ -196,4 +199,6 @@ export("datefakemap.txt")
 # Leave build dir
 os.chdir("..")
 
-print "Used external modules:",sorted(list(modules))
+print "Accessed external modules:",sorted(list(modules))
+print "Of those, the following were subject to import-star at least once:",sorted(list(importstar))
+
