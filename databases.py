@@ -33,7 +33,7 @@ def open_lib(path):
     return _ookii.extractfile(path.replace("\\","/"))
 
 def _mslatinised_to_utf8(n):
-    """Given a integer codepoint mixing Unicode and Microsoft-Latin-1, return a UTF-8 string."""
+    """Given a integer code-point mixing Unicode and Microsoft-Latin-1, return a UTF-8 string."""
     if n<0x100:
         return chr(n).decode("cp1252").encode("utf-8")
     else:
@@ -83,8 +83,9 @@ def _ookii_to_mslatin1(obj):
     Also replaces ampersands which should be ellipses with actual ellipses."""
     return "\x85".join(_ampersand_quasi_ellipsis.split(obj.replace("\x14","\x85").replace("\x18","\x91").replace("\x19","\x92")))
 
-def to_utf8(obj):
-    """Given a dict, list, tuple or string mixing Ookii- and/or Microsoft-Latin-1 with UTF-8, return it in UTF-8."""
+def to_utf8(obj, ookii=True):
+    """Given a dict, list, tuple or string mixing Ookii- and/or Microsoft-Latin-1 with UTF-8, return it in UTF-8.
+    Ookii processing (second arg) may be disabled, and must be if HTML entities in input."""
     if isinstance(obj, type({})):
         d={}
         for k,v in obj.items():
@@ -95,7 +96,10 @@ def to_utf8(obj):
     elif isinstance(obj,type(())):
         return map(to_utf8,obj)
     elif type(obj)==type(""):
-        return _make_me_utf8(_ookii_to_mslatin1(obj))
+        if ookii:
+            return _make_me_utf8(_ookii_to_mslatin1(obj))
+        else:
+            return _make_me_utf8(obj)
     else:
         return obj
 
