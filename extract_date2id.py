@@ -14,11 +14,11 @@ import os, json
 
 def extract_date2id():
     print (">>> extract_date2id")
-    if not os.path.exists(r"..\..\egs\0003 - (Sketchbook and Extras)\0001 - Filler Sketchbook"):
+    if not os.path.exists("../../egs/0003 - (Sketchbook and Extras)/0001 - Filler Sketchbook"):
         print ("Not running on HarJIT's machine, not regenerating Date2Id.txt")
         return
     lsdir=[]
-    for r,ds,fs in os.walk(r"..\..\egs"):
+    for r,ds,fs in os.walk("../../egs"):
         if ".git" not in r:
             lsdir.extend(fs)
     pl=len("ST-2010-04-23-")

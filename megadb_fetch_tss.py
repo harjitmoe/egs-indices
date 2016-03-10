@@ -37,9 +37,9 @@ def megadb_fetch_tss(alldat):
     print (">>> megadb_fetch_tss")
     for arc in utility.specific_section(alldat,"story")["StoryArcs"]:
         for strip in arc['Comics']:
-            if os.path.exists("..\\Transcripts\\"+strip['Date']+".txt"):
+            if os.path.exists("../Transcripts/"+strip['Date']+".txt"):
                 #print strip["Date"]
-                ts_file=open("..\\Transcripts\\"+strip['Date']+".txt","rU")
+                ts_file=open("../Transcripts/"+strip['Date']+".txt","rU")
                 transcript=ts_file.read()
                 ts_file.close()
                 #Thank goodness for Python mutables
