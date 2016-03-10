@@ -1,4 +1,4 @@
-# Copyright (c) HarJIT 2015.
+# Copyright (c) HarJIT 2015, 2016.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -32,8 +32,59 @@ _ookii=tarfile.open("Ookii.dat","r:")
 def open_lib(path):
     return _ookii.extractfile(path.replace("\\","/"))
 
+def _mslatinised_to_utf8(n):
+    """Given a integer codepoint mixing Unicode and Microsoft-Latin-1, return a UTF-8 string."""
+    if n<0x100:
+        return chr(n).decode("cp1252").encode("utf-8")
+    else:
+        return unichr(n).encode("utf-8")
+
+def _make_me_utf8(s):
+    """Given a string mixing Microsoft-Latin-1 with UTF-8, return it in UTF-8."""
+    def count_ones(n):
+        for i in range(8):
+            if not (n&0x80):
+                return i
+            n=n<<1
+        return 8
+    ot=""
+    while s:
+        curchar=ord(s[0])
+        s=s[1:]
+        ones=count_ones(curchar)
+        if ones in (0,1):
+            ot+=_mslatinised_to_utf8(curchar)
+        else:
+            seq=s[:ones-1]
+            if len(seq)<(ones-1):
+                ot+=_mslatinised_to_utf8(curchar)
+                continue
+            s=s[ones-1:]
+            nos=[]
+            for tra in seq:
+                if count_ones(ord(tra))!=1:
+                    ot+=_mslatinised_to_utf8(curchar)
+                    s=seq+s
+                    break
+                nos.append(ord(tra)%(2**7))
+            else:
+                #print seq,nos
+                nos=[curchar%(2**(8-ones))]+nos
+                outchar=0
+                for i in nos:
+                    outchar=outchar<<6
+                    outchar+=i
+                ot+=_mslatinised_to_utf8(outchar)
+    return ot
+
 _ampersand_quasi_ellipsis = re.compile(r"(?<!\S)&(?=\S)|(?<=\S)&(?!\S)")
+def _ookii_to_mslatin1(s):
+    """Convert Ookii's C0-replacement characters to Microsoft's C1-replacement characters.
+    Also replaces ampersands which should be ellipses with actual ellipses."""
+    return "\x85".join(_ampersand_quasi_ellipsis.split(obj.replace("\x14","\x85").replace("\x18","\x91").replace("\x19","\x92")))
+
 def to_utf8(obj):
+    """Given a dict, list, tuple or string mixing Ookii- and/or Microsoft-Latin-1 with UTF-8, return it in UTF-8."""
     if isinstance(obj, type({})):
         d={}
         for k,v in obj.items():
@@ -44,10 +95,7 @@ def to_utf8(obj):
     elif isinstance(obj,type(())):
         return map(to_utf8,obj)
     elif type(obj)==type(""):
-        if "\x9d" in obj:
-            return obj
-        else:
-            return "\x85".join(_ampersand_quasi_ellipsis.split(obj.replace("\x14","\x85").replace("\x18","\x91").replace("\x19","\x92"))).decode("cp1252").encode("utf8").replace("\xc3\x83\xc2\xbc","\xc3\xbc")
+        return _make_me_utf8(_ookii_to_mslatin1(obj))
     else:
         return obj
 
