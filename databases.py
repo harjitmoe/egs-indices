@@ -78,7 +78,7 @@ def _make_me_utf8(s):
     return ot
 
 _ampersand_quasi_ellipsis = re.compile(r"(?<!\S)&(?=\S)|(?<=\S)&(?!\S)")
-def _ookii_to_mslatin1(s):
+def _ookii_to_mslatin1(obj):
     """Convert Ookii's C0-replacement characters to Microsoft's C1-replacement characters.
     Also replaces ampersands which should be ellipses with actual ellipses."""
     return "\x85".join(_ampersand_quasi_ellipsis.split(obj.replace("\x14","\x85").replace("\x18","\x91").replace("\x19","\x92")))
