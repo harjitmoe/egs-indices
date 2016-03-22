@@ -43,7 +43,7 @@ def unichr4all(n):
         #
         # Will output triple-surrogates or more if needed,
         # concordant with the up-to-eight-bytes parsed by
-        # hybrid_object_to_utf8 - I might be going a bit crazy
+        # hybrid_to_utf8 - I might be going a bit crazy
         # with the "handle every input" thing here.
         main=n-0x010000
         s=unichr(0xDC00+(main%1024))
@@ -60,7 +60,7 @@ def unichr_mslatin(n):
     else:
         return unichr4all(n).encode("utf-8")
 
-def hybrid_object_to_utf8(s):
+def hybrid_to_utf8(s):
     """Given a string mixing Microsoft-Latin-1 with UTF-8, return it in UTF-8."""
     def count_ones(n):
         for i in range(8):
@@ -104,22 +104,22 @@ def _ookii_to_mslatin1(obj):
     Also replaces ampersands which should be ellipses with actual ellipses."""
     return "\x85".join(_ampersand_quasi_ellipsis.split(obj.replace("\x14","\x85").replace("\x18","\x91").replace("\x19","\x92")))
 
-def object_to_utf8(obj, ookii=True):
+def object_to_utf8(obj, ookii=False):
     """Given a dict, list, tuple or string mixing Ookii- and/or Microsoft-Latin-1 with UTF-8, return it in UTF-8.
-    Ookii processing (second arg) may be disabled, and must be if HTML entities in input."""
+    Ookii processing (second arg) may be enabled, but must not be if HTML entities in input."""
     if isinstance(obj, type({})):
         d={}
         for k,v in obj.items():
-            d[object_to_utf8(k)]=object_to_utf8(v)
+            d[object_to_utf8(k, ookii=ookii)]=object_to_utf8(v, ookii=ookii)
         return d
     elif isinstance(obj, type([])):
-        return map(object_to_utf8,obj)
+        return map(lambda ob,ookii=ookii:object_to_utf8(ob,ookii=ookii), obj)
     elif isinstance(obj,type(())):
-        return map(object_to_utf8,obj)
+        return map(lambda ob,ookii=ookii:object_to_utf8(ob,ookii=ookii), obj)
     elif type(obj)==type(""):
         if ookii:
-            return hybrid_object_to_utf8(_ookii_to_mslatin1(obj))
+            return hybrid_to_utf8(_ookii_to_mslatin1(obj))
         else:
-            return hybrid_object_to_utf8(obj)
+            return hybrid_to_utf8(obj)
     else:
         return obj

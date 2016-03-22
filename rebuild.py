@@ -50,8 +50,8 @@ class ModuleWarper(object):
         mod=object.__getattribute__(self,"mod")
         if nom in touched:
             touched.remove(nom)
-        if (nom not in modules) and (nom+".py" not in _raels):
-            if attr=="__all__":
+        if nom+".py" not in _raels:
+            if attr in ("__all__","__dict__"):
                 importstar.add(nom)
             modules.add(nom)
         return getattr(mod,attr)
@@ -60,7 +60,7 @@ class ModuleWarper(object):
         mod=object.__getattribute__(self,"mod")
         if nom in touched:
             touched.remove(nom)
-        if (nom not in modules) and (nom+".py" not in _raels):
+        if nom+".py" not in _raels:
             modules.add(nom)
         return setattr(mod,attr,val)
     def __delattr__(self,attr):
@@ -68,7 +68,7 @@ class ModuleWarper(object):
         mod=object.__getattribute__(self,"mod")
         if nom in touched:
             touched.remove(nom)
-        if (nom not in modules) and (nom+".py" not in _raels):
+        if nom+".py" not in _raels:
             modules.add(nom)
         delattr(mod,attr)
 def __import__(nom,*args,**kw):
@@ -210,6 +210,6 @@ export("datefakemap.txt")
 os.chdir("..")
 
 print ">>> Accessed contents of external modules:",sorted(list(modules))
-print ">>> Of those, the following were subject to import-star at least once:",sorted(list(importstar))
-print ">>> The following were imported but otherwise not visibly accessed:",sorted(list(touched))
-print ">>> (The above does not take into account module access from pre-existing objects, from either C or Python, or module access from objects imported via primitives.)"
+print ">>> Of those, the following were subject to import-star and/or dir() at least once:",sorted(list(importstar))
+print ">>> The following were imported but otherwise not detectably accessed:",sorted(list(touched))
+print ">>> (The above does not detect access via pre-existing objects, or access via objects imported via primitives.)"
