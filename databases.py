@@ -32,6 +32,27 @@ _ookii=tarfile.open("Ookii.dat","r:")
 def open_lib(path):
     return _ookii.extractfile(path.replace("\\","/"))
 
+def _unichr4all(n):
+    """Support full-range unichr, even on narrow builds."""
+    try:
+        return unichr(n)
+    except (ValueError, OverflowError):
+        # One might expect CESU sequences in eventual UTF-8;
+        # they are actually a fairly common phenomenon, possibly
+        # for this reason.  Python handles this properly, though.
+        #
+        # Will output triple or quadruple-surrogates if needed,
+        # concordant with the up-to-eight-bytes parsed by
+        # _make_me_utf8 - I might be going a bit crazy with
+        # the "handle every input" thing here.
+        main=n-0x010000
+        s=unichr(0xDC00+(main%1024))
+        while 1:
+            main = main//1024
+            s=unichr(0xD800+(main%1024))+s
+            if not (main//1024):
+                return s
+
 def _mslatinised_to_utf8(n):
     """Given a integer code-point mixing Unicode and Microsoft-Latin-1, return a UTF-8 string."""
     if n<0x100:
