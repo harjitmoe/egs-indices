@@ -33,6 +33,7 @@
 
 import __builtin__,os
 
+touched=set()
 modules=set()
 importstar=set()
 _real_import=__import__
@@ -47,6 +48,8 @@ class ModuleWarper(object):
             return object.__getattribute__(self,attr)
         nom=object.__getattribute__(self,"nom")
         mod=object.__getattribute__(self,"mod")
+        if nom in touched:
+            touched.remove(nom)
         if (nom not in modules) and (nom+".py" not in _raels):
             if attr=="__all__":
                 importstar.add(nom)
@@ -55,17 +58,24 @@ class ModuleWarper(object):
     def __setattr__(self,attr,val):
         nom=object.__getattribute__(self,"nom")
         mod=object.__getattribute__(self,"mod")
+        if nom in touched:
+            touched.remove(nom)
         if (nom not in modules) and (nom+".py" not in _raels):
             modules.add(nom)
         return setattr(mod,attr,val)
     def __delattr__(self,attr):
         nom=object.__getattribute__(self,"nom")
         mod=object.__getattribute__(self,"mod")
+        if nom in touched:
+            touched.remove(nom)
         if (nom not in modules) and (nom+".py" not in _raels):
             modules.add(nom)
         delattr(mod,attr)
 def __import__(nom,*args,**kw):
-    return ModuleWarper(nom,_real_import(nom,*args,**kw))
+    r=ModuleWarper(nom,_real_import(nom,*args,**kw))
+    if (nom not in touched) and (nom not in modules):
+        touched.add(nom)
+    return r
 __builtin__.__import__=__import__
 
 import sys, os, shutil, utility, __builtin__
@@ -199,6 +209,7 @@ export("datefakemap.txt")
 # Leave build dir
 os.chdir("..")
 
-print "Accessed external modules:",sorted(list(modules))
-print "Of those, the following were subject to import-star at least once:",sorted(list(importstar))
-
+print ">>> Accessed contents of external modules:",sorted(list(modules))
+print ">>> Of those, the following were subject to import-star at least once:",sorted(list(importstar))
+print ">>> The following were imported but otherwise not visibly accessed:",sorted(list(touched))
+print ">>> (The above does not take into account module access from pre-existing objects, from either C or Python, or module access from objects imported via primitives.)"

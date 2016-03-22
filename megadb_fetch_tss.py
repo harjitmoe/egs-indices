@@ -30,8 +30,8 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import os, utility
-import databases, titleharjit
+import os
+import databases, utfsupport, titleharjit, utility
 
 def megadb_fetch_tss(alldat):
     print (">>> megadb_fetch_tss")
@@ -45,7 +45,7 @@ def megadb_fetch_tss(alldat):
                 #Thank goodness for Python mutables
                 #I can change strip and it also changes in alldat
                 # on account of referencing the same object
-                strip["Transcript"]=utility.deentity(databases.to_utf8(transcript.rstrip("\n")+"\n\n",ookii=False))
+                strip["Transcript"]=utility.deentity(utfsupport.object_to_utf8(transcript.rstrip("\n")+"\n\n",ookii=False))
             else:
                 #print strip['Date']
                 strip["Transcript"]=None

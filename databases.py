@@ -26,103 +26,11 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import json, tarfile, re
+import json, tarfile, utfsupport
 
 _ookii=tarfile.open("Ookii.dat","r:")
 def open_lib(path):
     return _ookii.extractfile(path.replace("\\","/"))
-
-def _unichr4all(n):
-    """Support full-range unichr, even on narrow builds."""
-    try:
-        return unichr(n)
-    except (ValueError, OverflowError):
-        # One might expect CESU sequences in eventual UTF-8;
-        # they are actually a fairly common phenomenon, possibly
-        # for this reason.  Python handles this properly, though.
-        #
-        # Will output triple or quadruple-surrogates if needed,
-        # concordant with the up-to-eight-bytes parsed by
-        # _make_me_utf8 - I might be going a bit crazy with
-        # the "handle every input" thing here.
-        main=n-0x010000
-        s=unichr(0xDC00+(main%1024))
-        while 1:
-            main = main//1024
-            s=unichr(0xD800+(main%1024))+s
-            if not (main//1024):
-                return s
-
-def _mslatinised_to_utf8(n):
-    """Given a integer code-point mixing Unicode and Microsoft-Latin-1, return a UTF-8 string."""
-    if n<0x100:
-        return chr(n).decode("cp1252").encode("utf-8")
-    else:
-        return unichr(n).encode("utf-8")
-
-def _make_me_utf8(s):
-    """Given a string mixing Microsoft-Latin-1 with UTF-8, return it in UTF-8."""
-    def count_ones(n):
-        for i in range(8):
-            if not (n&0x80):
-                return i
-            n=n<<1
-        return 8
-    ot=""
-    while s:
-        curchar=ord(s[0])
-        s=s[1:]
-        ones=count_ones(curchar)
-        if ones in (0,1):
-            ot+=_mslatinised_to_utf8(curchar)
-        else:
-            seq=s[:ones-1]
-            if len(seq)<(ones-1):
-                ot+=_mslatinised_to_utf8(curchar)
-                continue
-            s=s[ones-1:]
-            nos=[]
-            for tra in seq:
-                if count_ones(ord(tra))!=1:
-                    ot+=_mslatinised_to_utf8(curchar)
-                    s=seq+s
-                    break
-                nos.append(ord(tra)%(2**7))
-            else:
-                #print seq,nos
-                nos=[curchar%(2**(8-ones))]+nos
-                outchar=0
-                for i in nos:
-                    outchar=outchar<<6
-                    outchar+=i
-                ot+=_mslatinised_to_utf8(outchar)
-    return ot
-
-_ampersand_quasi_ellipsis = re.compile(r"(?<!\S)&(?=\S)|(?<=\S)&(?!\S)")
-def _ookii_to_mslatin1(obj):
-    """Convert Ookii's C0-replacement characters to Microsoft's C1-replacement characters.
-    Also replaces ampersands which should be ellipses with actual ellipses."""
-    return "\x85".join(_ampersand_quasi_ellipsis.split(obj.replace("\x14","\x85").replace("\x18","\x91").replace("\x19","\x92")))
-
-def to_utf8(obj, ookii=True):
-    """Given a dict, list, tuple or string mixing Ookii- and/or Microsoft-Latin-1 with UTF-8, return it in UTF-8.
-    Ookii processing (second arg) may be disabled, and must be if HTML entities in input."""
-    if isinstance(obj, type({})):
-        d={}
-        for k,v in obj.items():
-            d[to_utf8(k)]=to_utf8(v)
-        return d
-    elif isinstance(obj, type([])):
-        return map(to_utf8,obj)
-    elif isinstance(obj,type(())):
-        return map(to_utf8,obj)
-    elif type(obj)==type(""):
-        if ookii:
-            return _make_me_utf8(_ookii_to_mslatin1(obj))
-        else:
-            return _make_me_utf8(obj)
-    else:
-        return obj
 
 def _fakejsonloads(dat):
     null=None
@@ -136,7 +44,7 @@ def load_ookii_record(strip):
     if not specific_db:
         print>>sys.stderr,"DEAD DOOR",strip["Date"],strip["OokiiId"]
     else:
-        strip.update(to_utf8(_fakejsonloads(specific_db)))
+        strip.update(utfsupport.object_to_utf8(_fakejsonloads(specific_db),ookii=True))
 
 date2id=open("Date2Id.txt","rU")
 date2id=json.loads(date2id.read())
@@ -151,7 +59,7 @@ dateswork=eval(dateswork.read())
 main_db={}
 for sect in ("story","sketch","np"):
     main_db[sect]=open_lib(r"Ookii\ComicIndices\egscomicapi_%d.txt"%([None,"story","np","sketch"].index(sect)))
-    main_db[sect]=to_utf8(_fakejsonloads(main_db[sect].read()))
+    main_db[sect]=utfsupport.object_to_utf8(_fakejsonloads(main_db[sect].read()),ookii=True)
 del sect
 
 def _parse_suddenlaunch(sect):
