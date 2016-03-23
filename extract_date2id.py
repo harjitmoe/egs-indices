@@ -1,4 +1,4 @@
-# Written in 2014, 2015 by HarJIT
+# Written in 2014, 2015 by Thomas Hori
 #
 # This file is made available under the CC0 Public Domain Dedication.  To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights to this file to the public domain worldwide. This file is distributed without any warranty.
 #
@@ -15,7 +15,7 @@ import os, json
 def extract_date2id():
     print (">>> extract_date2id")
     if not os.path.exists("../../egs/0003 - (Sketchbook and Extras)/0001 - Filler Sketchbook"):
-        print ("Not running on HarJIT's machine, not regenerating Date2Id.txt")
+        print ("Not running on Thomas Hori's machine, not regenerating Date2Id.txt")
         return
     lsdir=[]
     for r,ds,fs in os.walk("../../egs"):
