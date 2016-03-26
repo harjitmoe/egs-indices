@@ -62,8 +62,9 @@ if os.path.exists("b.txt"):
     f=open("b.txt","rU")
     dab=eval(f.read())
     f.close()
-wget="..\\..\\..\\Tools\\wget.exe"
+#wget="..\\..\\..\\Tools\\wget.exe"
 #wget="wget-gnu"
+wget="wget"
 names={"index":"story","egsnp":"np","sketchbook":"sketch"}
 
 f=open("metadataegs3.txt")

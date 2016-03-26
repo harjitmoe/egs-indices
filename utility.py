@@ -245,8 +245,9 @@ def dates_index(strip,dateswork):
         for crit in ('WorksInternal','WorksExternal'):
             if crit in dsi.keys():
                 works,date=dsi[crit]
-                if works:
+                if works and date:
                     if date!=strip["Date"]:
+                        print strip["Date"], date
                         raise AssertionError
                     strip["DateIndexable"]=True
 
