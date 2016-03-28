@@ -2169,6 +2169,7 @@
 |2016-03-21 = ("")
 |2016-03-23 = ("&quot;Helpful&quot; Immortals (LittleKingsguard, based on filename) (Reddit)")
 |2016-03-25 = ("From Bad to Worse (jstutter, based on filename) (Reddit)")
+|2016-03-28 = ("Checking In (Official)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic (Official)")
@@ -4339,6 +4340,7 @@
 |2170 = ("")
 |2171 = ("&quot;Helpful&quot; Immortals (LittleKingsguard, based on filename) (Reddit)")
 |2172 = ("From Bad to Worse (jstutter, based on filename) (Reddit)")
+|2173 = ("Checking In (Official)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -5367,6 +5369,7 @@
 |2014-03-05 = ("Summer Moments #3 - At The Movies")
 |2014-03-06 = ("Previous Summer Moments #4 - A Perfect Plan")
 |2014-03-07 = ("Previous Summer Moments #5 - Hazards Of Clone Form Pranking")
+|2016-03-28 = ("Checking In")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -6394,6 +6397,7 @@
 |1821 = ("Summer Moments #3 - At The Movies")
 |1822 = ("Previous Summer Moments #4 - A Perfect Plan")
 |1823 = ("Previous Summer Moments #5 - Hazards Of Clone Form Pranking")
+|2173 = ("Checking In")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -10058,6 +10062,7 @@
 |2016-03-21 = ("eep")
 |2016-03-23 = ("&quot;Helpful&quot; Immortals (LittleKingsguard, based on filename)")
 |2016-03-25 = ("From Bad to Worse (jstutter, based on filename)")
+|2016-03-28 = ("Checking In")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -12228,6 +12233,7 @@
 |2170 = ("eep")
 |2171 = ("&quot;Helpful&quot; Immortals (LittleKingsguard, based on filename)")
 |2172 = ("From Bad to Worse (jstutter, based on filename)")
+|2173 = ("Checking In")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -15588,6 +15594,7 @@
 |2016-03-21 = ("eep")
 |2016-03-23 = ("&quot;Helpful&quot; Immortals (LittleKingsguard, based on filename)")
 |2016-03-25 = ("From Bad to Worse (jstutter, based on filename)")
+|2016-03-28 = ("Checking In")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -17758,6 +17765,7 @@
 |2170 = ("eep")
 |2171 = ("&quot;Helpful&quot; Immortals (LittleKingsguard, based on filename)")
 |2172 = ("From Bad to Worse (jstutter, based on filename)")
+|2173 = ("Checking In")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -19934,6 +19942,7 @@
 |2016-03-21 = ("eep")
 |2016-03-23 = ("&quot;Helpful&quot; Immortals (LittleKingsguard, based on filename)")
 |2016-03-25 = ("From Bad to Worse (jstutter, based on filename)")
+|2016-03-28 = ("Checking In")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -22104,6 +22113,7 @@
 |2170 = ("eep")
 |2171 = ("&quot;Helpful&quot; Immortals (LittleKingsguard, based on filename)")
 |2172 = ("From Bad to Worse (jstutter, based on filename)")
+|2173 = ("Checking In")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -32123,6 +32133,7 @@
 |2016-03-21 = ("")
 |2016-03-23 = ("Would Them (There?) Be (m2pt5) (Reddit)")
 |2016-03-25 = ("Chibipocalypse (jstutter, based on filename) (Reddit)")
+|2016-03-28 = ("Friendgeance (Official)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)")
@@ -32563,6 +32574,7 @@
 |436 = ("")
 |437 = ("Would Them (There?) Be (m2pt5) (Reddit)")
 |438 = ("Chibipocalypse (jstutter, based on filename) (Reddit)")
+|439 = ("Friendgeance (Official)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -32711,6 +32723,7 @@
 |2008-10-07 = ("Oblivious Wand Waving - Part 13")
 |2008-10-11 = ("Oblivious Wand Waving - Part 14")
 |2008-10-14 = ("Oblivious Wand Waving - Part 15")
+|2016-03-28 = ("Friendgeance")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -32858,6 +32871,7 @@
 |154 = ("Oblivious Wand Waving - Part 13")
 |155 = ("Oblivious Wand Waving - Part 14")
 |156 = ("Oblivious Wand Waving - Part 15")
+|439 = ("Friendgeance")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -33314,6 +33328,7 @@
 |2016-03-21 = ("notailyanking")
 |2016-03-23 = ("Would Them (There?) Be (m2pt5)")
 |2016-03-25 = ("Chibipocalypse (jstutter, based on filename)")
+|2016-03-28 = ("Friendgeance")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -33754,6 +33769,7 @@
 |436 = ("notailyanking")
 |437 = ("Would Them (There?) Be (m2pt5)")
 |438 = ("Chibipocalypse (jstutter, based on filename)")
+|439 = ("Friendgeance")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -34268,6 +34284,7 @@
 |2016-03-21 = ("notailyanking")
 |2016-03-23 = ("Would Them (There?) Be (m2pt5)")
 |2016-03-25 = ("Chibipocalypse (jstutter, based on filename)")
+|2016-03-28 = ("Friendgeance")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -34708,6 +34725,7 @@
 |436 = ("notailyanking")
 |437 = ("Would Them (There?) Be (m2pt5)")
 |438 = ("Chibipocalypse (jstutter, based on filename)")
+|439 = ("Friendgeance")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -35562,6 +35580,7 @@
 |2016-03-21 = ("notailyanking")
 |2016-03-23 = ("Would Them (There?) Be (m2pt5)")
 |2016-03-25 = ("Chibipocalypse (jstutter, based on filename)")
+|2016-03-28 = ("Friendgeance")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("XYC")
@@ -36002,6 +36021,7 @@
 |436 = ("notailyanking")
 |437 = ("Would Them (There?) Be (m2pt5)")
 |438 = ("Chibipocalypse (jstutter, based on filename)")
+|439 = ("Friendgeance")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}

@@ -37,6 +37,8 @@ spatulae={}
 odat={"story":{},"sketch":{},"np":{}}
 
 for i in idat.keys():
+    if idat[i]==None:
+        continue
     section,dtyp,id=i.split("-")
     id=int(id)
     odat[section][id]={}
@@ -48,6 +50,8 @@ for i in idat.keys():
         spatulae[path]+=1
 
 for i in idat.keys():
+    if idat[i]==None:
+        continue
     section,dtyp,id=i.split("-")
     id=int(id)
     date,path=idat[i]

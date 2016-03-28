@@ -2159,3 +2159,1400 @@ Saving to: ‘sketchbook.php@id=877’
 
 2016-03-27 13:57:59 (5.21 MB/s) - ‘sketchbook.php@id=877’ saved [7737/7737]
 
+--2016-03-28 11:29:36--  http://www.egscomics.com/index.php?id=2005
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12349 (12K) [text/html]
+Saving to: ‘index.php@id=2005’
+
+     0K .......... ..                                         100% 3.03M=0.004s
+
+2016-03-28 11:29:36 (3.03 MB/s) - ‘index.php@id=2005’ saved [12349/12349]
+
+--2016-03-28 11:29:36--  http://www.egscomics.com/index.php?id=2011
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12349 (12K) [text/html]
+Saving to: ‘index.php@id=2011’
+
+     0K .......... ..                                         100% 2.84M=0.004s
+
+2016-03-28 11:29:37 (2.84 MB/s) - ‘index.php@id=2011’ saved [12349/12349]
+
+--2016-03-28 11:29:37--  http://www.egscomics.com/index.php?id=2039
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12349 (12K) [text/html]
+Saving to: ‘index.php@id=2039’
+
+     0K .......... ..                                         100% 2.49M=0.005s
+
+2016-03-28 11:29:38 (2.49 MB/s) - ‘index.php@id=2039’ saved [12349/12349]
+
+--2016-03-28 11:29:38--  http://www.egscomics.com/index.php?id=2173
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2173’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:29:38 (67.3 KB/s) - ‘index.php@id=2173’ saved [14013/14013]
+
+--2016-03-28 11:29:38--  http://www.egscomics.com/index.php?id=2174
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12349 (12K) [text/html]
+Saving to: ‘index.php@id=2174’
+
+     0K .......... ..                                         100% 3.39M=0.003s
+
+2016-03-28 11:29:39 (3.39 MB/s) - ‘index.php@id=2174’ saved [12349/12349]
+
+--2016-03-28 11:29:39--  http://www.egscomics.com/index.php?id=2175
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12349 (12K) [text/html]
+Saving to: ‘index.php@id=2175’
+
+     0K .......... ..                                         100% 3.01M=0.004s
+
+2016-03-28 11:29:40 (3.01 MB/s) - ‘index.php@id=2175’ saved [12349/12349]
+
+--2016-03-28 11:29:40--  http://www.egscomics.com/index.php?id=2176
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12349 (12K) [text/html]
+Saving to: ‘index.php@id=2176’
+
+     0K .......... ..                                         100% 2.81M=0.004s
+
+2016-03-28 11:29:40 (2.81 MB/s) - ‘index.php@id=2176’ saved [12349/12349]
+
+--2016-03-28 11:29:40--  http://www.egscomics.com/index.php?id=2177
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12349 (12K) [text/html]
+Saving to: ‘index.php@id=2177’
+
+     0K .......... ..                                         100%  959K=0.01s
+
+2016-03-28 11:29:41 (959 KB/s) - ‘index.php@id=2177’ saved [12349/12349]
+
+--2016-03-28 11:29:41--  http://www.egscomics.com/index.php?id=2178
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12349 (12K) [text/html]
+Saving to: ‘index.php@id=2178’
+
+     0K .......... ..                                         100% 3.43M=0.003s
+
+2016-03-28 11:29:41 (3.43 MB/s) - ‘index.php@id=2178’ saved [12349/12349]
+
+--2016-03-28 11:29:41--  http://www.egscomics.com/egsnp.php?id=439
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=439’
+
+     0K ........                                              100% 2.94M=0.003s
+
+2016-03-28 11:29:42 (2.94 MB/s) - ‘egsnp.php@id=439’ saved [8345/8345]
+
+--2016-03-28 11:29:42--  http://www.egscomics.com/egsnp.php?id=440
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6897 (6.7K) [text/html]
+Saving to: ‘egsnp.php@id=440’
+
+     0K ......                                                100% 4.61M=0.001s
+
+2016-03-28 11:29:43 (4.61 MB/s) - ‘egsnp.php@id=440’ saved [6897/6897]
+
+--2016-03-28 11:29:43--  http://www.egscomics.com/egsnp.php?id=441
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6897 (6.7K) [text/html]
+Saving to: ‘egsnp.php@id=441’
+
+     0K ......                                                100% 4.75M=0.001s
+
+2016-03-28 11:29:43 (4.75 MB/s) - ‘egsnp.php@id=441’ saved [6897/6897]
+
+--2016-03-28 11:29:43--  http://www.egscomics.com/egsnp.php?id=442
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6897 (6.7K) [text/html]
+Saving to: ‘egsnp.php@id=442’
+
+     0K ......                                                100% 4.57M=0.001s
+
+2016-03-28 11:29:44 (4.57 MB/s) - ‘egsnp.php@id=442’ saved [6897/6897]
+
+--2016-03-28 11:29:44--  http://www.egscomics.com/egsnp.php?id=443
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6897 (6.7K) [text/html]
+Saving to: ‘egsnp.php@id=443’
+
+     0K ......                                                100% 4.15M=0.002s
+
+2016-03-28 11:29:44 (4.15 MB/s) - ‘egsnp.php@id=443’ saved [6897/6897]
+
+--2016-03-28 11:29:44--  http://www.egscomics.com/egsnp.php?id=444
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6897 (6.7K) [text/html]
+Saving to: ‘egsnp.php@id=444’
+
+     0K ......                                                100% 5.06M=0.001s
+
+2016-03-28 11:29:45 (5.06 MB/s) - ‘egsnp.php@id=444’ saved [6897/6897]
+
+--2016-03-28 11:29:45--  http://www.egscomics.com/sketchbook.php?id=878
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6406 (6.3K) [text/html]
+Saving to: ‘sketchbook.php@id=878’
+
+     0K ......                                                100% 5.58M=0.001s
+
+2016-03-28 11:29:45 (5.58 MB/s) - ‘sketchbook.php@id=878’ saved [6406/6406]
+
+--2016-03-28 11:29:45--  http://www.egscomics.com/sketchbook.php?id=879
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6406 (6.3K) [text/html]
+Saving to: ‘sketchbook.php@id=879’
+
+     0K ......                                                100% 7.49M=0.001s
+
+2016-03-28 11:29:46 (7.49 MB/s) - ‘sketchbook.php@id=879’ saved [6406/6406]
+
+--2016-03-28 11:29:46--  http://www.egscomics.com/sketchbook.php?id=880
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6406 (6.3K) [text/html]
+Saving to: ‘sketchbook.php@id=880’
+
+     0K ......                                                100% 5.48M=0.001s
+
+2016-03-28 11:29:46 (5.48 MB/s) - ‘sketchbook.php@id=880’ saved [6406/6406]
+
+--2016-03-28 11:29:46--  http://www.egscomics.com/sketchbook.php?id=881
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6406 (6.3K) [text/html]
+Saving to: ‘sketchbook.php@id=881’
+
+     0K ......                                                100% 5.75M=0.001s
+
+2016-03-28 11:29:47 (5.75 MB/s) - ‘sketchbook.php@id=881’ saved [6406/6406]
+
+--2016-03-28 11:29:47--  http://www.egscomics.com/sketchbook.php?id=882
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6406 (6.3K) [text/html]
+Saving to: ‘sketchbook.php@id=882’
+
+     0K ......                                                100% 5.49M=0.001s
+
+2016-03-28 11:29:48 (5.49 MB/s) - ‘sketchbook.php@id=882’ saved [6406/6406]
+
+--2016-03-28 11:30:04--  http://www.egscomics.com/index.php?date=2015-12-04
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2141’
+
+     0K .......... ...                                        100% 51.5K=0.3s
+
+2016-03-28 11:30:05 (51.5 KB/s) - ‘index.php@id=2141’ saved [14013/14013]
+
+--2016-03-28 11:30:05--  http://www.egscomics.com/index.php?date=2016-01-18
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2142’
+
+     0K .......... ...                                        100% 50.7K=0.3s
+
+2016-03-28 11:30:06 (50.7 KB/s) - ‘index.php@id=2142’ saved [14013/14013]
+
+--2016-03-28 11:30:06--  http://www.egscomics.com/index.php?date=2016-01-06
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2143’
+
+     0K .......... ...                                        100% 51.0K=0.3s
+
+2016-03-28 11:30:07 (51.0 KB/s) - ‘index.php@id=2143’ saved [14013/14013]
+
+--2016-03-28 11:30:07--  http://www.egscomics.com/index.php?date=2015-01-08
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2144’
+
+     0K .......... ...                                        100% 53.4K=0.3s
+
+2016-03-28 11:30:08 (53.4 KB/s) - ‘index.php@id=2144’ saved [14013/14013]
+
+--2016-03-28 11:30:08--  http://www.egscomics.com/index.php?date=2015-01-11
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2145’
+
+     0K .......... ...                                        100% 47.1K=0.3s
+
+2016-03-28 11:30:09 (47.1 KB/s) - ‘index.php@id=2145’ saved [14013/14013]
+
+--2016-03-28 11:30:09--  http://www.egscomics.com/index.php?date=2016-01-13
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.php@id=2146’
+
+     0K .......... ...                                         67.5K=0.2s
+
+2016-03-28 11:30:10 (67.5 KB/s) - ‘index.php@id=2146’ saved [14013]
+
+--2016-03-28 11:30:10--  http://www.egscomics.com/index.php?date=2016-01-15
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2147’
+
+     0K .......... ...                                        100% 80.2K=0.2s
+
+2016-03-28 11:30:11 (80.2 KB/s) - ‘index.php@id=2147’ saved [14013/14013]
+
+--2016-03-28 11:30:11--  http://www.egscomics.com/index.php?date=2016-01-22
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2148’
+
+     0K .......... ...                                        100% 52.6K=0.3s
+
+2016-03-28 11:30:12 (52.6 KB/s) - ‘index.php@id=2148’ saved [14013/14013]
+
+--2016-03-28 11:30:12--  http://www.egscomics.com/index.php?date=2016-01-25
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2149’
+
+     0K .......... ...                                        100% 50.4K=0.3s
+
+2016-03-28 11:30:12 (50.4 KB/s) - ‘index.php@id=2149’ saved [14013/14013]
+
+--2016-03-28 11:30:12--  http://www.egscomics.com/index.php?date=2016-01-27
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.php@id=2150’
+
+     0K .......... ...                                         47.2K=0.3s
+
+2016-03-28 11:30:13 (47.2 KB/s) - ‘index.php@id=2150’ saved [14013]
+
+--2016-03-28 11:30:13--  http://www.egscomics.com/index.php?date=2016-01-29
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.php@id=2151’
+
+     0K .......... ...                                         47.9K=0.3s
+
+2016-03-28 11:30:14 (47.9 KB/s) - ‘index.php@id=2151’ saved [14013]
+
+--2016-03-28 11:30:14--  http://www.egscomics.com/index.php?date=2016-02-03
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2152’
+
+     0K .......... ...                                        100% 49.2K=0.3s
+
+2016-03-28 11:30:15 (49.2 KB/s) - ‘index.php@id=2152’ saved [14013/14013]
+
+--2016-03-28 11:30:15--  http://www.egscomics.com/index.php?date=2016-02-05
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.php@id=2153’
+
+     0K .......... ...                                         50.8K=0.3s
+
+2016-03-28 11:30:16 (50.8 KB/s) - ‘index.php@id=2153’ saved [14013]
+
+--2016-03-28 11:30:16--  http://www.egscomics.com/index.php?date=2016-02-08
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2154’
+
+     0K .......... ...                                        100% 67.8K=0.2s
+
+2016-03-28 11:30:17 (67.8 KB/s) - ‘index.php@id=2154’ saved [14013/14013]
+
+--2016-03-28 11:30:17--  http://www.egscomics.com/index.php?date=2016-02-10
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2155’
+
+     0K .......... ...                                        100% 48.1K=0.3s
+
+2016-03-28 11:30:18 (48.1 KB/s) - ‘index.php@id=2155’ saved [14013/14013]
+
+--2016-03-28 11:30:18--  http://www.egscomics.com/index.php?date=2016-02-12
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2156’
+
+     0K .......... ...                                        100% 47.1K=0.3s
+
+2016-03-28 11:30:19 (47.1 KB/s) - ‘index.php@id=2156’ saved [14013/14013]
+
+--2016-03-28 11:30:19--  http://www.egscomics.com/index.php?date=2016-02-15
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2157’
+
+     0K .......... ...                                        100% 47.4K=0.3s
+
+2016-03-28 11:30:20 (47.4 KB/s) - ‘index.php@id=2157’ saved [14013/14013]
+
+--2016-03-28 11:30:20--  http://www.egscomics.com/index.php?date=2016-02-17
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.php@id=2158’
+
+     0K .......... ...                                         49.0K=0.3s
+
+2016-03-28 11:30:20 (49.0 KB/s) - ‘index.php@id=2158’ saved [14013]
+
+--2016-03-28 11:30:20--  http://www.egscomics.com/index.php?date=2016-02-19
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2159’
+
+     0K .......... ...                                        100% 68.2K=0.2s
+
+2016-03-28 11:30:21 (68.2 KB/s) - ‘index.php@id=2159’ saved [14013/14013]
+
+--2016-03-28 11:30:21--  http://www.egscomics.com/index.php?date=2016-02-22
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2160’
+
+     0K .......... ...                                        100% 69.9K=0.2s
+
+2016-03-28 11:30:22 (69.9 KB/s) - ‘index.php@id=2160’ saved [14013/14013]
+
+--2016-03-28 11:30:22--  http://www.egscomics.com/index.php?date=2016-02-24
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2161’
+
+     0K .......... ...                                        100% 49.1K=0.3s
+
+2016-03-28 11:30:23 (49.1 KB/s) - ‘index.php@id=2161’ saved [14013/14013]
+
+--2016-03-28 11:30:23--  http://www.egscomics.com/index.php?date=2016-03-01
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.php@id=2162’
+
+     0K .......... ...                                         69.5K=0.2s
+
+2016-03-28 11:30:24 (69.5 KB/s) - ‘index.php@id=2162’ saved [14013]
+
+--2016-03-28 11:30:24--  http://www.egscomics.com/index.php?date=2016-03-03
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2163’
+
+     0K .......... ...                                        100% 70.7K=0.2s
+
+2016-03-28 11:30:25 (70.7 KB/s) - ‘index.php@id=2163’ saved [14013/14013]
+
+--2016-03-28 11:30:25--  http://www.egscomics.com/index.php?date=2016-03-07
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2164’
+
+     0K .......... ...                                        100% 50.7K=0.3s
+
+2016-03-28 11:30:26 (50.7 KB/s) - ‘index.php@id=2164’ saved [14013/14013]
+
+--2016-03-28 11:30:26--  http://www.egscomics.com/index.php?date=2016-03-09
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2165’
+
+     0K .......... ...                                        100% 46.8K=0.3s
+
+2016-03-28 11:30:27 (46.8 KB/s) - ‘index.php@id=2165’ saved [14013/14013]
+
+--2016-03-28 11:30:27--  http://www.egscomics.com/index.php?date=2016-03-11
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.php@id=2166’
+
+     0K .......... ...                                         48.3K=0.3s
+
+2016-03-28 11:30:27 (48.3 KB/s) - ‘index.php@id=2166’ saved [14013]
+
+--2016-03-28 11:30:27--  http://www.egscomics.com/index.php?date=2016-03-14
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2167’
+
+     0K .......... ...                                        100% 51.7K=0.3s
+
+2016-03-28 11:30:28 (51.7 KB/s) - ‘index.php@id=2167’ saved [14013/14013]
+
+--2016-03-28 11:30:28--  http://www.egscomics.com/index.php?date=2016-03-16
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2168’
+
+     0K .......... ...                                        100% 69.8K=0.2s
+
+2016-03-28 11:30:29 (69.8 KB/s) - ‘index.php@id=2168’ saved [14013/14013]
+
+--2016-03-28 11:30:29--  http://www.egscomics.com/index.php?date=2016-03-18
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2169’
+
+     0K .......... ...                                        100% 46.6K=0.3s
+
+2016-03-28 11:30:30 (46.6 KB/s) - ‘index.php@id=2169’ saved [14013/14013]
+
+--2016-03-28 11:30:30--  http://www.egscomics.com/index.php?date=2016-03-21
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2170’
+
+     0K .......... ...                                        100% 67.9K=0.2s
+
+2016-03-28 11:30:31 (67.9 KB/s) - ‘index.php@id=2170’ saved [14013/14013]
+
+--2016-03-28 11:30:31--  http://www.egscomics.com/index.php?date=2019-03-23
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2171’
+
+     0K .......... ...                                        100% 69.8K=0.2s
+
+2016-03-28 11:30:32 (69.8 KB/s) - ‘index.php@id=2171’ saved [14013/14013]
+
+--2016-03-28 11:30:32--  http://www.egscomics.com/index.php?date=20XX-03-25
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2172’
+
+     0K .......... ...                                        100% 48.0K=0.3s
+
+2016-03-28 11:30:32 (48.0 KB/s) - ‘index.php@id=2172’ saved [14013/14013]
+
+--2016-03-28 11:30:32--  http://www.egscomics.com/index.php?date=2016-03-28
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.php@id=2173’
+
+     0K .......... ...                                         69.6K=0.2s
+
+2016-03-28 11:30:33 (69.6 KB/s) - ‘index.php@id=2173’ saved [14013]
+
+--2016-03-28 11:30:35--  http://www.egscomics.com/index.php?date=2016-01-04
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2141’
+
+     0K .......... ...                                        100% 53.6K=0.3s
+
+2016-03-28 11:30:36 (53.6 KB/s) - ‘index.php@id=2141’ saved [14013/14013]
+
+--2016-03-28 11:30:36--  http://www.egscomics.com/index.php?date=2016-01-18
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2142’
+
+     0K .......... ...                                        100% 66.8K=0.2s
+
+2016-03-28 11:30:36 (66.8 KB/s) - ‘index.php@id=2142’ saved [14013/14013]
+
+--2016-03-28 11:30:36--  http://www.egscomics.com/index.php?date=2016-01-06
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2143’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:37 (67.3 KB/s) - ‘index.php@id=2143’ saved [14013/14013]
+
+--2016-03-28 11:30:37--  http://www.egscomics.com/index.php?date=2016-01-08
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.php@id=2144’
+
+     0K .......... ...                                         69.6K=0.2s
+
+2016-03-28 11:30:39 (69.6 KB/s) - ‘index.php@id=2144’ saved [14013]
+
+--2016-03-28 11:30:39--  http://www.egscomics.com/index.php?date=2016-01-11
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2145’
+
+     0K .......... ...                                        100% 53.4K=0.3s
+
+2016-03-28 11:30:40 (53.4 KB/s) - ‘index.php@id=2145’ saved [14013/14013]
+
+--2016-03-28 11:30:40--  http://www.egscomics.com/index.php?date=2016-01-13
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2146’
+
+     0K .......... ...                                        100% 67.2K=0.2s
+
+2016-03-28 11:30:41 (67.2 KB/s) - ‘index.php@id=2146’ saved [14013/14013]
+
+--2016-03-28 11:30:41--  http://www.egscomics.com/index.php?date=2016-01-15
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2147’
+
+     0K .......... ...                                        100% 68.1K=0.2s
+
+2016-03-28 11:30:42 (68.1 KB/s) - ‘index.php@id=2147’ saved [14013/14013]
+
+--2016-03-28 11:30:42--  http://www.egscomics.com/index.php?date=2016-01-22
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2148’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:42 (67.3 KB/s) - ‘index.php@id=2148’ saved [14013/14013]
+
+--2016-03-28 11:30:42--  http://www.egscomics.com/index.php?date=2016-01-25
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2149’
+
+     0K .......... ...                                        100% 67.2K=0.2s
+
+2016-03-28 11:30:43 (67.2 KB/s) - ‘index.php@id=2149’ saved [14013/14013]
+
+--2016-03-28 11:30:43--  http://www.egscomics.com/index.php?date=2016-01-27
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2150’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:44 (67.3 KB/s) - ‘index.php@id=2150’ saved [14013/14013]
+
+--2016-03-28 11:30:44--  http://www.egscomics.com/index.php?date=2016-01-29
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2151’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:45 (67.3 KB/s) - ‘index.php@id=2151’ saved [14013/14013]
+
+--2016-03-28 11:30:45--  http://www.egscomics.com/index.php?date=2016-02-03
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2152’
+
+     0K .......... ...                                        100% 67.5K=0.2s
+
+2016-03-28 11:30:46 (67.5 KB/s) - ‘index.php@id=2152’ saved [14013/14013]
+
+--2016-03-28 11:30:46--  http://www.egscomics.com/index.php?date=2016-02-05
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2153’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:46 (67.3 KB/s) - ‘index.php@id=2153’ saved [14013/14013]
+
+--2016-03-28 11:30:46--  http://www.egscomics.com/index.php?date=2016-02-08
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2154’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:47 (67.3 KB/s) - ‘index.php@id=2154’ saved [14013/14013]
+
+--2016-03-28 11:30:47--  http://www.egscomics.com/index.php?date=2016-02-10
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2155’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:48 (67.3 KB/s) - ‘index.php@id=2155’ saved [14013/14013]
+
+--2016-03-28 11:30:48--  http://www.egscomics.com/index.php?date=2016-02-12
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2156’
+
+     0K .......... ...                                        100% 67.2K=0.2s
+
+2016-03-28 11:30:49 (67.2 KB/s) - ‘index.php@id=2156’ saved [14013/14013]
+
+--2016-03-28 11:30:49--  http://www.egscomics.com/index.php?date=2016-02-15
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2157’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:50 (67.3 KB/s) - ‘index.php@id=2157’ saved [14013/14013]
+
+--2016-03-28 11:30:50--  http://www.egscomics.com/index.php?date=2016-02-17
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2158’
+
+     0K .......... ...                                        100% 79.5K=0.2s
+
+2016-03-28 11:30:51 (79.5 KB/s) - ‘index.php@id=2158’ saved [14013/14013]
+
+--2016-03-28 11:30:51--  http://www.egscomics.com/index.php?date=2016-02-19
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2159’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:51 (67.3 KB/s) - ‘index.php@id=2159’ saved [14013/14013]
+
+--2016-03-28 11:30:51--  http://www.egscomics.com/index.php?date=2016-02-22
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2160’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:52 (67.3 KB/s) - ‘index.php@id=2160’ saved [14013/14013]
+
+--2016-03-28 11:30:52--  http://www.egscomics.com/index.php?date=2016-02-24
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2161’
+
+     0K .......... ...                                        100% 67.5K=0.2s
+
+2016-03-28 11:30:53 (67.5 KB/s) - ‘index.php@id=2161’ saved [14013/14013]
+
+--2016-03-28 11:30:53--  http://www.egscomics.com/index.php?date=2016-03-01
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2162’
+
+     0K .......... ...                                        100% 67.6K=0.2s
+
+2016-03-28 11:30:54 (67.6 KB/s) - ‘index.php@id=2162’ saved [14013/14013]
+
+--2016-03-28 11:30:54--  http://www.egscomics.com/index.php?date=2016-03-03
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2163’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:55 (67.3 KB/s) - ‘index.php@id=2163’ saved [14013/14013]
+
+--2016-03-28 11:30:55--  http://www.egscomics.com/index.php?date=2016-03-07
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2164’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:55 (67.3 KB/s) - ‘index.php@id=2164’ saved [14013/14013]
+
+--2016-03-28 11:30:56--  http://www.egscomics.com/index.php?date=2016-03-09
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2165’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:56 (67.3 KB/s) - ‘index.php@id=2165’ saved [14013/14013]
+
+--2016-03-28 11:30:56--  http://www.egscomics.com/index.php?date=2016-03-11
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2166’
+
+     0K .......... ...                                        100% 67.2K=0.2s
+
+2016-03-28 11:30:57 (67.2 KB/s) - ‘index.php@id=2166’ saved [14013/14013]
+
+--2016-03-28 11:30:57--  http://www.egscomics.com/index.php?date=2016-03-14
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2167’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:58 (67.3 KB/s) - ‘index.php@id=2167’ saved [14013/14013]
+
+--2016-03-28 11:30:58--  http://www.egscomics.com/index.php?date=2016-03-16
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2168’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:59 (67.3 KB/s) - ‘index.php@id=2168’ saved [14013/14013]
+
+--2016-03-28 11:30:59--  http://www.egscomics.com/index.php?date=2016-03-18
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2169’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:30:59 (67.3 KB/s) - ‘index.php@id=2169’ saved [14013/14013]
+
+--2016-03-28 11:30:59--  http://www.egscomics.com/index.php?date=2016-03-21
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2170’
+
+     0K .......... ...                                        100% 67.3K=0.2s
+
+2016-03-28 11:31:00 (67.3 KB/s) - ‘index.php@id=2170’ saved [14013/14013]
+
+--2016-03-28 11:31:00--  http://www.egscomics.com/index.php?date=2016-03-23
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2171’
+
+     0K .......... ...                                        100% 67.4K=0.2s
+
+2016-03-28 11:31:01 (67.4 KB/s) - ‘index.php@id=2171’ saved [14013/14013]
+
+--2016-03-28 11:31:01--  http://www.egscomics.com/index.php?date=2016-03-25
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2172’
+
+     0K .......... ...                                        100% 51.8K=0.3s
+
+2016-03-28 11:31:02 (51.8 KB/s) - ‘index.php@id=2172’ saved [14013/14013]
+
+--2016-03-28 11:31:02--  http://www.egscomics.com/index.php?date=2016-03-28
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14013 (14K) [text/html]
+Saving to: ‘index.php@id=2173’
+
+     0K .......... ...                                        100% 67.2K=0.2s
+
+2016-03-28 11:31:03 (67.2 KB/s) - ‘index.php@id=2173’ saved [14013/14013]
+
+--2016-03-28 11:31:03--  http://www.egscomics.com/egsnp.php?date=2015-12-30
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=401’
+
+     0K ........                                              100% 4.72M=0.002s
+
+2016-03-28 11:31:04 (4.72 MB/s) - ‘egsnp.php@id=401’ saved [8345/8345]
+
+--2016-03-28 11:31:04--  http://www.egscomics.com/egsnp.php?date=2016-01-01
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=402’
+
+     0K ........                                              100%  358K=0.02s
+
+2016-03-28 11:31:04 (358 KB/s) - ‘egsnp.php@id=402’ saved [8345/8345]
+
+--2016-03-28 11:31:04--  http://www.egscomics.com/egsnp.php?date=2015-12-04
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=403’
+
+     0K ........                                              100% 3.41M=0.002s
+
+2016-03-28 11:31:05 (3.41 MB/s) - ‘egsnp.php@id=403’ saved [8345/8345]
+
+--2016-03-28 11:31:05--  http://www.egscomics.com/egsnp.php?date=2016-01-06
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=404’
+
+     0K ........                                              100% 5.64M=0.001s
+
+2016-03-28 11:31:05 (5.64 MB/s) - ‘egsnp.php@id=404’ saved [8345/8345]
+
+--2016-03-28 11:31:05--  http://www.egscomics.com/egsnp.php?date=2016-01-08
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘egsnp.php@id=405’
+
+     0K ........                                               4.53M=0.002s
+
+2016-03-28 11:31:06 (4.53 MB/s) - ‘egsnp.php@id=405’ saved [8345]
+
+--2016-03-28 11:31:06--  http://www.egscomics.com/egsnp.php?date=2016-01-11
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7898 (7.7K) [text/html]
+Saving to: ‘egsnp.php@id=406’
+
+     0K .......                                               100% 4.63M=0.002s
+
+2016-03-28 11:31:07 (4.63 MB/s) - ‘egsnp.php@id=406’ saved [7898/7898]
+
+--2016-03-28 11:31:07--  http://www.egscomics.com/egsnp.php?date=2016-01-13
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=407’
+
+     0K ........                                              100% 3.27M=0.002s
+
+2016-03-28 11:31:07 (3.27 MB/s) - ‘egsnp.php@id=407’ saved [8345/8345]
+
+--2016-03-28 11:31:07--  http://www.egscomics.com/egsnp.php?date=2016-01-14
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=408’
+
+     0K ........                                              100% 3.64M=0.002s
+
+2016-03-28 11:31:08 (3.64 MB/s) - ‘egsnp.php@id=408’ saved [8345/8345]
+
+--2016-03-28 11:31:08--  http://www.egscomics.com/egsnp.php?date=2016-01-17
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=409’
+
+     0K ........                                              100% 17.1K=0.5s
+
+2016-03-28 11:31:09 (17.1 KB/s) - ‘egsnp.php@id=409’ saved [8345/8345]
+
+--2016-03-28 11:31:09--  http://www.egscomics.com/egsnp.php?date=2016-01-20
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=410’
+
+     0K ........                                              100% 3.19M=0.002s
+
+2016-03-28 11:31:15 (3.19 MB/s) - ‘egsnp.php@id=410’ saved [8345/8345]
+
+--2016-03-28 11:31:15--  http://www.egscomics.com/egsnp.php?date=2016-01-22
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=411’
+
+     0K ........                                              100% 2.95M=0.003s
+
+2016-03-28 11:31:15 (2.95 MB/s) - ‘egsnp.php@id=411’ saved [8345/8345]
+
+--2016-03-28 11:31:15--  http://www.egscomics.com/egsnp.php?date=2016-01-26
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=412’
+
+     0K ........                                              100% 3.71M=0.002s
+
+2016-03-28 11:31:16 (3.71 MB/s) - ‘egsnp.php@id=412’ saved [8345/8345]
+
+--2016-03-28 11:31:16--  http://www.egscomics.com/egsnp.php?date=2016-01-27
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=413’
+
+     0K ........                                              100% 3.32M=0.002s
+
+2016-03-28 11:31:16 (3.32 MB/s) - ‘egsnp.php@id=413’ saved [8345/8345]
+
+--2016-03-28 11:31:16--  http://www.egscomics.com/egsnp.php?date=2016-01-29
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=414’
+
+     0K ........                                              100% 2.78M=0.003s
+
+2016-03-28 11:31:17 (2.78 MB/s) - ‘egsnp.php@id=414’ saved [8345/8345]
+
+--2016-03-28 11:31:17--  http://www.egscomics.com/egsnp.php?date=2016-02-01
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=415’
+
+     0K ........                                              100% 4.09M=0.002s
+
+2016-03-28 11:31:17 (4.09 MB/s) - ‘egsnp.php@id=415’ saved [8345/8345]
+
+--2016-03-28 11:31:17--  http://www.egscomics.com/egsnp.php?date=2016-02-03
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=416’
+
+     0K ........                                              100% 4.76M=0.002s
+
+2016-03-28 11:31:18 (4.76 MB/s) - ‘egsnp.php@id=416’ saved [8345/8345]
+
+--2016-03-28 11:31:18--  http://www.egscomics.com/egsnp.php?date=2016-02-05
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=417’
+
+     0K ........                                              100% 4.31M=0.002s
+
+2016-03-28 11:31:18 (4.31 MB/s) - ‘egsnp.php@id=417’ saved [8345/8345]
+
+--2016-03-28 11:31:18--  http://www.egscomics.com/egsnp.php?date=2016-02-08
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=418’
+
+     0K ........                                              100% 2.38M=0.003s
+
+2016-03-28 11:31:19 (2.38 MB/s) - ‘egsnp.php@id=418’ saved [8345/8345]
+
+--2016-03-28 11:31:19--  http://www.egscomics.com/egsnp.php?date=2016-02-10
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=419’
+
+     0K ........                                              100% 5.39M=0.001s
+
+2016-03-28 11:31:20 (5.39 MB/s) - ‘egsnp.php@id=419’ saved [8345/8345]
+
+--2016-03-28 11:31:20--  http://www.egscomics.com/egsnp.php?date=2016-02-12
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=420’
+
+     0K ........                                              100% 4.98M=0.002s
+
+2016-03-28 11:31:20 (4.98 MB/s) - ‘egsnp.php@id=420’ saved [8345/8345]
+
+--2016-03-28 11:31:20--  http://www.egscomics.com/egsnp.php?date=2016-02-15
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=421’
+
+     0K ........                                              100% 2.69M=0.003s
+
+2016-03-28 11:31:21 (2.69 MB/s) - ‘egsnp.php@id=421’ saved [8345/8345]
+
+--2016-03-28 11:31:21--  http://www.egscomics.com/egsnp.php?date=2016-02-17
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=422’
+
+     0K ........                                              100%  874K=0.009s
+
+2016-03-28 11:31:21 (874 KB/s) - ‘egsnp.php@id=422’ saved [8345/8345]
+
+--2016-03-28 11:31:21--  http://www.egscomics.com/egsnp.php?date=2016-02-19
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=423’
+
+     0K ........                                              100% 3.44M=0.002s
+
+2016-03-28 11:31:22 (3.44 MB/s) - ‘egsnp.php@id=423’ saved [8345/8345]
+
+--2016-03-28 11:31:22--  http://www.egscomics.com/egsnp.php?date=2016-02-22
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=424’
+
+     0K ........                                              100% 3.29M=0.002s
+
+2016-03-28 11:31:22 (3.29 MB/s) - ‘egsnp.php@id=424’ saved [8345/8345]
+
+--2016-03-28 11:31:22--  http://www.egscomics.com/egsnp.php?date=2016-02-24
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=425’
+
+     0K ........                                              100% 1.99M=0.004s
+
+2016-03-28 11:31:23 (1.99 MB/s) - ‘egsnp.php@id=425’ saved [8345/8345]
+
+--2016-03-28 11:31:23--  http://www.egscomics.com/egsnp.php?date=2016-02-26
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=426’
+
+     0K ........                                              100% 3.09M=0.003s
+
+2016-03-28 11:31:24 (3.09 MB/s) - ‘egsnp.php@id=426’ saved [8345/8345]
+
+--2016-03-28 11:31:24--  http://www.egscomics.com/egsnp.php?date=2016-02-29
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=427’
+
+     0K ........                                              100% 3.73M=0.002s
+
+2016-03-28 11:31:24 (3.73 MB/s) - ‘egsnp.php@id=427’ saved [8345/8345]
+
+--2016-03-28 11:31:24--  http://www.egscomics.com/egsnp.php?date=2016-03-02
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘egsnp.php@id=428’
+
+     0K ........                                               1.28M=0.006s
+
+2016-03-28 11:31:25 (1.28 MB/s) - ‘egsnp.php@id=428’ saved [8345]
+
+--2016-03-28 11:31:25--  http://www.egscomics.com/egsnp.php?date=2016-03-04
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=429’
+
+     0K ........                                              100% 3.50M=0.002s
+
+2016-03-28 11:31:25 (3.50 MB/s) - ‘egsnp.php@id=429’ saved [8345/8345]
+
+--2016-03-28 11:31:25--  http://www.egscomics.com/egsnp.php?date=2016-03-07
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=430’
+
+     0K ........                                              100% 1.64M=0.005s
+
+2016-03-28 11:31:26 (1.64 MB/s) - ‘egsnp.php@id=430’ saved [8345/8345]
+
+--2016-03-28 11:31:26--  http://www.egscomics.com/egsnp.php?date=2016-03-09
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘egsnp.php@id=431’
+
+     0K ........                                               4.36M=0.002s
+
+2016-03-28 11:31:27 (4.36 MB/s) - ‘egsnp.php@id=431’ saved [8345]
+
+--2016-03-28 11:31:27--  http://www.egscomics.com/egsnp.php?date=2016-03-11
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=432’
+
+     0K ........                                              100% 4.02M=0.002s
+
+2016-03-28 11:31:27 (4.02 MB/s) - ‘egsnp.php@id=432’ saved [8345/8345]
+
+--2016-03-28 11:31:27--  http://www.egscomics.com/egsnp.php?date=2016-03-14
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=433’
+
+     0K ........                                              100% 3.67M=0.002s
+
+2016-03-28 11:31:28 (3.67 MB/s) - ‘egsnp.php@id=433’ saved [8345/8345]
+
+--2016-03-28 11:31:28--  http://www.egscomics.com/egsnp.php?date=2016-03-16
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=434’
+
+     0K ........                                              100% 3.70M=0.002s
+
+2016-03-28 11:31:28 (3.70 MB/s) - ‘egsnp.php@id=434’ saved [8345/8345]
+
+--2016-03-28 11:31:28--  http://www.egscomics.com/egsnp.php?date=2016-03-18
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=435’
+
+     0K ........                                              100% 5.91M=0.001s
+
+2016-03-28 11:31:29 (5.91 MB/s) - ‘egsnp.php@id=435’ saved [8345/8345]
+
+--2016-03-28 11:31:29--  http://www.egscomics.com/egsnp.php?date=2016-03-21
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=436’
+
+     0K ........                                              100% 4.70M=0.002s
+
+2016-03-28 11:31:29 (4.70 MB/s) - ‘egsnp.php@id=436’ saved [8345/8345]
+
+--2016-03-28 11:31:29--  http://www.egscomics.com/egsnp.php?date=2016-03-23
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8345 (8.1K) [text/html]
+Saving to: ‘egsnp.php@id=437’
+
+     0K ........                                              100% 3.38M=0.002s
+
+2016-03-28 11:31:31 (3.38 MB/s) - ‘egsnp.php@id=437’ saved [8345/8345]
+
+--2016-03-28 11:31:31--  http://www.egscomics.com/egsnp.php?date=2016-03-25
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘egsnp.php@id=438’
+
+     0K ........                                               4.47M=0.002s
+
+2016-03-28 11:31:31 (4.47 MB/s) - ‘egsnp.php@id=438’ saved [8345]
+
+--2016-03-28 11:31:31--  http://www.egscomics.com/egsnp.php?date=2016-03-28
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘egsnp.php@id=439’
+
+     0K ........                                               2.98M=0.003s
+
+2016-03-28 11:31:32 (2.98 MB/s) - ‘egsnp.php@id=439’ saved [8345]
+
+--2016-03-28 11:31:33--  http://www.egscomics.com/sketchbook.php?date=2016-02-11
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7737 (7.6K) [text/html]
+Saving to: ‘sketchbook.php@id=877’
+
+     0K .......                                               100% 5.25M=0.001s
+
+2016-03-28 11:31:33 (5.25 MB/s) - ‘sketchbook.php@id=877’ saved [7737/7737]
+
+--2016-03-28 11:31:34--  http://www.egscomics.com/sketchbook.php?date=2016-02-11
+Resolving www.egscomics.com (www.egscomics.com)... 162.213.209.250
+Connecting to www.egscomics.com (www.egscomics.com)|162.213.209.250|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7737 (7.6K) [text/html]
+Saving to: ‘sketchbook.php@id=877’
+
+     0K .......                                               100% 5.43M=0.001s
+
+2016-03-28 11:31:34 (5.43 MB/s) - ‘sketchbook.php@id=877’ saved [7737/7737]
+

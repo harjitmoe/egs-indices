@@ -20,7 +20,7 @@
 #  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
 #  THE SOFTWARE.
 #
-# Copyright (c) Thomas Hori 2015.
+# Copyright (c) Thomas Hori 2015, 2016.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -50,7 +50,8 @@
 
 import re, os, time
 
-print """
+#print #Not needed anymore b/c lastic mechanism.
+"""
 ***
 Note that there must have been a large number of intervening comics since the last run for this to behave reliably.
 ***
@@ -70,6 +71,7 @@ names={"index":"story","egsnp":"np","sketchbook":"sketch"}
 f=open("metadataegs3.txt")
 dob=eval(f.read())
 f.close()
+lastic=None
 
 for interface in ("index","egsnp","sketchbook"):
     for styla in ("DateInBrowserTitle","DateStatedAboveComic"):
@@ -82,6 +84,8 @@ for interface in ("index","egsnp","sketchbook"):
                         fs+=1
                         if fs>=5:
                             i=1
+                            if lastic!=None:
+                                dab[lastic]=None #Not reliable for last comic.
                             break
                         else:
                             i+=1
@@ -105,6 +109,7 @@ for interface in ("index","egsnp","sketchbook"):
                     if not res2:
                         works=None
                     dab[names[interface]+"-"+styla+"-"+str(i)]=(works,res2.group() if res2 else None)
+                    lastic=names[interface]+"-"+styla+"-"+str(i)
                 else:
                     fs=0
             except Exception,e:

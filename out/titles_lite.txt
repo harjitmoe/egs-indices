@@ -1026,6 +1026,7 @@
 |2014-03-05 = ("Summer Moments #3 - At The Movies")
 |2014-03-06 = ("Previous Summer Moments #4 - A Perfect Plan")
 |2014-03-07 = ("Previous Summer Moments #5 - Hazards Of Clone Form Pranking")
+|2016-03-28 = ("Checking In")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -2053,6 +2054,7 @@
 |1821 = ("Summer Moments #3 - At The Movies")
 |1822 = ("Previous Summer Moments #4 - A Perfect Plan")
 |1823 = ("Previous Summer Moments #5 - Hazards Of Clone Form Pranking")
+|2173 = ("Checking In")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
@@ -2887,6 +2889,7 @@
 |2008-10-07 = ("Oblivious Wand Waving - Part 13")
 |2008-10-11 = ("Oblivious Wand Waving - Part 14")
 |2008-10-14 = ("Oblivious Wand Waving - Part 15")
+|2016-03-28 = ("Friendgeance")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -3034,6 +3037,7 @@
 |154 = ("Oblivious Wand Waving - Part 13")
 |155 = ("Oblivious Wand Waving - Part 14")
 |156 = ("Oblivious Wand Waving - Part 15")
+|439 = ("Friendgeance")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
