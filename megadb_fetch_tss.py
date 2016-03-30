@@ -68,7 +68,7 @@ def megadb_fetch_tss(alldat):
                 if strip['Id'] in databases.titlebank["sbmegatitles"]: #NOT elif
                     strip['Titles']["Official"]=databases.titlebank["sbmegatitles"][strip['Id']]
                 elif strip['Id'] in databases.metadataegs["sketch"]: #YES elif
-                    c=utility.deentity(databases.metadataegs["sketch"][strip['Id']]["Commentary"].replace("&nbsp;"," "),0)
+                    c=utility.deentity(utility.recdeentity(databases.metadataegs["sketch"][strip['Id']]["Commentary"].replace("&nbsp;"," "),0))
                     if c.count(marker):
                         strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker,1)[1].split("</p>",1)[0].split("<br />",1)[0])
                     elif c.count(marker2):

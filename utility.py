@@ -168,6 +168,21 @@ def entity_escape(data):
         data=data.replace(unichr(name2codepoint[name]),u"&"+name+u";")
     return data.encode("utf-8")
 
+def recdeentity(obj,mode=0):
+    if isinstance(obj, type({})):
+        d={}
+        for k,v in obj.items():
+            d[recdeentity(k, mode=mode)]=recdeentity(v, mode=mode)
+        return d
+    elif isinstance(obj, type([])):
+        return map(lambda ob,mode=mode:recdeentity(ob,mode=mode), obj)
+    elif isinstance(obj,type(())):
+        return map(lambda ob,mode=mode:recdeentity(ob,mode=mode), obj)
+    elif type(obj)==type(""):
+        return deentity(obj,mode)
+    else:
+        return obj
+
 ##############################################
 ##### Reaction link duplicity regulation #####
 

@@ -98,7 +98,7 @@ def handle_strip_record(strip,sect,classics_db,haylo_db,reddit_links,links_910ne
     if strip["DateIndexable"]:
         utility.dates_index(strip,databases.dateswork[sect])
     if strip["Id"] in databases.metadataegs[sect]:
-        strip.update(databases.metadataegs[sect][strip["Id"]])
+        strip.update(utility.recdeentity(databases.metadataegs[sect][strip["Id"]]))
     if strip["Id"] in reddit_links[sect]:
         strip["ReactionLinks"].append(reddit_links[sect][strip["Id"]])
     if strip["Date"] in links_910new[sect]:

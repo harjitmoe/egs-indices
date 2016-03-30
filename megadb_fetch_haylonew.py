@@ -54,7 +54,7 @@ def megadb_fetch_haylonew(main_db,haylo_additional_hierarchy,haylo_db,links_910n
             #Date indexing (XXX)
             utility.dates_index(strip,databases.dateswork["story"])
             if strip["Id"] in databases.metadataegs["story"]:
-                strip.update(databases.metadataegs["story"][strip["Id"]])
+                strip.update(utility.recdeentity(databases.metadataegs["story"][strip["Id"]]))
             strip["SharedDateIndex"]=0
             strip["FileNameTitle"]=None
             strip["Section"]="Story"

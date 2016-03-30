@@ -68,7 +68,7 @@ def megadb_fetch_newfiles(alldat,reddit_titles,reddit_links,links_910new):
             strip_obj["Date"]=source_strip[0]
             strip_obj["Id"]=source_strip[1]
             if strip_obj["Id"] in databases.metadataegs[sect]:
-                strip_obj.update(databases.metadataegs[sect][strip_obj["Id"]])
+                strip_obj.update(utility.recdeentity(databases.metadataegs[sect][strip_obj["Id"]]))
             strip_obj["OokiiId"]=-1
             strip_obj["FileNameTitle"]=source_strip[2]
             strip_obj["Section"]=utility.egslink2ookii[sect]
