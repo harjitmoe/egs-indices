@@ -1,3 +1,6 @@
+#!/usr/bin/env python2
+# -*- mode: python; coding: utf-8 -*-
+
 # Copyright (c) 2009 xipe totec
 #
 # http://code.activestate.com/recipes/576881-fetch-all-new-xkcd-strips/

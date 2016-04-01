@@ -2172,6 +2172,7 @@
 |2016-03-25 = ("From Bad to Worse (jstutter, based on filename) (Reddit)")
 |2016-03-28 = ("Checking In (Official)")
 |2016-03-30 = ("Critical Information (Official)")
+|2016-04-01 = ("Return In The Avengers (Official)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic (Official)")
@@ -4345,6 +4346,7 @@
 |2172 = ("From Bad to Worse (jstutter, based on filename) (Reddit)")
 |2173 = ("Checking In (Official)")
 |2174 = ("Critical Information (Official)")
+|2175 = ("Return In The Avengers (Official)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -5375,6 +5377,7 @@
 |2014-03-07 = ("Previous Summer Moments #5 - Hazards Of Clone Form Pranking")
 |2016-03-28 = ("Checking In")
 |2016-03-30 = ("Critical Information")
+|2016-04-01 = ("Return In The Avengers")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -6404,6 +6407,7 @@
 |1823 = ("Previous Summer Moments #5 - Hazards Of Clone Form Pranking")
 |2173 = ("Checking In")
 |2174 = ("Critical Information")
+|2175 = ("Return In The Avengers")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -10071,6 +10075,7 @@
 |2016-03-25 = ("From Bad to Worse (jstutter, based on filename)")
 |2016-03-28 = ("Checking In")
 |2016-03-30 = ("Critical Information")
+|2016-04-01 = ("Return In The Avengers")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -12244,6 +12249,7 @@
 |2172 = ("From Bad to Worse (jstutter, based on filename)")
 |2173 = ("Checking In")
 |2174 = ("Critical Information")
+|2175 = ("Return In The Avengers")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -15607,6 +15613,7 @@
 |2016-03-25 = ("From Bad to Worse (jstutter, based on filename)")
 |2016-03-28 = ("Checking In")
 |2016-03-30 = ("Critical Information")
+|2016-04-01 = ("Return In The Avengers")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -17780,6 +17787,7 @@
 |2172 = ("From Bad to Worse (jstutter, based on filename)")
 |2173 = ("Checking In")
 |2174 = ("Critical Information")
+|2175 = ("Return In The Avengers")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -19959,6 +19967,7 @@
 |2016-03-25 = ("From Bad to Worse (jstutter, based on filename)")
 |2016-03-28 = ("Checking In")
 |2016-03-30 = ("Critical Information")
+|2016-04-01 = ("Return In The Avengers")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -22132,6 +22141,7 @@
 |2172 = ("From Bad to Worse (jstutter, based on filename)")
 |2173 = ("Checking In")
 |2174 = ("Critical Information")
+|2175 = ("Return In The Avengers")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -32155,6 +32165,7 @@
 |2016-03-25 = ("Chibipocalypse (jstutter, based on filename) (Reddit)")
 |2016-03-28 = ("Friendgeance (Official)")
 |2016-03-30 = ("You've Lost Karma (Official)")
+|2016-04-01 = ("Noble Quest (Official)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)")
@@ -32597,6 +32608,7 @@
 |438 = ("Chibipocalypse (jstutter, based on filename) (Reddit)")
 |439 = ("Friendgeance (Official)")
 |440 = ("You've Lost Karma (Official)")
+|441 = ("Noble Quest (Official)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -32747,6 +32759,7 @@
 |2008-10-14 = ("Oblivious Wand Waving - Part 15")
 |2016-03-28 = ("Friendgeance")
 |2016-03-30 = ("You've Lost Karma")
+|2016-04-01 = ("Noble Quest")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -32896,6 +32909,7 @@
 |156 = ("Oblivious Wand Waving - Part 15")
 |439 = ("Friendgeance")
 |440 = ("You've Lost Karma")
+|441 = ("Noble Quest")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -33354,6 +33368,7 @@
 |2016-03-25 = ("Chibipocalypse (jstutter, based on filename)")
 |2016-03-28 = ("Friendgeance")
 |2016-03-30 = ("You've Lost Karma")
+|2016-04-01 = ("Noble Quest")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -33796,6 +33811,7 @@
 |438 = ("Chibipocalypse (jstutter, based on filename)")
 |439 = ("Friendgeance")
 |440 = ("You've Lost Karma")
+|441 = ("Noble Quest")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -34312,6 +34328,7 @@
 |2016-03-25 = ("Chibipocalypse (jstutter, based on filename)")
 |2016-03-28 = ("Friendgeance")
 |2016-03-30 = ("You've Lost Karma")
+|2016-04-01 = ("Noble Quest")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -34754,6 +34771,7 @@
 |438 = ("Chibipocalypse (jstutter, based on filename)")
 |439 = ("Friendgeance")
 |440 = ("You've Lost Karma")
+|441 = ("Noble Quest")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -35610,6 +35628,7 @@
 |2016-03-25 = ("Chibipocalypse (jstutter, based on filename)")
 |2016-03-28 = ("Friendgeance")
 |2016-03-30 = ("You've Lost Karma")
+|2016-04-01 = ("Noble Quest")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("XYC")
@@ -36052,6 +36071,7 @@
 |438 = ("Chibipocalypse (jstutter, based on filename)")
 |439 = ("Friendgeance")
 |440 = ("You've Lost Karma")
+|441 = ("Noble Quest")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
