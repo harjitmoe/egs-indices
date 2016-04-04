@@ -2173,6 +2173,7 @@
 |2016-03-28 = ("Checking In (Official)")
 |2016-03-30 = ("Critical Information (Official)")
 |2016-04-01 = ("Return In The Avengers (Official)")
+|2016-04-04 = ("Best Power (Official)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic (Official)")
@@ -4347,6 +4348,7 @@
 |2173 = ("Checking In (Official)")
 |2174 = ("Critical Information (Official)")
 |2175 = ("Return In The Avengers (Official)")
+|2176 = ("Best Power (Official)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -5378,6 +5380,7 @@
 |2016-03-28 = ("Checking In")
 |2016-03-30 = ("Critical Information")
 |2016-04-01 = ("Return In The Avengers")
+|2016-04-04 = ("Best Power")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -6408,6 +6411,7 @@
 |2173 = ("Checking In")
 |2174 = ("Critical Information")
 |2175 = ("Return In The Avengers")
+|2176 = ("Best Power")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -10076,6 +10080,7 @@
 |2016-03-28 = ("Checking In")
 |2016-03-30 = ("Critical Information")
 |2016-04-01 = ("Return In The Avengers")
+|2016-04-04 = ("Best Power")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -12250,6 +12255,7 @@
 |2173 = ("Checking In")
 |2174 = ("Critical Information")
 |2175 = ("Return In The Avengers")
+|2176 = ("Best Power")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -15614,6 +15620,7 @@
 |2016-03-28 = ("Checking In")
 |2016-03-30 = ("Critical Information")
 |2016-04-01 = ("Return In The Avengers")
+|2016-04-04 = ("Best Power")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -17788,6 +17795,7 @@
 |2173 = ("Checking In")
 |2174 = ("Critical Information")
 |2175 = ("Return In The Avengers")
+|2176 = ("Best Power")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -19968,6 +19976,7 @@
 |2016-03-28 = ("Checking In")
 |2016-03-30 = ("Critical Information")
 |2016-04-01 = ("Return In The Avengers")
+|2016-04-04 = ("Best Power")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -22142,6 +22151,7 @@
 |2173 = ("Checking In")
 |2174 = ("Critical Information")
 |2175 = ("Return In The Avengers")
+|2176 = ("Best Power")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -32166,6 +32176,7 @@
 |2016-03-28 = ("Friendgeance (Official)")
 |2016-03-30 = ("You've Lost Karma (Official)")
 |2016-04-01 = ("Noble Quest (Official)")
+|2016-04-04 = ("Silver Tongue (Official)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)")
@@ -32609,6 +32620,7 @@
 |439 = ("Friendgeance (Official)")
 |440 = ("You've Lost Karma (Official)")
 |441 = ("Noble Quest (Official)")
+|442 = ("Silver Tongue (Official)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -32760,6 +32772,7 @@
 |2016-03-28 = ("Friendgeance")
 |2016-03-30 = ("You've Lost Karma")
 |2016-04-01 = ("Noble Quest")
+|2016-04-04 = ("Silver Tongue")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -32910,6 +32923,7 @@
 |439 = ("Friendgeance")
 |440 = ("You've Lost Karma")
 |441 = ("Noble Quest")
+|442 = ("Silver Tongue")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -33369,6 +33383,7 @@
 |2016-03-28 = ("Friendgeance")
 |2016-03-30 = ("You've Lost Karma")
 |2016-04-01 = ("Noble Quest")
+|2016-04-04 = ("Silver Tongue")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -33812,6 +33827,7 @@
 |439 = ("Friendgeance")
 |440 = ("You've Lost Karma")
 |441 = ("Noble Quest")
+|442 = ("Silver Tongue")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -34329,6 +34345,7 @@
 |2016-03-28 = ("Friendgeance")
 |2016-03-30 = ("You've Lost Karma")
 |2016-04-01 = ("Noble Quest")
+|2016-04-04 = ("Silver Tongue")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -34772,6 +34789,7 @@
 |439 = ("Friendgeance")
 |440 = ("You've Lost Karma")
 |441 = ("Noble Quest")
+|442 = ("Silver Tongue")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -35629,6 +35647,7 @@
 |2016-03-28 = ("Friendgeance")
 |2016-03-30 = ("You've Lost Karma")
 |2016-04-01 = ("Noble Quest")
+|2016-04-04 = ("Silver Tongue")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("XYC")
@@ -36072,6 +36091,7 @@
 |439 = ("Friendgeance")
 |440 = ("You've Lost Karma")
 |441 = ("Noble Quest")
+|442 = ("Silver Tongue")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}

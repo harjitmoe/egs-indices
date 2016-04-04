@@ -1029,6 +1029,7 @@
 |2016-03-28 = ("Checking In")
 |2016-03-30 = ("Critical Information")
 |2016-04-01 = ("Return In The Avengers")
+|2016-04-04 = ("Best Power")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = ("First Comic")
@@ -2059,6 +2060,7 @@
 |2173 = ("Checking In")
 |2174 = ("Critical Information")
 |2175 = ("Return In The Avengers")
+|2176 = ("Best Power")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
@@ -2896,6 +2898,7 @@
 |2016-03-28 = ("Friendgeance")
 |2016-03-30 = ("You've Lost Karma")
 |2016-04-01 = ("Noble Quest")
+|2016-04-04 = ("Silver Tongue")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = ("Tedd Forgot To Do Something - Part I")
@@ -3046,6 +3049,7 @@
 |439 = ("Friendgeance")
 |440 = ("You've Lost Karma")
 |441 = ("Noble Quest")
+|442 = ("Silver Tongue")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
