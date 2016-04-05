@@ -23729,6 +23729,7 @@
 |2015-08-18 = ("MUSCLES (m2pt5) (Reddit)")
 |2015-09-01 = ("Mr. Verres as Father Time (jstutter) (Reddit)")
 |2016-02-11 = ("Ten vs Spider (jstutter, based on filename) (Reddit)")
+|2016-04-05 = ("Triumphant Magical Girl Grace and Defeated Steampunk Greg (Official)")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |79 = ("Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor. (Official)")
@@ -24610,6 +24611,7 @@
 |875 = ("Happy... New Year? (m2pt5) (Reddit)")
 |876 = ("Mr. Verres as Father Time (jstutter) (Reddit)")
 |877 = ("Ten vs Spider (jstutter, based on filename) (Reddit)")
+|878 = ("Triumphant Magical Girl Grace and Defeated Steampunk Greg (Official)")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -24949,6 +24951,7 @@
 |2015-07-07 = ("Nanasajayne")
 |2015-07-14 = ("Sorceress Sarah")
 |2015-08-06 = ("Requested by J. L. Schultz - Raven as Swain from League of Legends")
+|2016-04-05 = ("Triumphant Magical Girl Grace and Defeated Steampunk Greg")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |79 = ("Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.")
@@ -25292,6 +25295,7 @@
 |869 = ("Sorceress Sarah")
 |870 = ("Requested by J. L. Schultz - Raven as Swain from League of Legends")
 |874 = ("Requested by Yakaru - My Avatar, Nanase, Ellen, Grace, Tedd celebrating new years")
+|878 = ("Triumphant Magical Girl Grace and Defeated Steampunk Greg")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -26178,6 +26182,7 @@
 |2015-08-18 = ("MUSCLES (m2pt5)")
 |2015-09-01 = ("Mr. Verres as Father Time (jstutter)")
 |2016-02-11 = ("Ten vs Spider (jstutter, based on filename)")
+|2016-04-05 = ("Triumphant Magical Girl Grace and Defeated Steampunk Greg")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |79 = ("Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.")
@@ -27059,6 +27064,7 @@
 |875 = ("Happy... New Year? (m2pt5)")
 |876 = ("Mr. Verres as Father Time (jstutter)")
 |877 = ("Ten vs Spider (jstutter, based on filename)")
+|878 = ("Triumphant Magical Girl Grace and Defeated Steampunk Greg")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -28789,6 +28795,7 @@
 |2015-08-18 = ("MUSCLES (m2pt5)")
 |2015-09-01 = ("Mr. Verres as Father Time (jstutter)")
 |2016-02-11 = ("Ten vs Spider (jstutter, based on filename)")
+|2016-04-05 = ("Triumphant Magical Girl Grace and Defeated Steampunk Greg")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |79 = ("Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.")
@@ -29670,6 +29677,7 @@
 |875 = ("Happy... New Year? (m2pt5)")
 |876 = ("Mr. Verres as Father Time (jstutter)")
 |877 = ("Ten vs Spider (jstutter, based on filename)")
+|878 = ("Triumphant Magical Girl Grace and Defeated Steampunk Greg")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -30534,6 +30542,7 @@
 |2015-08-18 = ("MUSCLES (m2pt5)")
 |2015-09-01 = ("Mr. Verres as Father Time (jstutter)")
 |2016-02-11 = ("Ten vs Spider (jstutter, based on filename)")
+|2016-04-05 = ("Triumphant Magical Girl Grace and Defeated Steampunk Greg")
 |#default = }}
 |id = {{#switch:{{{4}}}
 |79 = ("Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.")
@@ -31415,6 +31424,7 @@
 |875 = ("Happy... New Year? (m2pt5)")
 |876 = ("Mr. Verres as Father Time (jstutter)")
 |877 = ("Ten vs Spider (jstutter, based on filename)")
+|878 = ("Triumphant Magical Girl Grace and Defeated Steampunk Greg")
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}

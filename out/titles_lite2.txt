@@ -2402,6 +2402,7 @@
 |2015-07-07 = Nanasajayne
 |2015-07-14 = Sorceress Sarah
 |2015-08-06 = Requested by J. L. Schultz - Raven as Swain from League of Legends
+|2016-04-05 = Triumphant Magical Girl Grace and Defeated Steampunk Greg
 |#default = }}
 |id = {{#switch:{{{4}}}
 |79 = Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.
@@ -2745,6 +2746,7 @@
 |869 = Sorceress Sarah
 |870 = Requested by J. L. Schultz - Raven as Swain from League of Legends
 |874 = Requested by Yakaru - My Avatar, Nanase, Ellen, Grace, Tedd celebrating new years
+|878 = Triumphant Magical Girl Grace and Defeated Steampunk Greg
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
