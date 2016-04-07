@@ -2174,6 +2174,7 @@
 |2016-03-30 = Critical Information (Official)
 |2016-04-01 = Return In The Avengers (Official)
 |2016-04-04 = Best Power (Official)
+|2016-04-06 = Bon Voyage (Official)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic (Official)
@@ -4349,6 +4350,7 @@
 |2174 = Critical Information (Official)
 |2175 = Return In The Avengers (Official)
 |2176 = Best Power (Official)
+|2177 = Bon Voyage (Official)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -5381,6 +5383,7 @@
 |2016-03-30 = Critical Information
 |2016-04-01 = Return In The Avengers
 |2016-04-04 = Best Power
+|2016-04-06 = Bon Voyage
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -6412,6 +6415,7 @@
 |2174 = Critical Information
 |2175 = Return In The Avengers
 |2176 = Best Power
+|2177 = Bon Voyage
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -10081,6 +10085,7 @@
 |2016-03-30 = Critical Information
 |2016-04-01 = Return In The Avengers
 |2016-04-04 = Best Power
+|2016-04-06 = Bon Voyage
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -12256,6 +12261,7 @@
 |2174 = Critical Information
 |2175 = Return In The Avengers
 |2176 = Best Power
+|2177 = Bon Voyage
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -15621,6 +15627,7 @@
 |2016-03-30 = Critical Information
 |2016-04-01 = Return In The Avengers
 |2016-04-04 = Best Power
+|2016-04-06 = Bon Voyage
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -17796,6 +17803,7 @@
 |2174 = Critical Information
 |2175 = Return In The Avengers
 |2176 = Best Power
+|2177 = Bon Voyage
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -19977,6 +19985,7 @@
 |2016-03-30 = Critical Information
 |2016-04-01 = Return In The Avengers
 |2016-04-04 = Best Power
+|2016-04-06 = Bon Voyage
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -22152,6 +22161,7 @@
 |2174 = Critical Information
 |2175 = Return In The Avengers
 |2176 = Best Power
+|2177 = Bon Voyage
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
