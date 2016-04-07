@@ -31,7 +31,7 @@
 # 3k compatibility has been made.  Python 2.5 requires the
 # simplejson extension but is likely to work.
 
-import __builtin__,os
+import __builtin__, os, sys
 
 touched=set()
 modules=set()
@@ -44,7 +44,7 @@ class ModuleWarper(object):
         object.__setattr__(self,"mod",mod)
     def __getattribute__(self,attr):
         if attr.startswith("__") and attr.endswith("__") \
-                and (attr not in ("__all__","__dict__")):
+                and (attr not in ("__all__","__dict__","__name__","__file__")):
             return object.__getattribute__(self,attr)
         nom=object.__getattribute__(self,"nom")
         mod=object.__getattribute__(self,"mod")
@@ -77,6 +77,11 @@ def __import__(nom,*args,**kw):
         touched.add(nom)
     return r
 __builtin__.__import__=__import__
+for i in sys.modules.keys():
+    if (i not in sys.builtin_module_names) and ("codecs" not in i) and ("encodings" not in i):
+        #Force reloading and hence reimporting
+        #of dependencies.
+        del sys.modules[i]
 
 import sys, os, shutil, utility, __builtin__
 
@@ -162,11 +167,9 @@ export_html.export_html(alldat)
 # Regenerate Shiveapedia templates and docs
 import export_titles_template
 import export_titles_template_lite
-import export_titles_template_lite2
 import export_numberdatemaps
 export_titles_template.export_titles_template(alldat)
 export_titles_template_lite.export_titles_template_lite(alldat)
-export_titles_template_lite2.export_titles_template_lite2(alldat)
 export_numberdatemaps.export_numberdatemaps(alldat)
 
 # Enter build dir

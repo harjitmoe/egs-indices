@@ -52,7 +52,7 @@ def doit(outfile,b):
             for comic in line["Comics"]:
                 if not comic["SharedDateIndex"]:
                     if source in comic["Titles"]:
-                        print>>outfile, "|"+comic["Date"]+' = ("'+utility.entity_escape(comic["Titles"][source])+'")'
+                        print>>outfile, "|"+comic["Date"]+' = '+utility.entity_escape(comic["Titles"][source])
     print>>outfile, "|#default = }}"
     #Only, by ID
     print>>outfile, "|id = {{#switch:{{{4}}}"
@@ -61,13 +61,13 @@ def doit(outfile,b):
             for comic in line["Comics"]:
                 if comic["Id"]!=-1:
                     if source in comic["Titles"]:
-                        print>>outfile, "|"+`comic["Id"]`+' = ("'+utility.entity_escape(comic["Titles"][source])+'")'
+                        print>>outfile, "|"+`comic["Id"]`+' = '+utility.entity_escape(comic["Titles"][source])
     print>>outfile, "|#default = }}"
     print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}"
 
 def export_titles_template_lite(alldat):
     print (">>> export_titles_template_lite")
-    outfile=open(".build/titles_lite.txt","w")
+    outfile=open(".build/titles_lite2.txt","w")
     print>>outfile, "<includeonly>{{#switch:{{{1}}}"
     for sect in ("story","sketch","np"):
         b=utility.specific_section(alldat,sect)["StoryArcs"]
@@ -79,7 +79,7 @@ def export_titles_template_lite(alldat):
     f.close()
     print>>outfile, "|bg={{#switch:{{{2}}}"
     for id in sorted(b.keys()):
-        print>>outfile, "|"+id+' = ("'+b[id]+'")'
+        print>>outfile, "|"+id+' = '+b[id]
     print>>outfile, "|#default = }}"
     print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>"
     print>>outfile, docs
@@ -87,5 +87,5 @@ def export_titles_template_lite(alldat):
 
 if __name__=="__main__":
     alldat=utility.open_alldat()
-    export_titles_template_lite(alldat)
+    export_titles_template_lite2(alldat)
 
