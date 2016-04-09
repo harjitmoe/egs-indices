@@ -1031,6 +1031,7 @@
 |2016-04-01 = Return In The Avengers
 |2016-04-04 = Best Power
 |2016-04-06 = Bon Voyage
+|2016-04-08 = Maybe
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -2063,6 +2064,7 @@
 |2175 = Return In The Avengers
 |2176 = Best Power
 |2177 = Bon Voyage
+|2178 = Maybe
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
