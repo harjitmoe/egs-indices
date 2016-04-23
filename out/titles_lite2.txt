@@ -1032,6 +1032,11 @@
 |2016-04-04 = Best Power
 |2016-04-06 = Bon Voyage
 |2016-04-08 = Maybe
+|2016-04-11 = Nothing can go wrong
+|2016-04-13 = Who Watches
+|2016-04-15 = T-Minus One
+|2016-04-18 = PI
+|2016-04-20 = I Trust Him
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -2065,6 +2070,11 @@
 |2176 = Best Power
 |2177 = Bon Voyage
 |2178 = Maybe
+|2179 = Nothing can go wrong
+|2180 = Who Watches
+|2181 = T-Minus One
+|2182 = PI
+|2183 = I Trust Him
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
@@ -2408,6 +2418,10 @@
 |2015-08-06 = Requested by J. L. Schultz - Raven as Swain from League of Legends
 |2016-04-05 = Triumphant Magical Girl Grace and Defeated Steampunk Greg
 |2016-04-07 = Requested by Anonymous - Sarah as Book from Firefly
+|2016-04-12 = Costume Party
+|2016-04-14 = Requested by Anonymous - Ellen as Simon from Firefly
+|2016-04-19 = Maximum Shipping
+|2016-04-22 = FV5 Greg and Justin Workout
 |#default = }}
 |id = {{#switch:{{{4}}}
 |79 = Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.
@@ -2753,6 +2767,10 @@
 |874 = Requested by Yakaru - My Avatar, Nanase, Ellen, Grace, Tedd celebrating new years
 |878 = Triumphant Magical Girl Grace and Defeated Steampunk Greg
 |879 = Requested by Anonymous - Sarah as Book from Firefly
+|880 = Costume Party
+|881 = Requested by Anonymous - Ellen as Simon from Firefly
+|882 = Maximum Shipping
+|883 = FV5 Greg and Justin Workout
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
@@ -2908,6 +2926,12 @@
 |2016-04-01 = Noble Quest
 |2016-04-04 = Silver Tongue
 |2016-04-08 = Outsourcing
+|2016-04-11 = AI With AF
+|2016-04-13 = Sales Pitch
+|2016-04-15 = Lizard Battle
+|2016-04-18 = Thank You Very Much
+|2016-04-20 = I'll Be There For You
+|2016-04-22 = Or Not
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -3060,6 +3084,12 @@
 |441 = Noble Quest
 |442 = Silver Tongue
 |444 = Outsourcing
+|445 = AI With AF
+|446 = Sales Pitch
+|447 = Lizard Battle
+|448 = Thank You Very Much
+|449 = I'll Be There For You
+|450 = Or Not
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
