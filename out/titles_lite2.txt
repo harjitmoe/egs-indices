@@ -1037,6 +1037,7 @@
 |2016-04-15 = T-Minus One
 |2016-04-18 = PI
 |2016-04-20 = I Trust Him
+|2016-04-27 = Magic Weapon Expert
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -2075,6 +2076,7 @@
 |2181 = T-Minus One
 |2182 = PI
 |2183 = I Trust Him
+|2185 = Magic Weapon Expert
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
@@ -2932,6 +2934,9 @@
 |2016-04-18 = Thank You Very Much
 |2016-04-20 = I'll Be There For You
 |2016-04-22 = Or Not
+|2016-04-25 = Bro
+|2016-04-27 = Oh Bro No
+|2016-04-29 = Welp
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -3090,6 +3095,9 @@
 |448 = Thank You Very Much
 |449 = I'll Be There For You
 |450 = Or Not
+|451 = Bro
+|452 = Oh Bro No
+|453 = Welp
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
