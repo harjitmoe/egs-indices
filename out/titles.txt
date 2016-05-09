@@ -2183,6 +2183,9 @@
 |2016-04-20 = I Trust Him (Official)
 |2016-04-25 = 
 |2016-04-27 = Magic Weapon Expert (Official)
+|2016-05-03 = More Info Needed (Official)
+|2016-05-06 = Pull The Strings (Official)
+|2016-05-09 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic (Official)
@@ -4367,6 +4370,9 @@
 |2183 = I Trust Him (Official)
 |2184 = 
 |2185 = Magic Weapon Expert (Official)
+|2186 = More Info Needed (Official)
+|2187 = Pull The Strings (Official)
+|2188 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -5407,6 +5413,8 @@
 |2016-04-18 = PI
 |2016-04-20 = I Trust Him
 |2016-04-27 = Magic Weapon Expert
+|2016-05-03 = More Info Needed
+|2016-05-06 = Pull The Strings
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -6446,6 +6454,8 @@
 |2182 = PI
 |2183 = I Trust Him
 |2185 = Magic Weapon Expert
+|2186 = More Info Needed
+|2187 = Pull The Strings
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -10124,6 +10134,9 @@
 |2016-04-20 = I Trust Him
 |2016-04-25 = acceptance
 |2016-04-27 = Magic Weapon Expert
+|2016-05-03 = More Info Needed
+|2016-05-06 = Pull The Strings
+|2016-05-09 = options
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -12308,6 +12321,9 @@
 |2183 = I Trust Him
 |2184 = acceptance
 |2185 = Magic Weapon Expert
+|2186 = More Info Needed
+|2187 = Pull The Strings
+|2188 = options
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -15682,6 +15698,9 @@
 |2016-04-20 = I Trust Him
 |2016-04-25 = acceptance
 |2016-04-27 = Magic Weapon Expert
+|2016-05-03 = More Info Needed
+|2016-05-06 = Pull The Strings
+|2016-05-09 = options
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -17866,6 +17885,9 @@
 |2183 = I Trust Him
 |2184 = acceptance
 |2185 = Magic Weapon Expert
+|2186 = More Info Needed
+|2187 = Pull The Strings
+|2188 = options
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -20056,6 +20078,9 @@
 |2016-04-20 = I Trust Him
 |2016-04-25 = acceptance
 |2016-04-27 = Magic Weapon Expert
+|2016-05-03 = More Info Needed
+|2016-05-06 = Pull The Strings
+|2016-05-09 = options
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -22240,6 +22265,9 @@
 |2183 = I Trust Him
 |2184 = acceptance
 |2185 = Magic Weapon Expert
+|2186 = More Info Needed
+|2187 = Pull The Strings
+|2188 = options
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -32336,6 +32364,9 @@
 |2016-04-25 = Bro (Official)
 |2016-04-27 = Oh Bro No (Official)
 |2016-04-29 = Welp (Official)
+|2016-05-02 = 
+|2016-05-04 = Bar Trolling (Official)
+|2016-05-06 = Milking It (Official)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)
@@ -32791,6 +32822,9 @@
 |451 = Bro (Official)
 |452 = Oh Bro No (Official)
 |453 = Welp (Official)
+|454 = 
+|455 = Bar Trolling (Official)
+|456 = Milking It (Official)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -32953,6 +32987,8 @@
 |2016-04-25 = Bro
 |2016-04-27 = Oh Bro No
 |2016-04-29 = Welp
+|2016-05-04 = Bar Trolling
+|2016-05-06 = Milking It
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -33114,6 +33150,8 @@
 |451 = Bro
 |452 = Oh Bro No
 |453 = Welp
+|455 = Bar Trolling
+|456 = Milking It
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -33585,6 +33623,9 @@
 |2016-04-25 = Bro
 |2016-04-27 = Oh Bro No
 |2016-04-29 = Welp
+|2016-05-02 = thedame
+|2016-05-04 = Bar Trolling
+|2016-05-06 = Milking It
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -34040,6 +34081,9 @@
 |451 = Bro
 |452 = Oh Bro No
 |453 = Welp
+|454 = thedame
+|455 = Bar Trolling
+|456 = Milking It
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -34569,6 +34613,9 @@
 |2016-04-25 = Bro
 |2016-04-27 = Oh Bro No
 |2016-04-29 = Welp
+|2016-05-02 = thedame
+|2016-05-04 = Bar Trolling
+|2016-05-06 = Milking It
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -35024,6 +35071,9 @@
 |451 = Bro
 |452 = Oh Bro No
 |453 = Welp
+|454 = thedame
+|455 = Bar Trolling
+|456 = Milking It
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -35893,6 +35943,9 @@
 |2016-04-25 = Bro
 |2016-04-27 = Oh Bro No
 |2016-04-29 = Welp
+|2016-05-02 = thedame
+|2016-05-04 = Bar Trolling
+|2016-05-06 = Milking It
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = XYC
@@ -36348,6 +36401,9 @@
 |451 = Bro
 |452 = Oh Bro No
 |453 = Welp
+|454 = thedame
+|455 = Bar Trolling
+|456 = Milking It
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
