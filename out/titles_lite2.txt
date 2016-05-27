@@ -2949,11 +2949,11 @@
 |2016-04-29 = Welp
 |2016-05-04 = Bar Trolling
 |2016-05-06 = Milking It
-|2016-05-11 = DUN DUN DUN
-|2016-05-13 = Deduction Rush
-|2016-05-16 = Solved
-|2016-05-18 = Legendary Roach
-|2016-05-20 = End Of An Era
+|2016-05-09 = DUN DUN DUN
+|2016-05-11 = Deduction Rush
+|2016-05-13 = Solved
+|2016-05-16 = Legendary Roach
+|2016-05-18 = End Of An Era
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I

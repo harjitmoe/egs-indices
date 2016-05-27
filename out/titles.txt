@@ -32457,12 +32457,13 @@
 |2016-05-02 = The Dame (m2pt5, based on filename) (Reddit)
 |2016-05-04 = Bar Trolling (Official) / Bar Trolling (jstutter, based on filename) (Reddit)
 |2016-05-06 = Milking It (Official) / Milking it (jstutter, based on filename) (Reddit)
-|2016-05-11 = DUN DUN DUN (Official) / Dun Dun DUN! (m2pt5) (Reddit)
-|2016-05-13 = Deduction Rush (Official) / Deduction Rush (PthariensFlame) (Reddit)
-|2016-05-16 = Solved (Official) / Solved (PthariensFlame) (Reddit)
-|2016-05-18 = Legendary Roach (Official) / Random Drops (LittleKingsguard) (Reddit)
-|2016-05-20 = End Of An Era (Official) / Tetris: The movie (jstutter) (Reddit)
-|2016-05-23 = Ghostbusters (jstutter) (Reddit)
+|2016-05-09 = DUN DUN DUN (Official) / Dun Dun DUN! (m2pt5, based on filename) (Reddit)
+|2016-05-11 = Deduction Rush (Official) / Deduction Rush (PthariensFlame, based on filename) (Reddit)
+|2016-05-13 = Solved (Official) / Solved (PthariensFlame, based on filename) (Reddit)
+|2016-05-16 = Legendary Roach (Official) / Random Drops (LittleKingsguard) (Reddit)
+|2016-05-18 = End Of An Era (Official) / Tetris: The movie (jstutter) (Reddit)
+|2016-05-20 = Ghostbusters (jstutter) (Reddit)
+|2016-05-23 = U Mad? (m2pt5) (Reddit)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)
@@ -32921,12 +32922,13 @@
 |454 = The Dame (m2pt5, based on filename) (Reddit)
 |455 = Bar Trolling (Official) / Bar Trolling (jstutter, based on filename) (Reddit)
 |456 = Milking It (Official) / Milking it (jstutter, based on filename) (Reddit)
-|457 = DUN DUN DUN (Official) / Dun Dun DUN! (m2pt5) (Reddit)
-|458 = Deduction Rush (Official) / Deduction Rush (PthariensFlame) (Reddit)
-|459 = Solved (Official) / Solved (PthariensFlame) (Reddit)
+|457 = DUN DUN DUN (Official) / Dun Dun DUN! (m2pt5, based on filename) (Reddit)
+|458 = Deduction Rush (Official) / Deduction Rush (PthariensFlame, based on filename) (Reddit)
+|459 = Solved (Official) / Solved (PthariensFlame, based on filename) (Reddit)
 |460 = Legendary Roach (Official) / Random Drops (LittleKingsguard) (Reddit)
 |461 = End Of An Era (Official) / Tetris: The movie (jstutter) (Reddit)
 |462 = Ghostbusters (jstutter) (Reddit)
+|463 = U Mad? (m2pt5) (Reddit)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -33091,11 +33093,11 @@
 |2016-04-29 = Welp
 |2016-05-04 = Bar Trolling
 |2016-05-06 = Milking It
-|2016-05-11 = DUN DUN DUN
-|2016-05-13 = Deduction Rush
-|2016-05-16 = Solved
-|2016-05-18 = Legendary Roach
-|2016-05-20 = End Of An Era
+|2016-05-09 = DUN DUN DUN
+|2016-05-11 = Deduction Rush
+|2016-05-13 = Solved
+|2016-05-16 = Legendary Roach
+|2016-05-18 = End Of An Era
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -33738,12 +33740,13 @@
 |2016-05-02 = The Dame (m2pt5, based on filename)
 |2016-05-04 = Bar Trolling
 |2016-05-06 = Milking It
-|2016-05-11 = DUN DUN DUN
-|2016-05-13 = Deduction Rush
-|2016-05-16 = Solved
-|2016-05-18 = Legendary Roach
-|2016-05-20 = End Of An Era
-|2016-05-23 = Ghostbusters (jstutter)
+|2016-05-09 = DUN DUN DUN
+|2016-05-11 = Deduction Rush
+|2016-05-13 = Solved
+|2016-05-16 = Legendary Roach
+|2016-05-18 = End Of An Era
+|2016-05-20 = Ghostbusters (jstutter)
+|2016-05-23 = U Mad? (m2pt5)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -34208,6 +34211,7 @@
 |460 = Legendary Roach
 |461 = End Of An Era
 |462 = Ghostbusters (jstutter)
+|463 = U Mad? (m2pt5)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -34740,12 +34744,13 @@
 |2016-05-02 = The Dame (m2pt5, based on filename)
 |2016-05-04 = Bar Trolling
 |2016-05-06 = Milking It
-|2016-05-11 = DUN DUN DUN
-|2016-05-13 = Deduction Rush
-|2016-05-16 = Solved
-|2016-05-18 = Legendary Roach
-|2016-05-20 = End Of An Era
-|2016-05-23 = Ghostbusters (jstutter)
+|2016-05-09 = DUN DUN DUN
+|2016-05-11 = Deduction Rush
+|2016-05-13 = Solved
+|2016-05-16 = Legendary Roach
+|2016-05-18 = End Of An Era
+|2016-05-20 = Ghostbusters (jstutter)
+|2016-05-23 = U Mad? (m2pt5)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -35210,6 +35215,7 @@
 |460 = Legendary Roach
 |461 = End Of An Era
 |462 = Ghostbusters (jstutter)
+|463 = U Mad? (m2pt5)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -36082,12 +36088,13 @@
 |2016-05-02 = The Dame (m2pt5, based on filename)
 |2016-05-04 = Bar Trolling
 |2016-05-06 = Milking It
-|2016-05-11 = DUN DUN DUN
-|2016-05-13 = Deduction Rush
-|2016-05-16 = Solved
-|2016-05-18 = Legendary Roach
-|2016-05-20 = End Of An Era
-|2016-05-23 = Ghostbusters (jstutter)
+|2016-05-09 = DUN DUN DUN
+|2016-05-11 = Deduction Rush
+|2016-05-13 = Solved
+|2016-05-16 = Legendary Roach
+|2016-05-18 = End Of An Era
+|2016-05-20 = Ghostbusters (jstutter)
+|2016-05-23 = U Mad? (m2pt5)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = XYC
@@ -36552,6 +36559,7 @@
 |460 = Legendary Roach
 |461 = End Of An Era
 |462 = Ghostbusters (jstutter)
+|463 = U Mad? (m2pt5)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -36831,12 +36839,13 @@
 |2016-05-02 = The Dame (m2pt5, based on filename)
 |2016-05-04 = Bar Trolling (jstutter, based on filename)
 |2016-05-06 = Milking it (jstutter, based on filename)
-|2016-05-11 = Dun Dun DUN! (m2pt5)
-|2016-05-13 = Deduction Rush (PthariensFlame)
-|2016-05-16 = Solved (PthariensFlame)
-|2016-05-18 = Random Drops (LittleKingsguard)
-|2016-05-20 = Tetris: The movie (jstutter)
-|2016-05-23 = Ghostbusters (jstutter)
+|2016-05-09 = Dun Dun DUN! (m2pt5, based on filename)
+|2016-05-11 = Deduction Rush (PthariensFlame, based on filename)
+|2016-05-13 = Solved (PthariensFlame, based on filename)
+|2016-05-16 = Random Drops (LittleKingsguard)
+|2016-05-18 = Tetris: The movie (jstutter)
+|2016-05-20 = Ghostbusters (jstutter)
+|2016-05-23 = U Mad? (m2pt5)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |180 = Farewell Gods of Curling! (ScorpSt)
@@ -37110,12 +37119,13 @@
 |454 = The Dame (m2pt5, based on filename)
 |455 = Bar Trolling (jstutter, based on filename)
 |456 = Milking it (jstutter, based on filename)
-|457 = Dun Dun DUN! (m2pt5)
-|458 = Deduction Rush (PthariensFlame)
-|459 = Solved (PthariensFlame)
+|457 = Dun Dun DUN! (m2pt5, based on filename)
+|458 = Deduction Rush (PthariensFlame, based on filename)
+|459 = Solved (PthariensFlame, based on filename)
 |460 = Random Drops (LittleKingsguard)
 |461 = Tetris: The movie (jstutter)
 |462 = Ghostbusters (jstutter)
+|463 = U Mad? (m2pt5)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}
