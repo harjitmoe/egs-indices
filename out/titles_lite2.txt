@@ -800,7 +800,7 @@
 |2006-11-06 = TF Gun Forms and Variants, Part 2
 |2006-11-13 = TF Gun Forms and Variants, Part 3
 |2006-12-29 = Super Slippery Water Balloon Conclusion
-|2007-01-01 = The Fateful Dual, Part 1
+|2007-01-01 = The Fateful Duel, Part 1
 |2007-01-03 = The Fateful Duel, Part 2
 |2007-01-05 = The Fateful Duel, Part 3
 |2007-01-08 = Somewhat Fateful Investigation (it's Part of Their Jobs, After All)
@@ -1040,6 +1040,9 @@
 |2016-04-27 = Magic Weapon Expert
 |2016-05-03 = More Info Needed
 |2016-05-06 = Pull The Strings
+|2016-05-11 = Reunion
+|2016-05-13 = Contrast
+|2016-05-16 = Soon
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -1841,7 +1844,7 @@
 |817 = TF Gun Forms and Variants, Part 2
 |818 = TF Gun Forms and Variants, Part 3
 |819 = Super Slippery Water Balloon Conclusion
-|820 = The Fateful Dual, Part 1
+|820 = The Fateful Duel, Part 1
 |821 = The Fateful Duel, Part 2
 |822 = The Fateful Duel, Part 3
 |823 = Somewhat Fateful Investigation (it's Part of Their Jobs, After All)
@@ -2081,6 +2084,9 @@
 |2185 = Magic Weapon Expert
 |2186 = More Info Needed
 |2187 = Pull The Strings
+|2189 = Reunion
+|2190 = Contrast
+|2191 = Soon
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
@@ -2089,7 +2095,7 @@
 |2002-07-01 = Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.
 |2002-07-02 = Tedd and Grace Embrace
 |2002-07-03 = Super-Happy-Gonna-Get-Hit-By-a-Hammer Filler Comic
-|2002-07-04 = Jemery Facts Filler Comic
+|2002-07-04 = Jeremy Facts Filler Comic
 |2002-07-14 = Grace and Tedd Fooling Around While Both Women
 |2002-07-21 = Karmic Balance
 |2002-07-28 = OOOOOOOOOOOOOOOHHHHHHH YEAH!!!!!!!!!
@@ -2433,7 +2439,7 @@
 |79 = Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.
 |80 = Tedd and Grace Embrace
 |81 = Super-Happy-Gonna-Get-Hit-By-a-Hammer Filler Comic
-|82 = Jemery Facts Filler Comic
+|82 = Jeremy Facts Filler Comic
 |83 = Grace and Tedd Fooling Around While Both Women
 |84 = Karmic Balance
 |85 = OOOOOOOOOOOOOOOHHHHHHH YEAH!!!!!!!!!
@@ -2943,6 +2949,11 @@
 |2016-04-29 = Welp
 |2016-05-04 = Bar Trolling
 |2016-05-06 = Milking It
+|2016-05-11 = DUN DUN DUN
+|2016-05-13 = Deduction Rush
+|2016-05-16 = Solved
+|2016-05-18 = Legendary Roach
+|2016-05-20 = End Of An Era
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -3106,6 +3117,11 @@
 |453 = Welp
 |455 = Bar Trolling
 |456 = Milking It
+|457 = DUN DUN DUN
+|458 = Deduction Rush
+|459 = Solved
+|460 = Legendary Roach
+|461 = End Of An Era
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}

@@ -48,7 +48,7 @@ def handle_titles_ookii(strip,sect):
     if "untitled" in strip["Title"].lower():
         strip["Titles"]={"Ookii":strip["Title"].split("-",1)[-1].strip()}
     else:
-        strip["Titles"]={"Official":strip["Title"]}
+        strip["Titles"]={"Official":strip["Title"].replace("Dual","Duel").replace("Jemery","Jeremy")}
     del strip["Title"]
     if sect=="sketch":
         if strip["Id"] in databases.titlebank["datitles"]:
