@@ -6,11 +6,11 @@
 
 The entire thing requires Python 2.7.  You might get it working on 2.5, given simplejson.  You might take it upon yourself to port it to 3k.
 
-The "Pulling data from the EGS website" described below requires GNU wget.
+The "Extracting titles and date information from the EGS website" described below requires GNU wget.
 
 ### Updating the sources
 
-Well, firstly, you need to find a way to keep NewFiles.txt and Date2Id.txt up to date - these are not designed to be updated manually, but the way which I use only works on my system as it reads from a carefully organised and filenamed offline mirror of EGS which is present on my system, and to distribute such a mirror here would be both *very* large and a blatant violation of Dan's copyright.  A dedicated JSON editor, if such a thing exists (I haven't checked), might be helpful.
+Well, firstly, you need to find a way to keep NewFiles.txt and possibly also Date2Id.txt up to date - these are not designed to be updated manually, but the way which I use only works on my system as it reads from a carefully organised and filenamed offline mirror of EGS which is present on my system, and to distribute such a mirror here would be both *very* large and a blatant violation of Dan's copyright.  A dedicated JSON editor, if such a thing exists (I haven't checked), might be helpful.
 
 Reddit Titles simply contains index pages saved (as "HTML only") from /r/elgoonishshive at different times.  Some overlap is fine.
 
@@ -18,7 +18,9 @@ Reddit Titles simply contains index pages saved (as "HTML only") from /r/elgooni
 
 titlebank.dat["modes"] needs to be updated every time a new storyline starts but is designed to be updated manually in a text editor.
 
-#### Pulling data from the EGS website: (Misc Source Material)/Spiders
+#### Extracting titles and date information from the EGS website
+
+The following takes place in "(Misc Source Material)/Spiders" unless otherwise specified.
 
 You may need to edit the scripts to use the correct path to a GNU wget.  Also, you need a GNU wget (not busybox).
 
@@ -45,4 +47,169 @@ The simplest and fastest way is to run rebuild.py in the repository root, under 
 The chain is composed of a sequence of modular operations which can be run as individual scripts in theory, and were originally, but repeatedly storing and reading the data from the disk is a tad inefficient, so rebuild.py runs them in a single process which passes data through memory.
 
 The output will appear in the "out" directory.
+
+## File by file
+
+### Launcher
+
+rebuild.bat
+
+> loads rebuild.py (sometimes means less typing on Windows, and makes it easy to specify a path to Python by editing it)
+
+rebuild.py
+
+> runs the process modules, in order, keeping the database in memory.
+
+### Shared
+
+utfsupport.py
+
+> lenient UTF-8 support, Ookii charset support, and code to work around narrow Python builds.
+
+databases.py
+
+> access to the various database files.
+
+utility.py
+
+> assorted code useful for multiple processes.  sorted into more detailed headings in the module itself.
+
+### Data
+
+"910 Raw DBs/" and "Classics 910/"
+
+> rest in peace for now.
+
+"(Misc Source Material)/"
+
+> source material for some of the other databases, notably the code for updating metadataegs3.txt.
+
+"Reddit Titles/"
+
+> various index pages saved (as "HTML only") from /r/elgoonishshive at different times - for titles and reaction links.
+
+alldates*.txt
+
+> output of test_get_all_dates.py, used at certain points in the build process for primarily diagnostic purposes.
+
+BgNames.txt and BgDescriptions.txt
+
+> metadata of legacy backgrounds.  this is not gonna change in the foreseeable future.
+
+Date2Id.txt
+
+> mapping of dates to IDs.  not entirely reliable in event of multi-SB days, but otherwise good.  over entire EGS range.  see also NewFiles.txt
+
+DatesWorkProcessed.txt
+
+> data about what can and cannot be looked up using a date-scheme URL.
+
+HayloList.html
+
+> data from Haylo's fansite regarding strip titles and reaction links.  no longer accessible at the original site I don't think.
+
+NewFiles.txt
+
+> date-ID and filename-title data for files postdating both Ookii.dat and (for Story) HayloList.html
+
+Megathread.dat
+
+> data from Reddit about the assigned titles, title assigner and discussion URL from the megathread for the 17-SB day.
+
+metadataegs3.txt
+
+> metadate obtained from the website itself - do not attempt to edit this directly, see "Extracting titles and date information from the EGS website" above.
+
+Ookii.dat
+
+> the Ookii database (by strip, not by character) saved using the internal AJAX-JSON API.  stored as an uncompressed tarball to save disk footprint (many, many files significantly below 4k is a worst-case scenario for size-footprint ratio).
+
+suddenlaunch.dat
+
+> URLs for reaction threads on the briefly-used Suddenlaunch forum.
+
+titlebank.dat
+
+> assorted titles, as well as storyline boundary information.  human-readable and designed to be edited in a text editor.
+
+titleharjit.py
+
+> titles by HarJIT.
+
+zorua_db.dat
+
+> Zorua's EGS-NP titles and appearance data, obtained form the now-dead pre-crash 910 forum.
+
+### Processes
+
+#### Data preprocessing (extract_*)
+
+extract_date2id.py, extract_newfiles.py, extract_bg_title_db.py
+
+> these only do anything on my system.
+
+extract_classics_910.py
+
+> extract information from the "Classics 910" directory, for what use it is to anyone now.
+
+extract_reddit_info.py
+
+> extract information from the "Reddit Titles" directory.
+
+extract_threads_new910.py
+
+> extract information from the "910 Raw DBs" directory, for what use it is to anyone anymore.
+
+extract_haylo_list.py, extract_haylo_hierarchy.py
+
+> process HayloList.html
+
+#### Database formation (megadb_*)
+
+megadb_generate_initial.py
+
+> generate the portion of the database covered by the Ookii database, using that as a framework, but adding information from other sources.
+
+megadb_fetch_haylonew.py
+
+> further generate database entries for those Story comics covered by HayloList.html but not Ookii.dat
+
+megadb_fetch_newfiles.py
+
+> add the remaining database entries using NewFiles.txt and building upon it.
+
+megadb_fetch_tss.py
+
+> fetch transcripts (not included in repo) if possible (not) and obtain titles for some strips (titlebank.dat and titleharjit.py and others)
+
+megadb_fetch_zorua.py
+
+> add Zorua information from zorua_db.dat
+
+megadb_indextransforms.py
+
+> reorganise Story database to the arc-line hierarchy used by EGS, and reorganise SB by year.
+
+megadb_pull_bg.py
+
+> add entries for legacy backgrounds.
+
+#### Exporting data to files (export_*)
+
+TODO
+
+#### Peripheral (primarily diagnostic) tools (test_*)
+
+TODO
+
+### Output files (in out/)
+
+TODO
+
+
+
+
+
+
+
 
