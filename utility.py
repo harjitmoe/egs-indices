@@ -50,13 +50,16 @@ def save_alldat(b):
 import calendar
 _iso2top={}
 def month2number(month):
-    #Just a TAD NEUROTIC?
+    """Convert a month name to a number."""
+    #Slightly excessive?
     if month[:3]=="Qui": month="Jul" #Quinctilis=July
     if month[:3]=="Sex": month="Aug" #Sextilis=August
     return "%02d"%[None,"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"].index(month[:3])
 def number2month(month):
+    """Convert a month number to a three-character name."""
     return [None,"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][int(month)]
 def top2iso(top):
+    """Convert the date format used above comics on the EGS website to ISO format."""
     wd,md,y=top.split(", ")
     m,d=md.split()
     d="%02d"%int(d)
@@ -124,6 +127,7 @@ def datefix_910(date,sect):
 ##### Conversion between HTML and plain text #####
 
 def detag(s):
+    """Remove HTML tags from a string."""
     o=""
     a=1
     for c in s:
@@ -136,6 +140,15 @@ def detag(s):
     assert a,"partial tag?"
     return o
 def deentity(data,mode=0):
+    """Remove HTML entities from a string.
+    
+    Modes:
+    
+    0: Fast / common entities only (default)
+    1: Comprehensive (slow)
+    2: Syntax-critical escapes only
+    3: Whole-file mode (skip syntax-critical escapes)
+    """
     # The level of overhead which results from inefficiencies in this function is phenomenal.
     from htmlentitydefs import name2codepoint,codepoint2name
     #
@@ -161,6 +174,7 @@ def deentity(data,mode=0):
         data=data.replace(u"&amp;",u"&")
     return data.encode("utf-8")
 def entity_escape(data):
+    """Encode the HTML entities used by deentity in Mode 0."""
     # The level of overhead which results from inefficiencies in this function is phenomenal.
     from htmlentitydefs import name2codepoint,codepoint2name
     data=data.decode("utf-8").replace(u"&",u"&amp;")
@@ -169,15 +183,16 @@ def entity_escape(data):
     return data.encode("utf-8")
 
 def recdeentity(obj,mode=0):
+    """Remove HTML entities from a JSON-compatible object (modes same as deentity)."""
     if isinstance(obj, type({})):
         d={}
         for k,v in obj.items():
             d[recdeentity(k, mode=mode)]=recdeentity(v, mode=mode)
         return d
     elif isinstance(obj, type([])):
-        return map(lambda ob,mode=mode:recdeentity(ob,mode=mode), obj)
+        return list(map(lambda ob,mode=mode:recdeentity(ob,mode=mode), obj))
     elif isinstance(obj,type(())):
-        return map(lambda ob,mode=mode:recdeentity(ob,mode=mode), obj)
+        return tuple(map(lambda ob,mode=mode:recdeentity(ob,mode=mode), obj))
     elif type(obj)==type(""):
         return deentity(obj,mode)
     else:
@@ -248,6 +263,7 @@ ookii2egslink=dict(zip(*zip(*egslink2ookii.items())[::-1]))
 ookii2url={"Story":"index.php","EGS:NP":"egsnp.php","Sketchbook":"sketchbook.php"}
 
 def specific_section(whole,sect):
+    """Index the database for a section by Shiveapedia code."""
     for section in whole:
         if section["Title"]==egslink2ookii[sect]:
             return section
