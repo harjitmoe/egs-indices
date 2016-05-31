@@ -1,4 +1,4 @@
-# egs-indices - Index agglomoration for El Goonish Shive.
+# egs-indices - Index agglomeration for El Goonish Shive.
 
 ## How the heck do I use this thing?
 
@@ -24,14 +24,14 @@ The following takes place in "(Misc Source Material)/Spiders" unless otherwise s
 
 You may need to edit the scripts to use the correct path to a GNU wget.  Also, you need a GNU wget (not busybox).
 
-To update the databases on official titles and date anomolies:
+To update the databases on official titles and date anomalies:
 
 * Delete a.txt
 * Rename metadataegs3.txt to a.txt (this is used by the script as the starting point).
 * Run htmlonlyyo.py
 * Force copy metadataegs3.txt into the repository root.
 
-To check for any anomolous date lookup successes (this should not be done too frequently):
+To check for any anomalous date lookup successes (this should not be done too frequently):
 
 * Delete b.txt
 * Rename dateswork.txt to b.txt (this is used by the script as the starting point).
@@ -44,7 +44,7 @@ To check for any anomolous date lookup successes (this should not be done too fr
 
 The simplest and fastest way is to run rebuild.py in the repository root, under Python 2.7.
 
-The chain is composed of a sequence of modular operations which can be run as individual scripts in theory, and were originally, but repeatedly storing and reading the data from the disk is a tad inefficient, so rebuild.py runs them in a single process which passes data through memory.
+The chain is composed of a sequence of modular operations which can be run as individual scripts in theory, and were originally, but repeatedly storing and reading the data from the disk is rather inefficient, so rebuild.py runs them in a single process which passes data through memory.
 
 The output will appear in the "out" directory.
 
@@ -61,7 +61,7 @@ rebuild.py|runs the process modules, in order, keeping the database in memory.
 
 file(s)|description
 ---|---
-utfsupport.py|lenient UTF-8 support, Ookii charset support, and code to work around narrow Python builds.
+utfsupport.py|lenient UTF-8 support, Ookii character-set support, and code to work around narrow Python builds.
 databases.py|access to the various database files.
 utility.py|assorted code useful for multiple processes.  sorted into more detailed headings in the module itself.
 
@@ -73,13 +73,13 @@ file(s)|description
 "(Misc Source Material)/"|source material for some of the other databases, notably the code for updating metadataegs3.txt.
 "Reddit Titles/"|various index pages saved (as "HTML only") from /r/elgoonishshive at different times - for titles and reaction links.
 alldates*.txt|output of test_get_all_dates.py, used by extract_theads_new910 for anomaly detection
-BgNames.txt and BgDescriptions.txt|metadata of legacy backgrounds.  this is not gonna change in the foreseeable future.
+BgNames.txt and BgDescriptions.txt|metadata of legacy backgrounds.  this will not change in the foreseeable future.
 Date2Id.txt|mapping of dates to IDs.  not entirely reliable in event of multi-SB days, but otherwise good.  over entire EGS range.  see also NewFiles.txt
 DatesWorkProcessed.txt|data about what can and cannot be looked up using a date-scheme URL.
-HayloList.html|data from Haylo's fansite regarding strip titles and reaction links.  no longer accessible at the original site I don't think.
+HayloList.html|data from Haylo's fan-site regarding strip titles and reaction links.  no longer accessible at the original site I don't think.
 NewFiles.txt|date-ID and filename-title data for files postdating both Ookii.dat and (for Story) HayloList.html
 Megathread.dat|data from Reddit about the assigned titles, title assigner and discussion URL from the megathread for the 17-SB day.
-metadataegs3.txt|metadate obtained from the website itself - do not attempt to edit this directly, see "Extracting titles and date information from the EGS website" above.
+metadataegs3.txt|metadata obtained from the website itself - do not attempt to edit this directly, see "Extracting titles and date information from the EGS website" above.
 Ookii.dat|the Ookii database (by strip, not by character) saved using the internal AJAX-JSON API.  stored as an uncompressed tarball to save disk footprint (many, many files significantly below 4k is a worst-case scenario for size-footprint ratio).
 suddenlaunch.dat|URLs for reaction threads on the briefly-used Suddenlaunch forum.
 titlebank.dat|assorted titles, as well as storyline boundary information.  human-readable and designed to be edited in a text editor.
