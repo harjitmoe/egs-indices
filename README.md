@@ -84,7 +84,7 @@ Ookii.dat|the Ookii database (by strip, not by character) saved using the intern
 suddenlaunch.dat|URLs for reaction threads on the briefly-used Suddenlaunch forum.
 titlebank.dat|assorted titles, as well as storyline boundary information.  human-readable and designed to be edited in a text editor.
 titleharjit.py|titles by HarJIT.
-zorua_db.dat|Zorua's EGS-NP titles and appearance data, obtained form the now-dead pre-crash 910 forum.
+zorua_db.dat|Zorua's EGS-NP titles and appearance data, obtained from the now-dead pre-crash 910 forum.
 
 ### Build processes
 
