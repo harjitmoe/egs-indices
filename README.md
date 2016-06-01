@@ -84,6 +84,7 @@ Ookii.dat|the Ookii database (by strip, not by character) saved using the intern
 suddenlaunch.dat|URLs for reaction threads on the briefly-used Suddenlaunch forum.
 titlebank.dat|assorted titles, as well as storyline boundary information.  human-readable and designed to be edited in a text editor.
 titleharjit.py|titles by HarJIT.
+Transcripts.dat|another uncompressed tarfile, extract this the parent folder (it contains a directory called "Transcripts") if you want to do anything with it.
 zorua_db.dat|Zorua's EGS-NP titles and appearance data, obtained from the now-dead pre-crash 910 forum.
 
 ### Build processes
@@ -105,7 +106,7 @@ file(s)|description
 megadb_generate_initial.py|generate the portion of the database covered by the Ookii database, using that as a framework, but adding information from other sources.
 megadb_fetch_haylonew.py|further generate database entries for those Story comics covered by HayloList.html but not Ookii.dat
 megadb_fetch_newfiles.py|add the remaining database entries using NewFiles.txt and building upon it.
-megadb_fetch_tss.py|fetch transcripts (not included in repo) if possible (not) and obtain titles for some strips (titlebank.dat and titleharjit.py and others)
+megadb_fetch_tss.py|fetch transcripts and obtain titles for some strips (titlebank.dat and titleharjit.py and others)
 megadb_fetch_zorua.py|add Zorua information from zorua_db.dat
 megadb_indextransforms.py|reorganise Story database to the arc-line hierarchy used by EGS, and reorganise SB by year.
 megadb_pull_bg.py|add entries for legacy backgrounds.

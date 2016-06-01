@@ -47,8 +47,18 @@ def megadb_fetch_tss(alldat):
                 # on account of referencing the same object
                 strip["Transcript"]=utility.deentity(utfsupport.object_to_utf8(transcript.rstrip("\n")+"\n\n",ookii=False))
             else:
-                #print strip['Date']
-                strip["Transcript"]=None
+                #print strip["Date"]
+                try:
+                    ts_file=databases.open_tss("Transcripts/"+strip['Date']+".txt")
+                    transcript=ts_file.read().replace("\r\n","\n").replace("\r","\n")
+                except (EnvironmentError, KeyError):
+                    strip["Transcript"]=None
+                else:
+                    ts_file.close()
+                    #Thank goodness for Python mutables
+                    #I can change strip and it also changes in alldat
+                    # on account of referencing the same object
+                    strip["Transcript"]=utility.deentity(utfsupport.object_to_utf8(transcript.rstrip("\n")+"\n\n",ookii=False))
             if ("Official" not in strip['Titles']):
                 if strip['Id'] in databases.titlebank["megatitles"]:
                     strip['Titles']["Official"]=databases.titlebank["megatitles"][strip['Id']]

@@ -32,7 +32,11 @@ _ookii=tarfile.open("Ookii.dat","r:")
 def open_lib(path):
     return _ookii.extractfile(path.replace("\\","/"))
 
-def _fakejsonloads(dat):
+_transcipts=tarfile.open("Transcripts.dat","r:")
+def open_tss(path):
+    return _transcipts.extractfile(path.replace("\\","/"))
+
+def _fakejsonloads(dat): #Note insecure
     null=None
     true=True
     false=False
