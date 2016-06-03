@@ -1,6 +1,7 @@
+== Incorrect, elaborated or non-ISO dates in browser title ==
 ===Main Story===
 
-Only discrepancies are listed.
+This only catalogues those found using ID-lookup. Those found using date lookup are invariably wrong and seem not to depend on the actual date. Only discrepancies, and elaborated dates on multi-posting days (or not), are listed. 
 
 {|border="1" cellpadding="3"
 !ID!!ISO Date (converted from above comic)!!Date in browser title
@@ -59,7 +60,7 @@ Only discrepancies are listed.
 
 ===Sketchbook===
 
-Only discrepancies are listed.
+This only catalogues those found using ID-lookup. Those found using date lookup are invariably wrong and seem not to depend on the actual date. Only discrepancies, and elaborated dates on multi-posting days (or not), are listed. 
 
 {|border="1" cellpadding="3"
 !ID!!ISO Date (converted from above comic)!!Date in browser title
@@ -146,7 +147,7 @@ Only discrepancies are listed.
 
 ===EGS:NP===
 
-Only discrepancies are listed.
+This only catalogues those found using ID-lookup. Those found using date lookup are invariably wrong and seem not to depend on the actual date. Only discrepancies, and elaborated dates on multi-posting days (or not), are listed. 
 
 {|border="1" cellpadding="3"
 !ID!!ISO Date (probable)!!Date in browser title
@@ -174,6 +175,8 @@ Only discrepancies are listed.
 |457||2016-05-09||2016-04-09
 |-
 |459||2016-05-13||206-05-13
+|-
+|465||2016-05-27||2015-05-27
 |}
 
 

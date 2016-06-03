@@ -2190,6 +2190,10 @@
 |2016-05-13 = Contrast (Official) / Contrast (jstutter, based on filename) (Reddit)
 |2016-05-16 = Soon (Official) / Soon (jstutter, based on filename) (Reddit)
 |2016-05-23 = Q&amp;A Seven (jstutter) (Reddit)
+|2016-05-25 = Magic Recap (jstutter) (Reddit)
+|2016-05-27 = Wait, She Didn't Transform... (m2pt5) (Reddit)
+|2016-05-30 = 
+|2016-06-02 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic (Official)
@@ -4381,6 +4385,10 @@
 |2190 = Contrast (Official) / Contrast (jstutter, based on filename) (Reddit)
 |2191 = Soon (Official) / Soon (jstutter, based on filename) (Reddit)
 |2192 = Q&amp;A Seven (jstutter) (Reddit)
+|2193 = Magic Recap (jstutter) (Reddit)
+|2194 = Wait, She Didn't Transform... (m2pt5) (Reddit)
+|2195 = 
+|2196 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -10155,6 +10163,10 @@
 |2016-05-13 = Contrast
 |2016-05-16 = Soon
 |2016-05-23 = Q&amp;A Seven (jstutter)
+|2016-05-25 = Magic Recap (jstutter)
+|2016-05-27 = Wait, She Didn't Transform... (m2pt5)
+|2016-05-30 = 
+|2016-06-02 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -12346,6 +12358,10 @@
 |2190 = Contrast
 |2191 = Soon
 |2192 = Q&amp;A Seven (jstutter)
+|2193 = Magic Recap (jstutter)
+|2194 = Wait, She Didn't Transform... (m2pt5)
+|2195 = 
+|2196 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -15727,6 +15743,10 @@
 |2016-05-13 = Contrast
 |2016-05-16 = Soon
 |2016-05-23 = Q&amp;A Seven (jstutter)
+|2016-05-25 = Magic Recap (jstutter)
+|2016-05-27 = Wait, She Didn't Transform... (m2pt5)
+|2016-05-30 = 
+|2016-06-02 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -17918,6 +17938,10 @@
 |2190 = Contrast
 |2191 = Soon
 |2192 = Q&amp;A Seven (jstutter)
+|2193 = Magic Recap (jstutter)
+|2194 = Wait, She Didn't Transform... (m2pt5)
+|2195 = 
+|2196 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -20115,6 +20139,10 @@
 |2016-05-13 = Contrast
 |2016-05-16 = Soon
 |2016-05-23 = Q&amp;A Seven (jstutter)
+|2016-05-25 = Magic Recap (jstutter)
+|2016-05-27 = Wait, She Didn't Transform... (m2pt5)
+|2016-05-30 = 
+|2016-06-02 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -22306,6 +22334,10 @@
 |2190 = Contrast
 |2191 = Soon
 |2192 = Q&amp;A Seven (jstutter)
+|2193 = Magic Recap (jstutter)
+|2194 = Wait, She Didn't Transform... (m2pt5)
+|2195 = 
+|2196 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -22770,6 +22802,8 @@
 |2016-05-13 = Contrast (jstutter, based on filename)
 |2016-05-16 = Soon (jstutter, based on filename)
 |2016-05-23 = Q&amp;A Seven (jstutter)
+|2016-05-25 = Magic Recap (jstutter)
+|2016-05-27 = Wait, She Didn't Transform... (m2pt5)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1890 = Today's comic is gay (riking27)
@@ -23062,6 +23096,8 @@
 |2190 = Contrast (jstutter, based on filename)
 |2191 = Soon (jstutter, based on filename)
 |2192 = Q&amp;A Seven (jstutter)
+|2193 = Magic Recap (jstutter)
+|2194 = Wait, She Didn't Transform... (m2pt5)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}
@@ -32464,6 +32500,11 @@
 |2016-05-18 = End Of An Era (Official) / Tetris: The movie (jstutter) (Reddit)
 |2016-05-20 = Ghostbusters (jstutter) (Reddit)
 |2016-05-23 = U Mad? (m2pt5) (Reddit)
+|2016-05-25 = Clarification (m2pt5) (Reddit)
+|2016-05-27 = 
+|2016-05-30 = 
+|2016-06-01 = 
+|2016-06-03 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)
@@ -32929,6 +32970,11 @@
 |461 = End Of An Era (Official) / Tetris: The movie (jstutter) (Reddit)
 |462 = Ghostbusters (jstutter) (Reddit)
 |463 = U Mad? (m2pt5) (Reddit)
+|464 = Clarification (m2pt5) (Reddit)
+|465 = 
+|466 = 
+|467 = 
+|468 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -33747,6 +33793,11 @@
 |2016-05-18 = End Of An Era
 |2016-05-20 = Ghostbusters (jstutter)
 |2016-05-23 = U Mad? (m2pt5)
+|2016-05-25 = Clarification (m2pt5)
+|2016-05-27 = 
+|2016-05-30 = 
+|2016-06-01 = 
+|2016-06-03 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -34212,6 +34263,11 @@
 |461 = End Of An Era
 |462 = Ghostbusters (jstutter)
 |463 = U Mad? (m2pt5)
+|464 = Clarification (m2pt5)
+|465 = 
+|466 = 
+|467 = 
+|468 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -34751,6 +34807,11 @@
 |2016-05-18 = End Of An Era
 |2016-05-20 = Ghostbusters (jstutter)
 |2016-05-23 = U Mad? (m2pt5)
+|2016-05-25 = Clarification (m2pt5)
+|2016-05-27 = 
+|2016-05-30 = 
+|2016-06-01 = 
+|2016-06-03 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -35216,6 +35277,11 @@
 |461 = End Of An Era
 |462 = Ghostbusters (jstutter)
 |463 = U Mad? (m2pt5)
+|464 = Clarification (m2pt5)
+|465 = 
+|466 = 
+|467 = 
+|468 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -36095,6 +36161,11 @@
 |2016-05-18 = End Of An Era
 |2016-05-20 = Ghostbusters (jstutter)
 |2016-05-23 = U Mad? (m2pt5)
+|2016-05-25 = Clarification (m2pt5)
+|2016-05-27 = 
+|2016-05-30 = 
+|2016-06-01 = 
+|2016-06-03 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = XYC
@@ -36560,6 +36631,11 @@
 |461 = End Of An Era
 |462 = Ghostbusters (jstutter)
 |463 = U Mad? (m2pt5)
+|464 = Clarification (m2pt5)
+|465 = 
+|466 = 
+|467 = 
+|468 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -36846,6 +36922,7 @@
 |2016-05-18 = Tetris: The movie (jstutter)
 |2016-05-20 = Ghostbusters (jstutter)
 |2016-05-23 = U Mad? (m2pt5)
+|2016-05-25 = Clarification (m2pt5)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |180 = Farewell Gods of Curling! (ScorpSt)
@@ -37126,6 +37203,7 @@
 |461 = Tetris: The movie (jstutter)
 |462 = Ghostbusters (jstutter)
 |463 = U Mad? (m2pt5)
+|464 = Clarification (m2pt5)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}

@@ -26,7 +26,7 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import utility
+import utility, os
 
 def munj(id):
     if id==-1:
@@ -51,14 +51,18 @@ def export_numberdatemaps(alldat):
     sbdb=utility.specific_section(alldat,"sketch")["StoryArcs"]
     npdb=utility.specific_section(alldat,"np")["StoryArcs"]
     nem=open(".build/numbereidmap.txt","w")
+    print>>nem, "== Numbers to IDs =="
     nom=open(".build/numberoidmap.txt","w")
+    print>>nom, "== Numbers to Ookii IDs =="
     dim=open(".build/numberdibmap.txt","w")
+    print>>dim, "== Which comics date lookup works for =="
     dfm=open(".build/datefakemap.txt","w")
+    print>>dfm, "== Incorrect, elaborated or non-ISO dates in browser title =="
     for title,db in (("Main Story",stdb),("Sketchbook",sbdb),("EGS:NP",npdb)):
         print>>nem, "===%s===\n\n{|border=\"1\" cellpadding=\"3\"\n!Date!!Number!!ID (EGSComics)"%title
         print>>nom, "===%s===\n\n{|border=\"1\" cellpadding=\"3\"\n!Date!!Number!!OokiiDB ID"%title
         print>>dim, "===%s===\n\n{|border=\"1\" cellpadding=\"3\"\n!Date!!Number!!ID (EGSComics)!!Date-indexable"%title
-        print>>dfm, "===%s===\n\nOnly discrepancies are listed.\n\n{|border=\"1\" cellpadding=\"3\"\n!ID!!ISO Date%s!!Date in browser title"%(title,(" (probable)" if title=="EGS:NP" else " (converted from above comic)"))
+        print>>dfm, "===%s===\n\nThis only catalogues those found using ID-lookup. Those found using date lookup are invariably wrong and seem not to depend on the actual date. Only discrepancies, and elaborated dates on multi-posting days (or not), are listed. \n\n{|border=\"1\" cellpadding=\"3\"\n!ID!!ISO Date%s!!Date in browser title"%(title,(" (probable)" if title=="EGS:NP" else " (converted from above comic)"))
         lastid=-40
         lastod=-40
         lastdib=None
