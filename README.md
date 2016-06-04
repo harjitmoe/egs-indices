@@ -29,6 +29,7 @@ To update the databases on official titles and date anomalies:
 * Delete a.txt
 * Rename metadataegs3.txt to a.txt (this is used by the script as the starting point).
 * Run htmlonlyyo.py
+* Press RETURN (Enter) after the script has finished.
 * Force copy metadataegs3.txt into the repository root.
 
 To check for any anomalous date lookup successes (this should not be done too frequently):
@@ -36,6 +37,7 @@ To check for any anomalous date lookup successes (this should not be done too fr
 * Delete b.txt
 * Rename dateswork.txt to b.txt (this is used by the script as the starting point).
 * Run datecheckyo.py
+* Press RETURN (Enter) after the script has finished.
 * Force copy dateswork.txt to "(Misc Source Material)" (the parent directory)
 * In that directory, run slurp_dateswork.py
 * Force copy DatesWorkProcessed.txt into the repository root.
