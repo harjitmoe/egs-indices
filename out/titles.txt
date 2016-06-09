@@ -32529,6 +32529,7 @@
 |2016-05-30 = 
 |2016-06-01 = 
 |2016-06-03 = 
+|2016-06-06 = 
 |2016-06-08 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
@@ -33001,6 +33002,7 @@
 |467 = 
 |468 = 
 |469 = 
+|470 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -33824,6 +33826,7 @@
 |2016-05-30 = 
 |2016-06-01 = 
 |2016-06-03 = 
+|2016-06-06 = 
 |2016-06-08 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
@@ -34296,6 +34299,7 @@
 |467 = 
 |468 = 
 |469 = 
+|470 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -34840,6 +34844,7 @@
 |2016-05-30 = 
 |2016-06-01 = 
 |2016-06-03 = 
+|2016-06-06 = 
 |2016-06-08 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
@@ -35312,6 +35317,7 @@
 |467 = 
 |468 = 
 |469 = 
+|470 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -36196,6 +36202,7 @@
 |2016-05-30 = 
 |2016-06-01 = 
 |2016-06-03 = 
+|2016-06-06 = 
 |2016-06-08 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
@@ -36668,6 +36675,7 @@
 |467 = 
 |468 = 
 |469 = 
+|470 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
