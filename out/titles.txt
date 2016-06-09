@@ -2196,6 +2196,7 @@
 |2016-06-02 = 
 |2016-06-03 = 
 |2016-06-07 = 
+|2016-06-08 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic (Official)
@@ -4393,6 +4394,7 @@
 |2196 = 
 |2197 = 
 |2198 = 
+|2199 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -10173,6 +10175,7 @@
 |2016-06-02 = 
 |2016-06-03 = 
 |2016-06-07 = 
+|2016-06-08 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -12370,6 +12373,7 @@
 |2196 = 
 |2197 = 
 |2198 = 
+|2199 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -15757,6 +15761,7 @@
 |2016-06-02 = 
 |2016-06-03 = 
 |2016-06-07 = 
+|2016-06-08 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -17954,6 +17959,7 @@
 |2196 = 
 |2197 = 
 |2198 = 
+|2199 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -20157,6 +20163,7 @@
 |2016-06-02 = 
 |2016-06-03 = 
 |2016-06-07 = 
+|2016-06-08 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -22354,6 +22361,7 @@
 |2196 = 
 |2197 = 
 |2198 = 
+|2199 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -32521,6 +32529,7 @@
 |2016-05-30 = 
 |2016-06-01 = 
 |2016-06-03 = 
+|2016-06-08 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)
@@ -32991,6 +33000,7 @@
 |466 = 
 |467 = 
 |468 = 
+|469 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -33814,6 +33824,7 @@
 |2016-05-30 = 
 |2016-06-01 = 
 |2016-06-03 = 
+|2016-06-08 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -34284,6 +34295,7 @@
 |466 = 
 |467 = 
 |468 = 
+|469 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -34828,6 +34840,7 @@
 |2016-05-30 = 
 |2016-06-01 = 
 |2016-06-03 = 
+|2016-06-08 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -35298,6 +35311,7 @@
 |466 = 
 |467 = 
 |468 = 
+|469 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -36182,6 +36196,7 @@
 |2016-05-30 = 
 |2016-06-01 = 
 |2016-06-03 = 
+|2016-06-08 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = XYC
@@ -36652,6 +36667,7 @@
 |466 = 
 |467 = 
 |468 = 
+|469 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
