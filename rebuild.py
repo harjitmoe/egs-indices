@@ -78,7 +78,7 @@ def __import__(nom,*args,**kw):
     return r
 __builtin__.__import__=__import__
 for i in sys.modules.keys():
-    if (i not in sys.builtin_module_names) and ("codecs" not in i) and ("encodings" not in i):
+    if (i not in sys.builtin_module_names) and ("codecs" not in i) and ("encodings" not in i) and ("__pypy__" not in i):
         #Force reloading and hence reimporting
         #of dependencies.
         del sys.modules[i]
@@ -168,9 +168,11 @@ export_html.export_html(alldat)
 import export_titles_template
 import export_titles_template_lite
 import export_numberdatemaps
+import export_dateidtemplate
 export_titles_template.export_titles_template(alldat)
 export_titles_template_lite.export_titles_template_lite(alldat)
 export_numberdatemaps.export_numberdatemaps(alldat)
+export_dateidtemplate.export_dateidtemplate(alldat)
 
 # Enter build dir
 os.chdir(".build")
@@ -211,6 +213,9 @@ export("numbereidmap.txt")
 export("numberoidmap.txt")
 export("numberdibmap.txt")
 export("datefakemap.txt")
+export("dateidtemplate-ST.txt")
+export("dateidtemplate-SB.txt")
+export("dateidtemplate-NP.txt")
 
 # Leave build dir
 os.chdir("..")

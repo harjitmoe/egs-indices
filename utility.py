@@ -150,6 +150,7 @@ def deentity(data,mode=0):
     3: Whole-file mode (skip syntax-critical escapes)
     """
     # The level of overhead which results from inefficiencies in this function is phenomenal.
+    # Especially(!) under PyPy
     from htmlentitydefs import name2codepoint,codepoint2name
     #
     # 0: Fast, 1: Comprehensive, 2: Syntax-critical only, 3: Whole-file mode (skip syntax-critical)
