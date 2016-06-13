@@ -1560,7 +1560,7 @@
 |460 = Legendary Roach
 |461 = End Of An Era
 |#default = }}
-|#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>
+|#default = <span class="error">[[Template:EGS-title-dateid|EGS-title-dateid]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>
 
 
 == About ==

@@ -161,8 +161,8 @@ def export_titles_template_lite(alldat):
         print>>outfile_bg, "|"+id+' = '+b[id]
     print>>outfile_bg, "|#default = }}</includeonly><noinclude>"
     print>>outfile, "|#default = }}"
-    print>>outfile_id, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>"
-    print>>outfile_date, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>"
+    print>>outfile_id, "|#default = <span class=\"error\">[[Template:EGS-title-dateid|EGS-title-dateid]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>"
+    print>>outfile_date, "|#default = <span class=\"error\">[[Template:EGS-title-date|EGS-title-date]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>"
     print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>"
     print>>outfile, docs
     print>>outfile_date, docs_date

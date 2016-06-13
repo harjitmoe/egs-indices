@@ -1555,7 +1555,7 @@
 |2016-05-16 = Legendary Roach
 |2016-05-18 = End Of An Era
 |#default = }}
-|#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>
+|#default = <span class="error">[[Template:EGS-title-date|EGS-title-date]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>
 
 
 == About ==
