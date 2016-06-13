@@ -913,7 +913,7 @@
 |2016-04-14=881
 |2016-04-19=882
 |2016-04-22=883
-}}</includeonly><noinclude>{{{templatenotice}}}
+}}</includeonly><noinclude>{{templatenotice}}
 
 This database template is the date-to-ID mapping for the [[Sketchbook]] section.
 

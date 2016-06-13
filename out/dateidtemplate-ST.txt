@@ -2195,7 +2195,7 @@
 |2016-06-03=2197
 |2016-06-07=2198
 |2016-06-08=2199
-}}</includeonly><noinclude>{{{templatenotice}}}
+}}</includeonly><noinclude>{{templatenotice}}
 
 This database template is the date-to-ID mapping for the [[Structural Nomenclature|Main Story]] section.
 

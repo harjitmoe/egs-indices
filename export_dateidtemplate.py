@@ -10,13 +10,13 @@
 # different terms.  This note is not part of the above notice.
 #
 
-docs="""<noinclude>{{{templatenotice}}}
+docs="""<noinclude>{{templatenotice}}
 
 This database template is the date-to-ID mapping for the [[%s]] section.
 
 This is more reliable than using the site's own date-lookup functionality.  It can also be updated with more recent mappings, but is not updated automatically.
 
-Dates with multiple postings in the same section take an additional hyphen and number (no leading zeroes) indicating which nth posting it is.  OTherwise, pass an ISO date (including hyphens).
+Dates with multiple postings in the same section take an additional hyphen and number (no leading zeroes) indicating which nth posting it is.  Otherwise, pass an ISO date (including hyphens).
 
 The three templates are {{t|Date2Id-story}}, {{t|Date2Id-sketch}} and {{t|Date2Id-np}}.
 
