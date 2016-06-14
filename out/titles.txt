@@ -2192,11 +2192,13 @@
 |2016-05-23 = Q&amp;A Seven (jstutter) (Reddit)
 |2016-05-25 = Magic Recap (jstutter) (Reddit)
 |2016-05-27 = Wait, She Didn't Transform... (m2pt5) (Reddit)
-|2016-05-30 = 
-|2016-06-02 = 
-|2016-06-03 = 
-|2016-06-07 = 
-|2016-06-08 = 
+|2016-05-30 = Colour scale (dragn99) (Reddit)
+|2016-06-02 = Pronouns (jstutter) (Reddit)
+|2016-06-03 = Lazer Beams (LittleKingsguard) (Reddit)
+|2016-06-07 = How common is transformation magic? (jstutter) (Reddit)
+|2016-06-08 = Dan answers a question while displaying unfitting images (m2pt5) (Reddit)
+|2016-06-10 = Weird? (m2pt5) (Reddit)
+|2016-06-14 = Powder Keg (m2pt5) (Reddit)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic (Official)
@@ -4390,11 +4392,13 @@
 |2192 = Q&amp;A Seven (jstutter) (Reddit)
 |2193 = Magic Recap (jstutter) (Reddit)
 |2194 = Wait, She Didn't Transform... (m2pt5) (Reddit)
-|2195 = 
-|2196 = 
-|2197 = 
-|2198 = 
-|2199 = 
+|2195 = Colour scale (dragn99) (Reddit)
+|2196 = Pronouns (jstutter) (Reddit)
+|2197 = Lazer Beams (LittleKingsguard) (Reddit)
+|2198 = How common is transformation magic? (jstutter) (Reddit)
+|2199 = Dan answers a question while displaying unfitting images (m2pt5) (Reddit)
+|2200 = Weird? (m2pt5) (Reddit)
+|2201 = Powder Keg (m2pt5) (Reddit)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -10171,11 +10175,13 @@
 |2016-05-23 = Q&amp;A Seven (jstutter)
 |2016-05-25 = Magic Recap (jstutter)
 |2016-05-27 = Wait, She Didn't Transform... (m2pt5)
-|2016-05-30 = 
-|2016-06-02 = 
-|2016-06-03 = 
-|2016-06-07 = 
-|2016-06-08 = 
+|2016-05-30 = Colour scale (dragn99)
+|2016-06-02 = Pronouns (jstutter)
+|2016-06-03 = Lazer Beams (LittleKingsguard)
+|2016-06-07 = How common is transformation magic? (jstutter)
+|2016-06-08 = Dan answers a question while displaying unfitting images (m2pt5)
+|2016-06-10 = Weird? (m2pt5)
+|2016-06-14 = Powder Keg (m2pt5)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -12369,11 +12375,13 @@
 |2192 = Q&amp;A Seven (jstutter)
 |2193 = Magic Recap (jstutter)
 |2194 = Wait, She Didn't Transform... (m2pt5)
-|2195 = 
-|2196 = 
-|2197 = 
-|2198 = 
-|2199 = 
+|2195 = Colour scale (dragn99)
+|2196 = Pronouns (jstutter)
+|2197 = Lazer Beams (LittleKingsguard)
+|2198 = How common is transformation magic? (jstutter)
+|2199 = Dan answers a question while displaying unfitting images (m2pt5)
+|2200 = Weird? (m2pt5)
+|2201 = Powder Keg (m2pt5)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -15757,11 +15765,13 @@
 |2016-05-23 = Q&amp;A Seven (jstutter)
 |2016-05-25 = Magic Recap (jstutter)
 |2016-05-27 = Wait, She Didn't Transform... (m2pt5)
-|2016-05-30 = 
-|2016-06-02 = 
-|2016-06-03 = 
-|2016-06-07 = 
-|2016-06-08 = 
+|2016-05-30 = Colour scale (dragn99)
+|2016-06-02 = Pronouns (jstutter)
+|2016-06-03 = Lazer Beams (LittleKingsguard)
+|2016-06-07 = How common is transformation magic? (jstutter)
+|2016-06-08 = Dan answers a question while displaying unfitting images (m2pt5)
+|2016-06-10 = Weird? (m2pt5)
+|2016-06-14 = Powder Keg (m2pt5)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -17955,11 +17965,13 @@
 |2192 = Q&amp;A Seven (jstutter)
 |2193 = Magic Recap (jstutter)
 |2194 = Wait, She Didn't Transform... (m2pt5)
-|2195 = 
-|2196 = 
-|2197 = 
-|2198 = 
-|2199 = 
+|2195 = Colour scale (dragn99)
+|2196 = Pronouns (jstutter)
+|2197 = Lazer Beams (LittleKingsguard)
+|2198 = How common is transformation magic? (jstutter)
+|2199 = Dan answers a question while displaying unfitting images (m2pt5)
+|2200 = Weird? (m2pt5)
+|2201 = Powder Keg (m2pt5)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -20159,11 +20171,13 @@
 |2016-05-23 = Q&amp;A Seven (jstutter)
 |2016-05-25 = Magic Recap (jstutter)
 |2016-05-27 = Wait, She Didn't Transform... (m2pt5)
-|2016-05-30 = 
-|2016-06-02 = 
-|2016-06-03 = 
-|2016-06-07 = 
-|2016-06-08 = 
+|2016-05-30 = Colour scale (dragn99)
+|2016-06-02 = Pronouns (jstutter)
+|2016-06-03 = Lazer Beams (LittleKingsguard)
+|2016-06-07 = How common is transformation magic? (jstutter)
+|2016-06-08 = Dan answers a question while displaying unfitting images (m2pt5)
+|2016-06-10 = Weird? (m2pt5)
+|2016-06-14 = Powder Keg (m2pt5)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -22357,11 +22371,13 @@
 |2192 = Q&amp;A Seven (jstutter)
 |2193 = Magic Recap (jstutter)
 |2194 = Wait, She Didn't Transform... (m2pt5)
-|2195 = 
-|2196 = 
-|2197 = 
-|2198 = 
-|2199 = 
+|2195 = Colour scale (dragn99)
+|2196 = Pronouns (jstutter)
+|2197 = Lazer Beams (LittleKingsguard)
+|2198 = How common is transformation magic? (jstutter)
+|2199 = Dan answers a question while displaying unfitting images (m2pt5)
+|2200 = Weird? (m2pt5)
+|2201 = Powder Keg (m2pt5)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -22828,6 +22844,13 @@
 |2016-05-23 = Q&amp;A Seven (jstutter)
 |2016-05-25 = Magic Recap (jstutter)
 |2016-05-27 = Wait, She Didn't Transform... (m2pt5)
+|2016-05-30 = Colour scale (dragn99)
+|2016-06-02 = Pronouns (jstutter)
+|2016-06-03 = Lazer Beams (LittleKingsguard)
+|2016-06-07 = How common is transformation magic? (jstutter)
+|2016-06-08 = Dan answers a question while displaying unfitting images (m2pt5)
+|2016-06-10 = Weird? (m2pt5)
+|2016-06-14 = Powder Keg (m2pt5)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1890 = Today's comic is gay (riking27)
@@ -23122,6 +23145,13 @@
 |2192 = Q&amp;A Seven (jstutter)
 |2193 = Magic Recap (jstutter)
 |2194 = Wait, She Didn't Transform... (m2pt5)
+|2195 = Colour scale (dragn99)
+|2196 = Pronouns (jstutter)
+|2197 = Lazer Beams (LittleKingsguard)
+|2198 = How common is transformation magic? (jstutter)
+|2199 = Dan answers a question while displaying unfitting images (m2pt5)
+|2200 = Weird? (m2pt5)
+|2201 = Powder Keg (m2pt5)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}
@@ -32525,12 +32555,14 @@
 |2016-05-20 = Ghostbusters (jstutter) (Reddit)
 |2016-05-23 = U Mad? (m2pt5) (Reddit)
 |2016-05-25 = Clarification (m2pt5) (Reddit)
-|2016-05-27 = 
-|2016-05-30 = 
-|2016-06-01 = 
-|2016-06-03 = 
-|2016-06-06 = 
-|2016-06-08 = 
+|2016-05-27 = Eternal Flame War (fusion_wizard) (Reddit)
+|2016-05-30 = I Got Distracted (m2pt5) (Reddit)
+|2016-06-01 = Pixar. (jstutter) (Reddit)
+|2016-06-03 = Motivation (jstutter) (Reddit)
+|2016-06-06 = &quot;You're trading me for a STEELIX?&quot; (m2pt5) (Reddit)
+|2016-06-08 = The Solution To Writer's Block (m2pt5) (Reddit)
+|2016-06-10 = At the cinema (jstutter) (Reddit)
+|2016-06-13 = Overwatch (jstutter) (Reddit)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)
@@ -32997,12 +33029,14 @@
 |462 = Ghostbusters (jstutter) (Reddit)
 |463 = U Mad? (m2pt5) (Reddit)
 |464 = Clarification (m2pt5) (Reddit)
-|465 = 
-|466 = 
-|467 = 
-|468 = 
-|469 = 
-|470 = 
+|465 = Eternal Flame War (fusion_wizard) (Reddit)
+|466 = I Got Distracted (m2pt5) (Reddit)
+|467 = Pixar. (jstutter) (Reddit)
+|468 = Motivation (jstutter) (Reddit)
+|469 = &quot;You're trading me for a STEELIX?&quot; (m2pt5) (Reddit)
+|470 = The Solution To Writer's Block (m2pt5) (Reddit)
+|471 = At the cinema (jstutter) (Reddit)
+|472 = Overwatch (jstutter) (Reddit)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -33822,12 +33856,14 @@
 |2016-05-20 = Ghostbusters (jstutter)
 |2016-05-23 = U Mad? (m2pt5)
 |2016-05-25 = Clarification (m2pt5)
-|2016-05-27 = 
-|2016-05-30 = 
-|2016-06-01 = 
-|2016-06-03 = 
-|2016-06-06 = 
-|2016-06-08 = 
+|2016-05-27 = Eternal Flame War (fusion_wizard)
+|2016-05-30 = I Got Distracted (m2pt5)
+|2016-06-01 = Pixar. (jstutter)
+|2016-06-03 = Motivation (jstutter)
+|2016-06-06 = &quot;You're trading me for a STEELIX?&quot; (m2pt5)
+|2016-06-08 = The Solution To Writer's Block (m2pt5)
+|2016-06-10 = At the cinema (jstutter)
+|2016-06-13 = Overwatch (jstutter)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -34294,12 +34330,14 @@
 |462 = Ghostbusters (jstutter)
 |463 = U Mad? (m2pt5)
 |464 = Clarification (m2pt5)
-|465 = 
-|466 = 
-|467 = 
-|468 = 
-|469 = 
-|470 = 
+|465 = Eternal Flame War (fusion_wizard)
+|466 = I Got Distracted (m2pt5)
+|467 = Pixar. (jstutter)
+|468 = Motivation (jstutter)
+|469 = &quot;You're trading me for a STEELIX?&quot; (m2pt5)
+|470 = The Solution To Writer's Block (m2pt5)
+|471 = At the cinema (jstutter)
+|472 = Overwatch (jstutter)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -34840,12 +34878,14 @@
 |2016-05-20 = Ghostbusters (jstutter)
 |2016-05-23 = U Mad? (m2pt5)
 |2016-05-25 = Clarification (m2pt5)
-|2016-05-27 = 
-|2016-05-30 = 
-|2016-06-01 = 
-|2016-06-03 = 
-|2016-06-06 = 
-|2016-06-08 = 
+|2016-05-27 = Eternal Flame War (fusion_wizard)
+|2016-05-30 = I Got Distracted (m2pt5)
+|2016-06-01 = Pixar. (jstutter)
+|2016-06-03 = Motivation (jstutter)
+|2016-06-06 = &quot;You're trading me for a STEELIX?&quot; (m2pt5)
+|2016-06-08 = The Solution To Writer's Block (m2pt5)
+|2016-06-10 = At the cinema (jstutter)
+|2016-06-13 = Overwatch (jstutter)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -35312,12 +35352,14 @@
 |462 = Ghostbusters (jstutter)
 |463 = U Mad? (m2pt5)
 |464 = Clarification (m2pt5)
-|465 = 
-|466 = 
-|467 = 
-|468 = 
-|469 = 
-|470 = 
+|465 = Eternal Flame War (fusion_wizard)
+|466 = I Got Distracted (m2pt5)
+|467 = Pixar. (jstutter)
+|468 = Motivation (jstutter)
+|469 = &quot;You're trading me for a STEELIX?&quot; (m2pt5)
+|470 = The Solution To Writer's Block (m2pt5)
+|471 = At the cinema (jstutter)
+|472 = Overwatch (jstutter)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -36198,12 +36240,14 @@
 |2016-05-20 = Ghostbusters (jstutter)
 |2016-05-23 = U Mad? (m2pt5)
 |2016-05-25 = Clarification (m2pt5)
-|2016-05-27 = 
-|2016-05-30 = 
-|2016-06-01 = 
-|2016-06-03 = 
-|2016-06-06 = 
-|2016-06-08 = 
+|2016-05-27 = Eternal Flame War (fusion_wizard)
+|2016-05-30 = I Got Distracted (m2pt5)
+|2016-06-01 = Pixar. (jstutter)
+|2016-06-03 = Motivation (jstutter)
+|2016-06-06 = &quot;You're trading me for a STEELIX?&quot; (m2pt5)
+|2016-06-08 = The Solution To Writer's Block (m2pt5)
+|2016-06-10 = At the cinema (jstutter)
+|2016-06-13 = Overwatch (jstutter)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = XYC
@@ -36670,12 +36714,14 @@
 |462 = Ghostbusters (jstutter)
 |463 = U Mad? (m2pt5)
 |464 = Clarification (m2pt5)
-|465 = 
-|466 = 
-|467 = 
-|468 = 
-|469 = 
-|470 = 
+|465 = Eternal Flame War (fusion_wizard)
+|466 = I Got Distracted (m2pt5)
+|467 = Pixar. (jstutter)
+|468 = Motivation (jstutter)
+|469 = &quot;You're trading me for a STEELIX?&quot; (m2pt5)
+|470 = The Solution To Writer's Block (m2pt5)
+|471 = At the cinema (jstutter)
+|472 = Overwatch (jstutter)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -36963,6 +37009,14 @@
 |2016-05-20 = Ghostbusters (jstutter)
 |2016-05-23 = U Mad? (m2pt5)
 |2016-05-25 = Clarification (m2pt5)
+|2016-05-27 = Eternal Flame War (fusion_wizard)
+|2016-05-30 = I Got Distracted (m2pt5)
+|2016-06-01 = Pixar. (jstutter)
+|2016-06-03 = Motivation (jstutter)
+|2016-06-06 = &quot;You're trading me for a STEELIX?&quot; (m2pt5)
+|2016-06-08 = The Solution To Writer's Block (m2pt5)
+|2016-06-10 = At the cinema (jstutter)
+|2016-06-13 = Overwatch (jstutter)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |180 = Farewell Gods of Curling! (ScorpSt)
@@ -37244,6 +37298,14 @@
 |462 = Ghostbusters (jstutter)
 |463 = U Mad? (m2pt5)
 |464 = Clarification (m2pt5)
+|465 = Eternal Flame War (fusion_wizard)
+|466 = I Got Distracted (m2pt5)
+|467 = Pixar. (jstutter)
+|468 = Motivation (jstutter)
+|469 = &quot;You're trading me for a STEELIX?&quot; (m2pt5)
+|470 = The Solution To Writer's Block (m2pt5)
+|471 = At the cinema (jstutter)
+|472 = Overwatch (jstutter)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}

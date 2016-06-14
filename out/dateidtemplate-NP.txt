@@ -469,6 +469,8 @@
 |2016-06-03=468
 |2016-06-06=469
 |2016-06-08=470
+|2016-06-10=471
+|2016-06-13=472
 }}</includeonly><noinclude>{{templatenotice}}
 
 This database template is the date-to-ID mapping for the [[EGS:NP]] section.
