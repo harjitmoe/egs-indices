@@ -2199,6 +2199,14 @@
 |2016-06-08 = Dan answers a question while displaying unfitting images (m2pt5) (Reddit)
 |2016-06-10 = Weird? (m2pt5) (Reddit)
 |2016-06-14 = Powder Keg (m2pt5) (Reddit)
+|2016-06-15 = 
+|2016-06-17 = 
+|2016-06-20 = 
+|2016-06-22 = 
+|2016-06-24 = 
+|2016-06-27 = 
+|2016-06-29 = 
+|2016-07-01 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic (Official)
@@ -4399,6 +4407,14 @@
 |2199 = Dan answers a question while displaying unfitting images (m2pt5) (Reddit)
 |2200 = Weird? (m2pt5) (Reddit)
 |2201 = Powder Keg (m2pt5) (Reddit)
+|2202 = 
+|2203 = 
+|2204 = 
+|2205 = 
+|2206 = 
+|2207 = 
+|2208 = 
+|2209 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -10182,6 +10198,14 @@
 |2016-06-08 = Dan answers a question while displaying unfitting images (m2pt5)
 |2016-06-10 = Weird? (m2pt5)
 |2016-06-14 = Powder Keg (m2pt5)
+|2016-06-15 = 
+|2016-06-17 = 
+|2016-06-20 = 
+|2016-06-22 = 
+|2016-06-24 = 
+|2016-06-27 = 
+|2016-06-29 = 
+|2016-07-01 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -12382,6 +12406,14 @@
 |2199 = Dan answers a question while displaying unfitting images (m2pt5)
 |2200 = Weird? (m2pt5)
 |2201 = Powder Keg (m2pt5)
+|2202 = 
+|2203 = 
+|2204 = 
+|2205 = 
+|2206 = 
+|2207 = 
+|2208 = 
+|2209 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -15772,6 +15804,14 @@
 |2016-06-08 = Dan answers a question while displaying unfitting images (m2pt5)
 |2016-06-10 = Weird? (m2pt5)
 |2016-06-14 = Powder Keg (m2pt5)
+|2016-06-15 = 
+|2016-06-17 = 
+|2016-06-20 = 
+|2016-06-22 = 
+|2016-06-24 = 
+|2016-06-27 = 
+|2016-06-29 = 
+|2016-07-01 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -17972,6 +18012,14 @@
 |2199 = Dan answers a question while displaying unfitting images (m2pt5)
 |2200 = Weird? (m2pt5)
 |2201 = Powder Keg (m2pt5)
+|2202 = 
+|2203 = 
+|2204 = 
+|2205 = 
+|2206 = 
+|2207 = 
+|2208 = 
+|2209 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -20178,6 +20226,14 @@
 |2016-06-08 = Dan answers a question while displaying unfitting images (m2pt5)
 |2016-06-10 = Weird? (m2pt5)
 |2016-06-14 = Powder Keg (m2pt5)
+|2016-06-15 = 
+|2016-06-17 = 
+|2016-06-20 = 
+|2016-06-22 = 
+|2016-06-24 = 
+|2016-06-27 = 
+|2016-06-29 = 
+|2016-07-01 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -22378,6 +22434,14 @@
 |2199 = Dan answers a question while displaying unfitting images (m2pt5)
 |2200 = Weird? (m2pt5)
 |2201 = Powder Keg (m2pt5)
+|2202 = 
+|2203 = 
+|2204 = 
+|2205 = 
+|2206 = 
+|2207 = 
+|2208 = 
+|2209 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -23886,7 +23950,7 @@
 |2013-10-20 = Fluffy Susan (HarJIT)
 |2013-10-26 = Sure thing (HarJIT)
 |2013-10-27 = Griffin with map (HarJIT)
-|2013-11-02 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, EGS Strip Slaying, Page 271) (HarJIT)
+|2013-11-02 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, http://goo.gl/ackOn2) (HarJIT)
 |2013-11-03 = Fluffy Susan 2 (HarJIT)
 |2013-11-09 = Too many people at once? (HarJIT)
 |2013-11-10 = Did You See (Her) Coming (HarJIT)
@@ -24746,7 +24810,7 @@
 |723 = Fluffy Susan (HarJIT)
 |724 = Sure thing (HarJIT)
 |725 = Griffin with map (HarJIT)
-|726 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, EGS Strip Slaying, Page 271) (HarJIT)
+|726 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, http://goo.gl/ackOn2) (HarJIT)
 |727 = Fluffy Susan 2 (HarJIT)
 |728 = Too many people at once? (HarJIT)
 |729 = Did You See (Her) Coming (HarJIT)
@@ -26359,7 +26423,7 @@
 |2013-10-20 = Fluffy Susan
 |2013-10-26 = Sure thing
 |2013-10-27 = Griffin with map
-|2013-11-02 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, EGS Strip Slaying, Page 271)
+|2013-11-02 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, http://goo.gl/ackOn2)
 |2013-11-03 = Fluffy Susan 2
 |2013-11-09 = Too many people at once?
 |2013-11-10 = Did You See (Her) Coming
@@ -27219,7 +27283,7 @@
 |723 = Fluffy Susan
 |724 = Sure thing
 |725 = Griffin with map
-|726 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, EGS Strip Slaying, Page 271)
+|726 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, http://goo.gl/ackOn2)
 |727 = Fluffy Susan 2
 |728 = Too many people at once?
 |729 = Did You See (Her) Coming
@@ -28982,7 +29046,7 @@
 |2013-10-20 = Fluffy Susan
 |2013-10-26 = Sure thing
 |2013-10-27 = Griffin with map
-|2013-11-02 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, EGS Strip Slaying, Page 271)
+|2013-11-02 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, http://goo.gl/ackOn2)
 |2013-11-03 = Fluffy Susan 2
 |2013-11-09 = Too many people at once?
 |2013-11-10 = Did You See (Her) Coming
@@ -29842,7 +29906,7 @@
 |723 = Fluffy Susan
 |724 = Sure thing
 |725 = Griffin with map
-|726 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, EGS Strip Slaying, Page 271)
+|726 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, http://goo.gl/ackOn2)
 |727 = Fluffy Susan 2
 |728 = Too many people at once?
 |729 = Did You See (Her) Coming
@@ -30739,7 +30803,7 @@
 |2013-10-20 = Fluffy Susan
 |2013-10-26 = Sure thing
 |2013-10-27 = Griffin with map
-|2013-11-02 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, EGS Strip Slaying, Page 271)
+|2013-11-02 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, http://goo.gl/ackOn2)
 |2013-11-03 = Fluffy Susan 2
 |2013-11-09 = Too many people at once?
 |2013-11-10 = Did You See (Her) Coming
@@ -31599,7 +31663,7 @@
 |723 = Fluffy Susan
 |724 = Sure thing
 |725 = Griffin with map
-|726 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, EGS Strip Slaying, Page 271)
+|726 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, http://goo.gl/ackOn2)
 |727 = Fluffy Susan 2
 |728 = Too many people at once?
 |729 = Did You See (Her) Coming
@@ -31777,7 +31841,7 @@
 |2013-10-20 = Fluffy Susan
 |2013-10-26 = Sure thing
 |2013-10-27 = Griffin with map
-|2013-11-02 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, EGS Strip Slaying, Page 271)
+|2013-11-02 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, http://goo.gl/ackOn2)
 |2013-11-03 = Fluffy Susan 2
 |2013-11-09 = Too many people at once?
 |2013-11-10 = Did You See (Her) Coming
@@ -31834,7 +31898,7 @@
 |723 = Fluffy Susan
 |724 = Sure thing
 |725 = Griffin with map
-|726 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, EGS Strip Slaying, Page 271)
+|726 = Lesbians Who Have Kissed Elliot Count = 2 (thankyou SMJB, http://goo.gl/ackOn2)
 |727 = Fluffy Susan 2
 |728 = Too many people at once?
 |729 = Did You See (Her) Coming
@@ -32563,6 +32627,14 @@
 |2016-06-08 = The Solution To Writer's Block (m2pt5) (Reddit)
 |2016-06-10 = At the cinema (jstutter) (Reddit)
 |2016-06-13 = Overwatch (jstutter) (Reddit)
+|2016-06-15 = 
+|2016-06-17 = 
+|2016-06-20 = 
+|2016-06-22 = 
+|2016-06-24 = 
+|2016-06-27 = 
+|2016-06-29 = 
+|2016-07-01 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)
@@ -33037,6 +33109,14 @@
 |470 = The Solution To Writer's Block (m2pt5) (Reddit)
 |471 = At the cinema (jstutter) (Reddit)
 |472 = Overwatch (jstutter) (Reddit)
+|473 = 
+|474 = 
+|475 = 
+|476 = 
+|477 = 
+|478 = 
+|479 = 
+|480 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -33864,6 +33944,14 @@
 |2016-06-08 = The Solution To Writer's Block (m2pt5)
 |2016-06-10 = At the cinema (jstutter)
 |2016-06-13 = Overwatch (jstutter)
+|2016-06-15 = 
+|2016-06-17 = 
+|2016-06-20 = 
+|2016-06-22 = 
+|2016-06-24 = 
+|2016-06-27 = 
+|2016-06-29 = 
+|2016-07-01 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -34338,6 +34426,14 @@
 |470 = The Solution To Writer's Block (m2pt5)
 |471 = At the cinema (jstutter)
 |472 = Overwatch (jstutter)
+|473 = 
+|474 = 
+|475 = 
+|476 = 
+|477 = 
+|478 = 
+|479 = 
+|480 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -34886,6 +34982,14 @@
 |2016-06-08 = The Solution To Writer's Block (m2pt5)
 |2016-06-10 = At the cinema (jstutter)
 |2016-06-13 = Overwatch (jstutter)
+|2016-06-15 = 
+|2016-06-17 = 
+|2016-06-20 = 
+|2016-06-22 = 
+|2016-06-24 = 
+|2016-06-27 = 
+|2016-06-29 = 
+|2016-07-01 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -35360,6 +35464,14 @@
 |470 = The Solution To Writer's Block (m2pt5)
 |471 = At the cinema (jstutter)
 |472 = Overwatch (jstutter)
+|473 = 
+|474 = 
+|475 = 
+|476 = 
+|477 = 
+|478 = 
+|479 = 
+|480 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -36248,6 +36360,14 @@
 |2016-06-08 = The Solution To Writer's Block (m2pt5)
 |2016-06-10 = At the cinema (jstutter)
 |2016-06-13 = Overwatch (jstutter)
+|2016-06-15 = 
+|2016-06-17 = 
+|2016-06-20 = 
+|2016-06-22 = 
+|2016-06-24 = 
+|2016-06-27 = 
+|2016-06-29 = 
+|2016-07-01 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = XYC
@@ -36722,6 +36842,14 @@
 |470 = The Solution To Writer's Block (m2pt5)
 |471 = At the cinema (jstutter)
 |472 = Overwatch (jstutter)
+|473 = 
+|474 = 
+|475 = 
+|476 = 
+|477 = 
+|478 = 
+|479 = 
+|480 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
