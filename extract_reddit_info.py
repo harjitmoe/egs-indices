@@ -40,7 +40,7 @@ def extract_reddit_info():
     files=os.listdir("Reddit Titles")
     for file in files:
         f=open("Reddit Titles/"+file)
-        b=f.read().replace("loggedin ","").replace("&#32;"," ")
+        b=f.read().replace("loggedin ","").replace("outbound ","").replace("&#32;"," ")
         b=utility.deentity(b,3)
         f.close()
         b=b.replace("https://","http://")
