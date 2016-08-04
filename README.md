@@ -76,10 +76,10 @@ file(s)|description
 "Reddit Titles/"|various index pages saved (as "HTML only") from /r/elgoonishshive at different times - for titles and reaction links.
 alldates*.txt|output of test_get_all_dates.py, used by extract_theads_new910 for anomaly detection
 BgNames.txt and BgDescriptions.txt|metadata of legacy backgrounds.  this will not change in the foreseeable future.
-Date2Id.txt|mapping of dates to IDs.  not entirely reliable in event of multi-SB days, but otherwise good.  over entire EGS range.  see also NewFiles.txt
+Date2Id.txt|mapping of dates to IDs.  not entirely reliable in event of multi-SB days.  still used although there is no need to.  see also NewFiles.txt
 DatesWorkProcessed.txt|data about what can and cannot be looked up using a date-scheme URL.
 HayloList.html|data from Haylo's fan-site regarding strip titles and reaction links.  no longer accessible at the original site I don't think.
-NewFiles.txt|date-ID and filename-title data for files postdating both Ookii.dat and (for Story) HayloList.html
+NewFiles.txt|date-ID and filename-title data for, in the current version, actually all comics.
 Megathread.dat|data from Reddit about the assigned titles, title assigner and discussion URL from the megathread for the 17-SB day.
 metadataegs3.txt|metadata obtained from the website itself - do not attempt to edit this directly, see "Extracting titles and date information from the EGS website" above.
 Ookii.dat|the Ookii database (by strip, not by character) saved using the internal AJAX-JSON API.  stored as an uncompressed tarball to save disk footprint (many, many files significantly below 4k is a worst-case scenario for size-footprint ratio).
