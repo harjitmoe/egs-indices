@@ -113,6 +113,7 @@ def output_html(outfile,record,parent=None):
         print>>outfile, "<p style='margin: 0 0 1ex 0'><a href='#%s'>(up one level)</a></p><ul>"%get_id(parent)
         reul_counter=0
         for comic in record["Comics"]:
+            comic["Date"]=comic["Date"].encode("utf-8")
             print>>outfile, "<li><a href='#"+get_id(comic)+"'>"+comic["Date"]+": "+get_comid(comic)+": "+utility.get_title_aggregate(comic)+"</a></li>"
             #Back-buttoning onto middle of list causes all to appear unbulleted on one line
             #Contain damage by splitting ul into chunks (also why I'm using ul, not ol)
