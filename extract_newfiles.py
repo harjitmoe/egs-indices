@@ -14,7 +14,7 @@ import os, json
 
 def getdate_st(fn):
     pl=len("ST-2010-04-23-")
-    return fn[3:][:10],(int(fn[pl:][:5]),fn[pl+6:][:-4])
+    return fn[3:][:10]+"/"+fn[pl:][:5],(fn[3:][:10],int(fn[pl:][:5]),fn[pl+6:][:-4])
 
 def getdate_sb(fn):
     pl=len("NP-2010-04-23-")
@@ -22,7 +22,7 @@ def getdate_sb(fn):
 
 def getdate_np(fn):
     pl=len("NP-2010-04-23-")
-    return fn[3:][:10],(int(fn[pl:][:5]),fn[pl+6:][:-4])
+    return fn[3:][:10]+"/"+fn[pl:][:5],(fn[3:][:10],int(fn[pl:][:5]),fn[pl+6:][:-4])
 
 def extract_newfiles():
     print (">>> extract_newfiles")

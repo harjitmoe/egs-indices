@@ -88,7 +88,8 @@ import sys, os, shutil, utility, __builtin__
 try:
     import json
 except ImportError:
-    import simplejson as json
+    import simplejson
+    json=simplejson
     sys.modules["json"]=json
 
 #Arkadiusz Wahlig's PCRE binding for Python 2.6+.
@@ -98,11 +99,10 @@ try:
     #(unlike pcre, which is used in the pre-SRE re module to bind
     # to a very old PCRE which lacks sufficient syntax support)
     import _pcre
-except ImportError:
-    pass
-else:
     import pcre
     sys.modules["re"]=pcre
+except ImportError:
+    pass
 
 # Remove build dir so existing files do not mess up regen process
 shutil.rmtree(".build")
