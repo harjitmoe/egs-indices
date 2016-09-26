@@ -32,9 +32,6 @@
 import utility,databases
 import os,sys
 
-#XXX the possibility of an ID irregularity across a boundary is not
-#considered (and *presently* unheard of, *presently*)
-
 def shared_date(strip_obj,djv,source_strip):
     if source_strip[0] in djv:
         djv[source_strip[0]]["SharedDateIndex"]=1
@@ -51,10 +48,15 @@ def megadb_fetch_newfiles(alldat,reddit_titles,reddit_links,links_910new):
     for sect in ("story","np","sketch"):
         mode=databases.titlebank["modes"][sect]
         arcs=[]
+        allot={}
         for number,name in mode:
+            if name in allot:
+                arcs.append(allot[name])
+                continue
             newark={"Title":name,"Comics":[],"RecordType":"StoryLine"}
             utility.specific_section(alldat,sect)["StoryArcs"].append(newark)
             arcs.append(newark)
+            allot[name]=newark
         djv={}
         for source_strip in sorted(databases.lsdir[sect].keys()):
             if len(databases.lsdir[sect][source_strip])==2:

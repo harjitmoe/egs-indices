@@ -96,8 +96,8 @@ except ImportError:
 #Preferred to SRE if present.
 try:
     #Unique module name in Arkadiusz Wahlig's binding
-    #(unlike pcre, which is used in the pre-SRE re module to bind
-    # to a very old PCRE which lacks sufficient syntax support)
+    #(unlike pcre, which is used in the pre-SRE post-reop re module 
+    #to bind to a very old PCRE which lacks sufficient syntax support)
     import _pcre
     import pcre
     sys.modules["re"]=pcre

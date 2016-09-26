@@ -10,7 +10,7 @@ The "Extracting titles and date information from the EGS website" described belo
 
 ### Updating the sources
 
-Well, firstly, you need to find a way to keep NewFiles.txt and possibly also Date2Id.txt up to date - these are not designed to be updated manually, but the way which I use only works on my system as it reads from a carefully organised and filenamed offline mirror of EGS which is present on my system, and to distribute such a mirror here would be both *very* large and a blatant violation of Dan's copyright.  A dedicated JSON editor, if such a thing exists (I haven't checked), might be helpful.
+Well, firstly, you need to find a way to keep NewFiles.txt and possibly also Date2Id.txt up to date - these are not designed to be updated manually, but the way which I use only works on my system as it reads from a carefully organised and filenamed offline mirror of EGS which is present on my system, and to distribute such a mirror here would be both large and a blatant violation of Dan's copyright.  A dedicated JSON editor, if such a thing exists (I haven't checked), might be helpful.
 
 Reddit Titles simply contains index pages saved (as "HTML only") from /r/elgoonishshive at different times.  Some overlap is fine.
 

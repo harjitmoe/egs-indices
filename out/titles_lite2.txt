@@ -2087,6 +2087,16 @@
 |2189 = Reunion
 |2190 = Contrast
 |2191 = Soon
+|2236 = Question Mark 01
+|2237 = Question Mark 02
+|2238 = Question Mark 03
+|2239 = Question Mark 04
+|2240 = Question Mark 05
+|2241 = Question Mark 06
+|2242 = Question Mark 07
+|2243 = Question Mark 08
+|2244 = Question Mark 09
+|2245 = Question Mark 10
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}

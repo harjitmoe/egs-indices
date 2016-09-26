@@ -65,9 +65,15 @@ def handle_line(line, arcs, curatitl_p):
     if line["Title"].count(": "):
         atitl,ltitl=line["Title"].split(": ",1)
         if atitl!=curatitl_p[0]:
-            arcs.append({"Title":atitl,"StoryLines":[],"RecordType":"StoryArc"})
+            if atitl in curatitl_p[1]:
+                curatitl_p[2]=arcs.index(curatitl_p[1][atitl])
+            else:
+                myne={"Title":atitl,"StoryLines":[],"RecordType":"StoryArc"}
+                arcs.append(myne)
+                curatitl_p[1][atitl]=myne
+                curatitl_p[2]=-1
             curatitl_p[0]=atitl
-        arcs[-1]["StoryLines"].append({"Title":ltitl,"Comics":line["Comics"],"RecordType":"StoryLine"})
+        arcs[curatitl_p[2]]["StoryLines"].append({"Title":ltitl,"Comics":line["Comics"],"RecordType":"StoryLine"})
     else:
         curatitl_p[0]=""
         arcs.append(line)
@@ -75,7 +81,7 @@ def handle_line(line, arcs, curatitl_p):
 def megadb_arcline(main_db):
     print ">>> megadb_arcline (megadb_indextransforms)"
     arcs=[]
-    curatitl_p=[""] #single-item array functioning as a pointer.
+    curatitl_p=["",{},-1] #functioning as struct of pointers.
     arcs_in=utility.specific_section(main_db,"story")["StoryArcs"]
     for arc in arcs_in:
         handle_line(arc,arcs,curatitl_p)

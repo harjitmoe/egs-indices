@@ -58,8 +58,12 @@ def extract_reddit_info():
             b=b.split(">",1)[1]
             title,b=b.split('</a>',1)
             title=utility.deentity(title,2)
-            b=b.split(' by <a href="http://www.reddit.com/user/',1)[1]
-            submitter,b=b.split('"',1)
+            if "/user/" in b[:400]:
+                b=b.split(' by <a href="http://www.reddit.com/user/',1)[1]
+                submitter,b=b.split('"',1)
+            else:
+                submitter="[error or deleted]"
+                if id in reddit_titles[type]: continue
             if "Comic for" not in title and "Sketchbook for" not in title: #Older links, dates given rather than titles
                 if id!=1974: #Haven't time to work out what went badly wrong here
                     reddit_titles[type][id]=title+" ("+submitter+")"
