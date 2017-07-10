@@ -84,7 +84,8 @@ def megadb_fetch_newfiles(alldat,reddit_titles,reddit_links,links_910new):
             if source_strip[1] not in reddit_titles[sect]:
                 strip_obj["Titles"]={"Filename":strip_obj["FileNameTitle"]} #For now
             else:
-                if utility.alphabetical_id(strip_obj["FileNameTitle"])==utility.alphabetical_id(reddit_titles[sect][source_strip[1]][::-1].split("( ",1)[1][::-1]):
+                uuu = utility.alphabetical_id(strip_obj["FileNameTitle"])
+                if uuu and uuu==utility.alphabetical_id(reddit_titles[sect][source_strip[1]][::-1].split("( ",1)[1][::-1]):
                     strip_obj["Titles"]={"Reddit":reddit_titles[sect][source_strip[1]][:-1]+", based on filename)"}
                 else:
                     strip_obj["Titles"]={"Reddit":reddit_titles[sect][source_strip[1]]}

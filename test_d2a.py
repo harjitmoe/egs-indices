@@ -31,6 +31,8 @@ id2date3=eval(f.read())
 f.close()
 date2id=eval(open("Date2Id.txt","rU").read())
 
+print "Format: Category, date (index), id, date (title), date (heading)"
+
 for category in ("story","sketch","np"):
     d2i=date2id[category]
     for date in sorted(d2i.keys()):

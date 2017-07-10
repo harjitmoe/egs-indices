@@ -260,7 +260,7 @@ def alphabetical_id(string):
 
 #"Backgrounds" is an extension used by megadb_pull_bg
 egslink2ookii={"story":"Story","sketch":"Sketchbook","np":"EGS:NP","bg":"Backgrounds"}
-ookii2egslink=dict(zip(*zip(*egslink2ookii.items())[::-1]))
+ookii2egslink=dict(zip(*list(zip(*egslink2ookii.items()))[::-1]))
 ookii2url={"Story":"index.php","EGS:NP":"egsnp.php","Sketchbook":"sketchbook.php"}
 
 def specific_section(whole,sect):
@@ -268,7 +268,7 @@ def specific_section(whole,sect):
     for section in whole:
         if section["Title"]==egslink2ookii[sect]:
             return section
-    raise IndexError,"section %r not in db"%sect
+    raise IndexError("section %r not in db"%sect)
 
 def dates_index(strip,dateswork):
     strip["DateIndexable"]=False
@@ -279,7 +279,7 @@ def dates_index(strip,dateswork):
                 works,date=dsi[crit]
                 if works and date:
                     if date!=strip["Date"]:
-                        print strip["Date"], date
+                        print ("%s %s" % (strip["Date"], date))
                         raise AssertionError
                     strip["DateIndexable"]=True
 

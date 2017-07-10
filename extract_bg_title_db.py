@@ -14,7 +14,7 @@ import json,os
 
 def extract_bg_title_db():
     print (">>> extract_bg_title_db")
-    if not os.path.exists(r"../../egs/0003 - (Sketchbook and Extras)/0001 - Filler Sketchbook"):
+    if not os.path.exists(r"../../egs/0003 - (Sketchbook and Extras)/0001 - Filler Sketchbook") or not os.path.exists(r"../../egsbg"):
         print ("Not running on Thomas Hori's machine, not regenerating Bg*.txt")
         return
     db={}

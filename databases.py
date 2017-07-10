@@ -32,7 +32,7 @@ _ookii=tarfile.open("Ookii.dat","r:")
 def open_lib(path):
     return _ookii.extractfile(path.replace("\\","/"))
 
-_transcipts=tarfile.open("Transcripts.dat","r:")
+_transcipts=tarfile.open("Transcripts.tar","r:")
 def open_tss(path):
     return _transcipts.extractfile(path.replace("\\","/"))
 
