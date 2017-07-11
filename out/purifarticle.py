@@ -56,10 +56,10 @@ for part in myinp:
             sid = None
     #Note if "polysketch" in a title (unlikely) then we in trouble.
     trailing = ("|".join([""] + tcall)).replace("polysketch", "polyday") #Leading | iff not empty
-    if not id: #i.e. none found
+    if not sid: #i.e. none found
         out += "{{EGS-link-date|"+sect+"|"+year+"|"+month+"|"+day+trailing+"}}"
     else:
-        out += "{{EGS-link-dateid|"+sect+"|"+id+"|"+year+"|"+month+"|"+day+trailing+"}}"
+        out += "{{EGS-link-dateid|"+sect+"|"+sid+"|"+year+"|"+month+"|"+day+trailing+"}}"
     out += text
 
 open("output.txt","w").write(out)
