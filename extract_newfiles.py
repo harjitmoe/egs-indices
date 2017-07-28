@@ -42,9 +42,9 @@ def extract_newfiles():
                     sbmap.append(i)
                 elif i.startswith("NP-"):
                     npmap.append(i)
-    stmap=dict(map(getdate_st,filter(lambda i:not i.lower().count("-original") and not i.lower().count("-pagecut") and not i.lower().count("-pageextend") and not i.lower().count("-remastered-sb"),stmap)))
-    sbmap=dict(map(getdate_sb,filter(lambda i:i.lower().count("-00"),sbmap)))
-    npmap=dict(map(getdate_np,filter(lambda i:not i.lower().count("-original") and not i.lower().count("-remastered-sb") and not i.lower().count("-colour-official"),npmap)))
+    stmap=dict(list(map(getdate_st,[i for i in stmap if not i.lower().count("-original") and not i.lower().count("-pagecut") and not i.lower().count("-pageextend") and not i.lower().count("-remastered-sb")])))
+    sbmap=dict(list(map(getdate_sb,[i for i in sbmap if i.lower().count("-00")])))
+    npmap=dict(list(map(getdate_np,[i for i in npmap if not i.lower().count("-original") and not i.lower().count("-remastered-sb") and not i.lower().count("-colour-official")])))
     open("NewFiles.txt","w").write(json.dumps({"story":stmap,"sketch":sbmap,"np":npmap}))
 
 if __name__=="__main__":

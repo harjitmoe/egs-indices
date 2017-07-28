@@ -1,4 +1,4 @@
-# Copyright (c) Thomas Hori 2015, 2016.
+# Copyright (c) Thomas Hori 2015, 2016, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -150,44 +150,43 @@ def deentity(data,mode=0):
     3: Whole-file mode (skip syntax-critical escapes)
     """
     # The level of overhead which results from inefficiencies in this function is phenomenal.
-    # Especially(!) under PyPy
-    from htmlentitydefs import name2codepoint,codepoint2name
+    # TODO: convert this entire function to do it properly or at least using a compiled regex.
+    from html.entities import name2codepoint,codepoint2name
     #
     # 0: Fast, 1: Comprehensive, 2: Syntax-critical only, 3: Whole-file mode (skip syntax-critical)
-    data=data.decode("utf-8")
     if mode==0:
-        foci=(u'lt', u'gt', u'quot', u'nbsp', u'lsquo', u'rsquo', u'ldquo', u'rdquo', u'ndash', u'hellip', u'eacute')
+        foci = ('lt', 'gt', 'quot', 'nbsp', 'lsquo', 'rsquo', 'ldquo', 'rdquo', 'ndash', 'hellip', 'eacute')
     elif mode in (1,3):
-        foci=name2codepoint.keys()
-    elif mode==2:
-        foci=(u'lt',u'gt')
+        foci = list(name2codepoint.keys())
+    elif mode == 2:
+        foci = ('lt', 'gt')
     for name in foci:
-        if name!=u"amp":
-            if (mode!=3) or (name not in (u'lt',u'gt')):
-                data=data.replace(u"&"+name+u";",unichr(name2codepoint[name]))
-    if mode in (0,2):
-        data=data.replace(u"&#39;",unichr(39))
-    elif mode in (1,3):
+        if name != "amp":
+            if (mode != 3) or (name not in ('lt', 'gt')):
+                data = data.replace("&" + name + ";", chr(name2codepoint[name]))
+    if mode in (0, 2):
+        data = data.replace("&#39;", chr(39))
+    elif mode in (1, ):#3):
         for number in range(0x100):
-            name=u"#"+str(number).decode("latin1")
-            data=data.replace(u"&"+name+u";",unichr(number))
-    if mode!=3:
-        data=data.replace(u"&amp;",u"&")
-    return data.encode("utf-8")
+            name = "#"+str(number)
+            data = data.replace("&" + name + ";", chr(number))
+    if mode != 3:
+        data = data.replace("&amp;", "&")
+    return data
 def entity_escape(data):
     """Encode the HTML entities used by deentity in Mode 0."""
     # The level of overhead which results from inefficiencies in this function is phenomenal.
-    from htmlentitydefs import name2codepoint,codepoint2name
-    data=data.decode("utf-8").replace(u"&",u"&amp;")
-    for name in (u'lt', u'gt', u'quot', u'nbsp', u'lsquo', u'rsquo', u'ldquo', u'rdquo', u'ndash', u'hellip', u'eacute'):
-        data=data.replace(unichr(name2codepoint[name]),u"&"+name+u";")
-    return data.encode("utf-8")
+    from html.entities import name2codepoint,codepoint2name
+    data=data.replace("&","&amp;")
+    for name in ('lt', 'gt', 'quot', 'nbsp', 'lsquo', 'rsquo', 'ldquo', 'rdquo', 'ndash', 'hellip', 'eacute'):
+        data=data.replace(chr(name2codepoint[name]),"&"+name+";")
+    return data
 
 def recdeentity(obj,mode=0):
     """Remove HTML entities from a JSON-compatible object (modes same as deentity)."""
     if isinstance(obj, type({})):
         d={}
-        for k,v in obj.items():
+        for k,v in list(obj.items()):
             d[recdeentity(k, mode=mode)]=recdeentity(v, mode=mode)
         return d
     elif isinstance(obj, type([])):
@@ -244,23 +243,23 @@ def get_title_aggregate(comic):
             if comic["Titles"][ttype]:
                 value.append(comic["Titles"][ttype]+" ("+ttype+")")
     if (not value) and comic["Titles"]:
-        value.extend([i[1]+" ("+i[0]+")" for i in comic["Titles"].items()])
+        value.extend([i[1]+" ("+i[0]+")" for i in list(comic["Titles"].items())])
     return entity_escape((" / ".join(value)) or "Untitled.")
 def get_title_preferring(comic,pref):
     for ttype in (pref,)+title_sources:
         if ttype in comic["Titles"]:
             return entity_escape(comic["Titles"][ttype])
     if comic["Titles"]:
-        return entity_escape(comic["Titles"][comic["Titles"].keys()[0]])
+        return entity_escape(comic["Titles"][list(comic["Titles"].keys())[0]])
     return "Untitled."
 def alphabetical_id(string):
-    return tuple(filter(lambda i:i in "qwertyuiopasdfghjklzxcvbnm",string.lower()))
+    return tuple([i for i in string.lower() if i in "qwertyuiopasdfghjklzxcvbnm"])
 
 #### Unsorted:
 
 #"Backgrounds" is an extension used by megadb_pull_bg
 egslink2ookii={"story":"Story","sketch":"Sketchbook","np":"EGS:NP","bg":"Backgrounds"}
-ookii2egslink=dict(zip(*list(zip(*egslink2ookii.items()))[::-1]))
+ookii2egslink=dict(list(zip(*list(zip(*list(egslink2ookii.items())))[::-1])))
 ookii2url={"Story":"index.php","EGS:NP":"egsnp.php","Sketchbook":"sketchbook.php"}
 
 def specific_section(whole,sect):
@@ -275,11 +274,11 @@ def dates_index(strip,dateswork):
     if strip["Id"] in dateswork:
         dsi=dateswork[strip["Id"]]
         for crit in ('WorksInternal','WorksExternal'):
-            if crit in dsi.keys():
+            if crit in dsi:
                 works,date=dsi[crit]
                 if works and date:
                     if date!=strip["Date"]:
-                        print ("%s %s" % (strip["Date"], date))
+                        print("%s %s" % (strip["Date"], date))
                         raise AssertionError
                     strip["DateIndexable"]=True
 

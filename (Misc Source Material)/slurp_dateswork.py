@@ -36,7 +36,7 @@ spatulae={}
 
 odat={"story":{},"sketch":{},"np":{}}
 
-for i in idat.keys():
+for i in list(idat.keys()):
     if idat[i]==None:
         continue
     section,dtyp,id=i.split("-")
@@ -49,7 +49,7 @@ for i in idat.keys():
         #if spatulae[path]:print path
         spatulae[path]+=1
 
-for i in idat.keys():
+for i in list(idat.keys()):
     if idat[i]==None:
         continue
     section,dtyp,id=i.split("-")
@@ -58,11 +58,11 @@ for i in idat.keys():
     works=spatulae[path]<2 #not a recurring image (i.e. current comic)
     odat[section][id][map[dtyp]]=(works,date)
 
-for s,sodat in odat.items():
+for s,sodat in list(odat.items()):
     lastid=0
     for id in sorted(sodat.keys()):
         if (id-lastid)!=1:
-            print s,id,lastid
+            print(s,id,lastid)
         lastid=id
 
 f=open("DatesWorkProcessed.txt","w")

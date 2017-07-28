@@ -1,5 +1,5 @@
-#!/usr/bin/env python
-# -*- python -*-
+#!/usr/bin/env python3
+# -*- mode: python; coding: utf-8 -*-
 
 # Copyright (c) Thomas Hori 2015.
 #
@@ -35,7 +35,7 @@ import databases
 def merge_haylo(strip,haylo_db):
     if strip["Date"] in haylo_db:
         date,title2,fora=haylo_db[strip["Date"]]
-        title2=title2.replace("Animi-Style","Anim\xe9-Style".decode("cp1252").encode("utf8"))
+        title2=title2.replace("Animi-Style","Animé-Style")
         for el in databases.titlebank["haylo_errorlinks"]:
             if el in [i[0] for i in fora]:
                 #Apparantly an error in the Haylo list.  Made up for by Herald Loveall list.
@@ -77,7 +77,7 @@ def find_eid_ookii(strip,sect,date2id):
             strip["SpecialUrl"]="http://danshive.tumblr.com/post/36647880400/site-link-watching-star-trek-ii-whats-funny"
             strip["DateIndexable"]=0
         else:
-            print>>sys.stderr,"Error: cannot find date-id mapping for %s"%strip["Date"]
+            print("Error: cannot find date-id mapping for %s"%strip["Date"], file=sys.stderr)
 
 def handle_strip_record(strip,sect,classics_db,haylo_db,reddit_links,links_910new):
     date=strip["Date"]
@@ -85,9 +85,9 @@ def handle_strip_record(strip,sect,classics_db,haylo_db,reddit_links,links_910ne
     find_eid_ookii(strip,sect,databases.date2id)
     #Reactions
     strip["ReactionLinks"]=[]
-    if date in classics_db[sect].keys():
+    if date in classics_db[sect]:
         strip["ReactionLinks"].append(classics_db[sect][date])
-    if date in databases.suddenlaunch_db[sect].keys():
+    if date in databases.suddenlaunch_db[sect]:
         strip["ReactionLinks"].append((databases.suddenlaunch_db[sect][date],0))
     #Handle title list
     handle_titles_ookii(strip,sect)

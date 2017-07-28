@@ -4,7 +4,7 @@
 
 ### Dependencies
 
-The entire thing requires Python 2.7.  You might get it working on 2.5, given simplejson.  You might take it upon yourself to port it to 3k.
+The entire thing requires Python 3, tested on version 3.5.
 
 The "Extracting titles and date information from the EGS website" described below requires GNU wget.
 

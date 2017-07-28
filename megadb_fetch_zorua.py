@@ -110,7 +110,7 @@ def megadb_fetch_zorua(alldat):
             if db:
                 ldb=db.pop(0)
                 if "Date" in ldb:
-                    print strip['Date'],ldb["Date"]
+                    print(strip['Date'],ldb["Date"])
                 if ldb["Title"].strip():
                     strip['Titles']["Zorua"]=ldb["Title"]
                 if ldb["Characters"]:

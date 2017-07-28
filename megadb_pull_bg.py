@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- python -*-
 
 # Copyright (c) Thomas Hori 2015.
@@ -39,7 +39,7 @@ def formurl(idst):
 gifs=[0,1,2,3,4,5,6,7,826,27,28,29,30,31,32,33,34,35,36,38,45,48,54,55]
 
 def megadb_pull_bg(alldat):
-    print ">>> megadb_pull_bg"
+    print(">>> megadb_pull_bg")
     f=open("BgNames.txt","rU")
     b=eval(f.read()) #Blatantly no security, assume trust
     f.close()

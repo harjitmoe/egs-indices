@@ -74,15 +74,15 @@ try:
         year=2013 #Before 2013 usually goes without saying, don't waste time.
         month=1
         day=1
-        print "I",interface
+        print("I",interface)
         prefix = names[interface]
-        if prefix not in database.keys():
+        if prefix not in list(database.keys()):
             database[prefix]={}
         #Get the section homepage (hence fallback) strip.
         url = "http://www.egscomics.com/"+interface+".php"
         os.system(wget+" -O \""+interface+".php\" \""+url+"\" >> wgetlog.txt 2>&1")
         if not os.path.exists(interface+".php"):
-            print "A"
+            print("A")
         rd = open(interface+".php","rU")
         data = rd.read()
         rd.close()
@@ -91,15 +91,15 @@ try:
         tm=time.time()
         while 1:
             try:
-                if (year,month,day) not in database[prefix].keys():
-                    print "T",year,month,day
+                if (year,month,day) not in list(database[prefix].keys()):
+                    print("T",year,month,day)
                     url = "http://www.egscomics.com/"+interface+(".php?date=%04d-%02d-%02d"%(year,month,day))
                     #Cap rate at once a second
                     if 1.0-(time.time()-tm)>1:
                         time.sleep(1.0-(time.time()-tm))
                     os.system(wget+" -O \""+interface+(".php@date=%04d-%02d-%02d"%(year,month,day))+"\" \""+url+"\" >> wgetlog.txt 2>&1")
                     if not os.path.exists(interface+(".php@date=%04d-%02d-%02d"%(year,month,day))):
-                        print "A"
+                        print("A")
                         continue
                     rd = open(interface+(".php@date=%04d-%02d-%02d"%(year,month,day)),"rU")
                     data = rd.read()
@@ -114,8 +114,8 @@ try:
                             database[prefix][year,month,day]="No"
                         else:
                             database[prefix][year,month,day]="Yes"
-            except Exception,e:
-                print "Pfail",year,month,day,str(e)
+            except Exception as e:
+                print("Pfail",year,month,day,str(e))
             day += 1
             if day>maxday:
                 day = 1
@@ -128,11 +128,11 @@ try:
             tm=time.time()
 finally:
     f=open("alldates.break.txt","w")
-    f.write(`database`)
+    f.write(repr(database))
     f.close()
 
 f=open("alldates.txt","w")
-f.write(`database`)
+f.write(repr(database))
 f.close()
 
-raw_input()
+input()

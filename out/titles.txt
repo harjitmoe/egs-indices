@@ -2359,6 +2359,14 @@
 |2017-07-05 = Pep talk (danshive) (Reddit)
 |2017-07-07 = Goodness Defined (danshive) (Reddit)
 |2017-07-10 = The Luck of Tedd (danshive) (Reddit)
+|2017-07-12 = 
+|2017-07-14 = 
+|2017-07-17 = 
+|2017-07-19 = 
+|2017-07-21 = 
+|2017-07-24 = 
+|2017-07-26 = 
+|2017-07-28 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic (Official)
@@ -4730,6 +4738,14 @@
 |2369 = Pep talk (danshive) (Reddit)
 |2370 = Goodness Defined (danshive) (Reddit)
 |2371 = The Luck of Tedd (danshive) (Reddit)
+|2372 = 
+|2373 = 
+|2374 = 
+|2375 = 
+|2376 = 
+|2377 = 
+|2378 = 
+|2379 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -10683,6 +10699,14 @@
 |2017-07-05 = Pep talk (danshive)
 |2017-07-07 = Goodness Defined (danshive)
 |2017-07-10 = The Luck of Tedd (danshive)
+|2017-07-12 = 
+|2017-07-14 = 
+|2017-07-17 = 
+|2017-07-19 = 
+|2017-07-21 = 
+|2017-07-24 = 
+|2017-07-26 = 
+|2017-07-28 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -13054,6 +13078,14 @@
 |2369 = Pep talk (danshive)
 |2370 = Goodness Defined (danshive)
 |2371 = The Luck of Tedd (danshive)
+|2372 = 
+|2373 = 
+|2374 = 
+|2375 = 
+|2376 = 
+|2377 = 
+|2378 = 
+|2379 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -16604,6 +16636,14 @@
 |2017-07-05 = Pep talk (danshive)
 |2017-07-07 = Goodness Defined (danshive)
 |2017-07-10 = The Luck of Tedd (danshive)
+|2017-07-12 = 
+|2017-07-14 = 
+|2017-07-17 = 
+|2017-07-19 = 
+|2017-07-21 = 
+|2017-07-24 = 
+|2017-07-26 = 
+|2017-07-28 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -18975,6 +19015,14 @@
 |2369 = Pep talk (danshive)
 |2370 = Goodness Defined (danshive)
 |2371 = The Luck of Tedd (danshive)
+|2372 = 
+|2373 = 
+|2374 = 
+|2375 = 
+|2376 = 
+|2377 = 
+|2378 = 
+|2379 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -21341,6 +21389,14 @@
 |2017-07-05 = Pep talk (danshive)
 |2017-07-07 = Goodness Defined (danshive)
 |2017-07-10 = The Luck of Tedd (danshive)
+|2017-07-12 = 
+|2017-07-14 = 
+|2017-07-17 = 
+|2017-07-19 = 
+|2017-07-21 = 
+|2017-07-24 = 
+|2017-07-26 = 
+|2017-07-28 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -23712,6 +23768,14 @@
 |2369 = Pep talk (danshive)
 |2370 = Goodness Defined (danshive)
 |2371 = The Luck of Tedd (danshive)
+|2372 = 
+|2373 = 
+|2374 = 
+|2375 = 
+|2376 = 
+|2377 = 
+|2378 = 
+|2379 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -34389,6 +34453,13 @@
 |2017-07-05 = Ellen Demo 20 (Official) / Double Zappery Limits (danshive) (Reddit)
 |2017-07-07 = Ellen Demo 21 (Official) / A new EGS:NP hops onto the scene! (danshive) (Reddit)
 |2017-07-10 = Ellen Demo 22 (Official) / ELLEN BEAM! (danshive) (Reddit)
+|2017-07-12 = 
+|2017-07-14 = 
+|2017-07-17 = 
+|2017-07-19 = 
+|2017-07-21 = 
+|2017-07-24 = 
+|2017-07-26 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)
@@ -35031,6 +35102,13 @@
 |638 = Ellen Demo 20 (Official) / Double Zappery Limits (danshive) (Reddit)
 |639 = Ellen Demo 21 (Official) / A new EGS:NP hops onto the scene! (danshive) (Reddit)
 |640 = Ellen Demo 22 (Official) / ELLEN BEAM! (danshive) (Reddit)
+|641 = 
+|642 = 
+|643 = 
+|644 = 
+|645 = 
+|646 = 
+|647 = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -36104,6 +36182,13 @@
 |2017-07-05 = Ellen Demo 20
 |2017-07-07 = Ellen Demo 21
 |2017-07-10 = Ellen Demo 22
+|2017-07-12 = ED-23
+|2017-07-14 = ED-24
+|2017-07-17 = ED-25
+|2017-07-19 = ED-26
+|2017-07-21 = ED-27
+|2017-07-24 = ED-28
+|2017-07-26 = ED-29
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -36746,6 +36831,13 @@
 |638 = Ellen Demo 20
 |639 = Ellen Demo 21
 |640 = Ellen Demo 22
+|641 = ED-23
+|642 = ED-24
+|643 = ED-25
+|644 = ED-26
+|645 = ED-27
+|646 = ED-28
+|647 = ED-29
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -37462,6 +37554,13 @@
 |2017-07-05 = Ellen Demo 20
 |2017-07-07 = Ellen Demo 21
 |2017-07-10 = Ellen Demo 22
+|2017-07-12 = ED-23
+|2017-07-14 = ED-24
+|2017-07-17 = ED-25
+|2017-07-19 = ED-26
+|2017-07-21 = ED-27
+|2017-07-24 = ED-28
+|2017-07-26 = ED-29
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -38104,6 +38203,13 @@
 |638 = Ellen Demo 20
 |639 = Ellen Demo 21
 |640 = Ellen Demo 22
+|641 = ED-23
+|642 = ED-24
+|643 = ED-25
+|644 = ED-26
+|645 = ED-27
+|646 = ED-28
+|647 = ED-29
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -39160,6 +39266,13 @@
 |2017-07-05 = Ellen Demo 20
 |2017-07-07 = Ellen Demo 21
 |2017-07-10 = Ellen Demo 22
+|2017-07-12 = ED-23
+|2017-07-14 = ED-24
+|2017-07-17 = ED-25
+|2017-07-19 = ED-26
+|2017-07-21 = ED-27
+|2017-07-24 = ED-28
+|2017-07-26 = ED-29
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = XYC
@@ -39802,6 +39915,13 @@
 |638 = Ellen Demo 20
 |639 = Ellen Demo 21
 |640 = Ellen Demo 22
+|641 = ED-23
+|642 = ED-24
+|643 = ED-25
+|644 = ED-26
+|645 = ED-27
+|646 = ED-28
+|647 = ED-29
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}

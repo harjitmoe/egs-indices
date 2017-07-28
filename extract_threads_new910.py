@@ -89,10 +89,10 @@ def parse_date(s):
     #
     #Mistaken threads to ignore
     elif s=='Power glove, power glove, power glove!':
-        print "  mistaken thread"
+        print("  mistaken thread")
         return None #An abortive misplaced GD thread
     elif s=='NP January 25, 2010':
-        print "  mistaken thread"
+        print("  mistaken thread")
         return None #was a v.short mistaken thread which lingers
     #
     #Remove annotations which confuse the gestalt matcher
@@ -119,14 +119,14 @@ def parse_date(s):
                 day=int(j.rstrip("."),10)
                 s.remove(j)
             else:
-                print " ",year,month,day,dow,s
+                print(" ",year,month,day,dow,s)
                 return None
         elif (j.endswith("th") or j.endswith("nd") or j.endswith("st") or j.endswith("rd")) and (j[0] in "0123456789"):
             if day==None:
                 day=int(j[:-2],10)
                 s.remove(j)
             else:
-                print " ",year,month,day,dow,s
+                print(" ",year,month,day,dow,s)
                 return None
         elif j in ("and","monday","sarah"): #Detected as months but are not
             continue
@@ -137,7 +137,7 @@ def parse_date(s):
                 month=int(utility.month2number(i[0].title()),10)
                 s.remove(j)
     if not year or not month or not day:
-        print " ",year,month,day,dow,s
+        print(" ",year,month,day,dow,s)
         return None
     date2str["%04d-%02d-%02d"%(year,month,day)].append(os)
     return "%04d-%02d-%02d"%(year,month,day)
@@ -175,11 +175,11 @@ def grok(code):
         if j:
             j=utility.datefix_910(j,code.lower())
             if checkdb and (j not in checkdb):
-                print "anomaly",code,j
+                print("anomaly",code,j)
             #XXX do what with 2014-12-08?
             b2[j].append((utility.standardise910link(b3[i]),False))
         else:
-            print i
+            print(i)
     return b2
 
 def extract_threads_new910():

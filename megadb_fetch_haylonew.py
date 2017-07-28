@@ -46,7 +46,7 @@ def megadb_fetch_haylonew(main_db,haylo_additional_hierarchy,haylo_db,links_910n
                 strip["Id"]=databases.date2id["story"][date]
             except:
                 strip["Id"]=-1#i.e. error
-                print>>sys.stderr,"Error: cannot find date-id mapping for %s"%date
+                print("Error: cannot find date-id mapping for %s"%date, file=sys.stderr)
             strip["OokiiId"]=-1
             strip["ReactionLinks"]=fora
             if strip["Date"] in links_910new["story"]:

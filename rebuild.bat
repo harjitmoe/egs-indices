@@ -1,4 +1,4 @@
-@rem Written in 2015 by HarJIT
+@rem Written in 2015, 2017 by HarJIT
 @rem
 @rem This file is made available under the CC0 Public Domain Dedication.  To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights to this file to the public domain worldwide. This file is distributed without any warranty.
 @rem
@@ -10,13 +10,9 @@
 @rem different terms.  This note is not part of the above notice.
 @rem
 
-@rem The version supported is Python 2.7.  Generally no attempt at 
-@rem 3k compatibility has been made.  Python 2.5 requires the
-@rem simplejson extension but is likely to work.
+@rem The version supported is Python 3.5.
 
-@rem set PYINTER=C:\python27\python -i
-@rem set PYINTER=ipy
-set PYINTER=pypy
+set PYINTER=C:\python35\python -i
 
 @echo off
 %PYINTER% rebuild.py

@@ -5,3 +5,4 @@ Thumbs.db
 */*/*/Thumbs.db
 *.pyc
 wgetlog.txt
+*.py.bak

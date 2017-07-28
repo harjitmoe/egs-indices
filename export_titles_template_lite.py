@@ -101,36 +101,36 @@ import utility
 def doit_date(outfile,b,shuffle=0):
     source="Official"
     #Only, by date
-    print>>outfile, "{{#switch:{{{%d}}}-{{{%d}}}-{{{%d}}}"%(4+shuffle,5+shuffle,6+shuffle)
+    print("{{#switch:{{{%d}}}-{{{%d}}}-{{{%d}}}"%(4+shuffle,5+shuffle,6+shuffle), file=outfile)
     for arc in b:
         for line in (arc["StoryLines"] if arc["RecordType"]=="StoryArc" else (arc,)):
             for comic in line["Comics"]:
                 if not comic["SharedDateIndex"]:
                     if source in comic["Titles"]:
-                        print>>outfile, "|"+comic["Date"]+' = '+utility.entity_escape(comic["Titles"][source])
-    print>>outfile, "|#default = }}"
+                        print("|"+comic["Date"]+' = '+utility.entity_escape(comic["Titles"][source]), file=outfile)
+    print("|#default = }}", file=outfile)
 
 def doit_id(outfile,b,shuffle=0):
     source="Official"
     #Only, by ID
-    print>>outfile, "{{#switch:{{{%d}}}"%(4+shuffle,)
+    print("{{#switch:{{{%d}}}"%(4+shuffle,), file=outfile)
     for arc in b:
         for line in (arc["StoryLines"] if arc["RecordType"]=="StoryArc" else (arc,)):
             for comic in line["Comics"]:
                 if comic["Id"]!=-1:
                     if source in comic["Titles"]:
-                        print>>outfile, "|"+`comic["Id"]`+' = '+utility.entity_escape(comic["Titles"][source])
-    print>>outfile, "|#default = }}"
+                        print("|"+repr(comic["Id"])+' = '+utility.entity_escape(comic["Titles"][source]), file=outfile)
+    print("|#default = }}", file=outfile)
 
 def doit(outfile,b,shuffle=0):
-    print>>outfile, "{{#switch:{{{%d}}}"%(3+shuffle,),
+    print("{{#switch:{{{%d}}}"%(3+shuffle,), end=' ', file=outfile)
     #Only, by date
-    print>>outfile, "|date =",
+    print("|date =", end=' ', file=outfile)
     doit_date(outfile, b, shuffle)
     #Only, by ID
-    print>>outfile, "|id =",
+    print("|id =", end=' ', file=outfile)
     doit_id(outfile, b, shuffle)
-    print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{%d}}}'</span>}}"%(3+shuffle,)
+    print("|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{%d}}}'</span>}}"%(3+shuffle,), file=outfile)
 
 def export_titles_template_lite(alldat):
     print (">>> export_titles_template_lite")
@@ -138,36 +138,36 @@ def export_titles_template_lite(alldat):
     outfile_date=open(".build/titles_lite_date.txt","w")
     outfile_id=open(".build/titles_lite_id.txt","w")
     outfile_bg=open(".build/titles_lite_bg.txt","w")
-    print>>outfile, "<includeonly>{{#switch:{{{1}}}"
-    print>>outfile_date, "<includeonly>{{#switch:{{{1}}}"
-    print>>outfile_id, "<includeonly>{{#switch:{{{1}}}"
+    print("<includeonly>{{#switch:{{{1}}}", file=outfile)
+    print("<includeonly>{{#switch:{{{1}}}", file=outfile_date)
+    print("<includeonly>{{#switch:{{{1}}}", file=outfile_id)
     for sect in ("story","sketch","np"):
         b=utility.specific_section(alldat,sect)["StoryArcs"]
-        print>>outfile, "|%s={{#switch:{{{2}}}"%sect
-        print>>outfile, "|official =",
+        print("|%s={{#switch:{{{2}}}"%sect, file=outfile)
+        print("|official =", end=' ', file=outfile)
         doit(outfile,b)
-        print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}"
-        print>>outfile_date, ("|%s="%sect),
+        print("|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}", file=outfile)
+        print(("|%s="%sect), end=' ', file=outfile_date)
         doit_date(outfile_date,b,-2)
-        print>>outfile_id, ("|%s="%sect),
+        print(("|%s="%sect), end=' ', file=outfile_id)
         doit_id(outfile_id,b,-2)
     f=open("BgNames.txt","rU")
     b=eval(f.read()) #Blatantly no security, assume trust
     f.close()
-    print>>outfile, "|bg={{#switch:{{{2}}}"
-    print>>outfile_bg, "<includeonly>{{#switch:{{{1}}}"
+    print("|bg={{#switch:{{{2}}}", file=outfile)
+    print("<includeonly>{{#switch:{{{1}}}", file=outfile_bg)
     for id in sorted(b.keys()):
-        print>>outfile, "|"+id+' = '+b[id]
-        print>>outfile_bg, "|"+id+' = '+b[id]
-    print>>outfile_bg, "|#default = }}</includeonly><noinclude>"
-    print>>outfile, "|#default = }}"
-    print>>outfile_id, "|#default = <span class=\"error\">[[Template:EGS-title-dateid|EGS-title-dateid]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>"
-    print>>outfile_date, "|#default = <span class=\"error\">[[Template:EGS-title-date|EGS-title-date]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>"
-    print>>outfile, "|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>"
-    print>>outfile, docs
-    print>>outfile_date, docs_date
-    print>>outfile_id, docs_id
-    print>>outfile_bg, docs_bg
+        print("|"+id+' = '+b[id], file=outfile)
+        print("|"+id+' = '+b[id], file=outfile_bg)
+    print("|#default = }}</includeonly><noinclude>", file=outfile_bg)
+    print("|#default = }}", file=outfile)
+    print("|#default = <span class=\"error\">[[Template:EGS-title-dateid|EGS-title-dateid]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>", file=outfile_id)
+    print("|#default = <span class=\"error\">[[Template:EGS-title-date|EGS-title-date]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>", file=outfile_date)
+    print("|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>", file=outfile)
+    print(docs, file=outfile)
+    print(docs_date, file=outfile_date)
+    print(docs_id, file=outfile_id)
+    print(docs_bg, file=outfile_bg)
     tuple(i.close() for i in (outfile,outfile_date,outfile_id,outfile_bg)) #IronPython grumble grumble
 
 if __name__=="__main__":

@@ -34,16 +34,16 @@ def munj(id):
     return id
 
 def print_infos_nem(nem,cd):
-    print>>nem, "|-\n|%s||%s||%s"%(cd["Date"],cd["-numberidmap-numero"],munj(cd["Id"]))
+    print("|-\n|%s||%s||%s"%(cd["Date"],cd["-numberidmap-numero"],munj(cd["Id"])), file=nem)
 
 def print_infos_nom(nom,cd):
-    print>>nom, "|-\n|%s||%s||%s"%(cd["Date"],cd["-numberidmap-numero"],munj(cd["OokiiId"]))
+    print("|-\n|%s||%s||%s"%(cd["Date"],cd["-numberidmap-numero"],munj(cd["OokiiId"])), file=nom)
 
 def print_infos_dim(dim,cd):
-    print>>dim, "|-\n|%s||%s||%s||%s"%(cd["Date"],cd["-numberidmap-numero"],munj(cd["Id"]),("YES" if cd["DateIndexable"] else "NO"))
+    print("|-\n|%s||%s||%s||%s"%(cd["Date"],cd["-numberidmap-numero"],munj(cd["Id"]),("YES" if cd["DateIndexable"] else "NO")), file=dim)
 
 def print_infos_dfm(dfm,cd):
-    print>>dfm, "|-\n|%s||%s||%s"%(munj(cd["Id"]),cd["Date"],cd["DateInBrowserTitle"])
+    print("|-\n|%s||%s||%s"%(munj(cd["Id"]),cd["Date"],cd["DateInBrowserTitle"]), file=dfm)
 
 def export_numberdatemaps(alldat):
     print (">>> export_numberdatemaps")
@@ -51,18 +51,18 @@ def export_numberdatemaps(alldat):
     sbdb=utility.specific_section(alldat,"sketch")["StoryArcs"]
     npdb=utility.specific_section(alldat,"np")["StoryArcs"]
     nem=open(".build/numbereidmap.txt","w")
-    print>>nem, "== Numbers to IDs =="
+    print("== Numbers to IDs ==", file=nem)
     nom=open(".build/numberoidmap.txt","w")
-    print>>nom, "== Numbers to Ookii IDs =="
+    print("== Numbers to Ookii IDs ==", file=nom)
     dim=open(".build/numberdibmap.txt","w")
-    print>>dim, "== Which comics date lookup works for =="
+    print("== Which comics date lookup works for ==", file=dim)
     dfm=open(".build/datefakemap.txt","w")
-    print>>dfm, "== Incorrect, elaborated or non-ISO dates in browser title =="
+    print("== Incorrect, elaborated or non-ISO dates in browser title ==", file=dfm)
     for title,db in (("Main Story",stdb),("Sketchbook",sbdb),("EGS:NP",npdb)):
-        print>>nem, "===%s===\n\n{|border=\"1\" cellpadding=\"3\"\n!Date!!Number!!ID (EGSComics)"%title
-        print>>nom, "===%s===\n\n{|border=\"1\" cellpadding=\"3\"\n!Date!!Number!!OokiiDB ID"%title
-        print>>dim, "===%s===\n\n{|border=\"1\" cellpadding=\"3\"\n!Date!!Number!!ID (EGSComics)!!Date-indexable"%title
-        print>>dfm, "===%s===\n\nThis only catalogues those found using ID-lookup. Those found using date lookup are invariably wrong and seem not to depend on the actual date. Only discrepancies, and elaborated dates on multi-posting days (or not), are listed. \n\n{|border=\"1\" cellpadding=\"3\"\n!ID!!ISO Date%s!!Date in browser title"%(title,(" (probable)" if title=="EGS:NP" else " (converted from above comic)"))
+        print("===%s===\n\n{|border=\"1\" cellpadding=\"3\"\n!Date!!Number!!ID (EGSComics)"%title, file=nem)
+        print("===%s===\n\n{|border=\"1\" cellpadding=\"3\"\n!Date!!Number!!OokiiDB ID"%title, file=nom)
+        print("===%s===\n\n{|border=\"1\" cellpadding=\"3\"\n!Date!!Number!!ID (EGSComics)!!Date-indexable"%title, file=dim)
+        print("===%s===\n\nThis only catalogues those found using ID-lookup. Those found using date lookup are invariably wrong and seem not to depend on the actual date. Only discrepancies, and elaborated dates on multi-posting days (or not), are listed. \n\n{|border=\"1\" cellpadding=\"3\"\n!ID!!ISO Date%s!!Date in browser title"%(title,(" (probable)" if title=="EGS:NP" else " (converted from above comic)")), file=dfm)
         lastid=-40
         lastod=-40
         lastdib=None
@@ -79,7 +79,7 @@ def export_numberdatemaps(alldat):
                 for comic in line["Comics"]:
                     numero+=1
                     comic["-numberidmap-numero"]=numero
-                    if "DateInBrowserTitle" not in comic.keys():
+                    if "DateInBrowserTitle" not in comic:
                         comic["DateInBrowserTitle"]="(Error)"
                     if (comic["Id"]!=lastid+1):
                         if (last!=None) and (last!=lastprinted_nem):
@@ -89,7 +89,7 @@ def export_numberdatemaps(alldat):
                         ellipsed_nem=0
                     else:
                         if ellipsed_nem==1:
-                            print>>nem, "|-\n|...||...||..."
+                            print("|-\n|...||...||...", file=nem)
                         ellipsed_nem+=1
                     if (comic["OokiiId"]!=lastod+1):
                         if (last!=None) and (last!=lastprinted_nom):
@@ -99,7 +99,7 @@ def export_numberdatemaps(alldat):
                         ellipsed_nom=0
                     else:
                         if ellipsed_nom==1:
-                            print>>nom, "|-\n|...||...||..."
+                            print("|-\n|...||...||...", file=nom)
                         ellipsed_nom+=1
                     if (comic["DateIndexable"]!=lastdib):
                         if (last!=None) and (last!=lastprinted_dim):
@@ -109,7 +109,7 @@ def export_numberdatemaps(alldat):
                         ellipsed_dim=0
                     else:
                         if ellipsed_dim==1:
-                            print>>dim, "|-\n|...||...||...||..."
+                            print("|-\n|...||...||...||...", file=dim)
                         ellipsed_dim+=1
                     if (comic["Date"]!=comic["DateInBrowserTitle"]):
                         print_infos_dfm(dfm,comic)
@@ -117,11 +117,12 @@ def export_numberdatemaps(alldat):
                     lastid=comic["Id"]
                     lastdib=comic["DateIndexable"]
                     last=comic
-        print>>nem, "|}\n\n"
-        print>>nom, "|}\n\n"
-        print>>dim, "|}\n\n"
-        print>>dfm, "|}\n\n"
-    map(file.close,(nem,nom,dim,dfm)) #IronPython grumble grumble
+        print("|}\n\n", file=nem)
+        print("|}\n\n", file=nom)
+        print("|}\n\n", file=dim)
+        print("|}\n\n", file=dfm)
+    for i in (nem,nom,dim,dfm):
+        i.close() #IronPython grumble grumble
 
 if __name__=="__main__":
     alldat=utility.open_alldat()

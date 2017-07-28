@@ -1,4 +1,4 @@
-# Copyright (c) Thomas Hori 2015, 2016.
+# Copyright (c) Thomas Hori 2015, 2016, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -44,11 +44,12 @@ def _fakejsonloads(dat): #Note insecure
 
 def load_ookii_record(strip):
     """Load the full Ookii record given the index card."""
-    specific_db=open_lib(r"Ookii\ComicRecords\egscomicapi_%d.txt"%strip["OokiiId"]).read()
+    specific_db = open_lib(r"Ookii\ComicRecords\egscomicapi_%d.txt"%strip["OokiiId"]).read()
+    specific_db = utfsupport.hybrid_to_unicode(utfsupport.ookii_to_mslatin1(specific_db))
     if not specific_db:
-        print>>sys.stderr,"DEAD DOOR",strip["Date"],strip["OokiiId"]
+        print("DEAD DOOR",strip["Date"],strip["OokiiId"], file=sys.stderr)
     else:
-        strip.update(utfsupport.object_to_utf8(_fakejsonloads(specific_db),ookii=True))
+        strip.update(_fakejsonloads(specific_db))
 
 date2id=open("Date2Id.txt","rU")
 date2id=json.loads(date2id.read())
@@ -63,7 +64,8 @@ dateswork=eval(dateswork.read())
 main_db={}
 for sect in ("story","sketch","np"):
     main_db[sect]=open_lib(r"Ookii\ComicIndices\egscomicapi_%d.txt"%([None,"story","np","sketch"].index(sect)))
-    main_db[sect]=utfsupport.object_to_utf8(_fakejsonloads(main_db[sect].read()),ookii=True)
+    _deco = utfsupport.hybrid_to_unicode(utfsupport.ookii_to_mslatin1(main_db[sect].read()))
+    main_db[sect]=_fakejsonloads(_deco)
 del sect
 
 def _parse_suddenlaunch(sect):

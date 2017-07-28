@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- python -*-
 
 # Copyright (c) Thomas Hori 2015.

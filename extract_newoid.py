@@ -7,7 +7,7 @@ def open_lib2(path):
 date2id=json.loads(open("Date2Id.txt","rU").read())
 
 def extract_newoid():
-    print ">>> extract_newoid"
+    print(">>> extract_newoid")
     out={}
     n=0
     for sect in ("story","np","sketch"):

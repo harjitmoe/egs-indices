@@ -2379,6 +2379,14 @@
 |2017-07-05=2369
 |2017-07-07=2370
 |2017-07-10=2371
+|2017-07-12=2372
+|2017-07-14=2373
+|2017-07-17=2374
+|2017-07-19=2375
+|2017-07-21=2376
+|2017-07-24=2377
+|2017-07-26=2378
+|2017-07-28=2379
 }}</includeonly><noinclude>{{templatenotice}}
 
 This database template is the date-to-ID mapping for the [[Structural Nomenclature|Main Story]] section.

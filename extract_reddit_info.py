@@ -1,4 +1,4 @@
-# Copyright (c) Thomas Hori 2015.
+# Copyright (c) Thomas Hori 2015, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -73,8 +73,8 @@ def extract_reddit_info():
                 reddit_links[type][id]=(link,False)
     f=open("Megathread.dat")
     iterator=iter(f)
-    link=iterator.next().rstrip()
-    submitter=iterator.next().rstrip()
+    link=next(iterator).rstrip()
+    submitter=next(iterator).rstrip()
     for line in iterator:
         line=line.rstrip()
         id,title=line.split(" ",1)

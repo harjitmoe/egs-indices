@@ -31,7 +31,7 @@ id2date3=eval(f.read())
 f.close()
 date2id=eval(open("Date2Id.txt","rU").read())
 
-print "Format: Category, date (index), id, date (title), date (heading)"
+print("Format: Category, date (index), id, date (title), date (heading)")
 
 for category in ("story","sketch","np"):
     d2i=date2id[category]
@@ -42,8 +42,8 @@ for category in ("story","sketch","np"):
             roundtrip2=id2date3[category][index]["DateStatedAboveComic"]
             roundtrip=(roundtrip2 if roundtrip2 else roundtrip1)
             if roundtrip1!=roundtrip:
-                print "Eh?",`category`,`date`,`d2i[date]`,`roundtrip1`,`roundtrip2`
+                print("Eh?",repr(category),repr(date),repr(d2i[date]),repr(roundtrip1),repr(roundtrip2))
             if date not in (roundtrip,):
-                print "Discrepancy",`category`,`date`,`d2i[date]`,`roundtrip1`,`roundtrip2`
+                print("Discrepancy",repr(category),repr(date),repr(d2i[date]),repr(roundtrip1),repr(roundtrip2))
         else:
-            print "Not grabbed",category,date,d2i[date]
+            print("Not grabbed",category,date,d2i[date])

@@ -1,8 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- python -*-
 """fetch transcripts, fix titles"""
 
-# Copyright (c) Thomas Hori 2015.
+# Copyright (c) Thomas Hori 2015, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -39,18 +39,18 @@ def megadb_fetch_tss(alldat):
         for strip in arc['Comics']:
             if os.path.exists("../Transcripts/"+strip['Date']+".txt"):
                 #print strip["Date"]
-                ts_file=open("../Transcripts/"+strip['Date']+".txt","rU")
-                transcript=ts_file.read()
+                ts_file=open("../Transcripts/"+strip['Date']+".txt","rb")
+                transcript=ts_file.read().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
                 ts_file.close()
                 #Thank goodness for Python mutables
                 #I can change strip and it also changes in alldat
                 # on account of referencing the same object
-                strip["Transcript"]=utility.deentity(utfsupport.object_to_utf8(transcript.rstrip("\n")+"\n\n",ookii=False))
+                strip["Transcript"]=utility.deentity(utfsupport.hybrid_to_unicode(transcript.rstrip(b"\n")+b"\n\n"))
             else:
                 #print strip["Date"]
                 try:
                     ts_file=databases.open_tss("Transcripts/"+strip['Date']+".txt")
-                    transcript=ts_file.read().replace("\r\n","\n").replace("\r","\n")
+                    transcript=ts_file.read().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
                 except (EnvironmentError, KeyError):
                     strip["Transcript"]=None
                 else:
@@ -58,7 +58,7 @@ def megadb_fetch_tss(alldat):
                     #Thank goodness for Python mutables
                     #I can change strip and it also changes in alldat
                     # on account of referencing the same object
-                    strip["Transcript"]=utility.deentity(utfsupport.object_to_utf8(transcript.rstrip("\n")+"\n\n",ookii=False))
+                    strip["Transcript"]=utility.deentity(utfsupport.hybrid_to_unicode(transcript.rstrip("\n")+"\n\n"))
             if ("Official" not in strip['Titles']):
                 if strip['Id'] in databases.titlebank["megatitles"]:
                     strip['Titles']["Official"]=databases.titlebank["megatitles"][strip['Id']]

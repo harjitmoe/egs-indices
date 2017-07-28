@@ -87,18 +87,18 @@ if os.path.exists("a.txt"):
 
 for interface in ("index","egsnp","sketchbook"):
     fs=0
-    print "I",interface
+    print("I",interface)
     prefix = names[interface]
-    if prefix not in database.keys():
+    if prefix not in list(database.keys()):
         database[prefix]={}
     while 1:
         try:
-            if i not in database[prefix].keys():
+            if i not in list(database[prefix].keys()):
                 url = "http://www.egscomics.com/"+interface+".php?id="+str(i)
                 #time.sleep(0.5)
                 os.system(wget+" -O \""+interface+".php@id="+str(i)+"\" \""+url+"\" >> wgetlog.txt 2>&1")
                 if not os.path.exists(interface+".php@id="+str(i)):
-                    print "A"
+                    print("A")
                     continue
                 rd = open(interface+".php@id="+str(i),"rU")
                 data = rd.read()
@@ -107,7 +107,7 @@ for interface in ("index","egsnp","sketchbook"):
                 title_date_re = re.search("[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].*?</title>", data)
                 valid_id_re = re.search("comics/[-a-zA-Z0-9_()]*.(jpg|gif|png)", data)
                 if not valid_id_re:
-                    print "F",i
+                    print("F",i)
                     fs+=1
                     if fs>=5:
                         i=1
@@ -152,12 +152,12 @@ for interface in ("index","egsnp","sketchbook"):
                 database[prefix][i]={"Commentary":commentary,"Id":i,"DateStatedAboveComic":(printed_date or None),"DateInBrowserTitle":(title_date or None),"HtmlComicTitle":(title or None)}
             else:
                 fs=0
-        except Exception,e:
-            print "Pfail",i,str(e)
+        except Exception as e:
+            print("Pfail",i,str(e))
         i += 1
 
 f=open("metadataegs3.txt","w")
-f.write(`database`)
+f.write(repr(database))
 f.close()
 
-raw_input()
+input()

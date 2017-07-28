@@ -1,4 +1,4 @@
-# Written in 2014, 2015, 2016 by Thomas Hori.
+# Written in 2014, 2015, 2016, 2017 by Thomas Hori.
 # Portions copyright (c) Thomas Hori 2016.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
@@ -27,11 +27,9 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-# The version supported is Python 2.7.  Generally no attempt at 
-# 3k compatibility has been made.  Python 2.5 requires the
-# simplejson extension but is likely to work.
+# The version supported is Python 3.5.
 
-import __builtin__, os, sys
+import builtins, os, sys
 
 touched=set()
 modules=set()
@@ -76,14 +74,14 @@ def __import__(nom,*args,**kw):
     if (nom not in touched) and (nom not in modules):
         touched.add(nom)
     return r
-__builtin__.__import__=__import__
-for i in sys.modules.keys():
+builtins.__import__=__import__
+for i in list(sys.modules.keys())[:]:
     if (i not in sys.builtin_module_names) and ("codecs" not in i) and ("encodings" not in i) and ("__pypy__" not in i):
         #Force reloading and hence reimporting
         #of dependencies.
         del sys.modules[i]
 
-import sys, os, shutil, utility, __builtin__
+import sys, os, shutil, utility, builtins
 
 try:
     import json
@@ -182,9 +180,9 @@ os.chdir(".build")
 # Requires Kindlegen and KindleUnpack.
 def ebooks():
     import subprocess
-    print ">>> kindlegen"
+    print(">>> kindlegen")
     subprocess.call(["../../Tools/kindlegen_win32_v2_9\kindlegen.exe", "index.html", "-c1", "-o", "index.azw3"])
-    print ">>> kindleunpack"
+    print(">>> kindleunpack")
     subprocess.call([sys.executable, "../../Tools/KindleUnpack_v073/lib/kindleunpack.py", "-s", "index.azw3", "."])
     os.rename("mobi7-index.mobi", "index.mobi")
 #ebooks()
@@ -193,10 +191,10 @@ def ebooks():
 def export(fp):
     fn=os.path.basename(fp)
     if os.path.exists(os.path.join("../out",fn)):
-        print ">>> removing existing",fn,"from out dir"
+        print(">>> removing existing",fn,"from out dir")
         os.unlink(os.path.join("../out",fn))
     if os.path.exists(fp):
-        print ">>> exporting",fn
+        print(">>> exporting",fn)
         shutil.copy(fp,"../out")
 
 export("index.mobi")
@@ -220,7 +218,7 @@ export("dateidtemplate-NP.txt")
 # Leave build dir
 os.chdir("..")
 
-print ">>> Accessed contents of external modules:",sorted(list(modules))
-print ">>> Of those, the following were subject to import-star and/or dir() at least once:",sorted(list(importstar))
-print ">>> The following were imported but otherwise not detectably accessed:",sorted(list(touched))
-print ">>> (The above does not detect access via pre-existing objects, or access via objects imported via primitives.)"
+print(">>> Accessed contents of external modules:",sorted(list(modules)))
+print(">>> Of those, the following were subject to import-star and/or dir() at least once:",sorted(list(importstar)))
+print(">>> The following were imported but otherwise not detectably accessed:",sorted(list(touched)))
+print(">>> (The above does not detect access via pre-existing objects, or access via objects imported via primitives.)")

@@ -1,4 +1,4 @@
-# Copyright (c) Thomas Hori 2015, 2016.
+# Copyright (c) Thomas Hori 2015, 2016, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -28,40 +28,18 @@
 
 import re
 
-def unichr4all(n):
-    """Support full-range unichr, even on narrow builds.
-    
-    Uses standard unichr verbatim where possible.
-    
-    This contains an extended UTF-16 encoder."""
-    try:
-        return unichr(n)
-    except (ValueError, OverflowError):
-        # One might expect CESU sequences in eventual UTF-8;
-        # they are actually a fairly common phenomenon, possibly
-        # for this reason.  Python handles this properly, though.
-        #
-        # Will output triple-surrogates or more if needed,
-        # concordant with the up-to-eight-bytes parsed by
-        # hybrid_to_utf8 - I might be going a bit crazy
-        # with the "handle every input" thing here.
-        main=n-0x010000
-        s=unichr(0xDC00+(main%1024))
-        while 1:
-            main = main//1024
-            s=unichr(0xD800+(main%1024))+s
-            if not (main//1024):
-                return s
+unichr4all = chr # Not needed anymore in current Python 3k. versions
 
 def unichr_mslatin(n):
-    """Given a integer code-point mixing Unicode and Microsoft-Latin-1, return a UTF-8 string."""
+    """Given a integer code-point mixing Unicode and Microsoft-Latin-1, return a Unicode string."""
     if n<0x100:
-        return chr(n).decode("cp1252").encode("utf-8")
+        return bytes([n]).decode("cp1252")
     else:
-        return unichr4all(n).encode("utf-8")
+        return chr(n)
 
-def hybrid_to_utf8(s):
-    """Given a string mixing Microsoft-Latin-1 with UTF-8, return it in UTF-8."""
+# Equivalent to bs4.UnicodeDammit.detwingle(...), should I use that?
+def hybrid_to_unicode(s):
+    """Given a bytes mixing Microsoft-Latin-1 with UTF-8, return it in UTF-8."""
     def count_ones(n):
         for i in range(8):
             if not (n&0x80):
@@ -70,7 +48,7 @@ def hybrid_to_utf8(s):
         return 8
     ot=""
     while s:
-        curchar=ord(s[0])
+        curchar=s[0]
         s=s[1:]
         ones=count_ones(curchar)
         if ones in (0,1):
@@ -83,11 +61,11 @@ def hybrid_to_utf8(s):
             s=s[ones-1:]
             nos=[]
             for tra in seq:
-                if count_ones(ord(tra))!=1:
+                if count_ones(tra)!=1:
                     ot+=unichr_mslatin(curchar)
                     s=seq+s
                     break
-                nos.append(ord(tra)%(2**7))
+                nos.append(tra%(2**7))
             else:
                 #print seq,nos
                 nos=[curchar%(2**(8-ones))]+nos
@@ -98,28 +76,11 @@ def hybrid_to_utf8(s):
                 ot+=unichr_mslatin(outchar)
     return ot
 
-_ampersand_quasi_ellipsis = re.compile(r"(?<!\S)&(?=\S)|(?<=\S)&(?!\S)")
-def _ookii_to_mslatin1(obj):
+_ampersand_quasi_ellipsis = re.compile(rb"(?<!\S)&(?=\S)|(?<=\S)&(?!\S)|(?<=\")&(?=\S)|(?<=\S)&(?=\")")
+def ookii_to_mslatin1(obj):
     """Convert Ookii's C0-replacement characters to Microsoft's C1-replacement characters.
     Also replaces ampersands which should be ellipses with actual ellipses."""
-    return "\x85".join(_ampersand_quasi_ellipsis.split(obj.replace("\x14","\x85").replace("\x18","\x91").replace("\x19","\x92")))
+    return b"\x85".join(_ampersand_quasi_ellipsis.split(obj.replace(b"\x14",b"\x85").replace(b"\x18",b"\x91").replace(b"\x19",b"\x92")))
 
 def object_to_utf8(obj, ookii=False):
-    """Given a dict, list, tuple or string mixing Ookii- and/or Microsoft-Latin-1 with UTF-8, return it in UTF-8.
-    Ookii processing (second arg) may be enabled, but must not be if HTML entities in input."""
-    if isinstance(obj, type({})):
-        d={}
-        for k,v in obj.items():
-            d[object_to_utf8(k, ookii=ookii)]=object_to_utf8(v, ookii=ookii)
-        return d
-    elif isinstance(obj, type([])):
-        return map(lambda ob,ookii=ookii:object_to_utf8(ob,ookii=ookii), obj)
-    elif isinstance(obj,type(())):
-        return map(lambda ob,ookii=ookii:object_to_utf8(ob,ookii=ookii), obj)
-    elif type(obj)==type(""):
-        if ookii:
-            return hybrid_to_utf8(_ookii_to_mslatin1(obj))
-        else:
-            return hybrid_to_utf8(obj)
-    else:
-        return obj
+    raise RuntimeError("function removed")

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- python -*-
 
 # Copyright (c) Thomas Hori 2015.
@@ -47,7 +47,7 @@ def handle_arc(arc, by_year, by_year_order):
         handle_strip_record(i,by_year,by_year_order)
 
 def megadb_sb2year(main_db):
-    print ">>> megadb_sb2year (megadb_indextransforms)"
+    print(">>> megadb_sb2year (megadb_indextransforms)")
     by_year={}
     by_year_order=[]
     for arc in utility.specific_section(main_db,"sketch")["StoryArcs"]:
@@ -61,7 +61,7 @@ def megadb_sb2year(main_db):
 #ArcLine
 
 def handle_line(line, arcs, curatitl_p):
-    print line["Title"]
+    print(line["Title"])
     if line["Title"].count(": "):
         atitl,ltitl=line["Title"].split(": ",1)
         if atitl!=curatitl_p[0]:
@@ -79,7 +79,7 @@ def handle_line(line, arcs, curatitl_p):
         arcs.append(line)
 
 def megadb_arcline(main_db):
-    print ">>> megadb_arcline (megadb_indextransforms)"
+    print(">>> megadb_arcline (megadb_indextransforms)")
     arcs=[]
     curatitl_p=["",{},-1] #functioning as struct of pointers.
     arcs_in=utility.specific_section(main_db,"story")["StoryArcs"]

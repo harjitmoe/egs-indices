@@ -24,9 +24,9 @@ def extract_date2id():
     pl=len("ST-2010-04-23-")
     def getdate(fn):
         return fn[3:][:10],int(fn[pl:][:5])
-    stmap=dict(map(getdate,filter(lambda i:i.startswith("ST-") and not i.lower().count("-original") and not i.lower().count("-pagecut") and not i.lower().count("-pageextend") and not i.lower().count("-remastered-sb"),lsdir)))
-    npmap=dict(map(getdate,filter(lambda i:i.startswith("NP-") and not i.lower().count("-original") and not i.lower().count("-colour-official"),lsdir)))
-    sbmap=dict(map(getdate,filter(lambda i:i.startswith("SB-") and not i.lower().count("-original") and not i.lower().count("-xxxxx"),lsdir)))
+    stmap=dict(list(map(getdate,[i for i in lsdir if i.startswith("ST-") and not i.lower().count("-original") and not i.lower().count("-pagecut") and not i.lower().count("-pageextend") and not i.lower().count("-remastered-sb")])))
+    npmap=dict(list(map(getdate,[i for i in lsdir if i.startswith("NP-") and not i.lower().count("-original") and not i.lower().count("-colour-official")])))
+    sbmap=dict(list(map(getdate,[i for i in lsdir if i.startswith("SB-") and not i.lower().count("-original") and not i.lower().count("-xxxxx")])))
     if stmap and npmap and sbmap:
         open("Date2Id.txt","w").write(json.dumps({"story":stmap,"sketch":sbmap,"np":npmap}))
 
