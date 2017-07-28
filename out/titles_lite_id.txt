@@ -1608,6 +1608,13 @@
 |638 = Ellen Demo 20
 |639 = Ellen Demo 21
 |640 = Ellen Demo 22
+|641 = Ellen Demo 23
+|642 = Ellen Demo 24
+|643 = Ellen Demo 25
+|644 = Ellen Demo 26
+|645 = Ellen Demo 27
+|646 = Ellen Demo 28
+|647 = Ellen Demo 29
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title-dateid|EGS-title-dateid]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>
 

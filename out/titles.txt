@@ -2359,14 +2359,14 @@
 |2017-07-05 = Pep talk (danshive) (Reddit)
 |2017-07-07 = Goodness Defined (danshive) (Reddit)
 |2017-07-10 = The Luck of Tedd (danshive) (Reddit)
-|2017-07-12 = 
-|2017-07-14 = 
-|2017-07-17 = 
-|2017-07-19 = 
-|2017-07-21 = 
-|2017-07-24 = 
-|2017-07-26 = 
-|2017-07-28 = 
+|2017-07-12 = To tell or not to tell (danshive) (Reddit)
+|2017-07-14 = What has been kept from Tedd (danshive) (Reddit)
+|2017-07-17 = Loud and scary (danshive) (Reddit)
+|2017-07-19 = 100% chill story comic (danshive) (Reddit)
+|2017-07-21 = Friday, July 21 (danshive) (Reddit)
+|2017-07-24 = The question everyone has asked (danshive) (Reddit)
+|2017-07-26 = Incredibly detailed wand making tips (danshive) (Reddit)
+|2017-07-28 = Testing, testing... (danshive) (Reddit)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic (Official)
@@ -4738,14 +4738,14 @@
 |2369 = Pep talk (danshive) (Reddit)
 |2370 = Goodness Defined (danshive) (Reddit)
 |2371 = The Luck of Tedd (danshive) (Reddit)
-|2372 = 
-|2373 = 
-|2374 = 
-|2375 = 
-|2376 = 
-|2377 = 
-|2378 = 
-|2379 = 
+|2372 = To tell or not to tell (danshive) (Reddit)
+|2373 = What has been kept from Tedd (danshive) (Reddit)
+|2374 = Loud and scary (danshive) (Reddit)
+|2375 = 100% chill story comic (danshive) (Reddit)
+|2376 = Friday, July 21 (danshive) (Reddit)
+|2377 = The question everyone has asked (danshive) (Reddit)
+|2378 = Incredibly detailed wand making tips (danshive) (Reddit)
+|2379 = Testing, testing... (danshive) (Reddit)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -10699,14 +10699,14 @@
 |2017-07-05 = Pep talk (danshive)
 |2017-07-07 = Goodness Defined (danshive)
 |2017-07-10 = The Luck of Tedd (danshive)
-|2017-07-12 = 
-|2017-07-14 = 
-|2017-07-17 = 
-|2017-07-19 = 
-|2017-07-21 = 
-|2017-07-24 = 
-|2017-07-26 = 
-|2017-07-28 = 
+|2017-07-12 = To tell or not to tell (danshive)
+|2017-07-14 = What has been kept from Tedd (danshive)
+|2017-07-17 = Loud and scary (danshive)
+|2017-07-19 = 100% chill story comic (danshive)
+|2017-07-21 = Friday, July 21 (danshive)
+|2017-07-24 = The question everyone has asked (danshive)
+|2017-07-26 = Incredibly detailed wand making tips (danshive)
+|2017-07-28 = Testing, testing... (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -13078,14 +13078,14 @@
 |2369 = Pep talk (danshive)
 |2370 = Goodness Defined (danshive)
 |2371 = The Luck of Tedd (danshive)
-|2372 = 
-|2373 = 
-|2374 = 
-|2375 = 
-|2376 = 
-|2377 = 
-|2378 = 
-|2379 = 
+|2372 = To tell or not to tell (danshive)
+|2373 = What has been kept from Tedd (danshive)
+|2374 = Loud and scary (danshive)
+|2375 = 100% chill story comic (danshive)
+|2376 = Friday, July 21 (danshive)
+|2377 = The question everyone has asked (danshive)
+|2378 = Incredibly detailed wand making tips (danshive)
+|2379 = Testing, testing... (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -16636,14 +16636,14 @@
 |2017-07-05 = Pep talk (danshive)
 |2017-07-07 = Goodness Defined (danshive)
 |2017-07-10 = The Luck of Tedd (danshive)
-|2017-07-12 = 
-|2017-07-14 = 
-|2017-07-17 = 
-|2017-07-19 = 
-|2017-07-21 = 
-|2017-07-24 = 
-|2017-07-26 = 
-|2017-07-28 = 
+|2017-07-12 = To tell or not to tell (danshive)
+|2017-07-14 = What has been kept from Tedd (danshive)
+|2017-07-17 = Loud and scary (danshive)
+|2017-07-19 = 100% chill story comic (danshive)
+|2017-07-21 = Friday, July 21 (danshive)
+|2017-07-24 = The question everyone has asked (danshive)
+|2017-07-26 = Incredibly detailed wand making tips (danshive)
+|2017-07-28 = Testing, testing... (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -19015,14 +19015,14 @@
 |2369 = Pep talk (danshive)
 |2370 = Goodness Defined (danshive)
 |2371 = The Luck of Tedd (danshive)
-|2372 = 
-|2373 = 
-|2374 = 
-|2375 = 
-|2376 = 
-|2377 = 
-|2378 = 
-|2379 = 
+|2372 = To tell or not to tell (danshive)
+|2373 = What has been kept from Tedd (danshive)
+|2374 = Loud and scary (danshive)
+|2375 = 100% chill story comic (danshive)
+|2376 = Friday, July 21 (danshive)
+|2377 = The question everyone has asked (danshive)
+|2378 = Incredibly detailed wand making tips (danshive)
+|2379 = Testing, testing... (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -21389,14 +21389,14 @@
 |2017-07-05 = Pep talk (danshive)
 |2017-07-07 = Goodness Defined (danshive)
 |2017-07-10 = The Luck of Tedd (danshive)
-|2017-07-12 = 
-|2017-07-14 = 
-|2017-07-17 = 
-|2017-07-19 = 
-|2017-07-21 = 
-|2017-07-24 = 
-|2017-07-26 = 
-|2017-07-28 = 
+|2017-07-12 = To tell or not to tell (danshive)
+|2017-07-14 = What has been kept from Tedd (danshive)
+|2017-07-17 = Loud and scary (danshive)
+|2017-07-19 = 100% chill story comic (danshive)
+|2017-07-21 = Friday, July 21 (danshive)
+|2017-07-24 = The question everyone has asked (danshive)
+|2017-07-26 = Incredibly detailed wand making tips (danshive)
+|2017-07-28 = Testing, testing... (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -23768,14 +23768,14 @@
 |2369 = Pep talk (danshive)
 |2370 = Goodness Defined (danshive)
 |2371 = The Luck of Tedd (danshive)
-|2372 = 
-|2373 = 
-|2374 = 
-|2375 = 
-|2376 = 
-|2377 = 
-|2378 = 
-|2379 = 
+|2372 = To tell or not to tell (danshive)
+|2373 = What has been kept from Tedd (danshive)
+|2374 = Loud and scary (danshive)
+|2375 = 100% chill story comic (danshive)
+|2376 = Friday, July 21 (danshive)
+|2377 = The question everyone has asked (danshive)
+|2378 = Incredibly detailed wand making tips (danshive)
+|2379 = Testing, testing... (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -24410,6 +24410,14 @@
 |2017-07-05 = Pep talk (danshive)
 |2017-07-07 = Goodness Defined (danshive)
 |2017-07-10 = The Luck of Tedd (danshive)
+|2017-07-12 = To tell or not to tell (danshive)
+|2017-07-14 = What has been kept from Tedd (danshive)
+|2017-07-17 = Loud and scary (danshive)
+|2017-07-19 = 100% chill story comic (danshive)
+|2017-07-21 = Friday, July 21 (danshive)
+|2017-07-24 = The question everyone has asked (danshive)
+|2017-07-26 = Incredibly detailed wand making tips (danshive)
+|2017-07-28 = Testing, testing... (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1890 = Today's comic is gay (riking27)
@@ -24874,6 +24882,14 @@
 |2369 = Pep talk (danshive)
 |2370 = Goodness Defined (danshive)
 |2371 = The Luck of Tedd (danshive)
+|2372 = To tell or not to tell (danshive)
+|2373 = What has been kept from Tedd (danshive)
+|2374 = Loud and scary (danshive)
+|2375 = 100% chill story comic (danshive)
+|2376 = Friday, July 21 (danshive)
+|2377 = The question everyone has asked (danshive)
+|2378 = Incredibly detailed wand making tips (danshive)
+|2379 = Testing, testing... (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}
@@ -34453,13 +34469,13 @@
 |2017-07-05 = Ellen Demo 20 (Official) / Double Zappery Limits (danshive) (Reddit)
 |2017-07-07 = Ellen Demo 21 (Official) / A new EGS:NP hops onto the scene! (danshive) (Reddit)
 |2017-07-10 = Ellen Demo 22 (Official) / ELLEN BEAM! (danshive) (Reddit)
-|2017-07-12 = 
-|2017-07-14 = 
-|2017-07-17 = 
-|2017-07-19 = 
-|2017-07-21 = 
-|2017-07-24 = 
-|2017-07-26 = 
+|2017-07-12 = Ellen Demo 23 (Official) / 1 + 1 = Transformation (danshive) (Reddit)
+|2017-07-14 = Ellen Demo 24 (Official) / EGS:NP of zappiness (danshive) (Reddit)
+|2017-07-17 = Ellen Demo 25 (Official) / A quite odd EGS:NP (danshive) (Reddit)
+|2017-07-19 = Ellen Demo 26 (Official) / Who's that furry-mon?! (danshive) (Reddit)
+|2017-07-21 = Ellen Demo 27 (Official) / The folly of Dan (danshive) (Reddit)
+|2017-07-24 = Ellen Demo 28 (Official) / THAT spell (danshive) (Reddit)
+|2017-07-26 = Ellen Demo 29 (Official) / See the true face of magic (danshive) (Reddit)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)
@@ -35102,13 +35118,13 @@
 |638 = Ellen Demo 20 (Official) / Double Zappery Limits (danshive) (Reddit)
 |639 = Ellen Demo 21 (Official) / A new EGS:NP hops onto the scene! (danshive) (Reddit)
 |640 = Ellen Demo 22 (Official) / ELLEN BEAM! (danshive) (Reddit)
-|641 = 
-|642 = 
-|643 = 
-|644 = 
-|645 = 
-|646 = 
-|647 = 
+|641 = Ellen Demo 23 (Official) / 1 + 1 = Transformation (danshive) (Reddit)
+|642 = Ellen Demo 24 (Official) / EGS:NP of zappiness (danshive) (Reddit)
+|643 = Ellen Demo 25 (Official) / A quite odd EGS:NP (danshive) (Reddit)
+|644 = Ellen Demo 26 (Official) / Who's that furry-mon?! (danshive) (Reddit)
+|645 = Ellen Demo 27 (Official) / The folly of Dan (danshive) (Reddit)
+|646 = Ellen Demo 28 (Official) / THAT spell (danshive) (Reddit)
+|647 = Ellen Demo 29 (Official) / See the true face of magic (danshive) (Reddit)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -35317,6 +35333,13 @@
 |2017-07-05 = Ellen Demo 20
 |2017-07-07 = Ellen Demo 21
 |2017-07-10 = Ellen Demo 22
+|2017-07-12 = Ellen Demo 23
+|2017-07-14 = Ellen Demo 24
+|2017-07-17 = Ellen Demo 25
+|2017-07-19 = Ellen Demo 26
+|2017-07-21 = Ellen Demo 27
+|2017-07-24 = Ellen Demo 28
+|2017-07-26 = Ellen Demo 29
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -35524,6 +35547,13 @@
 |638 = Ellen Demo 20
 |639 = Ellen Demo 21
 |640 = Ellen Demo 22
+|641 = Ellen Demo 23
+|642 = Ellen Demo 24
+|643 = Ellen Demo 25
+|644 = Ellen Demo 26
+|645 = Ellen Demo 27
+|646 = Ellen Demo 28
+|647 = Ellen Demo 29
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -36182,13 +36212,13 @@
 |2017-07-05 = Ellen Demo 20
 |2017-07-07 = Ellen Demo 21
 |2017-07-10 = Ellen Demo 22
-|2017-07-12 = ED-23
-|2017-07-14 = ED-24
-|2017-07-17 = ED-25
-|2017-07-19 = ED-26
-|2017-07-21 = ED-27
-|2017-07-24 = ED-28
-|2017-07-26 = ED-29
+|2017-07-12 = Ellen Demo 23
+|2017-07-14 = Ellen Demo 24
+|2017-07-17 = Ellen Demo 25
+|2017-07-19 = Ellen Demo 26
+|2017-07-21 = Ellen Demo 27
+|2017-07-24 = Ellen Demo 28
+|2017-07-26 = Ellen Demo 29
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -36831,13 +36861,13 @@
 |638 = Ellen Demo 20
 |639 = Ellen Demo 21
 |640 = Ellen Demo 22
-|641 = ED-23
-|642 = ED-24
-|643 = ED-25
-|644 = ED-26
-|645 = ED-27
-|646 = ED-28
-|647 = ED-29
+|641 = Ellen Demo 23
+|642 = Ellen Demo 24
+|643 = Ellen Demo 25
+|644 = Ellen Demo 26
+|645 = Ellen Demo 27
+|646 = Ellen Demo 28
+|647 = Ellen Demo 29
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -37554,13 +37584,13 @@
 |2017-07-05 = Ellen Demo 20
 |2017-07-07 = Ellen Demo 21
 |2017-07-10 = Ellen Demo 22
-|2017-07-12 = ED-23
-|2017-07-14 = ED-24
-|2017-07-17 = ED-25
-|2017-07-19 = ED-26
-|2017-07-21 = ED-27
-|2017-07-24 = ED-28
-|2017-07-26 = ED-29
+|2017-07-12 = Ellen Demo 23
+|2017-07-14 = Ellen Demo 24
+|2017-07-17 = Ellen Demo 25
+|2017-07-19 = Ellen Demo 26
+|2017-07-21 = Ellen Demo 27
+|2017-07-24 = Ellen Demo 28
+|2017-07-26 = Ellen Demo 29
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -38203,13 +38233,13 @@
 |638 = Ellen Demo 20
 |639 = Ellen Demo 21
 |640 = Ellen Demo 22
-|641 = ED-23
-|642 = ED-24
-|643 = ED-25
-|644 = ED-26
-|645 = ED-27
-|646 = ED-28
-|647 = ED-29
+|641 = Ellen Demo 23
+|642 = Ellen Demo 24
+|643 = Ellen Demo 25
+|644 = Ellen Demo 26
+|645 = Ellen Demo 27
+|646 = Ellen Demo 28
+|647 = Ellen Demo 29
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -39266,13 +39296,13 @@
 |2017-07-05 = Ellen Demo 20
 |2017-07-07 = Ellen Demo 21
 |2017-07-10 = Ellen Demo 22
-|2017-07-12 = ED-23
-|2017-07-14 = ED-24
-|2017-07-17 = ED-25
-|2017-07-19 = ED-26
-|2017-07-21 = ED-27
-|2017-07-24 = ED-28
-|2017-07-26 = ED-29
+|2017-07-12 = Ellen Demo 23
+|2017-07-14 = Ellen Demo 24
+|2017-07-17 = Ellen Demo 25
+|2017-07-19 = Ellen Demo 26
+|2017-07-21 = Ellen Demo 27
+|2017-07-24 = Ellen Demo 28
+|2017-07-26 = Ellen Demo 29
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = XYC
@@ -39915,13 +39945,13 @@
 |638 = Ellen Demo 20
 |639 = Ellen Demo 21
 |640 = Ellen Demo 22
-|641 = ED-23
-|642 = ED-24
-|643 = ED-25
-|644 = ED-26
-|645 = ED-27
-|646 = ED-28
-|647 = ED-29
+|641 = Ellen Demo 23
+|642 = Ellen Demo 24
+|643 = Ellen Demo 25
+|644 = Ellen Demo 26
+|645 = Ellen Demo 27
+|646 = Ellen Demo 28
+|647 = Ellen Demo 29
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -40384,6 +40414,13 @@
 |2017-07-05 = Double Zappery Limits (danshive)
 |2017-07-07 = A new EGS:NP hops onto the scene! (danshive)
 |2017-07-10 = ELLEN BEAM! (danshive)
+|2017-07-12 = 1 + 1 = Transformation (danshive)
+|2017-07-14 = EGS:NP of zappiness (danshive)
+|2017-07-17 = A quite odd EGS:NP (danshive)
+|2017-07-19 = Who's that furry-mon?! (danshive)
+|2017-07-21 = The folly of Dan (danshive)
+|2017-07-24 = THAT spell (danshive)
+|2017-07-26 = See the true face of magic (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |180 = Farewell Gods of Curling! (ScorpSt)
@@ -40840,6 +40877,13 @@
 |638 = Double Zappery Limits (danshive)
 |639 = A new EGS:NP hops onto the scene! (danshive)
 |640 = ELLEN BEAM! (danshive)
+|641 = 1 + 1 = Transformation (danshive)
+|642 = EGS:NP of zappiness (danshive)
+|643 = A quite odd EGS:NP (danshive)
+|644 = Who's that furry-mon?! (danshive)
+|645 = The folly of Dan (danshive)
+|646 = THAT spell (danshive)
+|647 = See the true face of magic (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}'</span>}}
