@@ -63,7 +63,7 @@ rebuild.py|runs the process modules, in order, keeping the database in memory.
 
 file(s)|description
 ---|---
-utfsupport.py|lenient UTF-8 support, Ookii character-set support, and code to work around narrow Python builds.
+utfsupport.py|UTF-8 detwingling and Ookii character-set support.
 databases.py|access to the various database files.
 utility.py|assorted code useful for multiple processes.  sorted into more detailed headings in the module itself.
 
