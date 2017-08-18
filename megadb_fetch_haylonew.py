@@ -1,4 +1,4 @@
-# Copyright (c) Thomas Hori 2015.
+# Copyright (c) Thomas Hori 2015, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -64,13 +64,3 @@ def megadb_fetch_haylonew(main_db,haylo_additional_hierarchy,haylo_db,links_910n
         db["Comics"]=comics
         utility.specific_section(main_db,"story")["StoryArcs"].append(db)
     return main_db
-
-if __name__=="__main__":
-    links_910new=open(".build/910-new.dat","rU")
-    links_910new=eval(links_910new.read())
-    haylo_db=open(".build/HayloListMini.txt","rU")
-    haylo_db=eval(haylo_db.read())
-    haylo_additional_hierarchy=open(".build/HayloHierarchyAdditional.txt","rU")
-    haylo_additional_hierarchy=eval(haylo_additional_hierarchy.read())
-    utility.save_alldat(megadb_fetch_haylonew(utility.open_alldat(),haylo_additional_hierarchy,haylo_db,links_910new))
-

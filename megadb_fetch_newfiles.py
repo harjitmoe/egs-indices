@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- python -*-
 
-# Copyright (c) Thomas Hori 2015.
+# Copyright (c) Thomas Hori 2015, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -100,13 +100,3 @@ def megadb_fetch_newfiles(alldat,reddit_titles,reddit_links,links_910new):
                 #else clause of for-loop, i.e. finished without break
                 arcs[-1]["Comics"].append(strip_obj)
     return alldat
-
-if __name__=="__main__":
-    reddit_titles=open(".build/reddit_titles.txt","rU")
-    reddit_titles=eval(reddit_titles.read())
-    reddit_links=open(".build/reddit_threads.txt","rU")
-    reddit_links=eval(reddit_links.read())
-    links_910new=open(".build/910-new.dat","rU")
-    links_910new=eval(links_910new.read())
-    utility.save_alldat(megadb_fetch_newfiles(utility.open_alldat(),reddit_titles,reddit_links,links_910new))
-

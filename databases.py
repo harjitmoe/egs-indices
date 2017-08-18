@@ -26,7 +26,8 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import json, tarfile, utfsupport
+import json, yaml, tarfile
+import utfsupport
 
 _ookii=tarfile.open("Ookii.dat","r:")
 def open_lib(path):
@@ -36,12 +37,6 @@ _transcipts=tarfile.open("Transcripts.tar","r:")
 def open_tss(path):
     return _transcipts.extractfile(path.replace("\\","/"))
 
-def _fakejsonloads(dat): #Note insecure
-    null=None
-    true=True
-    false=False
-    return eval(dat,locals())
-
 def load_ookii_record(strip):
     """Load the full Ookii record given the index card."""
     specific_db = open_lib(r"Ookii\ComicRecords\egscomicapi_%d.txt"%strip["OokiiId"]).read()
@@ -49,23 +44,34 @@ def load_ookii_record(strip):
     if not specific_db:
         print("DEAD DOOR",strip["Date"],strip["OokiiId"], file=sys.stderr)
     else:
-        strip.update(_fakejsonloads(specific_db))
+        try:
+            psdb = json.loads(specific_db)
+        except ValueError:
+            psdb = yaml.safe_load(specific_db)
+        strip.update(psdb)
 
-date2id=open("Date2Id.txt","rU")
-date2id=json.loads(date2id.read())
-lsdir=open("NewFiles.txt","rU")
-lsdir=json.loads(lsdir.read())
+date2id = open("Date2Id.txt","rU")
+date2id = json.loads(date2id.read())
+lsdir = open("NewFiles.txt","rU")
+lsdir = json.loads(lsdir.read())
 
-metadataegs=open("metadataegs3.txt","rU")
-metadataegs=eval(metadataegs.read())
-dateswork=open("DatesWorkProcessed.txt","rU")
-dateswork=eval(dateswork.read())
+# true and True are both YAML, as are null, Null, NULL but not None
+_p = lambda s: s.replace(": None", ": null")
+
+metadataegs = open("metadataegs3.txt","rU")
+metadataegs = yaml.safe_load(_p(metadataegs.read()))
+dateswork = open("DatesWorkProcessed.txt","rU")
+dateswork = yaml.safe_load(_p(dateswork.read().replace("(", "[").replace(")", "]")))
 
 main_db={}
 for sect in ("story","sketch","np"):
-    main_db[sect]=open_lib(r"Ookii\ComicIndices\egscomicapi_%d.txt"%([None,"story","np","sketch"].index(sect)))
+    main_db[sect] = open_lib(r"Ookii\ComicIndices\egscomicapi_%d.txt"%([None,"story","np","sketch"].index(sect)))
     _deco = utfsupport.hybrid_to_unicode(utfsupport.ookii_to_mslatin1(main_db[sect].read()))
-    main_db[sect]=_fakejsonloads(_deco)
+    try:
+        _pdeco = json.loads(_deco)
+    except ValueError:
+        _pdeco = yaml.safe_load(_deco)
+    main_db[sect] = _pdeco
 del sect
 
 def _parse_suddenlaunch(sect):
@@ -86,5 +92,5 @@ suddenlaunch_db["sketch"]=_parse_suddenlaunch("sketch")
 suddenlaunch_db["np"]={}
 
 titlebank=open("titlebank.dat","rU")
-titlebank=eval(titlebank.read()) #JSON apparently does not support numerical keys.
+titlebank=yaml.safe_load(titlebank.read())
 

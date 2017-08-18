@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- python -*-
 
-# Copyright (c) Thomas Hori 2015.
+# Copyright (c) Thomas Hori 2015, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -92,6 +92,3 @@ def megadb_arcline(main_db):
 
 def megadb_indextransforms(alldat):
     return megadb_arcline(megadb_sb2year(alldat))
-
-if __name__=="__main__":
-    utility.save_alldat(megadb_indextransforms(utility.open_alldat()))

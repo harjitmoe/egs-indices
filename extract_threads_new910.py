@@ -1,4 +1,4 @@
-# Copyright (c) Thomas Hori 2015, 2016.
+# Copyright (c) Thomas Hori 2015, 2016, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -26,18 +26,11 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import utility, re
+import utility
+import re, collections, yaml
 
-class Gazza(dict):
-    """Subclass dict to allow b[i].append without having to check if
-    b[i] exists yet thus allowing cleaner code in general."""
-    def __getitem__(self,k):
-        try:
-            return dict.__getitem__(self,k)
-        except KeyError:
-            self[k]=[]
-            return self[k]
-date2str=Gazza()
+listdict=lambda: collections.defaultdict(lambda: [])
+date2str=listdict()
 
 def parse_date(s):
     os=s
@@ -149,8 +142,7 @@ def grok(code):
     checkdb=None #Integration with test_get_all_dates
     checkdbp="alldates-%s.txt"%code.lower()
     if os.path.exists(checkdbp):
-        #Insecure
-        checkdb=eval(open(checkdbp,"rU").read())
+        checkdb=yaml.safe_load(open(checkdbp,"rU").read())
     for f in os.listdir("910 Raw DBs/"+code)[:]:
         if f.endswith(".htm"):
             f=open(os.path.join("910 Raw DBs/"+code,f),"rU")
@@ -169,7 +161,7 @@ def grok(code):
                 #print b
             b=dict(b)
             b3.update(b)
-    b2=Gazza()
+    b2=listdict()
     for i in b3.keys():
         j=parse_date(i)
         if j:

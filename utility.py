@@ -28,22 +28,6 @@
 
 import sys
 
-####################################################################
-##### Support for the current incarnation of the Script System #####
-
-def open_alldat():
-    import pickle
-    f=open(".build/AllMegaDb.pickle","rb")
-    b=pickle.load(f)
-    f.close()
-    return b
-def save_alldat(b):
-    import pickle
-    f=open(".build/AllMegaDb.pickle","wb")
-    pickle.dump(b,f)
-    f.close()
-    return b
-
 ####################################
 ##### Date/calendar processing #####
 

@@ -4,7 +4,7 @@
 
 ### Dependencies
 
-The entire thing requires Python 3, tested on version 3.5.
+The entire thing requires Python 3, tested on version 3.5, with [PyYAML](http://pyyaml.org/).
 
 The "Extracting titles and date information from the EGS website" described below requires GNU wget.
 
@@ -16,7 +16,7 @@ Reddit Titles simply contains index pages saved (as "HTML only") from /r/elgooni
 
 910 Raw DBs was for the old, sadly deceased, pre-crash 910 Forum.  No equivalent system for the present forum exists at the moment.
 
-titlebank.dat["modes"] needs to be updated every time a new storyline starts but is designed to be updated manually in a text editor.
+titlebank.dat["modes"] needs to be updated every time a new storyline starts but is designed to be updated manually in a text editor.  It was originally a Python expression; it is currently designed to be parsed as YAML (JSON is not suitable due to the use of integers as dictionary keys) but remains a valid Python expression for the time being.
 
 #### Extracting titles and date information from the EGS website
 
@@ -46,7 +46,7 @@ To check for any anomalous date lookup successes (this should not be done too fr
 
 The simplest and fastest way is to run rebuild.py in the repository root, under Python 2.7.
 
-The chain is composed of a sequence of modular operations which can be run as individual scripts in theory, and were originally, but repeatedly storing and reading the data from the disk is rather inefficient, so rebuild.py runs them in a single process which passes data through memory.
+The chain is composed of a sequence of modular operations.
 
 The output will appear in the "out" directory.
 

@@ -1,4 +1,4 @@
-# Copyright (c) Thomas Hori 2015.
+# Copyright (c) Thomas Hori 2015, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -116,6 +116,3 @@ def megadb_fetch_zorua(alldat):
                 if ldb["Characters"]:
                     strip['Characters']["Zorua"]=ldb["Characters"]
     return alldat
-
-if __name__=="__main__":
-    utility.save_alldat(megadb_fetch_zorua(utility.open_alldat()))

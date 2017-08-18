@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- python -*-
 
-# Copyright (c) Thomas Hori 2015.
+# Copyright (c) Thomas Hori 2015, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -30,6 +30,7 @@
 #
 
 import utility
+import yaml
 
 def formurl(idst):
     #Not eval(idst) because starting a number with 0 means octal in Py2 (a nice gotcha for newbies) and is invalid in Py3
@@ -41,10 +42,10 @@ gifs=[0,1,2,3,4,5,6,7,826,27,28,29,30,31,32,33,34,35,36,38,45,48,54,55]
 def megadb_pull_bg(alldat):
     print(">>> megadb_pull_bg")
     f=open("BgNames.txt","rU")
-    b=eval(f.read()) #Blatantly no security, assume trust
+    b=yaml.safe_load(f)
     f.close()
     f=open("BgDescriptions.txt","rU")
-    c=eval(f.read()) #Blatantly no security, assume trust
+    c=yaml.safe_load(f)
     f.close()
     comics=[]
     for i in sorted(c.keys()):
@@ -53,6 +54,3 @@ def megadb_pull_bg(alldat):
         comics.append({"ReactionLinks": [], "SharedDateIndex": 0, "OokiiId": -1, "DateIndexable": False, "Section": "Backgrounds", "RecordType": "Comic", "Titles": {"Official": title}, "Characters": None, "Date": "?", "Commentary": comment, "Transcript": None, "Id": int(i,10), "SpecialUrl": formurl(i)})
     alldat.append({"Title":"Backgrounds","StoryArcs":comics,"RecordType":"Section"})
     return alldat
-
-if __name__=="__main__":
-    utility.save_alldat(megadb_pull_bg(utility.open_alldat()))

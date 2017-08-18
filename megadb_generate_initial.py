@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- mode: python; coding: utf-8 -*-
 
-# Copyright (c) Thomas Hori 2015.
+# Copyright (c) Thomas Hori 2015, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -127,10 +127,3 @@ def megadb_generate_initial(classics_db,haylo_db,reddit_links,links_910new):
             handle_line(line,sect,classics_db,haylo_db,reddit_links,links_910new)
         output.append({"Title":utility.egslink2ookii[sect],"StoryArcs":dat,"RecordType":"Section"})
     return output
-
-if __name__=="__main__":
-    classics_db=open(".build/classics_910.txt","rU")
-    classics_db=eval(classics_db.read())
-    links_910new=open(".build/910-new.dat","rU")
-    links_910new=eval(links_910new.read())
-    utility.save_alldat(megadb_generate_initial(classics_db,haylo_db,reddit_links,links_910new))

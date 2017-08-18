@@ -70,6 +70,11 @@ def megadb_fetch_tss(alldat):
     marker2="<strong><a href=\"http://www.patreon.com/egscomics\">Requested</a> by"
     marker3="<strong><a href=\"http://www.patreon.com/egscomics\"> Requested</a> by"
     marker4="<strong> Requested</strong></a><strong> by"
+    # The metadataegs3 file is produced using repr at the moment but this toolchain is parsing it as YAML (with some preprocessing
+    # regarding changing None to null) for security reasons.  Hence strings not containing apostrophes are single quoted (ASCII), which
+    # YAML interprets as a raw string (somewhat like Python's r"..."), hence we end up with literal \n in the strings.
+    trim = lambda c, m: "Requested by "+utility.detag(c.split(m, 1)[1].split("</p>",1)[0].split("<br />",1)[0]).replace("\\n", "\n").strip()
+    gcom = lambda st: utility.deentity(utility.recdeentity(databases.metadataegs["sketch"][st['Id']]["Commentary"].replace("&nbsp;"," "),0))
     for arc in utility.specific_section(alldat,"sketch")["StoryArcs"]:
         for strip in arc['Comics']:        
             if ("Official" not in strip['Titles']):
@@ -78,16 +83,13 @@ def megadb_fetch_tss(alldat):
                 if strip['Id'] in databases.titlebank["sbmegatitles"]: #NOT elif
                     strip['Titles']["Official"]=databases.titlebank["sbmegatitles"][strip['Id']]
                 elif strip['Id'] in databases.metadataegs["sketch"]: #YES elif
-                    c=utility.deentity(utility.recdeentity(databases.metadataegs["sketch"][strip['Id']]["Commentary"].replace("&nbsp;"," "),0))
+                    c = gcom(strip)
                     if c.count(marker):
-                        strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker,1)[1].split("</p>",1)[0].split("<br />",1)[0])
+                        strip['Titles']["Official"] = trim(c, marker)
                     elif c.count(marker2):
-                        strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker2,1)[1].split("</p>",1)[0].split("<br />",1)[0])
+                        strip['Titles']["Official"] = trim(c, marker2)
                     elif c.count(marker3):
-                        strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker3,1)[1].split("</p>",1)[0].split("<br />",1)[0])
+                        strip['Titles']["Official"] = trim(c, marker3)
                     elif c.count(marker4):
-                        strip['Titles']["Official"]="Requested by"+utility.detag(c.split(marker4,1)[1].split("</p>",1)[0].split("<br />",1)[0])
+                        strip['Titles']["Official"] = trim(c, marker4)
     return alldat
-
-if __name__=="__main__":
-    utility.save_alldat(megadb_fetch_tss(utility.open_alldat()))

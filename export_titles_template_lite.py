@@ -1,4 +1,4 @@
-# Written in 2015 by Thomas Hori
+# Written in 2015,2017 by Thomas Hori
 #
 # This file is made available under the CC0 Public Domain Dedication.  To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights to this file to the public domain worldwide. This file is distributed without any warranty.
 #
@@ -95,7 +95,7 @@ The only parameter is the 4-digit integer ID, counting from 0000 inclusive.
 </noinclude>
 """
 
-import sys,os
+import sys,os,yaml
 import utility
 
 def doit_date(outfile,b,shuffle=0):
@@ -152,7 +152,7 @@ def export_titles_template_lite(alldat):
         print(("|%s="%sect), end=' ', file=outfile_id)
         doit_id(outfile_id,b,-2)
     f=open("BgNames.txt","rU")
-    b=eval(f.read()) #Blatantly no security, assume trust
+    b=yaml.safe_load(f)
     f.close()
     print("|bg={{#switch:{{{2}}}", file=outfile)
     print("<includeonly>{{#switch:{{{1}}}", file=outfile_bg)
