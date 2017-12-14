@@ -26,61 +26,27 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import re
+import re, codecs, functools
 
-unichr4all = chr # Not needed anymore in current Python 3k. versions
+def unichr4all(i):
+    raise RuntimeError("function removed, not needed in recent Python 3, use chr")
+
+def object_to_utf8(obj, ookii=False):
+    raise RuntimeError("function removed")
 
 def unichr_mslatin(n):
-    """Given a integer code-point mixing Unicode and Microsoft-Latin-1, return a Unicode string."""
-    if n<0x100:
-        return bytes([n]).decode("cp1252")
-    else:
-        return chr(n)
+    raise RuntimeError("function removed")
 
-# Equivalent to bs4.UnicodeDammit.detwingle(...), should I use that?
+@functools.partial(codecs.register_error, "winlatin_one_fallback")
+def winlatin_one_fallback_handler(error):
+    return (error.object[error.start:error.end].decode("windows-1252"), error.end)
+
 def hybrid_to_unicode(s):
-    """Given a bytes mixing Microsoft-Latin-1 with UTF-8, return it in UTF-8."""
-    def count_ones(n):
-        for i in range(8):
-            if not (n&0x80):
-                return i
-            n=n<<1
-        return 8
-    ot=""
-    while s:
-        curchar=s[0]
-        s=s[1:]
-        ones=count_ones(curchar)
-        if ones in (0,1):
-            ot+=unichr_mslatin(curchar)
-        else:
-            seq=s[:ones-1]
-            if len(seq)<(ones-1):
-                ot+=unichr_mslatin(curchar)
-                continue
-            s=s[ones-1:]
-            nos=[]
-            for tra in seq:
-                if count_ones(tra)!=1:
-                    ot+=unichr_mslatin(curchar)
-                    s=seq+s
-                    break
-                nos.append(tra%(2**7))
-            else:
-                #print seq,nos
-                nos=[curchar%(2**(8-ones))]+nos
-                outchar=0
-                for i in nos:
-                    outchar=outchar<<6
-                    outchar+=i
-                ot+=unichr_mslatin(outchar)
-    return ot
+    """Given a bytes mixing Microsoft-Latin-1 with UTF-8, return it in Unicode."""
+    return s.decode("utf-8", errors = "winlatin_one_fallback")
 
 _ampersand_quasi_ellipsis = re.compile(rb"(?<!\S)&(?=\S)|(?<=\S)&(?!\S)|(?<=\")&(?=\S)|(?<=\S)&(?=\")")
 def ookii_to_mslatin1(obj):
     """Convert Ookii's C0-replacement characters to Microsoft's C1-replacement characters.
     Also replaces ampersands which should be ellipses with actual ellipses."""
     return b"\x85".join(_ampersand_quasi_ellipsis.split(obj.replace(b"\x14",b"\x85").replace(b"\x18",b"\x91").replace(b"\x19",b"\x92")))
-
-def object_to_utf8(obj, ookii=False):
-    raise RuntimeError("function removed")

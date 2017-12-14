@@ -66,7 +66,7 @@ def datefix_910(date,sect):
     """Fix dates of 910 threads to match database in cases 
     where precise date is disputable."""
     # Much of this was written during a 910 outage.
-    # Much of this is in need of verification.
+    # ~~Much of this is in need of verification.~~ Moot now.
     if date=="2012-03-29" and sect=="story":
         return "2013-03-29" #Confirmed
     if date=="2013-08-04" and sect=="story": #Amended (was correcting from 2012)
