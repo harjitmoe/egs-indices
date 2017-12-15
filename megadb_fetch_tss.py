@@ -31,7 +31,12 @@
 #
 
 import os
-import databases, utfsupport, titleharjit, utility
+import databases, titleharjit, utility
+
+# Following is already in databases.py
+#@functools.partial(codecs.register_error, "winlatin_one_fallback")
+#def winlatin_one_fallback_handler(error):
+#    return (error.object[error.start:error.end].decode("windows-1252"), error.end)
 
 def megadb_fetch_tss(alldat):
     print (">>> megadb_fetch_tss")
@@ -45,7 +50,8 @@ def megadb_fetch_tss(alldat):
                 #Thank goodness for Python mutables
                 #I can change strip and it also changes in alldat
                 # on account of referencing the same object
-                strip["Transcript"]=utility.deentity(utfsupport.hybrid_to_unicode(transcript.rstrip(b"\n")+b"\n\n"))
+                tscr=transcript.decode("utf-8", errors="winlatin_one_fallback")
+                strip["Transcript"]=utility.deentity(tscr.rstrip("\n")+"\n\n")
             else:
                 #print strip["Date"]
                 try:
@@ -58,7 +64,8 @@ def megadb_fetch_tss(alldat):
                     #Thank goodness for Python mutables
                     #I can change strip and it also changes in alldat
                     # on account of referencing the same object
-                    strip["Transcript"]=utility.deentity(utfsupport.hybrid_to_unicode(transcript.rstrip("\n")+"\n\n"))
+                    tscr=transcript.decode("utf-8", errors="winlatin_one_fallback")
+                    strip["Transcript"]=utility.deentity(tscr.rstrip("\n")+"\n\n")
             if ("Official" not in strip['Titles']):
                 if strip['Id'] in databases.titlebank["megatitles"]:
                     strip['Titles']["Official"]=databases.titlebank["megatitles"][strip['Id']]

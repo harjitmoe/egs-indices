@@ -26,8 +26,20 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import json, yaml, tarfile
-import utfsupport
+import json, yaml, tarfile, re, codecs, functools
+
+@functools.partial(codecs.register_error, "winlatin_one_fallback")
+def winlatin_one_fallback_handler(error):
+    return (error.object[error.start:error.end].decode("windows-1252"), error.end)
+
+_quasi_ellipsis = re.compile(rb"(?<!\S)&(?=\S)|(?<=\S)&(?!\S)|(?<=\")&(?=\S)|(?<=\S)&(?=\")")
+def ookii_to_utf8(obj):
+    """Convert Ookii's C0-replacement characters to UTF-8.
+    Also replaces ampersands which should be ellipses with actual ellipses."""
+    obj = obj.replace(b"\x14",b"\xe2\x80\xa6")
+    obj = obj.replace(b"\x18",b"\xe2\x80\x98")
+    obj = obj.replace(b"\x19",b"\xe2\x80\x99")
+    return b"\xe2\x80\xa6".join(_quasi_ellipsis.split(obj))
 
 _ookii=tarfile.open("Ookii.dat","r:")
 def open_lib(path):
@@ -40,7 +52,7 @@ def open_tss(path):
 def load_ookii_record(strip):
     """Load the full Ookii record given the index card."""
     specific_db = open_lib(r"Ookii\ComicRecords\egscomicapi_%d.txt"%strip["OokiiId"]).read()
-    specific_db = utfsupport.hybrid_to_unicode(utfsupport.ookii_to_mslatin1(specific_db))
+    specific_db = ookii_to_utf8(specific_db).decode("utf-8", errors="winlatin_one_fallback")
     if not specific_db:
         print("DEAD DOOR",strip["Date"],strip["OokiiId"], file=sys.stderr)
     else:
@@ -66,7 +78,7 @@ dateswork = yaml.safe_load(_p(dateswork.read().replace("(", "[").replace(")", "]
 main_db={}
 for sect in ("story","sketch","np"):
     main_db[sect] = open_lib(r"Ookii\ComicIndices\egscomicapi_%d.txt"%([None,"story","np","sketch"].index(sect)))
-    _deco = utfsupport.hybrid_to_unicode(utfsupport.ookii_to_mslatin1(main_db[sect].read()))
+    _deco = ookii_to_utf8(main_db[sect].read()).decode("utf-8", errors="winlatin_one_fallback")
     try:
         _pdeco = json.loads(_deco)
     except ValueError:
