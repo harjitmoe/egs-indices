@@ -22,7 +22,7 @@ titlebank.dat["modes"] needs to be updated every time a new storyline starts but
 
 The following takes place in "(Misc Source Material)/Spiders" unless otherwise specified.
 
-You may need to edit the scripts to use the correct path to a GNU wget.  Also, you need a GNU wget (not busybox).
+You may need to edit the scripts to use the correct path to a GNU wget.  Also, you need a GNU wget or clone (but not busybox).
 
 To update the databases on official titles and date anomalies:
 
@@ -63,8 +63,7 @@ rebuild.py|runs the process modules, in order, keeping the database in memory.
 
 file(s)|description
 ---|---
-utfsupport.py|UTF-8 detwingling and Ookii character-set support.
-databases.py|access to the various database files.
+databases.py|access to the various database files, also defines a Unicode error handler for use in UTF-8 / WinLatin-1 detwingling.
 utility.py|assorted code useful for multiple processes.  sorted into more detailed headings in the module itself.
 
 ### Data
