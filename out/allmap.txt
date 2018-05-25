@@ -88,8 +88,6 @@ This only catalogues those found using ID-lookup. Those found using date lookup 
 |-
 |2260||2016-10-10||2016-10-16
 |-
-|2283||2016-12-04||2016-12-05
-|-
 |2301||2017-01-19||2017-01-20
 |-
 |2302||2017-01-23||2016-01-23
@@ -941,12 +939,6 @@ This only catalogues those found using ID-lookup. Those found using date lookup 
 |2016-09-05||2242||2235
 |-
 |2016-09-07||2243||2246
-|-
-|...||...||...
-|-
-|2016-12-04||2280||2283
-|-
-|2016-12-05||2281||2283
 |-
 |...||...||...
 |}
