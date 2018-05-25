@@ -23,7 +23,7 @@ def extract_date2id():
             lsdir.extend(fs)
     pl=len("ST-2010-04-23-")
     def getdate(fn):
-        return fn[3:][:10],int(fn[pl:][:5])
+        return fn[3:][:10], (int(fn[pl:][:5]) if fn[pl:][:5].strip("xn") else None)
     stmap=dict(list(map(getdate,[i for i in lsdir if i.startswith("ST-") and not i.lower().count("-original") and not i.lower().count("-pagecut") and not i.lower().count("-pageextend") and not i.lower().count("-remastered-sb")])))
     npmap=dict(list(map(getdate,[i for i in lsdir if i.startswith("NP-") and not i.lower().count("-original") and not i.lower().count("-colour-official")])))
     sbmap=dict(list(map(getdate,[i for i in lsdir if i.startswith("SB-") and not i.lower().count("-original") and not i.lower().count("-xxxxx")])))

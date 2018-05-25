@@ -68,7 +68,7 @@ lsdir = open("NewFiles.txt","rU")
 lsdir = json.loads(lsdir.read())
 
 # true and True are both YAML, as are null, Null, NULL but not None
-_p = lambda s: s.replace(": None", ": null")
+_p = lambda s: s.replace(": None", ": null").replace("\\'", "\\x27")
 
 metadataegs = open("metadataegs3.txt","rU")
 metadataegs = yaml.safe_load(_p(metadataegs.read()))

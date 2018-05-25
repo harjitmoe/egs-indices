@@ -1399,6 +1399,18 @@
 |881 = Requested by Anonymous - Ellen as Simon from Firefly
 |882 = Maximum Shipping
 |883 = FV5 Greg and Justin Workout
+|884 = Trick or Grace!
+|885 = Sorceress Rhoda
+|886 = Cool Off And Be Hot!
+|887 = Remote Control
+|888 = Bunny Susan Carrot Rocket Magic Fun Ride
+|889 = New Student Diane
+|890 = Girls Day Out
+|891 = You've Won The Game!
+|892 = KITTY ASHLEY!
+|893 = Make Kitty A Kitty!
+|894 = Beach Trip!
+|895 = Nase-FV5-Sarah and Elliot
 |#default = }}
 |np= {{#switch:{{{2}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -1613,6 +1625,19 @@
 |645 = Ellen Demo 27
 |646 = Ellen Demo 28
 |647 = Ellen Demo 29
+|648 = Ellen Demo 30
+|649 = Goonmanji 2 - 01
+|650 = Goonmanji 2 - 02
+|651 = Goonmanji 2 - 03
+|652 = Goonmanji 2 - 04
+|653 = Goonmanji 2 - 05
+|654 = Goonmanji 2 - 06
+|655 = Goonmanji 2 - 07
+|656 = Goonmanji 2 - 08
+|657 = Goonmanji 2 - 09
+|658 = Goonmanji 2 - 10
+|659 = Goonmanji 2 - 11
+|660 = Goonmanji 2 - 12
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title-dateid|EGS-title-dateid]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>
 

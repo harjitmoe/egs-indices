@@ -1384,6 +1384,18 @@
 |2016-04-14 = Requested by Anonymous - Ellen as Simon from Firefly
 |2016-04-19 = Maximum Shipping
 |2016-04-22 = FV5 Greg and Justin Workout
+|2017-10-31 = Trick or Grace!
+|2017-11-02 = Sorceress Rhoda
+|2017-11-27 = Cool Off And Be Hot!
+|2017-12-25 = Remote Control
+|2018-01-01 = Bunny Susan Carrot Rocket Magic Fun Ride
+|2018-01-02 = New Student Diane
+|2018-01-25 = Girls Day Out
+|2018-01-29 = You've Won The Game!
+|2018-01-31 = KITTY ASHLEY!
+|2018-02-01 = Make Kitty A Kitty!
+|2018-02-04 = Beach Trip!
+|2018-02-13 = Nase-FV5-Sarah and Elliot
 |#default = }}
 |np= {{#switch:{{{2}}}-{{{3}}}-{{{4}}}
 |2004-02-24 = Tedd Forgot To Do Something - Part I
@@ -1598,6 +1610,19 @@
 |2017-07-21 = Ellen Demo 27
 |2017-07-24 = Ellen Demo 28
 |2017-07-26 = Ellen Demo 29
+|2017-07-28 = Ellen Demo 30
+|2017-07-31 = Goonmanji 2 - 01
+|2017-08-02 = Goonmanji 2 - 02
+|2017-08-04 = Goonmanji 2 - 03
+|2017-08-07 = Goonmanji 2 - 04
+|2017-08-09 = Goonmanji 2 - 05
+|2017-08-11 = Goonmanji 2 - 06
+|2017-08-14 = Goonmanji 2 - 07
+|2017-08-16 = Goonmanji 2 - 08
+|2017-08-18 = Goonmanji 2 - 09
+|2017-08-21 = Goonmanji 2 - 10
+|2017-08-23 = Goonmanji 2 - 11
+|2017-08-25 = Goonmanji 2 - 12
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title-date|EGS-title-date]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>
 

@@ -84,6 +84,14 @@
     [2342,"Sister III: Part 15 - Elliot and Ellen"],
     [2355,"Sister III: Part 16 - BFFs"],
     [2364,"Sister III: Part 17 - Great Fairy Godmother"],
+    [2388,"Sister III: Part 18 - Gathering Monsters"],
+    [2391,"Sister III: Part 19 - Family Meetings"],
+    [2403,"Sister III: Part 20 - Geminis"],
+    [2423,"Sister III: Part 21 - The Other Dunkel"],
+    [2429,"Sister III: Part 22 - Apocalypse"],
+    [2450,"Sister III: Part 23 - The Fate of Magic"],
+    [2468,"Sister III: Part 24 - Elliots and Ellens"],
+    # Part 25 is entirely supernumerary, sadly. This is no longer workable.
 ],"sketch":[
     [708,"Post Ookii (will be redone by megadb_indextransforms anyway)"],
 ],"np":[
@@ -110,6 +118,12 @@
     [595,"GR4-C3"],
     [601,"Fun at Work"],
     [619,"Ellen Demo"],
+    [649,"Goonmanji 2 - Part 1"],
+    [667,"Goonmanji 2 - Part 2"],
+    [683,"Goonmanji 2 - Part 3"],
+    [686,"Goonmanji 2 - Part 4"],
+    [748,"Goonmanji 2 - Part 5"],
+    [763,"Goonmanji 2 - Bonus That is Not Part 6"],
 ]},
 
 "datitles":{

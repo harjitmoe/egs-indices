@@ -2442,6 +2442,18 @@
 |2016-04-14 = Requested by Anonymous - Ellen as Simon from Firefly
 |2016-04-19 = Maximum Shipping
 |2016-04-22 = FV5 Greg and Justin Workout
+|2017-10-31 = Trick or Grace!
+|2017-11-02 = Sorceress Rhoda
+|2017-11-27 = Cool Off And Be Hot!
+|2017-12-25 = Remote Control
+|2018-01-01 = Bunny Susan Carrot Rocket Magic Fun Ride
+|2018-01-02 = New Student Diane
+|2018-01-25 = Girls Day Out
+|2018-01-29 = You've Won The Game!
+|2018-01-31 = KITTY ASHLEY!
+|2018-02-01 = Make Kitty A Kitty!
+|2018-02-04 = Beach Trip!
+|2018-02-13 = Nase-FV5-Sarah and Elliot
 |#default = }}
 |id = {{#switch:{{{4}}}
 |79 = Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.
@@ -2789,6 +2801,18 @@
 |881 = Requested by Anonymous - Ellen as Simon from Firefly
 |882 = Maximum Shipping
 |883 = FV5 Greg and Justin Workout
+|884 = Trick or Grace!
+|885 = Sorceress Rhoda
+|886 = Cool Off And Be Hot!
+|887 = Remote Control
+|888 = Bunny Susan Carrot Rocket Magic Fun Ride
+|889 = New Student Diane
+|890 = Girls Day Out
+|891 = You've Won The Game!
+|892 = KITTY ASHLEY!
+|893 = Make Kitty A Kitty!
+|894 = Beach Trip!
+|895 = Nase-FV5-Sarah and Elliot
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
@@ -3006,6 +3030,19 @@
 |2017-07-21 = Ellen Demo 27
 |2017-07-24 = Ellen Demo 28
 |2017-07-26 = Ellen Demo 29
+|2017-07-28 = Ellen Demo 30
+|2017-07-31 = Goonmanji 2 - 01
+|2017-08-02 = Goonmanji 2 - 02
+|2017-08-04 = Goonmanji 2 - 03
+|2017-08-07 = Goonmanji 2 - 04
+|2017-08-09 = Goonmanji 2 - 05
+|2017-08-11 = Goonmanji 2 - 06
+|2017-08-14 = Goonmanji 2 - 07
+|2017-08-16 = Goonmanji 2 - 08
+|2017-08-18 = Goonmanji 2 - 09
+|2017-08-21 = Goonmanji 2 - 10
+|2017-08-23 = Goonmanji 2 - 11
+|2017-08-25 = Goonmanji 2 - 12
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -3220,6 +3257,19 @@
 |645 = Ellen Demo 27
 |646 = Ellen Demo 28
 |647 = Ellen Demo 29
+|648 = Ellen Demo 30
+|649 = Goonmanji 2 - 01
+|650 = Goonmanji 2 - 02
+|651 = Goonmanji 2 - 03
+|652 = Goonmanji 2 - 04
+|653 = Goonmanji 2 - 05
+|654 = Goonmanji 2 - 06
+|655 = Goonmanji 2 - 07
+|656 = Goonmanji 2 - 08
+|657 = Goonmanji 2 - 09
+|658 = Goonmanji 2 - 10
+|659 = Goonmanji 2 - 11
+|660 = Goonmanji 2 - 12
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}

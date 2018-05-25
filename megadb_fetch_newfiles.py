@@ -63,7 +63,7 @@ def megadb_fetch_newfiles(alldat,reddit_titles,reddit_links,links_910new):
                 source_strip=(source_strip,)+tuple(databases.lsdir[sect][source_strip])
             else:
                 source_strip=databases.lsdir[sect][source_strip]
-            if (mode[0][0]) and (source_strip[1]<mode[0][0]):
+            if (not source_strip[1]) or ((mode[0][0]) and (source_strip[1]<mode[0][0])):
                 continue
             strip_obj={}
             shared_date(strip_obj,djv,source_strip)

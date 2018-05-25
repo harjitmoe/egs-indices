@@ -85,6 +85,7 @@ if os.path.exists("a.txt"):
     database=eval(f.read())
     f.close()
 
+lastt = "xktdxkxxxkxdxupdxh,bhxxgcxxgcxgcxgxgcxgci" # THANK YOU, NEW SCHEME
 for interface in ("index","egsnp","sketchbook"):
     fs=0
     print("I",interface)
@@ -100,13 +101,13 @@ for interface in ("index","egsnp","sketchbook"):
                 if not os.path.exists(interface+".php@id="+str(i)):
                     print("A")
                     continue
-                rd = open(interface+".php@id="+str(i),"rU")
+                rd = open(interface+".php@id="+str(i), "rU", encoding="cp850")
                 data = rd.read()
                 rd.close()
                 os.unlink(interface+".php@id="+str(i))
                 title_date_re = re.search("[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].*?</title>", data)
                 valid_id_re = re.search("comics/[-a-zA-Z0-9_()]*.(jpg|gif|png)", data)
-                if not valid_id_re:
+                if not valid_id_re or valid_id_re.group(0) == lastt:
                     print("F",i)
                     fs+=1
                     if fs>=5:
@@ -116,6 +117,7 @@ for interface in ("index","egsnp","sketchbook"):
                         i+=1
                         continue
                 else:
+                    lastt = valid_id_re.group(0)
                     fs=0
                 #Obtain date from above comic if present
                 printed_date=""
@@ -146,14 +148,15 @@ for interface in ("index","egsnp","sketchbook"):
                     title_date=title_date+" "+title
                     title=""
                 #Extract commentary (which may contain some title info)
-                commentary=data.split('<div id="newsarea">',1)[1].split('<div id="boxad">',1)[0]
+                #Was <div id="newsarea">
+                commentary=data.split('<div id="news">',1)[1].split('<div id="boxad">',1)[0]
                 commentary=strip_style(strip_comments(commentary)).replace(' target="_blank"','').replace('<div id="newsheader"></div>',"").replace("<div>","<br />").replace("</div>","").strip()
                 #Store in database
                 database[prefix][i]={"Commentary":commentary,"Id":i,"DateStatedAboveComic":(printed_date or None),"DateInBrowserTitle":(title_date or None),"HtmlComicTitle":(title or None)}
             else:
                 fs=0
         except Exception as e:
-            print("Pfail",i,str(e))
+            print("Pfail",i,str(e)); raise
         i += 1
 
 f=open("metadataegs3.txt","w")

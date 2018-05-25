@@ -40,7 +40,7 @@ def extract_reddit_info():
     files=os.listdir("Reddit Titles")
     for file in files:
         f=open("Reddit Titles/"+file)
-        b=f.read().replace("loggedin ","").replace("outbound ","").replace("outbound","").replace('data-event-action="title" ',"").replace("&#32;"," ")
+        b=f.read().replace("loggedin ","").replace("outbound ","").replace("outbound","").replace('data-event-action="title" ',"").replace("&#32;"," ").replace('https://old.reddit.com','https://www.reddit.com')
         b=utility.deentity(b,3)
         f.close()
         b=b.replace("https://","http://")
@@ -50,6 +50,8 @@ def extract_reddit_info():
             if ".jpg" in b.split('"',1)[0]:
                 continue #Cannot parse, forget it.
             if "?date" in b.split('"',1)[0]:
+                continue #Cannot parse, forget it.
+            if "?id" not in b.split('"',1)[0]:
                 continue #Cannot parse, forget it.
             type,b=b.split("?id=",1)
             id,b=b.split('"',1)
