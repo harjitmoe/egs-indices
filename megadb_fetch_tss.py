@@ -2,7 +2,7 @@
 # -*- python -*-
 """fetch transcripts, fix titles"""
 
-# Copyright (c) Thomas Hori 2015, 2017.
+# Copyright (c) Thomas Hori 2015, 2017, 2018.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -82,8 +82,18 @@ def megadb_fetch_tss(alldat):
     # YAML interprets as a raw string (somewhat like Python's r"..."), hence we end up with literal \n in the strings.
     trim = lambda c, m: "Requested by "+utility.detag(c.split(m, 1)[1].split("</p>",1)[0].split("<br />",1)[0]).replace("\\n", "\n").strip()
     gcom = lambda st: utility.deentity(utility.recdeentity(databases.metadataegs["sketch"][st['Id']]["Commentary"].replace("&nbsp;"," "),0))
+    for arc in utility.specific_section(alldat,"story")["StoryArcs"]:
+        for strip in arc['Comics']:
+            if strip['Id'] in databases.stids:
+                strip["UrlSlug"] = databases.stids[strip['Id']]
+    for arc in utility.specific_section(alldat,"np")["StoryArcs"]:
+        for strip in arc['Comics']:
+            if strip['Id'] in databases.stids:
+                strip["UrlSlug"] = databases.stids[strip['Id']]
     for arc in utility.specific_section(alldat,"sketch")["StoryArcs"]:
-        for strip in arc['Comics']:        
+        for strip in arc['Comics']:
+            if strip['Id'] in databases.sbids:
+                strip["UrlSlug"] = databases.sbids[strip['Id']]
             if ("Official" not in strip['Titles']):
                 if strip['Id'] in titleharjit.sbmytitles:
                     strip['Titles']["HarJIT"]=titleharjit.sbmytitles[strip['Id']]

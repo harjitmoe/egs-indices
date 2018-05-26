@@ -1,0 +1,4 @@
+[submodule "egs-ids"]
+	path = egs-ids
+	url = https://github.com/TBTerra/egs-ids
+

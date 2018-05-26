@@ -245,6 +245,7 @@ def alphabetical_id(string):
 egslink2ookii={"story":"Story","sketch":"Sketchbook","np":"EGS:NP","bg":"Backgrounds"}
 ookii2egslink=dict(list(zip(*list(zip(*list(egslink2ookii.items())))[::-1])))
 ookii2url={"Story":"index.php","EGS:NP":"egsnp.php","Sketchbook":"sketchbook.php"}
+ookii2url2018={"Story":"comics","EGS:NP":"egsnp","Sketchbook":"sketchbook"}
 
 def specific_section(whole,sect):
     """Index the database for a section by Shiveapedia code."""

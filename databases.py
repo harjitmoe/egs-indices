@@ -106,3 +106,15 @@ suddenlaunch_db["np"]={}
 titlebank=open("titlebank.dat","rU")
 titlebank=yaml.safe_load(titlebank.read())
 
+sbslugs=open("egs-ids/sketch.txt","rU")
+sbslugs=eval(sbslugs.read())
+sbids=dict(zip(sbslugs.values(), sbslugs.keys()))
+
+stslugs=open("egs-ids/main.txt","rU")
+stslugs=eval(stslugs.read())
+stids=dict(zip(stslugs.values(), stslugs.keys()))
+
+npslugs=open("egs-ids/np.txt","rU")
+npslugs=eval(npslugs.read())
+npids=dict(zip(npslugs.values(), npslugs.keys()))
+
