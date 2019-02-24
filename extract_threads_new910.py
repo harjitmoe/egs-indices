@@ -1,4 +1,4 @@
-# Copyright (c) Thomas Hori 2015, 2016, 2017.
+# Copyright (c) HarJIT 2015, 2016, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -19,7 +19,7 @@
 #     required.
 #
 #  2. Altered versions in any form must not be misrepresented as being the 
-#     original work, and neither the name of Thomas Hori nor the names of authors or
+#     original work, and neither the name of HarJIT nor the names of authors or
 #     contributors may be used to endorse or promote products derived from this
 #     work without specific prior written permission.
 #
@@ -27,7 +27,7 @@
 #
 
 import utility
-import re, collections, yaml
+import re, collections, json
 
 listdict=lambda: collections.defaultdict(lambda: [])
 date2str=listdict()
@@ -142,7 +142,7 @@ def grok(code):
     checkdb=None #Integration with test_get_all_dates
     checkdbp="alldates-%s.txt"%code.lower()
     if os.path.exists(checkdbp):
-        checkdb=yaml.safe_load(open(checkdbp,"rU").read())
+        checkdb=json.load(open(checkdbp,"rU"))
     for f in os.listdir("910 Raw DBs/"+code)[:]:
         if f.endswith(".htm"):
             f=open(os.path.join("910 Raw DBs/"+code,f),"rU")

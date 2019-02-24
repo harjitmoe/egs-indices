@@ -1,5 +1,5 @@
-# Written in 2014, 2015, 2016, 2017 by Thomas Hori.
-# Portions copyright (c) Thomas Hori 2016.
+# Written in 2014, 2015, 2016, 2017 by HarJIT.
+# Portions copyright (c) HarJIT 2016.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -20,7 +20,7 @@
 #     required.
 #
 #  2. Altered versions in any form must not be misrepresented as being the 
-#     original work, and neither the name of Thomas Hori nor the names of authors or
+#     original work, and neither the name of HarJIT nor the names of authors or
 #     contributors may be used to endorse or promote products derived from this
 #     work without specific prior written permission.
 #

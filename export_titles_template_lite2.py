@@ -1,4 +1,4 @@
-# Written in 2015,2017 by Thomas Hori
+# Written in 2015,2017 by HarJIT
 #
 # This file is made available under the CC0 Public Domain Dedication.  To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights to this file to the public domain worldwide. This file is distributed without any warranty.
 #
@@ -39,7 +39,7 @@ The third is either "date" or "id" depending on what is being passed in.  The su
 </noinclude>
 """
 
-import sys,os,yaml
+import sys,os,json
 import utility
 
 def doit(outfile,b):
@@ -75,7 +75,7 @@ def export_titles_template_lite2(alldat):
         doit(outfile,b)
         print("|#default = <span class=\"error\">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}", file=outfile)
     f=open("BgNames.txt","rU")
-    b=yaml.safe_load(f)
+    b=json.load(f)
     f.close()
     print("|bg={{#switch:{{{2}}}", file=outfile)
     for id in sorted(b.keys()):

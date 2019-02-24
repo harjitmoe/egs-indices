@@ -4,7 +4,7 @@
 
 ### Dependencies
 
-The entire thing requires Python 3, tested on version 3.5, with [PyYAML](http://pyyaml.org/).
+The entire thing requires Python 3.5 or newer.
 
 The "Extracting titles and date information from the EGS website" described below requires GNU wget.
 

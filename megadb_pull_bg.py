@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- python -*-
 
-# Copyright (c) Thomas Hori 2015, 2017.
+# Copyright (c) HarJIT 2015, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -22,7 +22,7 @@
 #     required.
 #
 #  2. Altered versions in any form must not be misrepresented as being the 
-#     original work, and neither the name of Thomas Hori nor the names of authors or
+#     original work, and neither the name of HarJIT nor the names of authors or
 #     contributors may be used to endorse or promote products derived from this
 #     work without specific prior written permission.
 #
@@ -30,7 +30,7 @@
 #
 
 import utility
-import yaml
+import json
 
 def formurl(idst):
     #Not eval(idst) because starting a number with 0 means octal in Py2 (a nice gotcha for newbies) and is invalid in Py3
@@ -42,10 +42,10 @@ gifs=[0,1,2,3,4,5,6,7,826,27,28,29,30,31,32,33,34,35,36,38,45,48,54,55]
 def megadb_pull_bg(alldat):
     print(">>> megadb_pull_bg")
     f=open("BgNames.txt","rU")
-    b=yaml.safe_load(f)
+    b=json.load(f)
     f.close()
     f=open("BgDescriptions.txt","rU")
-    c=yaml.safe_load(f)
+    c=json.load(f)
     f.close()
     comics=[]
     for i in sorted(c.keys()):

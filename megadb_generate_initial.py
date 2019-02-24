@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- mode: python; coding: utf-8 -*-
 
-# Copyright (c) Thomas Hori 2015, 2017.
+# Copyright (c) HarJIT 2015, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -22,7 +22,7 @@
 #     required.
 #
 #  2. Altered versions in any form must not be misrepresented as being the 
-#     original work, and neither the name of Thomas Hori nor the names of authors or
+#     original work, and neither the name of HarJIT nor the names of authors or
 #     contributors may be used to endorse or promote products derived from this
 #     work without specific prior written permission.
 #

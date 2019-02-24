@@ -1,4 +1,4 @@
-# Copyright (c) Thomas Hori 2016, 2017.
+# Copyright (c) HarJIT 2016, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -19,14 +19,14 @@
 #     required.
 #
 #  2. Altered versions in any form must not be misrepresented as being the 
-#     original work, and neither the name of Thomas Hori nor the names of authors or
+#     original work, and neither the name of HarJIT nor the names of authors or
 #     contributors may be used to endorse or promote products derived from this
 #     work without specific prior written permission.
 #
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import json, yaml, tarfile, zipfile, utfsupport
+import json, tarfile, zipfile, utfsupport, ast
 
 _ookii2=zipfile.ZipFile("Ookii2.dat","r")
 def open_lib2(path):
@@ -42,7 +42,7 @@ def extract_newoid():
         d2i=date2id[sect]
         n+=1
         null=None;true=True;false=False
-        our_dat=yaml.safe_load(open_lib2(str(n)).read()) #JSON borks
+        our_dat=ast.literal_eval(open_lib2(str(n)).read()) #JSON borks
         aut=out[sect]={}
         for i in our_dat:
             for j in i["Comics"]:

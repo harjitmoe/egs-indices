@@ -1,4 +1,4 @@
-# Copyright (c) Thomas Hori 2015, 2016, 2017.
+# Copyright (c) HarJIT 2015, 2016, 2017.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -19,14 +19,14 @@
 #     required.
 #
 #  2. Altered versions in any form must not be misrepresented as being the 
-#     original work, and neither the name of Thomas Hori nor the names of authors or
+#     original work, and neither the name of HarJIT nor the names of authors or
 #     contributors may be used to endorse or promote products derived from this
 #     work without specific prior written permission.
 #
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import json, yaml, tarfile, re, codecs, functools
+import json, ast, tarfile, re, codecs, functools
 
 @functools.partial(codecs.register_error, "winlatin_one_fallback")
 def winlatin_one_fallback_handler(error):
@@ -59,7 +59,7 @@ def load_ookii_record(strip):
         try:
             psdb = json.loads(specific_db)
         except ValueError:
-            psdb = yaml.safe_load(specific_db)
+            psdb = ast.literal_eval(specific_db)
         strip.update(psdb)
 
 date2id = open("Date2Id.txt","rU")
@@ -67,13 +67,10 @@ date2id = json.loads(date2id.read())
 lsdir = open("NewFiles.txt","rU")
 lsdir = json.loads(lsdir.read())
 
-# true and True are both YAML, as are null, Null, NULL but not None
-_p = lambda s: s.replace(": None", ": null").replace("\\'", "\\x27")
-
 metadataegs = open("metadataegs3.txt","rU")
-metadataegs = yaml.safe_load(_p(metadataegs.read()))
+metadataegs = ast.literal_eval(metadataegs.read())
 dateswork = open("DatesWorkProcessed.txt","rU")
-dateswork = yaml.safe_load(_p(dateswork.read().replace("(", "[").replace(")", "]")))
+dateswork = ast.literal_eval(dateswork.read().replace("(", "[").replace(")", "]"))
 
 main_db={}
 for sect in ("story","sketch","np"):
@@ -82,7 +79,7 @@ for sect in ("story","sketch","np"):
     try:
         _pdeco = json.loads(_deco)
     except ValueError:
-        _pdeco = yaml.safe_load(_deco)
+        _pdeco = ast.literal_eval(_deco)
     main_db[sect] = _pdeco
 del sect
 
@@ -104,7 +101,7 @@ suddenlaunch_db["sketch"]=_parse_suddenlaunch("sketch")
 suddenlaunch_db["np"]={}
 
 titlebank=open("titlebank.dat","rU")
-titlebank=yaml.safe_load(titlebank.read())
+titlebank=ast.literal_eval(titlebank.read())
 
 sbslugs=open("egs-ids/sketch.txt","rU")
 sbslugs=eval(sbslugs.read())
