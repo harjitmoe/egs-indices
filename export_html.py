@@ -1,4 +1,4 @@
-# Copyright (c) HarJIT 2015.
+# Copyright (c) HarJIT 2015, 2019.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -158,10 +158,12 @@ def output_html(outfile,record,parent=None):
             if comic["Id"]>0:#i.e. not an error code
                 print("<p style='margin: 0 0 1ex 0'>Archival ID: "+comic["Section"]+" "+repr(comic["Id"])+"</p>", file=outfile)
             print("<p style='margin: 0 0 1ex 0'>Unfortunately absent from current archives, or at least the interface thereof, possibly for technical reasons.  Accessible over "+special_website+" <a href='"+comic["SpecialUrl"]+"'>here</a>.</p>", file=outfile)
-        elif ("Id" in comic) and comic["Id"] and (comic["Id"] > 0): # i.e. not an error code
+        elif ("Id" in comic) and (comic["Id"] is not None) and (comic["Id"] >= 0): # i.e. not an error code
             print("<p style='margin: 0 0 1ex 0'>Archival ID: <a href='http://egscomics.com/"+{"Story":"index.php","EGS:NP":"egsnp.php","Sketchbook":"sketchbook.php"}[comic["Section"]]+"?id="+repr(comic["Id"])+"'>"+comic["Section"]+" "+repr(comic["Id"])+"</a></p>", file=outfile)
+        elif "UrlSlug" not in comic:
+            print("<p style='margin: 0 0 1ex 0'>Unable to determine archival ID or slug.  Lookup by date may or may not work.</p>", file=outfile)
         else:
-            print("<p style='margin: 0 0 1ex 0'>Unable to determine archival ID.  Lookup by date may or may not work.</p>", file=outfile)
+            print("<p style='margin: 0 0 1ex 0'>Unable to determine legacy archival ID, if it ever had one.</p>", file=outfile)
         if comic["OokiiId"]>0:
             print("<p style='margin: 0 0 1ex 0'>Ookii database ID: "+repr(comic["OokiiId"])+"</p>", file=outfile)
         else:
