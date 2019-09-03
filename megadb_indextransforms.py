@@ -33,9 +33,11 @@ import utility
 
 #SB2Year
 
-def handle_strip_record(strip, by_year, by_year_order):
+def handle_strip_record(strip, by_year, by_year_order, yovr=None):
     date=strip["Date"]
-    year=date[:4]
+    year=yovr or date[:4]
+    if year == "2013":
+        year = "2013 [- Jul 2014]"
     if year in by_year_order:
         by_year[year]["Comics"].append(strip)
     else:
@@ -43,8 +45,12 @@ def handle_strip_record(strip, by_year, by_year_order):
         by_year_order.append(year)
 
 def handle_arc(arc, by_year, by_year_order):
+    print(">>>>", arc["Title"])
+    yovr = None
+    if arc["Title"] not in ("Miscellaneous", "Sketch Week #1"):
+        yovr = arc["Title"]
     for i in arc["Comics"]:
-        handle_strip_record(i,by_year,by_year_order)
+        handle_strip_record(i,by_year,by_year_order,yovr)
 
 def megadb_sb2year(main_db):
     print(">>> megadb_sb2year (megadb_indextransforms)")

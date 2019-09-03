@@ -102,8 +102,19 @@
     ["2019-04-17","The New World: Title Pending"],
     ["2019-07-15","The New World: Title Pending 2 - Even More Pending"],
 ],"sketch":[
-    [708,"Post Ookii (will be redone by megadb_indextransforms anyway)"],
-    ["2018-08-07","Post Ookii (will be redone by megadb_indextransforms anyway)"],
+    [708, "2013 [- Jul 2014]"], # Post-Ookii start
+    # Proper lines start here
+    [771, "Patreonus [Aug 2014]"],
+    [784, "Patreon Sep 2014"],
+    [804, "Patreon Oct 2014"],
+    [823, "Patreon Nov 2014 [- Mar 2015]"],
+    [857, "Phoenix Squirrel 2015"],
+    [877, "2016"],
+    [884, "Milestones 2017"],
+    [888, "Milestones 2018"],
+    [896, "Milestones 2018"],
+    ["2018-08-07", "Milestones 2018"],
+    ["2019-01-03", "Milestones 2019"],
 ],"np":[
     [180,"Back"],
     [181,"Playing with Dolls"],
