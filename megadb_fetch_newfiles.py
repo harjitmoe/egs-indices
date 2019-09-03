@@ -63,12 +63,15 @@ def megadb_fetch_newfiles(alldat,reddit_titles,reddit_links,links_910new):
                 source_strip=(source_strip,)+tuple(databases.lsdir[sect][source_strip])
             else:
                 source_strip=databases.lsdir[sect][source_strip]
-            if (not source_strip[1]) or ((mode[0][0]) and (source_strip[1]<mode[0][0])):
+            if source_strip[1] and ((mode[0][0]) and (source_strip[1]<mode[0][0])):
                 continue
             strip_obj={}
             shared_date(strip_obj,djv,source_strip)
             strip_obj["Date"]=source_strip[0]
             strip_obj["Id"]=source_strip[1]
+            if len(source_strip) >= 4:
+                strip_obj["UrlSlug"]=source_strip[3]
+                print("yay")
             if strip_obj["Id"] in databases.metadataegs[sect]:
                 strip_obj.update(utility.recdeentity(databases.metadataegs[sect][strip_obj["Id"]]))
             strip_obj["OokiiId"]=-1
@@ -92,9 +95,9 @@ def megadb_fetch_newfiles(alldat,reddit_titles,reddit_links,links_910new):
             if ("HtmlComicTitle" in strip_obj) and strip_obj["HtmlComicTitle"]:
                 strip_obj["Titles"]["Official"]=strip_obj["HtmlComicTitle"]
             strip_obj["RecordType"]="Comic"
-            for number,(id,name) in enumerate(mode):
-                if strip_obj["Id"]<id:
-                    arcs[number-1]["Comics"].append(strip_obj)
+            for number, (aid, name) in enumerate(mode):
+                if strip_obj["Id"] and (strip_obj["Id"] < aid):
+                    arcs[number - 1]["Comics"].append(strip_obj)
                     break
             else:
                 #else clause of for-loop, i.e. finished without break

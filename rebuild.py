@@ -169,8 +169,8 @@ import export_numberdatemaps
 import export_dateidtemplate
 export_titles_template.export_titles_template(alldat)
 export_titles_template_lite.export_titles_template_lite(alldat)
-export_numberdatemaps.export_numberdatemaps(alldat)
-export_dateidtemplate.export_dateidtemplate(alldat)
+#export_numberdatemaps.export_numberdatemaps(alldat)
+#export_dateidtemplate.export_dateidtemplate(alldat)
 
 # Enter build dir
 os.chdir(".build")
@@ -207,13 +207,13 @@ export("titles_lite2.txt")
 export("titles_lite_date.txt")
 export("titles_lite_id.txt")
 export("titles_lite_bg.txt")
-export("numbereidmap.txt")
-export("numberoidmap.txt")
-export("numberdibmap.txt")
-export("datefakemap.txt")
-export("dateidtemplate-ST.txt")
-export("dateidtemplate-SB.txt")
-export("dateidtemplate-NP.txt")
+#export("numbereidmap.txt")
+#export("numberoidmap.txt")
+#export("numberdibmap.txt")
+#export("datefakemap.txt")
+#export("dateidtemplate-ST.txt")
+#export("dateidtemplate-SB.txt")
+#export("dateidtemplate-NP.txt")
 
 # Leave build dir
 os.chdir("..")

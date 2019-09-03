@@ -42,7 +42,9 @@ def get_section(record):
         return mapp[record["Title"]]
 
 def get_comid(record):
-    if record["Id"]>0:#i.e. not an error code
+    if record["Id"] is None and "UrlSlug" in record:
+        return record["UrlSlug"]
+    elif (record["Id"] is not None) and record["Id"]>0:#i.e. not an error code
         return repr(record["Id"])
     else:
         return record["Date"]

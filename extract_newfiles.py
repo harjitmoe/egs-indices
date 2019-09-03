@@ -14,15 +14,24 @@ import os, json
 
 def getdate_st(fn):
     pl=len("ST-2010-04-23-")
-    return fn[3:][:10]+"/"+fn[pl:][:5],(fn[3:][:10],(int(fn[pl:][:5]) if fn[pl:][:5].strip("xn") else None),fn[pl+6:][:-4])
+    r = (fn[3:][:10], (int(fn[pl:][:5]) if fn[pl:][:5].strip("xn") else None), fn[pl+6:][:-4].split("-SLUG-", 1)[0])
+    if "-SLUG-" in fn:
+        r += (fn.split("-SLUG-", 1)[1].split(".", 1)[0],)
+    return (fn[3:][:10] + "/" + fn[pl:][:5], r)
 
 def getdate_sb(fn):
     pl=len("NP-2010-04-23-")
-    return fn[3:][:10]+"/"+fn[pl:][:5],(fn[3:][:10],(int(fn[pl:][:5]) if fn[pl:][:5].strip("xn") else None),fn[pl+6:][:-4])
+    r = (fn[3:][:10], (int(fn[pl:][:5]) if fn[pl:][:5].strip("xn") else None), fn[pl+6:][:-4].split("-SLUG-", 1)[0])
+    if "-SLUG-" in fn:
+        r += (fn.split("-SLUG-", 1)[1].split(".", 1)[0],)
+    return (fn[3:][:10] + "/" + fn[pl:][:5], r)
 
 def getdate_np(fn):
     pl=len("NP-2010-04-23-")
-    return fn[3:][:10]+"/"+fn[pl:][:5],(fn[3:][:10],(int(fn[pl:][:5]) if fn[pl:][:5].strip("xn") else None),fn[pl+6:][:-4])
+    r = (fn[3:][:10], (int(fn[pl:][:5]) if fn[pl:][:5].strip("xn") else None), fn[pl+6:][:-4].split("-SLUG-", 1)[0])
+    if "-SLUG-" in fn:
+        r += (fn.split("-SLUG-", 1)[1].split(".", 1)[0],)
+    return (fn[3:][:10] + "/" + fn[pl:][:5], r)
 
 def extract_newfiles():
     print (">>> extract_newfiles")
