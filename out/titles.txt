@@ -2488,7 +2488,7 @@
 |2018-05-16 = Doors (danshive) (Reddit)
 |2018-05-18 = Not Even Remotely Passive (m2pt5) (Reddit)
 |2018-05-21 = Door time (Story) (danshive) (Reddit)
-|2018-05-23 = 
+|2018-05-23 = &quot;Wake up, Link... I mean, Ellen&quot; (danshive) (Reddit)
 |2018-05-25 = What Nanase's Been Up To (danshive) (Reddit)
 |2018-05-28 = Average (danshive) (Reddit)
 |2018-05-30 = SO WIZARD! (danshive) (Reddit)
@@ -5170,7 +5170,7 @@
 |2499 = Doors (danshive) (Reddit)
 |2500 = Not Even Remotely Passive (m2pt5) (Reddit)
 |2501 = Door time (Story) (danshive) (Reddit)
-|None = 
+|2502 = &quot;Wake up, Link... I mean, Ellen&quot; (danshive) (Reddit)
 |None = What Nanase's Been Up To (danshive) (Reddit)
 |None = Average (danshive) (Reddit)
 |None = SO WIZARD! (danshive) (Reddit)
@@ -11434,7 +11434,7 @@
 |2018-05-16 = Doors (danshive)
 |2018-05-18 = Not Even Remotely Passive (m2pt5)
 |2018-05-21 = Door time (Story) (danshive)
-|2018-05-23 = S3-283-title
+|2018-05-23 = &quot;Wake up, Link... I mean, Ellen&quot; (danshive)
 |2018-05-25 = What Nanase's Been Up To (danshive)
 |2018-05-28 = Average (danshive)
 |2018-05-30 = SO WIZARD! (danshive)
@@ -14116,7 +14116,7 @@
 |2499 = Doors (danshive)
 |2500 = Not Even Remotely Passive (m2pt5)
 |2501 = Door time (Story) (danshive)
-|None = S3-283-title
+|2502 = &quot;Wake up, Link... I mean, Ellen&quot; (danshive)
 |None = What Nanase's Been Up To (danshive)
 |None = Average (danshive)
 |None = SO WIZARD! (danshive)
@@ -17977,7 +17977,7 @@
 |2018-05-16 = Doors (danshive)
 |2018-05-18 = Not Even Remotely Passive (m2pt5)
 |2018-05-21 = Door time (Story) (danshive)
-|2018-05-23 = S3-283-title
+|2018-05-23 = &quot;Wake up, Link... I mean, Ellen&quot; (danshive)
 |2018-05-25 = What Nanase's Been Up To (danshive)
 |2018-05-28 = Average (danshive)
 |2018-05-30 = SO WIZARD! (danshive)
@@ -20659,7 +20659,7 @@
 |2499 = Doors (danshive)
 |2500 = Not Even Remotely Passive (m2pt5)
 |2501 = Door time (Story) (danshive)
-|None = S3-283-title
+|2502 = &quot;Wake up, Link... I mean, Ellen&quot; (danshive)
 |None = What Nanase's Been Up To (danshive)
 |None = Average (danshive)
 |None = SO WIZARD! (danshive)
@@ -23336,7 +23336,7 @@
 |2018-05-16 = Doors (danshive)
 |2018-05-18 = Not Even Remotely Passive (m2pt5)
 |2018-05-21 = Door time (Story) (danshive)
-|2018-05-23 = S3-283-title
+|2018-05-23 = &quot;Wake up, Link... I mean, Ellen&quot; (danshive)
 |2018-05-25 = What Nanase's Been Up To (danshive)
 |2018-05-28 = Average (danshive)
 |2018-05-30 = SO WIZARD! (danshive)
@@ -26018,7 +26018,7 @@
 |2499 = Doors (danshive)
 |2500 = Not Even Remotely Passive (m2pt5)
 |2501 = Door time (Story) (danshive)
-|None = S3-283-title
+|2502 = &quot;Wake up, Link... I mean, Ellen&quot; (danshive)
 |None = What Nanase's Been Up To (danshive)
 |None = Average (danshive)
 |None = SO WIZARD! (danshive)
@@ -26953,6 +26953,7 @@
 |2018-05-16 = Doors (danshive)
 |2018-05-18 = Not Even Remotely Passive (m2pt5)
 |2018-05-21 = Door time (Story) (danshive)
+|2018-05-23 = &quot;Wake up, Link... I mean, Ellen&quot; (danshive)
 |2018-05-25 = What Nanase's Been Up To (danshive)
 |2018-05-28 = Average (danshive)
 |2018-05-30 = SO WIZARD! (danshive)
@@ -27717,6 +27718,7 @@
 |2499 = Doors (danshive)
 |2500 = Not Even Remotely Passive (m2pt5)
 |2501 = Door time (Story) (danshive)
+|2502 = &quot;Wake up, Link... I mean, Ellen&quot; (danshive)
 |None = What Nanase's Been Up To (danshive)
 |None = Average (danshive)
 |None = SO WIZARD! (danshive)
@@ -37828,7 +37830,7 @@
 |2018-05-16 = Your order, please (danshive) (Reddit)
 |2018-05-18 = Callback (danshive) (Reddit)
 |2018-05-21 = Swings and misses (danshive) (Reddit)
-|2018-05-23 = 
+|2018-05-23 = Choices (danshive) (Reddit)
 |2018-05-25 = Another loose end (danshive) (Reddit)
 |2018-05-28 = 
 |2018-05-30 = A wild Grace appears! (danshive) (Reddit)
@@ -38792,7 +38794,7 @@
 |769 = Your order, please (danshive) (Reddit)
 |770 = Callback (danshive) (Reddit)
 |771 = Swings and misses (danshive) (Reddit)
-|None = 
+|772 = Choices (danshive) (Reddit)
 |None = Another loose end (danshive) (Reddit)
 |None = 
 |None = A wild Grace appears! (danshive) (Reddit)
@@ -40227,7 +40229,7 @@
 |2018-05-16 = Your order, please (danshive)
 |2018-05-18 = Callback (danshive)
 |2018-05-21 = Swings and misses (danshive)
-|2018-05-23 = np20180523-G2-125-jtyg
+|2018-05-23 = Choices (danshive)
 |2018-05-25 = Another loose end (danshive)
 |2018-05-28 = G2-127-wagfg
 |2018-05-30 = A wild Grace appears! (danshive)
@@ -41191,7 +41193,7 @@
 |769 = Your order, please (danshive)
 |770 = Callback (danshive)
 |771 = Swings and misses (danshive)
-|None = np20180523-G2-125-jtyg
+|772 = Choices (danshive)
 |None = Another loose end (danshive)
 |None = G2-127-wagfg
 |None = A wild Grace appears! (danshive)
@@ -42229,7 +42231,7 @@
 |2018-05-16 = Your order, please (danshive)
 |2018-05-18 = Callback (danshive)
 |2018-05-21 = Swings and misses (danshive)
-|2018-05-23 = np20180523-G2-125-jtyg
+|2018-05-23 = Choices (danshive)
 |2018-05-25 = Another loose end (danshive)
 |2018-05-28 = G2-127-wagfg
 |2018-05-30 = A wild Grace appears! (danshive)
@@ -43193,7 +43195,7 @@
 |769 = Your order, please (danshive)
 |770 = Callback (danshive)
 |771 = Swings and misses (danshive)
-|None = np20180523-G2-125-jtyg
+|772 = Choices (danshive)
 |None = Another loose end (danshive)
 |None = G2-127-wagfg
 |None = A wild Grace appears! (danshive)
@@ -44571,7 +44573,7 @@
 |2018-05-16 = Your order, please (danshive)
 |2018-05-18 = Callback (danshive)
 |2018-05-21 = Swings and misses (danshive)
-|2018-05-23 = np20180523-G2-125-jtyg
+|2018-05-23 = Choices (danshive)
 |2018-05-25 = Another loose end (danshive)
 |2018-05-28 = G2-127-wagfg
 |2018-05-30 = A wild Grace appears! (danshive)
@@ -45535,7 +45537,7 @@
 |769 = Your order, please (danshive)
 |770 = Callback (danshive)
 |771 = Swings and misses (danshive)
-|None = np20180523-G2-125-jtyg
+|772 = Choices (danshive)
 |None = Another loose end (danshive)
 |None = G2-127-wagfg
 |None = A wild Grace appears! (danshive)
@@ -46311,6 +46313,7 @@
 |2018-05-16 = Your order, please (danshive)
 |2018-05-18 = Callback (danshive)
 |2018-05-21 = Swings and misses (danshive)
+|2018-05-23 = Choices (danshive)
 |2018-05-25 = Another loose end (danshive)
 |2018-05-30 = A wild Grace appears! (danshive)
 |2018-06-01 = Of course (danshive)
@@ -47078,6 +47081,7 @@
 |769 = Your order, please (danshive)
 |770 = Callback (danshive)
 |771 = Swings and misses (danshive)
+|772 = Choices (danshive)
 |None = Another loose end (danshive)
 |None = A wild Grace appears! (danshive)
 |None = Of course (danshive)
