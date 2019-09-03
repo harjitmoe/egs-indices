@@ -29,6 +29,7 @@
 f=open("metadataegs3.txt","r")
 id2date3=eval(f.read())
 f.close()
+null = None
 date2id=eval(open("Date2Id.txt","rU").read())
 
 print("Format: Category, date (index), id, date (title), date (heading)")
@@ -42,8 +43,9 @@ for category in ("story","sketch","np"):
             roundtrip2=id2date3[category][index]["DateStatedAboveComic"]
             roundtrip=(roundtrip2 if roundtrip2 else roundtrip1)
             if roundtrip1!=roundtrip:
+                print("Key","Section","Database","ID","Tab","Above")
                 print("Eh?",repr(category),repr(date),repr(d2i[date]),repr(roundtrip1),repr(roundtrip2))
             if date not in (roundtrip,):
                 print("Discrepancy",repr(category),repr(date),repr(d2i[date]),repr(roundtrip1),repr(roundtrip2))
-        else:
+        elif d2i[date] is not None:
             print("Not grabbed",category,date,d2i[date])

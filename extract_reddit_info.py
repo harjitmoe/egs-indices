@@ -1,4 +1,4 @@
-# Copyright (c) HarJIT 2015, 2017.
+# Copyright (c) HarJIT 2015, 2017, 2019.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -40,24 +40,43 @@ def extract_reddit_info():
     files=os.listdir("Reddit Titles")
     for file in files:
         f=open("Reddit Titles/"+file)
-        b=f.read().replace("loggedin ","").replace("outbound ","").replace("outbound","").replace('data-event-action="title" ',"").replace("&#32;"," ").replace('https://old.reddit.com','https://www.reddit.com')
+        b=f.read().replace("loggedin ","").replace("outbound ","").replace("outbound","").replace('data-event-action="title" ',"").replace("&#32;"," ").replace('https://old.reddit.com','https://www.reddit.com').replace("://egscomics.com", "://www.egscomics.com")
         b=utility.deentity(b,3)
         f.close()
         b=b.replace("https://","http://")
+        if initiator not in b:
+            open("dump.txt", "w").write(b)
+            raise ValueError(file)
         while initiator in b:
             b=b.split(initiator,1)[1]
             #Very old links break this
             if ".jpg" in b.split('"',1)[0]:
                 continue #Cannot parse, forget it.
-            if "?date" in b.split('"',1)[0]:
+            elif "?date" in b.split('"',1)[0]:
                 continue #Cannot parse, forget it.
-            if "?id" not in b.split('"',1)[0]:
+            elif "?id" in b.split('"',1)[0]:
+                type,b=b.split("?id=",1)
+                id,b=b.split('"',1)
+                id=int(id.split("&")[0])
+                type={"egsnp":"np","index":"story","sketchbook":"sketch","filler":"sketch","":"story"}[type.split(".")[0].strip("/")]
+                b=b.split(">",1)[1]
+            elif b.split('"',1)[0].startswith("comic/"):
+                type = "story"
+                id, b = b.split('"',1)
+                id = "SLUG-" + id.rsplit("?", 1)[0].rsplit("/", 1)[1]
+                b = b.split(">",1)[1]
+            elif b.split('"',1)[0].startswith("sketchbook/"):
+                type = "sketch"
+                id, b = b.split('"',1)
+                id = "SLUG-" + id.rsplit("?", 1)[0].rsplit("/", 1)[1]
+                b = b.split(">",1)[1]
+            elif b.split('"',1)[0].startswith("egsnp/"):
+                type = "np"
+                id, b = b.split('"',1)
+                id = "SLUG-" + id.rsplit("?", 1)[0].rsplit("/", 1)[1]
+                b = b.split(">",1)[1]
+            else:
                 continue #Cannot parse, forget it.
-            type,b=b.split("?id=",1)
-            id,b=b.split('"',1)
-            id=int(id.split("&")[0])
-            type={"egsnp":"np","index":"story","sketchbook":"sketch","filler":"sketch","":"story"}[type.split(".")[0].strip("/")]
-            b=b.split(">",1)[1]
             title,b=b.split('</a>',1)
             title=utility.deentity(title,2)
             if "/user/" in b[:400]:

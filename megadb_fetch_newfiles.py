@@ -79,19 +79,19 @@ def megadb_fetch_newfiles(alldat,reddit_titles,reddit_links,links_910new):
             strip["Section"]=utility.egslink2ookii[sect]
             strip["Characters"]={}
             strip["ReactionLinks"]=[]
-            if strip["Id"] in reddit_links[sect]:
-                strip["ReactionLinks"].append(reddit_links[sect][strip["Id"]])
+            if utility.identifier(strip) in reddit_links[sect]:
+                strip["ReactionLinks"].append(reddit_links[sect][utility.identifier(strip)])
             if strip["Date"] in links_910new[sect]:
                 utility.merge_reactions(strip["ReactionLinks"],links_910new[sect][strip["Date"]])
             utility.dates_index(strip,databases.dateswork[sect])
-            if source_strip[1] not in reddit_titles[sect]:
+            if utility.identifier(strip) not in reddit_titles[sect]:
                 strip["Titles"]={"Filename":strip["FileNameTitle"]} #For now
             else:
                 uuu = utility.alphabetical_id(strip["FileNameTitle"])
-                if uuu and uuu==utility.alphabetical_id(reddit_titles[sect][source_strip[1]][::-1].split("( ",1)[1][::-1]):
-                    strip["Titles"]={"Reddit":reddit_titles[sect][source_strip[1]][:-1]+", based on filename)"}
+                if uuu and uuu==utility.alphabetical_id(reddit_titles[sect][utility.identifier(strip)][::-1].split("( ",1)[1][::-1]):
+                    strip["Titles"]={"Reddit":reddit_titles[sect][utility.identifier(strip)][:-1]+", based on filename)"}
                 else:
-                    strip["Titles"]={"Reddit":reddit_titles[sect][source_strip[1]]}
+                    strip["Titles"]={"Reddit":reddit_titles[sect][utility.identifier(strip)]}
             if ("HtmlComicTitle" in strip) and strip["HtmlComicTitle"]:
                 strip["Titles"]["Official"]=strip["HtmlComicTitle"]
             strip["RecordType"]="Comic"
