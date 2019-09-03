@@ -88,8 +88,8 @@ def megadb_fetch_tss(alldat):
                 strip["UrlSlug"] = databases.stids[strip['Id']]
     for arc in utility.specific_section(alldat,"np")["StoryArcs"]:
         for strip in arc['Comics']:
-            if strip['Id'] in databases.stids:
-                strip["UrlSlug"] = databases.stids[strip['Id']]
+            if strip['Id'] in databases.npids:
+                strip["UrlSlug"] = databases.npids[strip['Id']]
     for arc in utility.specific_section(alldat,"sketch")["StoryArcs"]:
         for strip in arc['Comics']:
             if strip['Id'] in databases.sbids:
