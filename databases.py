@@ -67,7 +67,10 @@ date2id = json.loads(date2id.read())
 lsdir = open("NewFiles.txt","rU")
 lsdir = json.loads(lsdir.read())
 
-metadataegs = open("metadataegs3.txt","rU")
+try:
+    metadataegs = open("metadataegs4.txt","rU")
+except EnvironmentError:
+    metadataegs = open("metadataegs3.txt","rU")
 metadataegs = ast.literal_eval(metadataegs.read())
 dateswork = open("DatesWorkProcessed.txt","rU")
 dateswork = ast.literal_eval(dateswork.read().replace("(", "[").replace(")", "]"))

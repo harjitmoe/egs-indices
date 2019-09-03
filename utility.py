@@ -1,4 +1,4 @@
-# Copyright (c) HarJIT 2015, 2016, 2017.
+# Copyright (c) HarJIT 2015, 2016, 2017, 2019.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -266,6 +266,11 @@ def dates_index(strip,dateswork):
                         print("%s %s" % (strip["Date"], date))
                         raise AssertionError
                     strip["DateIndexable"]=True
+
+def identifier(strip):
+    if strip["Id"] is not None:
+        return strip["Id"]
+    return strip["UrlSlug"]
 
 def openrf(fn, *mode):
     import os

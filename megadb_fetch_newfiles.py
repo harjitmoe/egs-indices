@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- python -*-
 
-# Copyright (c) HarJIT 2015, 2017.
+# Copyright (c) HarJIT 2015, 2017, 2019.
 #
 #  THIS WORK IS PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
 #  INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
@@ -29,19 +29,19 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import utility,databases
-import os,sys
+import utility, databases
+import os, sys
 
-def shared_date(strip_obj,djv,source_strip):
+def shared_date(strip,djv,source_strip):
     if source_strip[0] in djv:
         djv[source_strip[0]]["SharedDateIndex"]=1
         djv[source_strip[0]]["SharedDateTotal"][0]+=1
-        strip_obj["SharedDateIndex"]=djv[source_strip[0]]["SharedDateTotal"][0]
-        strip_obj["SharedDateTotal"]=djv[source_strip[0]]["SharedDateTotal"]
+        strip["SharedDateIndex"]=djv[source_strip[0]]["SharedDateTotal"][0]
+        strip["SharedDateTotal"]=djv[source_strip[0]]["SharedDateTotal"]
     else:
-        strip_obj["SharedDateIndex"]=0
-        strip_obj["SharedDateTotal"]=[1] #1-list approximating a pointer.
-        djv[source_strip[0]]=strip_obj
+        strip["SharedDateIndex"]=0
+        strip["SharedDateTotal"]=[1] #1-list approximating a pointer.
+        djv[source_strip[0]]=strip
 
 def megadb_fetch_newfiles(alldat,reddit_titles,reddit_links,links_910new):
     print (">>> megadb_fetch_newfiles")
@@ -65,41 +65,41 @@ def megadb_fetch_newfiles(alldat,reddit_titles,reddit_links,links_910new):
                 source_strip=databases.lsdir[sect][source_strip]
             if source_strip[1] and ((mode[0][0]) and (source_strip[1]<mode[0][0])):
                 continue
-            strip_obj={}
-            shared_date(strip_obj,djv,source_strip)
-            strip_obj["Date"]=source_strip[0]
-            strip_obj["Id"]=source_strip[1]
+            strip={}
+            shared_date(strip,djv,source_strip)
+            strip["Date"]=source_strip[0]
+            strip["Id"]=source_strip[1]
             if len(source_strip) >= 4:
-                strip_obj["UrlSlug"]=source_strip[3]
-                print("yay")
-            if strip_obj["Id"] in databases.metadataegs[sect]:
-                strip_obj.update(utility.recdeentity(databases.metadataegs[sect][strip_obj["Id"]]))
-            strip_obj["OokiiId"]=-1
-            strip_obj["FileNameTitle"]=source_strip[2]
-            strip_obj["Section"]=utility.egslink2ookii[sect]
-            strip_obj["Characters"]={}
-            strip_obj["ReactionLinks"]=[]
-            if strip_obj["Id"] in reddit_links[sect]:
-                strip_obj["ReactionLinks"].append(reddit_links[sect][strip_obj["Id"]])
-            if strip_obj["Date"] in links_910new[sect]:
-                utility.merge_reactions(strip_obj["ReactionLinks"],links_910new[sect][strip_obj["Date"]])
-            utility.dates_index(strip_obj,databases.dateswork[sect])
+                strip["UrlSlug"]=source_strip[3]
+            assert (strip["Id"] is not None) or ("UrlSlug" in strip), strip
+            if utility.identifier(strip) in databases.metadataegs[sect]:
+                strip.update(utility.recdeentity(databases.metadataegs[sect][utility.identifier(strip)]))
+            strip["OokiiId"]=-1
+            strip["FileNameTitle"]=source_strip[2]
+            strip["Section"]=utility.egslink2ookii[sect]
+            strip["Characters"]={}
+            strip["ReactionLinks"]=[]
+            if strip["Id"] in reddit_links[sect]:
+                strip["ReactionLinks"].append(reddit_links[sect][strip["Id"]])
+            if strip["Date"] in links_910new[sect]:
+                utility.merge_reactions(strip["ReactionLinks"],links_910new[sect][strip["Date"]])
+            utility.dates_index(strip,databases.dateswork[sect])
             if source_strip[1] not in reddit_titles[sect]:
-                strip_obj["Titles"]={"Filename":strip_obj["FileNameTitle"]} #For now
+                strip["Titles"]={"Filename":strip["FileNameTitle"]} #For now
             else:
-                uuu = utility.alphabetical_id(strip_obj["FileNameTitle"])
+                uuu = utility.alphabetical_id(strip["FileNameTitle"])
                 if uuu and uuu==utility.alphabetical_id(reddit_titles[sect][source_strip[1]][::-1].split("( ",1)[1][::-1]):
-                    strip_obj["Titles"]={"Reddit":reddit_titles[sect][source_strip[1]][:-1]+", based on filename)"}
+                    strip["Titles"]={"Reddit":reddit_titles[sect][source_strip[1]][:-1]+", based on filename)"}
                 else:
-                    strip_obj["Titles"]={"Reddit":reddit_titles[sect][source_strip[1]]}
-            if ("HtmlComicTitle" in strip_obj) and strip_obj["HtmlComicTitle"]:
-                strip_obj["Titles"]["Official"]=strip_obj["HtmlComicTitle"]
-            strip_obj["RecordType"]="Comic"
+                    strip["Titles"]={"Reddit":reddit_titles[sect][source_strip[1]]}
+            if ("HtmlComicTitle" in strip) and strip["HtmlComicTitle"]:
+                strip["Titles"]["Official"]=strip["HtmlComicTitle"]
+            strip["RecordType"]="Comic"
             for number, (aid, name) in enumerate(mode):
-                if strip_obj["Id"] and (strip_obj["Id"] < aid):
-                    arcs[number - 1]["Comics"].append(strip_obj)
+                if strip["Id"] and (strip["Id"] < aid):
+                    arcs[number - 1]["Comics"].append(strip)
                     break
             else:
                 #else clause of for-loop, i.e. finished without break
-                arcs[-1]["Comics"].append(strip_obj)
+                arcs[-1]["Comics"].append(strip)
     return alldat
