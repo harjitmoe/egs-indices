@@ -270,7 +270,7 @@ def dates_index(strip,dateswork):
 def identifier(strip):
     if strip["Id"] is not None:
         return strip["Id"]
-    return strip["UrlSlug"]
+    return "SLUG-" + strip["UrlSlug"]
 
 def openrf(fn, *mode):
     import os

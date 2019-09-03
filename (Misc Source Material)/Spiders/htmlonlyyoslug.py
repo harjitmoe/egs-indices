@@ -88,7 +88,7 @@ else:
     database=eval(f.read())
     f.close()
 
-firstnewslugs = {"story": "2018-05-25", "sketch": "2018-02-12-nase-fv5-sarah-and-elliot",
+firstnewslugs = {"story": "2018-05-23", "sketch": "2018-02-12-nase-fv5-sarah-and-elliot",
                 "np": "2018-05-21"}
 
 lastt = "xktdxkxxxkxdxupdxh,bhxxgcxxgcxgcxgxgcxgci" # THANK YOU, NEW SCHEME
@@ -100,6 +100,7 @@ for interface in ("comic","egsnp","sketchbook"):
     i = database[prefix].get("<LAST>", firstnewslugs[prefix])
     while 1:
         try:
+            print(prefix, i)
             url = "http://www.egscomics.com/" + interface + "/" + i
             #time.sleep(0.5)
             os.system(wget+" -O temp.tmp \""+url+"\" >> wgetlog.txt 2>&1")
@@ -148,9 +149,9 @@ for interface in ("comic","egsnp","sketchbook"):
                 commentary=data.split('<div id="news">',1)[1].split('<div id="boxad">',1)[0]
                 commentary=strip_style(strip_comments(commentary)).replace(' target="_blank"','').replace('<div id="newsheader"></div>',"").replace("<div>","<br />").replace("</div>","").strip()
                 #Store in database
-                database[prefix]["SLUG-"+i]={"Commentary":commentary,"Id":i,"DateStatedAboveComic":(printed_date or None),"DateInBrowserTitle":(title_date or None),"HtmlComicTitle":(title or None)}
+                database[prefix]["SLUG-"+i]={"Commentary":commentary,"UrlSlug":i,"DateStatedAboveComic":(printed_date or None),"DateInBrowserTitle":(title_date or None),"HtmlComicTitle":(title or None)}
             if 'class="cc-next" rel="next" href="' in data:
-                i = dat.split('class="cc-next" rel="next" href="', 1)[1].split('"', 1)[0].rsplit("/", 1)[1]
+                i = data.split('class="cc-next" rel="next" href="', 1)[1].split('"', 1)[0].rsplit("/", 1)[1]
             else:
                 break
         except Exception as e:

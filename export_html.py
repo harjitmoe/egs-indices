@@ -53,6 +53,7 @@ def get_id(record):
     if record["RecordType"]=="Comic":
         return "section%d"%(get_section(record))+"strip"+get_comid(record)
     elif record["RecordType"]=="StoryLine":
+        assert record["Comics"], record
         return "linestarting"+record["Comics"][0]["Section"]+get_id(record["Comics"][0])
     elif record["RecordType"]=="StoryArc":
         return "arcstarting"+record["StoryLines"][0]["Comics"][0]["Section"]+get_id(record["StoryLines"][0]["Comics"][0])

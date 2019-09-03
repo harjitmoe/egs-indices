@@ -90,8 +90,16 @@
     [2423,"Sister III: Part 21 - The Other Dunkel"],
     [2429,"Sister III: Part 22 - Apocalypse"],
     [2450,"Sister III: Part 23 - The Fate of Magic"],
+    # Transition is a blatant kludge.
     [2468,"Sister III: Part 24 - Elliots and Ellens"],
-    # Part 25 is entirely supernumerary, sadly. This is no longer workable.
+    [2502,"Sister III: Part 25 - Changes"],
+    ["2018-05-23","Sister III: Part 25 - Changes"],
+    ["2018-07-09","Sister III: Part 26 - Epilogues"],
+    ["2018-08-20","The New World: The Legend of Diane"],
+    ["2018-11-12","The New World: The Secret of Sam"],
+    ["2019-03-11","The New World: Q&A 8 - The Lord Of The Q&As"],
+    ["2019-04-17","The New World: Title Pending"],
+    ["2019-07-15","The New World: Title Pending 2 - Even More Pending"],
 ],"sketch":[
     [708,"Post Ookii (will be redone by megadb_indextransforms anyway)"],
 ],"np":[
@@ -123,7 +131,17 @@
     [683,"Goonmanji 2 - Part 3"],
     [686,"Goonmanji 2 - Part 4"],
     [748,"Goonmanji 2 - Part 5"],
+    # Transition is a blatant kludge.
     [763,"Goonmanji 2 - Bonus That is Not Part 6"],
+    [772,"Goonmanji 2 - Bonus That is Not Part 6"],
+    ["2018-05-21","Goonmanji 2 - Bonus That is Not Part 6"],
+    ["2018-06-11","Grace-A-Monsters"],
+    ["2018-09-03","Assorted 2018"],
+    ["2018-10-15","Nanase Craft and the Crypt of Zappiness"],
+    ["2019-04-08","Fantasy Wasteland"],
+    ["2019-06-24","Pizza"],
+    ["2019-07-15","Super Hero Science"],
+    ["2019-08-28","Parable"],
 ]},
 
 "datitles":{

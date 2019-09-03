@@ -95,11 +95,24 @@ def megadb_fetch_newfiles(alldat,reddit_titles,reddit_links,links_910new):
             if ("HtmlComicTitle" in strip) and strip["HtmlComicTitle"]:
                 strip["Titles"]["Official"]=strip["HtmlComicTitle"]
             strip["RecordType"]="Comic"
-            for number, (aid, name) in enumerate(mode):
-                if strip["Id"] and (strip["Id"] < aid):
-                    arcs[number - 1]["Comics"].append(strip)
-                    break
+            if strip["Id"] is not None:
+                assert isinstance(strip["Id"], int), strip
+                for number, (aid, name) in enumerate(mode):
+                    if isinstance(aid, int) and (strip["Id"] < aid):
+                        arcs[number - 1]["Comics"].append(strip)
+                        break
+                else:
+                    #else clause of for-loop, i.e. finished without break
+                    arcs[-1]["Comics"].append(strip)
             else:
-                #else clause of for-loop, i.e. finished without break
-                arcs[-1]["Comics"].append(strip)
+                for number, (aid, name) in enumerate(mode):
+                    if isinstance(aid, str) and (strip["Date"] < aid):
+                        arcs[number - 1]["Comics"].append(strip)
+                        break
+                else:
+                    #else clause of for-loop, i.e. finished without break
+                    arcs[-1]["Comics"].append(strip)
     return alldat
+
+
+
