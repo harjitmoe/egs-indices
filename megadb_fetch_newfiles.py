@@ -115,7 +115,7 @@ def megadb_fetch_newfiles(alldat, reddit_titles, reddit_links, links_910new):
                         "Reddit": reddit_titles[sect][utility.identifier(strip)]
                     }
             if ("HtmlComicTitle" in strip) and strip["HtmlComicTitle"] and (
-                    "UrlSlug" not in strip):
+                        strip["Id"] is not None):
                 strip["Titles"]["Official"] = strip["HtmlComicTitle"]
             strip["RecordType"] = "Comic"
             if strip["Id"] is not None:

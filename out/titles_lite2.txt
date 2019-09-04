@@ -2453,6 +2453,7 @@
 |2018-01-31 = KITTY ASHLEY!
 |2018-02-01 = Make Kitty A Kitty!
 |2018-02-04 = Beach Trip!
+|2018-02-13 = Nase-FV5-Sarah and Elliot
 |#default = }}
 |id = {{#switch:{{{4}}}
 |79 = Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.
@@ -2811,6 +2812,7 @@
 |892 = KITTY ASHLEY!
 |893 = Make Kitty A Kitty!
 |894 = Beach Trip!
+|895 = Nase-FV5-Sarah and Elliot
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}

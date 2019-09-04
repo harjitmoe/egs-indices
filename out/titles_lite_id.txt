@@ -1410,6 +1410,7 @@
 |892 = KITTY ASHLEY!
 |893 = Make Kitty A Kitty!
 |894 = Beach Trip!
+|895 = Nase-FV5-Sarah and Elliot
 |#default = }}
 |np= {{#switch:{{{2}}}
 |12 = Tedd Forgot To Do Something - Part I

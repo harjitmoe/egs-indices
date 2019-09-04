@@ -2670,6 +2670,7 @@
 |2019-08-28 = Twenty Questions (danshive) (Reddit)
 |2019-08-30 = SUDDENLY WORLD BUILDING (danshive) (Reddit)
 |2019-09-02 = Getting to know you... (danshive) (Reddit)
+|2019-09-04 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic (Official)
@@ -5352,6 +5353,7 @@
 |None = Twenty Questions (danshive) (Reddit)
 |None = SUDDENLY WORLD BUILDING (danshive) (Reddit)
 |None = Getting to know you... (danshive) (Reddit)
+|None = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -13145,6 +13147,7 @@
 |2019-08-28 = Twenty Questions (danshive)
 |2019-08-30 = SUDDENLY WORLD BUILDING (danshive)
 |2019-09-02 = Getting to know you... (danshive)
+|2019-09-04 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -15827,6 +15830,7 @@
 |None = Twenty Questions (danshive)
 |None = SUDDENLY WORLD BUILDING (danshive)
 |None = Getting to know you... (danshive)
+|None = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -19688,6 +19692,7 @@
 |2019-08-28 = Twenty Questions (danshive)
 |2019-08-30 = SUDDENLY WORLD BUILDING (danshive)
 |2019-09-02 = Getting to know you... (danshive)
+|2019-09-04 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -22370,6 +22375,7 @@
 |None = Twenty Questions (danshive)
 |None = SUDDENLY WORLD BUILDING (danshive)
 |None = Getting to know you... (danshive)
+|None = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -25047,6 +25053,7 @@
 |2019-08-28 = Twenty Questions (danshive)
 |2019-08-30 = SUDDENLY WORLD BUILDING (danshive)
 |2019-09-02 = Getting to know you... (danshive)
+|2019-09-04 = 
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -27729,6 +27736,7 @@
 |None = Twenty Questions (danshive)
 |None = SUDDENLY WORLD BUILDING (danshive)
 |None = Getting to know you... (danshive)
+|None = 
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -28776,7 +28784,7 @@
 |2018-01-31 = KITTY ASHLEY! (Official) / Sketchbook: Kitty Ashley! (danshive) (Reddit)
 |2018-02-01 = Make Kitty A Kitty! (Official) / Sketchbook: Make Kitty a Kitty! (danshive) (Reddit)
 |2018-02-04 = Beach Trip! (Official) / Beach Trip! (danshive) (Reddit)
-|2018-02-13 = Nanase-FV5-Sarah?! (danshive) (Reddit)
+|2018-02-13 = Nase-FV5-Sarah and Elliot (Official) / Nanase-FV5-Sarah?! (danshive) (Reddit)
 |2018-08-07 = KITTIES! (danshive) (Reddit)
 |2018-08-09 = Slumber party! (danshive) (Reddit)
 |2018-08-14 = MORE KITTIES (danshive) (Reddit)
@@ -29726,7 +29734,7 @@
 |892 = KITTY ASHLEY! (Official) / Sketchbook: Kitty Ashley! (danshive) (Reddit)
 |893 = Make Kitty A Kitty! (Official) / Sketchbook: Make Kitty a Kitty! (danshive) (Reddit)
 |894 = Beach Trip! (Official) / Beach Trip! (danshive) (Reddit)
-|895 = Nanase-FV5-Sarah?! (danshive) (Reddit)
+|895 = Nase-FV5-Sarah and Elliot (Official) / Nanase-FV5-Sarah?! (danshive) (Reddit)
 |None = KITTIES! (danshive) (Reddit)
 |None = Slumber party! (danshive) (Reddit)
 |None = MORE KITTIES (danshive) (Reddit)
@@ -30134,6 +30142,7 @@
 |2018-01-31 = KITTY ASHLEY!
 |2018-02-01 = Make Kitty A Kitty!
 |2018-02-04 = Beach Trip!
+|2018-02-13 = Nase-FV5-Sarah and Elliot
 |#default = }}
 |id = {{#switch:{{{4}}}
 |79 = Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.
@@ -30492,6 +30501,7 @@
 |892 = KITTY ASHLEY!
 |893 = Make Kitty A Kitty!
 |894 = Beach Trip!
+|895 = Nase-FV5-Sarah and Elliot
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -31733,7 +31743,7 @@
 |2018-01-31 = KITTY ASHLEY!
 |2018-02-01 = Make Kitty A Kitty!
 |2018-02-04 = Beach Trip!
-|2018-02-13 = Nanase-FV5-Sarah?! (danshive)
+|2018-02-13 = Nase-FV5-Sarah and Elliot
 |2018-08-07 = KITTIES! (danshive)
 |2018-08-09 = Slumber party! (danshive)
 |2018-08-14 = MORE KITTIES (danshive)
@@ -32683,7 +32693,7 @@
 |892 = KITTY ASHLEY!
 |893 = Make Kitty A Kitty!
 |894 = Beach Trip!
-|895 = Nanase-FV5-Sarah?! (danshive)
+|895 = Nase-FV5-Sarah and Elliot
 |None = KITTIES! (danshive)
 |None = Slumber party! (danshive)
 |None = MORE KITTIES (danshive)
@@ -34482,7 +34492,7 @@
 |2018-01-31 = KITTY ASHLEY!
 |2018-02-01 = Make Kitty A Kitty!
 |2018-02-04 = Beach Trip!
-|2018-02-13 = Nanase-FV5-Sarah?! (danshive)
+|2018-02-13 = Nase-FV5-Sarah and Elliot
 |2018-08-07 = KITTIES! (danshive)
 |2018-08-09 = Slumber party! (danshive)
 |2018-08-14 = MORE KITTIES (danshive)
@@ -35432,7 +35442,7 @@
 |892 = KITTY ASHLEY!
 |893 = Make Kitty A Kitty!
 |894 = Beach Trip!
-|895 = Nanase-FV5-Sarah?! (danshive)
+|895 = Nase-FV5-Sarah and Elliot
 |None = KITTIES! (danshive)
 |None = Slumber party! (danshive)
 |None = MORE KITTIES (danshive)
@@ -36365,7 +36375,7 @@
 |2018-01-31 = KITTY ASHLEY!
 |2018-02-01 = Make Kitty A Kitty!
 |2018-02-04 = Beach Trip!
-|2018-02-13 = Nanase-FV5-Sarah?! (danshive)
+|2018-02-13 = Nase-FV5-Sarah and Elliot
 |2018-08-07 = KITTIES! (danshive)
 |2018-08-09 = Slumber party! (danshive)
 |2018-08-14 = MORE KITTIES (danshive)
@@ -37315,7 +37325,7 @@
 |892 = KITTY ASHLEY!
 |893 = Make Kitty A Kitty!
 |894 = Beach Trip!
-|895 = Nanase-FV5-Sarah?! (danshive)
+|895 = Nase-FV5-Sarah and Elliot
 |None = KITTIES! (danshive)
 |None = Slumber party! (danshive)
 |None = MORE KITTIES (danshive)

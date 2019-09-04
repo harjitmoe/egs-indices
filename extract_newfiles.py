@@ -70,7 +70,8 @@ def extract_newfiles():
     sbmap = dict(
         list(
             map(getdate_sb,
-                [i for i in sbmap if i.count("-00") or i.count("-SLUG-")])))
+                [i for i in sbmap if (i.count("-00") or i.count("-SLUG-")) and
+                 not i.lower().count("-nbg")])))
     npmap = dict(
         list(
             map(getdate_np, [
