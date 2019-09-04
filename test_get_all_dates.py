@@ -18,7 +18,7 @@
 #     acknowledgment in the product documentation would be appreciated but is not
 #     required.
 #
-#  2. Altered versions in any form must not be misrepresented as being the 
+#  2. Altered versions in any form must not be misrepresented as being the
 #     original work, and neither the name of HarJIT nor the names of authors or
 #     contributors may be used to endorse or promote products derived from this
 #     work without specific prior written permission.
@@ -32,27 +32,32 @@ try:
 except ImportError:
     import simplejson as json
 import utility
-alldat=json.loads(open(".build/AllMegaDb.txt","rU").read())
-dates=None
+alldat = json.loads(open(".build/AllMegaDb.txt", "rU").read())
+dates = None
+
+
 def proc(node):
-    if node["RecordType"]=="Comic":
-        if node["Date"]!="?":
+    if node["RecordType"] == "Comic":
+        if node["Date"] != "?":
             dates.append(node["Date"].encode("utf-8"))
         return
     #
-    if node["RecordType"]=="Section":
-        nxtgen="StoryArcs"
-    elif node["RecordType"]=="StoryArc":
-        nxtgen="StoryLines"
-    elif node["RecordType"]=="StoryLine":
-        nxtgen="Comics"
+    if node["RecordType"] == "Section":
+        nxtgen = "StoryArcs"
+    elif node["RecordType"] == "StoryArc":
+        nxtgen = "StoryLines"
+    elif node["RecordType"] == "StoryLine":
+        nxtgen = "Comics"
     else:
         raise ValueError(node["RecordType"].encode("utf-8"))
     for child in node[nxtgen]:
         proc(child)
+
+
 for section in alldat:
-    if section["Title"]=="Backgrounds":
+    if section["Title"] == "Backgrounds":
         continue
-    dates=[]
+    dates = []
     proc(section)
-    open("alldates-%s.txt"%utility.ookii2egslink[section["Title"]],"wb").write(json.dumps(dates))
+    open("alldates-%s.txt" % utility.ookii2egslink[section["Title"]],
+         "wb").write(json.dumps(dates))

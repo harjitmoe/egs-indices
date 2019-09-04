@@ -21,7 +21,7 @@
 #     acknowledgment in the product documentation would be appreciated but is not
 #     required.
 #
-#  2. Altered versions in any form must not be misrepresented as being the 
+#  2. Altered versions in any form must not be misrepresented as being the
 #     original work, and neither the name of HarJIT nor the names of authors or
 #     contributors may be used to endorse or promote products derived from this
 #     work without specific prior written permission.
@@ -32,98 +32,124 @@
 import utility
 import databases
 
-def merge_haylo(strip,haylo_db):
+
+def merge_haylo(strip, haylo_db):
     if strip["Date"] in haylo_db:
-        date,title2,fora=haylo_db[strip["Date"]]
-        title2=title2.replace("Animi-Style","Animé-Style")
+        date, title2, fora = haylo_db[strip["Date"]]
+        title2 = title2.replace("Animi-Style", "Animé-Style")
         for el in databases.titlebank["haylo_errorlinks"]:
             if el in [i[0] for i in fora]:
                 #Apparantly an error in the Haylo list.  Made up for by Herald Loveall list.
                 del fora[[i[0] for i in fora].index(el)]
-        utility.merge_reactions(strip["ReactionLinks"],fora)
+        utility.merge_reactions(strip["ReactionLinks"], fora)
         if "Ookii" in strip["Titles"]:
-            strip["Titles"]["Haylo"]=title2.split("-")[-1].strip()
+            strip["Titles"]["Haylo"] = title2.split("-")[-1].strip()
 
-def handle_titles_ookii(strip,sect):
+
+def handle_titles_ookii(strip, sect):
     if "untitled" in strip["Title"].lower():
-        strip["Titles"]={"Ookii":strip["Title"].split("-",1)[-1].strip()}
-    else: #Thank-you Ylimegirl for Dual->Duel Ookii typo-fix
-        strip["Titles"]={"Official":strip["Title"].replace("Dual","Duel").replace("Jemery","Jeremy")}
+        strip["Titles"] = {"Ookii": strip["Title"].split("-", 1)[-1].strip()}
+    else:  #Thank-you Ylimegirl for Dual->Duel Ookii typo-fix
+        strip["Titles"] = {
+            "Official":
+            strip["Title"].replace("Dual", "Duel").replace("Jemery", "Jeremy")
+        }
     del strip["Title"]
-    if sect=="sketch":
+    if sect == "sketch":
         if strip["Id"] in databases.titlebank["datitles"]:
-            strip["Titles"]["DeviantArt"]=databases.titlebank["datitles"][strip["Id"]]
-        strip["SharedDateIndex"]=0
+            strip["Titles"]["DeviantArt"] = databases.titlebank["datitles"][
+                strip["Id"]]
+        strip["SharedDateIndex"] = 0
 
-def find_eid_ookii(strip,sect,date2id):
-    if (sect=="np") and (strip["Date"]=="2005-08-15"):
-        strip["Date"]="2005-08-16" #Error somewhere? It's 16
-    strip["OokiiId"]=strip["Id"]
-    strip["SpecialUrl"]=None
-    strip["DateIndexable"]=1
+
+def find_eid_ookii(strip, sect, date2id):
+    if (sect == "np") and (strip["Date"] == "2005-08-15"):
+        strip["Date"] = "2005-08-16"  #Error somewhere? It's 16
+    strip["OokiiId"] = strip["Id"]
+    strip["SpecialUrl"] = None
+    strip["DateIndexable"] = 1
     try:
-        strip["Id"]=date2id[sect][strip["Date"]]
+        strip["Id"] = date2id[sect][strip["Date"]]
     except KeyError:
-        strip["Id"]=-1#i.e. error
-        if (sect=="sketch") and (strip["Date"] in ("2007-06-26","2007-06-28","2007-06-30")):
+        strip["Id"] = -1  #i.e. error
+        if (sect == "sketch") and (strip["Date"] in ("2007-06-26",
+                                                     "2007-06-28",
+                                                     "2007-06-30")):
             #Dead multi-image entries which did not transfer off Keenspot and have no
             #parallel in the present archives exist and are listed in the Ookii database.
             #Fortunately, the Wayback Machine has us covered.
-            strip["SpecialUrl"]="http://wayback.archive.org/web/20081222223622/egscomics.com/Filler/d/"+strip["Date"].replace("-","")+".html"
-            strip["DateIndexable"]=0
-        elif (sect=="sketch") and (strip["Date"] in ("2012-11-27",)):
+            strip[
+                "SpecialUrl"] = "http://wayback.archive.org/web/20081222223622/egscomics.com/Filler/d/" + strip[
+                    "Date"].replace("-", "") + ".html"
+            strip["DateIndexable"] = 0
+        elif (sect == "sketch") and (strip["Date"] in ("2012-11-27", )):
             #For some bizarre reason, this one is no longer available and lacks a modern lookup ID.
             #It is fortunately displayed on Dan's Tumblr in its entirity.
-            strip["SpecialUrl"]="http://danshive.tumblr.com/post/36647880400/site-link-watching-star-trek-ii-whats-funny"
-            strip["DateIndexable"]=0
+            strip[
+                "SpecialUrl"] = "http://danshive.tumblr.com/post/36647880400/site-link-watching-star-trek-ii-whats-funny"
+            strip["DateIndexable"] = 0
         else:
-            print("Error: cannot find date-id mapping for %s"%strip["Date"], file=sys.stderr)
+            print("Error: cannot find date-id mapping for %s" % strip["Date"],
+                  file=sys.stderr)
 
-def handle_strip_record(strip,sect,classics_db,haylo_db,reddit_links,links_910new):
-    date=strip["Date"]
+
+def handle_strip_record(strip, sect, classics_db, haylo_db, reddit_links,
+                        links_910new):
+    date = strip["Date"]
     #Administrivia about dates and IDs
-    find_eid_ookii(strip,sect,databases.date2id)
+    find_eid_ookii(strip, sect, databases.date2id)
     #Reactions
-    strip["ReactionLinks"]=[]
+    strip["ReactionLinks"] = []
     if date in classics_db[sect]:
         strip["ReactionLinks"].append(classics_db[sect][date])
     if date in databases.suddenlaunch_db[sect]:
-        strip["ReactionLinks"].append((databases.suddenlaunch_db[sect][date],0))
+        strip["ReactionLinks"].append(
+            (databases.suddenlaunch_db[sect][date], 0))
     #Handle title list
-    handle_titles_ookii(strip,sect)
+    handle_titles_ookii(strip, sect)
     #Haylo record if applicable
-    if sect=="story":
-        merge_haylo(strip,haylo_db)
+    if sect == "story":
+        merge_haylo(strip, haylo_db)
     #Et cetera
     if strip["DateIndexable"]:
-        utility.dates_index(strip,databases.dateswork[sect])
+        utility.dates_index(strip, databases.dateswork[sect])
     if strip["Id"] in databases.metadataegs[sect]:
-        strip.update(utility.recdeentity(databases.metadataegs[sect][strip["Id"]]))
+        strip.update(
+            utility.recdeentity(databases.metadataegs[sect][strip["Id"]]))
     if strip["Id"] in reddit_links[sect]:
         strip["ReactionLinks"].append(reddit_links[sect][strip["Id"]])
     if strip["Date"] in links_910new[sect]:
-        utility.merge_reactions(strip["ReactionLinks"],links_910new[sect][strip["Date"]])
-    strip["SharedDateIndex"]=0
+        utility.merge_reactions(strip["ReactionLinks"],
+                                links_910new[sect][strip["Date"]])
+    strip["SharedDateIndex"] = 0
     #Load specific Ookii DB (i.e. beyond the index card)
     databases.load_ookii_record(strip)
     #Characters
     if strip["Characters"]:
-        strip["Characters"]={"Ookii":strip["Characters"]}
+        strip["Characters"] = {"Ookii": strip["Characters"]}
     else:
-        strip["Characters"]={}
-    strip["RecordType"]="Comic"
+        strip["Characters"] = {}
+    strip["RecordType"] = "Comic"
 
-def handle_line(line,sect,classics_db,haylo_db,reddit_links,links_910new):
+
+def handle_line(line, sect, classics_db, haylo_db, reddit_links, links_910new):
     for comic in line["Comics"]:
-        handle_strip_record(comic,sect,classics_db,haylo_db,reddit_links,links_910new)
-    line["RecordType"]="StoryLine"
+        handle_strip_record(comic, sect, classics_db, haylo_db, reddit_links,
+                            links_910new)
+    line["RecordType"] = "StoryLine"
 
-def megadb_generate_initial(classics_db,haylo_db,reddit_links,links_910new):
-    print (">>> megadb_generate_initial")
-    output=[]
-    for sect in ("story","np","sketch"):
-        dat=databases.main_db[sect]
+
+def megadb_generate_initial(classics_db, haylo_db, reddit_links, links_910new):
+    print(">>> megadb_generate_initial")
+    output = []
+    for sect in ("story", "np", "sketch"):
+        dat = databases.main_db[sect]
         for line in dat:
-            handle_line(line,sect,classics_db,haylo_db,reddit_links,links_910new)
-        output.append({"Title":utility.egslink2ookii[sect],"StoryArcs":dat,"RecordType":"Section"})
+            handle_line(line, sect, classics_db, haylo_db, reddit_links,
+                        links_910new)
+        output.append({
+            "Title": utility.egslink2ookii[sect],
+            "StoryArcs": dat,
+            "RecordType": "Section"
+        })
     return output

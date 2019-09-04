@@ -18,7 +18,7 @@
 #     acknowledgment in the product documentation would be appreciated but is not
 #     required.
 #
-#  2. Altered versions in any form must not be misrepresented as being the 
+#  2. Altered versions in any form must not be misrepresented as being the
 #     original work, and neither the name of HarJIT nor the names of authors or
 #     contributors may be used to endorse or promote products derived from this
 #     work without specific prior written permission.
@@ -26,41 +26,50 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
-import sys,utility,databases
+import sys, utility, databases
 
-def megadb_fetch_haylonew(main_db,haylo_additional_hierarchy,haylo_db,links_910new):
-    print (">>> megadb_fetch_haylonew")
-    for name,dates in haylo_additional_hierarchy:
-        db={"Title":": ".join(name.split(" - ",1)),"RecordType":"StoryLine"}
-        comics=[]
+
+def megadb_fetch_haylonew(main_db, haylo_additional_hierarchy, haylo_db,
+                          links_910new):
+    print(">>> megadb_fetch_haylonew")
+    for name, dates in haylo_additional_hierarchy:
+        db = {
+            "Title": ": ".join(name.split(" - ", 1)),
+            "RecordType": "StoryLine"
+        }
+        comics = []
         for date in dates:
-            date,title,fora=haylo_db[date]
-            strip={}
+            date, title, fora = haylo_db[date]
+            strip = {}
             if title.split("-")[-1].strip():
                 #Would rather \x96 but...
-                strip["Titles"]={"Haylo":title.split("-")[-1].strip()}
+                strip["Titles"] = {"Haylo": title.split("-")[-1].strip()}
             else:
-                strip["Titles"]={}
-            strip["Date"]=date
+                strip["Titles"] = {}
+            strip["Date"] = date
             try:
-                strip["Id"]=databases.date2id["story"][date]
+                strip["Id"] = databases.date2id["story"][date]
             except:
-                strip["Id"]=-1#i.e. error
-                print("Error: cannot find date-id mapping for %s"%date, file=sys.stderr)
-            strip["OokiiId"]=-1
-            strip["ReactionLinks"]=fora
+                strip["Id"] = -1  #i.e. error
+                print("Error: cannot find date-id mapping for %s" % date,
+                      file=sys.stderr)
+            strip["OokiiId"] = -1
+            strip["ReactionLinks"] = fora
             if strip["Date"] in links_910new["story"]:
-                utility.merge_reactions(strip["ReactionLinks"],links_910new["story"][strip["Date"]])
+                utility.merge_reactions(strip["ReactionLinks"],
+                                        links_910new["story"][strip["Date"]])
             #Date indexing (XXX)
-            utility.dates_index(strip,databases.dateswork["story"])
+            utility.dates_index(strip, databases.dateswork["story"])
             if strip["Id"] in databases.metadataegs["story"]:
-                strip.update(utility.recdeentity(databases.metadataegs["story"][strip["Id"]]))
-            strip["SharedDateIndex"]=0
-            strip["FileNameTitle"]=None
-            strip["Section"]="Story"
-            strip["Characters"]=None
-            strip["RecordType"]="Comic"
+                strip.update(
+                    utility.recdeentity(
+                        databases.metadataegs["story"][strip["Id"]]))
+            strip["SharedDateIndex"] = 0
+            strip["FileNameTitle"] = None
+            strip["Section"] = "Story"
+            strip["Characters"] = None
+            strip["RecordType"] = "Comic"
             comics.append(strip)
-        db["Comics"]=comics
-        utility.specific_section(main_db,"story")["StoryArcs"].append(db)
+        db["Comics"] = comics
+        utility.specific_section(main_db, "story")["StoryArcs"].append(db)
     return main_db

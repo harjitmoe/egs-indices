@@ -21,7 +21,7 @@
 #     acknowledgment in the product documentation would be appreciated but is not
 #     required.
 #
-#  2. Altered versions in any form must not be misrepresented as being the 
+#  2. Altered versions in any form must not be misrepresented as being the
 #     original work, and neither the name of HarJIT nor the names of authors or
 #     contributors may be used to endorse or promote products derived from this
 #     work without specific prior written permission.
@@ -32,24 +32,50 @@
 import utility
 import json
 
-def formurl(idst):
-    ext = "_1280x960.gif" if int(idst,10) in gifs else "_1280x960.jpg"
-    return "http://egscomics.com/bg/egs_bg_"+idst+ext
 
-gifs=[0,1,2,3,4,5,6,7,826,27,28,29,30,31,32,33,34,35,36,38,45,48,54,55]
+def formurl(idst):
+    ext = "_1280x960.gif" if int(idst, 10) in gifs else "_1280x960.jpg"
+    return "http://egscomics.com/bg/egs_bg_" + idst + ext
+
+
+gifs = [
+    0, 1, 2, 3, 4, 5, 6, 7, 826, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 38,
+    45, 48, 54, 55
+]
+
 
 def megadb_pull_bg(alldat):
     print(">>> megadb_pull_bg")
-    f=open("BgNames.txt","rU")
-    b=json.load(f)
+    f = open("BgNames.txt", "rU")
+    b = json.load(f)
     f.close()
-    f=open("BgDescriptions.txt","rU")
-    c=json.load(f)
+    f = open("BgDescriptions.txt", "rU")
+    c = json.load(f)
     f.close()
-    comics=[]
+    comics = []
     for i in sorted(c.keys()):
-        title=b[i]
-        comment=c[i]
-        comics.append({"ReactionLinks": [], "SharedDateIndex": 0, "OokiiId": -1, "DateIndexable": False, "Section": "Backgrounds", "RecordType": "Comic", "Titles": {"Official": title}, "Characters": None, "Date": "?", "Commentary": comment, "Transcript": None, "Id": int(i,10), "SpecialUrl": formurl(i)})
-    alldat.append({"Title":"Backgrounds","StoryArcs":comics,"RecordType":"Section"})
+        title = b[i]
+        comment = c[i]
+        comics.append({
+            "ReactionLinks": [],
+            "SharedDateIndex": 0,
+            "OokiiId": -1,
+            "DateIndexable": False,
+            "Section": "Backgrounds",
+            "RecordType": "Comic",
+            "Titles": {
+                "Official": title
+            },
+            "Characters": None,
+            "Date": "?",
+            "Commentary": comment,
+            "Transcript": None,
+            "Id": int(i, 10),
+            "SpecialUrl": formurl(i)
+        })
+    alldat.append({
+        "Title": "Backgrounds",
+        "StoryArcs": comics,
+        "RecordType": "Section"
+    })
     return alldat

@@ -21,7 +21,7 @@
 #     acknowledgment in the product documentation would be appreciated but is not
 #     required.
 #
-#  2. Altered versions in any form must not be misrepresented as being the 
+#  2. Altered versions in any form must not be misrepresented as being the
 #     original work, and neither the name of HarJIT nor the names of authors or
 #     contributors may be used to endorse or promote products derived from this
 #     work without specific prior written permission.
@@ -33,16 +33,22 @@ import utility
 
 #SB2Year
 
+
 def handle_strip_record(strip, by_year, by_year_order, yovr=None):
-    date=strip["Date"]
-    year=yovr or date[:4]
+    date = strip["Date"]
+    year = yovr or date[:4]
     if year == "2013":
         year = "2013 [- Jul 2014]"
     if year in by_year_order:
         by_year[year]["Comics"].append(strip)
     else:
-        by_year[year]={"Title":year,"Comics":[strip],"RecordType":"StoryLine"}
+        by_year[year] = {
+            "Title": year,
+            "Comics": [strip],
+            "RecordType": "StoryLine"
+        }
         by_year_order.append(year)
+
 
 def handle_arc(arc, by_year, by_year_order):
     print(">>>>", arc["Title"])
@@ -50,51 +56,65 @@ def handle_arc(arc, by_year, by_year_order):
     if arc["Title"] not in ("Miscellaneous", "Sketch Week #1"):
         yovr = arc["Title"]
     for i in arc["Comics"]:
-        handle_strip_record(i,by_year,by_year_order,yovr)
+        handle_strip_record(i, by_year, by_year_order, yovr)
+
 
 def megadb_sb2year(main_db):
     print(">>> megadb_sb2year (megadb_indextransforms)")
-    by_year={}
-    by_year_order=[]
-    for arc in utility.specific_section(main_db,"sketch")["StoryArcs"]:
+    by_year = {}
+    by_year_order = []
+    for arc in utility.specific_section(main_db, "sketch")["StoryArcs"]:
         handle_arc(arc, by_year, by_year_order)
-    output=[]
+    output = []
     for year in by_year_order:
         output.append(by_year[year])
-    utility.specific_section(main_db,"sketch")["StoryArcs"]=output
+    utility.specific_section(main_db, "sketch")["StoryArcs"] = output
     return main_db
 
+
 #ArcLine
+
 
 def handle_line(line, arcs, curatitl_p):
     print(line["Title"])
     if line["Title"].count(": "):
-        atitl,ltitl=line["Title"].split(": ",1)
-        if atitl!=curatitl_p[0]:
+        atitl, ltitl = line["Title"].split(": ", 1)
+        if atitl != curatitl_p[0]:
             if atitl in curatitl_p[1]:
-                curatitl_p[2]=arcs.index(curatitl_p[1][atitl])
+                curatitl_p[2] = arcs.index(curatitl_p[1][atitl])
             else:
-                myne={"Title":atitl,"StoryLines":[],"RecordType":"StoryArc"}
+                myne = {
+                    "Title": atitl,
+                    "StoryLines": [],
+                    "RecordType": "StoryArc"
+                }
                 arcs.append(myne)
-                curatitl_p[1][atitl]=myne
-                curatitl_p[2]=-1
-            curatitl_p[0]=atitl
-        arcs[curatitl_p[2]]["StoryLines"].append({"Title":ltitl,"Comics":line["Comics"],"RecordType":"StoryLine"})
+                curatitl_p[1][atitl] = myne
+                curatitl_p[2] = -1
+            curatitl_p[0] = atitl
+        arcs[curatitl_p[2]]["StoryLines"].append({
+            "Title": ltitl,
+            "Comics": line["Comics"],
+            "RecordType": "StoryLine"
+        })
     else:
-        curatitl_p[0]=""
+        curatitl_p[0] = ""
         arcs.append(line)
+
 
 def megadb_arcline(main_db):
     print(">>> megadb_arcline (megadb_indextransforms)")
-    arcs=[]
-    curatitl_p=["",{},-1] #functioning as struct of pointers.
-    arcs_in=utility.specific_section(main_db,"story")["StoryArcs"]
+    arcs = []
+    curatitl_p = ["", {}, -1]  #functioning as struct of pointers.
+    arcs_in = utility.specific_section(main_db, "story")["StoryArcs"]
     for arc in arcs_in:
-        handle_line(arc,arcs,curatitl_p)
-    utility.specific_section(main_db,"story")["StoryArcs"]=arcs
+        handle_line(arc, arcs, curatitl_p)
+    utility.specific_section(main_db, "story")["StoryArcs"] = arcs
     return main_db
 
+
 #
+
 
 def megadb_indextransforms(alldat):
     return megadb_arcline(megadb_sb2year(alldat))

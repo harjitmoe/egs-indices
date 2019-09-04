@@ -2,7 +2,7 @@
 #
 # This file is made available under the CC0 Public Domain Dedication.  To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights to this file to the public domain worldwide. This file is distributed without any warranty.
 #
-# You may have received a copy of the CC0 Public Domain Dedication along with this file. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>. 
+# You may have received a copy of the CC0 Public Domain Dedication along with this file. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 # -----------------------------------------------------------------
 #
@@ -12,37 +12,46 @@
 
 import os, json
 
+
 def getdate_st(fn):
-    pl=len("ST-2010-04-23-")
-    r = (fn[3:][:10], (int(fn[pl:][:5]) if fn[pl:][:5].strip("xn") else None), fn[pl+6:][:-4].split("-SLUG-", 1)[0].split("SLUG-", 1)[0])
+    pl = len("ST-2010-04-23-")
+    r = (fn[3:][:10], (int(fn[pl:][:5]) if fn[pl:][:5].strip("xn") else None),
+         fn[pl + 6:][:-4].split("-SLUG-", 1)[0].split("SLUG-", 1)[0])
     if "-SLUG-" in fn:
-        r += (fn.split("-SLUG-", 1)[1].split(".", 1)[0],)
+        r += (fn.split("-SLUG-", 1)[1].split(".", 1)[0], )
     return (fn[3:][:10] + "/" + fn[pl:][:5], r)
+
 
 def getdate_sb(fn):
-    pl=len("NP-2010-04-23-")
-    r = (fn[3:][:10], (int(fn[pl:][:5]) if fn[pl:][:5].strip("xn") else None), fn[pl+6:][:-4].split("-SLUG-", 1)[0].split("SLUG-", 1)[0])
+    pl = len("NP-2010-04-23-")
+    r = (fn[3:][:10], (int(fn[pl:][:5]) if fn[pl:][:5].strip("xn") else None),
+         fn[pl + 6:][:-4].split("-SLUG-", 1)[0].split("SLUG-", 1)[0])
     if "-SLUG-" in fn:
-        r += (fn.split("-SLUG-", 1)[1].split(".", 1)[0],)
+        r += (fn.split("-SLUG-", 1)[1].split(".", 1)[0], )
     return (fn[3:][:10] + "/" + fn[pl:][:5], r)
+
 
 def getdate_np(fn):
-    pl=len("NP-2010-04-23-")
-    r = (fn[3:][:10], (int(fn[pl:][:5]) if fn[pl:][:5].strip("xn") else None), fn[pl+6:][:-4].split("-SLUG-", 1)[0].split("SLUG-", 1)[0])
+    pl = len("NP-2010-04-23-")
+    r = (fn[3:][:10], (int(fn[pl:][:5]) if fn[pl:][:5].strip("xn") else None),
+         fn[pl + 6:][:-4].split("-SLUG-", 1)[0].split("SLUG-", 1)[0])
     if "-SLUG-" in fn:
-        r += (fn.split("-SLUG-", 1)[1].split(".", 1)[0],)
+        r += (fn.split("-SLUG-", 1)[1].split(".", 1)[0], )
     return (fn[3:][:10] + "/" + fn[pl:][:5], r)
 
+
 def extract_newfiles():
-    print (">>> extract_newfiles")
-    if not os.path.exists("../../egs/0003 - (Sketchbook and Extras)/0001 - Filler Sketchbook"):
-        print ("Not running on HarJIT's machine, not regenerating NewFiles.txt")
+    print(">>> extract_newfiles")
+    if not os.path.exists(
+            "../../egs/0003 - (Sketchbook and Extras)/0001 - Filler Sketchbook"
+    ):
+        print("Not running on HarJIT's machine, not regenerating NewFiles.txt")
         return
     #
-    stmap=[]
-    sbmap=[]
-    npmap=[]
-    for r,ds,fs in os.walk("../../egs"):
+    stmap = []
+    sbmap = []
+    npmap = []
+    for r, ds, fs in os.walk("../../egs"):
         if ".git" not in r:
             for i in fs:
                 if i.startswith("ST-"):
@@ -51,10 +60,31 @@ def extract_newfiles():
                     sbmap.append(i)
                 elif i.startswith("NP-"):
                     npmap.append(i)
-    stmap=dict(list(map(getdate_st,[i for i in stmap if not i.lower().count("-original") and not i.lower().count("-pagecut") and not i.lower().count("-pageextend") and not i.lower().count("-remastered-sb")])))
-    sbmap=dict(list(map(getdate_sb,[i for i in sbmap if i.count("-00") or i.count("-SLUG-")])))
-    npmap=dict(list(map(getdate_np,[i for i in npmap if not i.lower().count("-original") and not i.lower().count("-remastered-sb") and not i.lower().count("-colour-official")])))
-    open("NewFiles.txt","w").write(json.dumps({"story":stmap,"sketch":sbmap,"np":npmap}))
+    stmap = dict(
+        list(
+            map(getdate_st, [
+                i for i in stmap if not i.lower().count("-original")
+                and not i.lower().count("-pagecut") and not i.lower().count(
+                    "-pageextend") and not i.lower().count("-remastered-sb")
+            ])))
+    sbmap = dict(
+        list(
+            map(getdate_sb,
+                [i for i in sbmap if i.count("-00") or i.count("-SLUG-")])))
+    npmap = dict(
+        list(
+            map(getdate_np, [
+                i for i in npmap if not i.lower().count("-original")
+                and not i.lower().count("-remastered-sb")
+                and not i.lower().count("-colour-official")
+            ])))
+    open("NewFiles.txt",
+         "w").write(json.dumps({
+             "story": stmap,
+             "sketch": sbmap,
+             "np": npmap
+         }))
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     extract_newfiles()
