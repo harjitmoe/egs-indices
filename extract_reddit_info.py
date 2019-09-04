@@ -89,6 +89,11 @@ def extract_reddit_info():
                 b = b.split(">", 1)[1]
             else:
                 continue  #Cannot parse, forget it.
+            #
+            if type == "story" and id == 2502:
+                # ID 2502 does not truly exist, its use is a side-effect of the new system ignoring
+                # unknown IDs so when it was the current page that went unnoticed.
+                id = "SLUG-2018-05-23"
             title, b = b.split('</a>', 1)
             title = utility.deentity(title, 2)
             if "/user/" in b[:400]:
