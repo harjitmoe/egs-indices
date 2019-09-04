@@ -33,7 +33,6 @@ import utility
 import json
 
 def formurl(idst):
-    #Not eval(idst) because starting a number with 0 means octal in Py2 (a nice gotcha for newbies) and is invalid in Py3
     ext = "_1280x960.gif" if int(idst,10) in gifs else "_1280x960.jpg"
     return "http://egscomics.com/bg/egs_bg_"+idst+ext
 
