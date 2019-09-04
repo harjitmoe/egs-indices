@@ -335,6 +335,12 @@ def identifier(strip):
     return "SLUG-" + strip["UrlSlug"]
 
 
+def open_alldat():
+    # Used when running / debugging exporters individually
+    import json
+    return json.load(open(".build/AllMegaDb.txt", "rU"))
+
+
 def openrf(fn, *mode):
     import os
     try:

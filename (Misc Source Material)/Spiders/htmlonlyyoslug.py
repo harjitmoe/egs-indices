@@ -98,6 +98,9 @@ for interface in ("comic","egsnp","sketchbook"):
     if prefix not in list(database.keys()):
         database[prefix] = {}
     i = database[prefix].get("<LAST>", firstnewslugs[prefix])
+    if (prefix == "story") and (2502 in database[prefix]):
+        # See comments in megadb_fetch_newfiles.py for why we're burning this one.
+        del database[prefix][2502]
     while 1:
         try:
             print(prefix, i)

@@ -77,9 +77,14 @@ def megadb_fetch_newfiles(alldat, reddit_titles, reddit_links, links_910new):
                 strip["UrlSlug"] = source_strip[3]
             assert (strip["Id"] is not None) or ("UrlSlug" in strip), strip
             if utility.identifier(strip) in databases.metadataegs[sect]:
+                siid = utility.identifier(strip)
+                if siid == 2502:
+                    # Due to the unknown-URL-to-current-page behaviour of EGS, the Reddit data
+                    # uses a 2502 ID for 2018-05-23, but the metadataegs actually uses it for
+                    # 2018-05-25 since that was the current page at the time…
+                    siid = "SLUG-" + strip["UrlSlug"]
                 strip.update(
-                    utility.recdeentity(databases.metadataegs[sect][
-                        utility.identifier(strip)]))
+                    utility.recdeentity(databases.metadataegs[sect][siid]))
             strip["OokiiId"] = -1
             strip["FileNameTitle"] = source_strip[2]
             strip["Section"] = utility.egslink2ookii[sect]

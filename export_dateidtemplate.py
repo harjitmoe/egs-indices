@@ -42,6 +42,8 @@ def export_dateidtemplate(alldat):
             for line in (arc["StoryLines"]
                          if arc["RecordType"] == "StoryArc" else (arc, )):
                 for comic in line["Comics"]:
+                    if comic["Id"] is None:
+                        continue
                     date = comic["Date"]
                     if comic['SharedDateIndex']:
                         date += "-" + str(comic['SharedDateIndex'])

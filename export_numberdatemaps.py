@@ -112,6 +112,8 @@ def export_numberdatemaps(alldat):
                     comic["-numberidmap-numero"] = numero
                     if "DateInBrowserTitle" not in comic:
                         comic["DateInBrowserTitle"] = "(Error)"
+                    if comic["Id"] is None:
+                        continue
                     if (comic["Id"] != lastid + 1):
                         if (last != None) and (last != lastprinted_nem):
                             print_infos_nem(nem, last)

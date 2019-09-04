@@ -246,8 +246,6 @@ This only catalogues those found using ID-lookup. Those found using date lookup 
 |-
 |490||2016-07-25||2016-06-25
 |-
-|494||2016-08-03||2016-08-04
-|-
 |507||2016-09-02||2016-08-02
 |-
 |509||2016-09-07||2016-09-16

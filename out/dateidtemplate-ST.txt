@@ -2508,6 +2508,7 @@
 |2018-05-16=2499
 |2018-05-18=2500
 |2018-05-21=2501
+|2018-05-23=2502
 }}</includeonly><noinclude>{{templatenotice}}
 
 This database template is the date-to-ID mapping for the [[Structural Nomenclature|Main Story]] section.
