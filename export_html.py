@@ -44,7 +44,7 @@ def get_section(record):
 def get_comid(record):
     if record["Id"] is None and "UrlSlug" in record:
         return record["UrlSlug"]
-    elif (record["Id"] is not None) and record["Id"]>0:#i.e. not an error code
+    elif (record["Id"] is not None) and (record["Id"] >= 0): # i.e. not an error code (may be 0 in BG section)
         return repr(record["Id"])
     else:
         return record["Date"]
@@ -133,7 +133,7 @@ def output_html(outfile,record,parent=None):
         print("<p style='margin: 0 0 1ex 0'><a id='"+get_id(comic)+"'>(anchor)</a></p><h4 style='margin: 0 0 1ex 0'>"+utility.get_title_aggregate(comic)+"</h4>", file=outfile)
         print("<p style='margin: 0 0 1ex 0'><a href='#"+get_id(parent)+"'>(up one level)</a></p>", file=outfile)
         if "UrlSlug" in comic:
-            print("<p style='margin: 0 0 1ex 0'>URL Slug: <a href='http://egscomics.com/"+utility.ookii2url2018[comic["Section"]]+"/"+comic["UrlSlug"]+"'>"+comic["UrlSlug"]+"</a></p>", file=outfile)
+            print("<p style='margin: 0 0 1ex 0'>URL Slug: <a href='http://egscomics.com/"+utility.ookii2url2018[comic["Section"]]+"/"+comic["UrlSlug"]+"'>"+utility.ookii2url2018[comic["Section"]]+"/"+comic["UrlSlug"]+"</a></p>", file=outfile)
         if comic["DateIndexable"]:
             print("<p style='margin: 0 0 1ex 0'>Date: <a href='http://egscomics.com/"+utility.ookii2url[comic["Section"]]+"?date="+comic["Date"]+"'>"+comic["Date"]+"</a></p>", file=outfile)
         else:
@@ -155,11 +155,11 @@ def output_html(outfile,record,parent=None):
             if special_website.startswith("http://"):
                 special_website=special_website.split("://",1)[1]
             special_website=special_website.split("/")[0]
-            if comic["Id"]>0:#i.e. not an error code
+            if (comic["Id"] is not None) and (comic["Id"] >= 0): # i.e. not an error code (will be zero for BG 0000)
                 print("<p style='margin: 0 0 1ex 0'>Archival ID: "+comic["Section"]+" "+repr(comic["Id"])+"</p>", file=outfile)
             print("<p style='margin: 0 0 1ex 0'>Unfortunately absent from current archives, or at least the interface thereof, possibly for technical reasons.  Accessible over "+special_website+" <a href='"+comic["SpecialUrl"]+"'>here</a>.</p>", file=outfile)
         elif ("Id" in comic) and (comic["Id"] is not None) and (comic["Id"] >= 0): # i.e. not an error code
-            print("<p style='margin: 0 0 1ex 0'>Archival ID: <a href='http://egscomics.com/"+{"Story":"index.php","EGS:NP":"egsnp.php","Sketchbook":"sketchbook.php"}[comic["Section"]]+"?id="+repr(comic["Id"])+"'>"+comic["Section"]+" "+repr(comic["Id"])+"</a></p>", file=outfile)
+            print("<p style='margin: 0 0 1ex 0'>Archival ID: <a href='http://egscomics.com/"+utility.ookii2url[comic["Section"]]+"?id="+repr(comic["Id"])+"'>"+comic["Section"]+" "+repr(comic["Id"])+"</a></p>", file=outfile)
         elif "UrlSlug" not in comic:
             print("<p style='margin: 0 0 1ex 0'>Unable to determine archival ID or slug.  Lookup by date may or may not work.</p>", file=outfile)
         else:
