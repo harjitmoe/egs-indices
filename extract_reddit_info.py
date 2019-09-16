@@ -26,8 +26,8 @@
 #  3. The text of this notice must be included, unaltered, with any distribution.
 #
 
+import os
 import utility
-
 
 def extract_reddit_info():
     print(">>> extract_reddit_info")
@@ -37,7 +37,6 @@ def extract_reddit_info():
     reddit_titles = {"story": {}, "sketch": {}, "np": {}}
     reddit_links = {"story": {}, "sketch": {}, "np": {}}
     #
-    import os
     files = os.listdir("Reddit Titles")
     for file in files:
         f = open("Reddit Titles/" + file)
@@ -50,7 +49,7 @@ def extract_reddit_info():
         b = utility.deentity(b, 3)
         f.close()
         b = b.replace("https://", "http://")
-        if initiator not in b:
+        if (initiator not in b) and not (file.endswith(".py")):
             open("dump.txt", "w").write(b)
             raise ValueError(file)
         while initiator in b:

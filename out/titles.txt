@@ -2670,7 +2670,12 @@
 |2019-08-28 = Twenty Questions (danshive) (Reddit)
 |2019-08-30 = SUDDENLY WORLD BUILDING (danshive) (Reddit)
 |2019-09-02 = Getting to know you... (danshive) (Reddit)
-|2019-09-04 = 
+|2019-09-04 = The Justin Show Starring Justin (danshive) (Reddit)
+|2019-09-06 = The everyone but Justin show (danshive) (Reddit)
+|2019-09-09 = But are you Justin strong? (danshive) (Reddit)
+|2019-09-11 = Geeking out (danshive) (Reddit)
+|2019-09-13 = Over 9,000 Corgi Puppies (danshive) (Reddit)
+|2019-09-16 = Sorry Diane Is Not A Squirrel (danshive) (Reddit)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic (Official)
@@ -5353,7 +5358,12 @@
 |None = Twenty Questions (danshive) (Reddit)
 |None = SUDDENLY WORLD BUILDING (danshive) (Reddit)
 |None = Getting to know you... (danshive) (Reddit)
-|None = 
+|None = The Justin Show Starring Justin (danshive) (Reddit)
+|None = The everyone but Justin show (danshive) (Reddit)
+|None = But are you Justin strong? (danshive) (Reddit)
+|None = Geeking out (danshive) (Reddit)
+|None = Over 9,000 Corgi Puppies (danshive) (Reddit)
+|None = Sorry Diane Is Not A Squirrel (danshive) (Reddit)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -8277,6 +8287,12 @@
 |2019-08-28 = Twenty Questions (danshive)
 |2019-08-30 = SUDDENLY WORLD BUILDING (danshive)
 |2019-09-02 = Getting to know you... (danshive)
+|2019-09-04 = The Justin Show Starring Justin (danshive)
+|2019-09-06 = The everyone but Justin show (danshive)
+|2019-09-09 = But are you Justin strong? (danshive)
+|2019-09-11 = Geeking out (danshive)
+|2019-09-13 = Over 9,000 Corgi Puppies (danshive)
+|2019-09-16 = Sorry Diane Is Not A Squirrel (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1890 = Today's comic is gay (riking27)
@@ -9042,6 +9058,12 @@
 |None = Twenty Questions (danshive)
 |None = SUDDENLY WORLD BUILDING (danshive)
 |None = Getting to know you... (danshive)
+|None = The Justin Show Starring Justin (danshive)
+|None = The everyone but Justin show (danshive)
+|None = But are you Justin strong? (danshive)
+|None = Geeking out (danshive)
+|None = Over 9,000 Corgi Puppies (danshive)
+|None = Sorry Diane Is Not A Squirrel (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |haylo = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -13147,7 +13169,12 @@
 |2019-08-28 = Twenty Questions (danshive)
 |2019-08-30 = SUDDENLY WORLD BUILDING (danshive)
 |2019-09-02 = Getting to know you... (danshive)
-|2019-09-04 = 
+|2019-09-04 = The Justin Show Starring Justin (danshive)
+|2019-09-06 = The everyone but Justin show (danshive)
+|2019-09-09 = But are you Justin strong? (danshive)
+|2019-09-11 = Geeking out (danshive)
+|2019-09-13 = Over 9,000 Corgi Puppies (danshive)
+|2019-09-16 = Sorry Diane Is Not A Squirrel (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -15830,7 +15857,12 @@
 |None = Twenty Questions (danshive)
 |None = SUDDENLY WORLD BUILDING (danshive)
 |None = Getting to know you... (danshive)
-|None = 
+|None = The Justin Show Starring Justin (danshive)
+|None = The everyone but Justin show (danshive)
+|None = But are you Justin strong? (danshive)
+|None = Geeking out (danshive)
+|None = Over 9,000 Corgi Puppies (danshive)
+|None = Sorry Diane Is Not A Squirrel (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -19692,7 +19724,12 @@
 |2019-08-28 = Twenty Questions (danshive)
 |2019-08-30 = SUDDENLY WORLD BUILDING (danshive)
 |2019-09-02 = Getting to know you... (danshive)
-|2019-09-04 = 
+|2019-09-04 = The Justin Show Starring Justin (danshive)
+|2019-09-06 = The everyone but Justin show (danshive)
+|2019-09-09 = But are you Justin strong? (danshive)
+|2019-09-11 = Geeking out (danshive)
+|2019-09-13 = Over 9,000 Corgi Puppies (danshive)
+|2019-09-16 = Sorry Diane Is Not A Squirrel (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -22375,7 +22412,12 @@
 |None = Twenty Questions (danshive)
 |None = SUDDENLY WORLD BUILDING (danshive)
 |None = Getting to know you... (danshive)
-|None = 
+|None = The Justin Show Starring Justin (danshive)
+|None = The everyone but Justin show (danshive)
+|None = But are you Justin strong? (danshive)
+|None = Geeking out (danshive)
+|None = Over 9,000 Corgi Puppies (danshive)
+|None = Sorry Diane Is Not A Squirrel (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -25053,7 +25095,12 @@
 |2019-08-28 = Twenty Questions (danshive)
 |2019-08-30 = SUDDENLY WORLD BUILDING (danshive)
 |2019-09-02 = Getting to know you... (danshive)
-|2019-09-04 = 
+|2019-09-04 = The Justin Show Starring Justin (danshive)
+|2019-09-06 = The everyone but Justin show (danshive)
+|2019-09-09 = But are you Justin strong? (danshive)
+|2019-09-11 = Geeking out (danshive)
+|2019-09-13 = Over 9,000 Corgi Puppies (danshive)
+|2019-09-16 = Sorry Diane Is Not A Squirrel (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -27736,7 +27783,12 @@
 |None = Twenty Questions (danshive)
 |None = SUDDENLY WORLD BUILDING (danshive)
 |None = Getting to know you... (danshive)
-|None = 
+|None = The Justin Show Starring Justin (danshive)
+|None = The everyone but Justin show (danshive)
+|None = But are you Justin strong? (danshive)
+|None = Geeking out (danshive)
+|None = Over 9,000 Corgi Puppies (danshive)
+|None = Sorry Diane Is Not A Squirrel (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -38461,6 +38513,10 @@
 |2019-08-28 = A Hero Named Susan (danshive) (Reddit)
 |2019-08-30 = You Have To Be A Hero (danshive) (Reddit)
 |2019-09-02 = Bugs! No, not the wabbit (danshive) (Reddit)
+|2019-09-06 = The Magic Hour (danshive) (Reddit)
+|2019-09-09 = Power Up (danshive) (Reddit)
+|2019-09-11 = Wow (danshive) (Reddit)
+|2019-09-13 = Moral Choice Incoming (danshive) (Reddit)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)
@@ -39425,6 +39481,10 @@
 |None = A Hero Named Susan (danshive) (Reddit)
 |None = You Have To Be A Hero (danshive) (Reddit)
 |None = Bugs! No, not the wabbit (danshive) (Reddit)
+|None = The Magic Hour (danshive) (Reddit)
+|None = Power Up (danshive) (Reddit)
+|None = Wow (danshive) (Reddit)
+|None = Moral Choice Incoming (danshive) (Reddit)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -40659,6 +40719,10 @@
 |2019-08-28 = A Hero Named Susan (danshive)
 |2019-08-30 = You Have To Be A Hero (danshive)
 |2019-09-02 = Bugs! No, not the wabbit (danshive)
+|2019-09-06 = The Magic Hour (danshive)
+|2019-09-09 = Power Up (danshive)
+|2019-09-11 = Wow (danshive)
+|2019-09-13 = Moral Choice Incoming (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |180 = Farewell Gods of Curling! (ScorpSt)
@@ -41427,6 +41491,10 @@
 |None = A Hero Named Susan (danshive)
 |None = You Have To Be A Hero (danshive)
 |None = Bugs! No, not the wabbit (danshive)
+|None = The Magic Hour (danshive)
+|None = Power Up (danshive)
+|None = Wow (danshive)
+|None = Moral Choice Incoming (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |haylo = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -42397,6 +42465,10 @@
 |2019-08-28 = A Hero Named Susan (danshive)
 |2019-08-30 = You Have To Be A Hero (danshive)
 |2019-09-02 = Bugs! No, not the wabbit (danshive)
+|2019-09-06 = The Magic Hour (danshive)
+|2019-09-09 = Power Up (danshive)
+|2019-09-11 = Wow (danshive)
+|2019-09-13 = Moral Choice Incoming (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -43361,6 +43433,10 @@
 |None = A Hero Named Susan (danshive)
 |None = You Have To Be A Hero (danshive)
 |None = Bugs! No, not the wabbit (danshive)
+|None = The Magic Hour (danshive)
+|None = Power Up (danshive)
+|None = Wow (danshive)
+|None = Moral Choice Incoming (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -44399,6 +44475,10 @@
 |2019-08-28 = A Hero Named Susan (danshive)
 |2019-08-30 = You Have To Be A Hero (danshive)
 |2019-09-02 = Bugs! No, not the wabbit (danshive)
+|2019-09-06 = The Magic Hour (danshive)
+|2019-09-09 = Power Up (danshive)
+|2019-09-11 = Wow (danshive)
+|2019-09-13 = Moral Choice Incoming (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -45363,6 +45443,10 @@
 |None = A Hero Named Susan (danshive)
 |None = You Have To Be A Hero (danshive)
 |None = Bugs! No, not the wabbit (danshive)
+|None = The Magic Hour (danshive)
+|None = Power Up (danshive)
+|None = Wow (danshive)
+|None = Moral Choice Incoming (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -46741,6 +46825,10 @@
 |2019-08-28 = A Hero Named Susan (danshive)
 |2019-08-30 = You Have To Be A Hero (danshive)
 |2019-09-02 = Bugs! No, not the wabbit (danshive)
+|2019-09-06 = The Magic Hour (danshive)
+|2019-09-09 = Power Up (danshive)
+|2019-09-11 = Wow (danshive)
+|2019-09-13 = Moral Choice Incoming (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = XYC
@@ -47705,6 +47793,10 @@
 |None = A Hero Named Susan (danshive)
 |None = You Have To Be A Hero (danshive)
 |None = Bugs! No, not the wabbit (danshive)
+|None = The Magic Hour (danshive)
+|None = Power Up (danshive)
+|None = Wow (danshive)
+|None = Moral Choice Incoming (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}

@@ -42,9 +42,7 @@ def getdate_np(fn):
 
 def extract_newfiles():
     print(">>> extract_newfiles")
-    if not os.path.exists(
-            "../../egs/0003 - (Sketchbook and Extras)/0001 - Filler Sketchbook"
-    ):
+    if not os.path.exists("../../egs/0003 - (Sketchbook and Extras)/0001 - Filler Sketchbook"):
         print("Not running on HarJIT's machine, not regenerating NewFiles.txt")
         return
     #
