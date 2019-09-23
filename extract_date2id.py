@@ -58,7 +58,7 @@ def extract_date2id():
                 "story": stmap,
                 "sketch": sbmap,
                 "np": npmap
-            }))
+            }, sort_keys=True))
 
 
 if __name__ == "__main__":

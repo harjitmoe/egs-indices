@@ -40,8 +40,8 @@ def extract_bg_title_db():
             dbt[id] = text
 
     if db and dbt:
-        open("BgNames.txt", "w").write(json.dumps(db))
-        open("BgDescriptions.txt", "w").write(json.dumps(dbt))
+        open("BgNames.txt", "w").write(json.dumps(db, sort_keys=True))
+        open("BgDescriptions.txt", "w").write(json.dumps(dbt, sort_keys=True))
 
 
 if __name__ == "__main__":

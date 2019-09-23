@@ -103,7 +103,12 @@ def megadb_fetch_newfiles(alldat, reddit_titles, reddit_links, links_910new):
                 }  #For now
             else:
                 uuu = utility.alphabetical_id(strip["FileNameTitle"])
-                if uuu and uuu == utility.alphabetical_id(reddit_titles[sect][
+                rt = reddit_titles[sect][utility.identifier(strip)]
+                if rt.endswith(" (danshive)"): # Use Dan's own Reddit titles as official.
+                    strip["Titles"] = {
+                        "Official": rt[:-len(" (danshive)")]
+                    }
+                elif uuu and uuu == utility.alphabetical_id(reddit_titles[sect][
                         utility.identifier(strip)][::-1].split("( ",
                                                                1)[1][::-1]):
                     strip["Titles"] = {
@@ -112,7 +117,7 @@ def megadb_fetch_newfiles(alldat, reddit_titles, reddit_links, links_910new):
                     }
                 else:
                     strip["Titles"] = {
-                        "Reddit": reddit_titles[sect][utility.identifier(strip)]
+                        "Reddit": rt
                     }
             if ("HtmlComicTitle" in strip) and strip["HtmlComicTitle"] and (
                         strip["Id"] is not None):

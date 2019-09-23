@@ -16,7 +16,7 @@ import json, utility
 def export_json(dat):
     print(">>> export_json")
     f = open(".build/AllMegaDb.txt", "w")
-    json.dump(dat, f)
+    json.dump(dat, f, sort_keys=True)
     f.close()
 
 

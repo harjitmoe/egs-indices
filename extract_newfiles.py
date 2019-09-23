@@ -82,7 +82,7 @@ def extract_newfiles():
              "story": stmap,
              "sketch": sbmap,
              "np": npmap
-         }))
+         }, sort_keys=True))
 
 
 if __name__ == "__main__":
