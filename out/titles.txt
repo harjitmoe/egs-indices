@@ -2676,6 +2676,9 @@
 |2019-09-11 = Geeking out (danshive) (Reddit)
 |2019-09-13 = Over 9,000 Corgi Puppies (danshive) (Reddit)
 |2019-09-16 = Sorry Diane Is Not A Squirrel (danshive) (Reddit)
+|2019-09-18 = Just a couple of Not-Dianes talking (danshive) (Reddit)
+|2019-09-20 = Disapproval (danshive) (Reddit)
+|2019-09-23 = Attempting to dissuade a wrecking ball (danshive) (Reddit)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic (Official)
@@ -5364,6 +5367,9 @@
 |None = Geeking out (danshive) (Reddit)
 |None = Over 9,000 Corgi Puppies (danshive) (Reddit)
 |None = Sorry Diane Is Not A Squirrel (danshive) (Reddit)
+|None = Just a couple of Not-Dianes talking (danshive) (Reddit)
+|None = Disapproval (danshive) (Reddit)
+|None = Attempting to dissuade a wrecking ball (danshive) (Reddit)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -8293,6 +8299,9 @@
 |2019-09-11 = Geeking out (danshive)
 |2019-09-13 = Over 9,000 Corgi Puppies (danshive)
 |2019-09-16 = Sorry Diane Is Not A Squirrel (danshive)
+|2019-09-18 = Just a couple of Not-Dianes talking (danshive)
+|2019-09-20 = Disapproval (danshive)
+|2019-09-23 = Attempting to dissuade a wrecking ball (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1890 = Today's comic is gay (riking27)
@@ -9064,6 +9073,9 @@
 |None = Geeking out (danshive)
 |None = Over 9,000 Corgi Puppies (danshive)
 |None = Sorry Diane Is Not A Squirrel (danshive)
+|None = Just a couple of Not-Dianes talking (danshive)
+|None = Disapproval (danshive)
+|None = Attempting to dissuade a wrecking ball (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |haylo = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -13175,6 +13187,9 @@
 |2019-09-11 = Geeking out (danshive)
 |2019-09-13 = Over 9,000 Corgi Puppies (danshive)
 |2019-09-16 = Sorry Diane Is Not A Squirrel (danshive)
+|2019-09-18 = Just a couple of Not-Dianes talking (danshive)
+|2019-09-20 = Disapproval (danshive)
+|2019-09-23 = Attempting to dissuade a wrecking ball (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -15863,6 +15878,9 @@
 |None = Geeking out (danshive)
 |None = Over 9,000 Corgi Puppies (danshive)
 |None = Sorry Diane Is Not A Squirrel (danshive)
+|None = Just a couple of Not-Dianes talking (danshive)
+|None = Disapproval (danshive)
+|None = Attempting to dissuade a wrecking ball (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -19730,6 +19748,9 @@
 |2019-09-11 = Geeking out (danshive)
 |2019-09-13 = Over 9,000 Corgi Puppies (danshive)
 |2019-09-16 = Sorry Diane Is Not A Squirrel (danshive)
+|2019-09-18 = Just a couple of Not-Dianes talking (danshive)
+|2019-09-20 = Disapproval (danshive)
+|2019-09-23 = Attempting to dissuade a wrecking ball (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -22418,6 +22439,9 @@
 |None = Geeking out (danshive)
 |None = Over 9,000 Corgi Puppies (danshive)
 |None = Sorry Diane Is Not A Squirrel (danshive)
+|None = Just a couple of Not-Dianes talking (danshive)
+|None = Disapproval (danshive)
+|None = Attempting to dissuade a wrecking ball (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -25101,6 +25125,9 @@
 |2019-09-11 = Geeking out (danshive)
 |2019-09-13 = Over 9,000 Corgi Puppies (danshive)
 |2019-09-16 = Sorry Diane Is Not A Squirrel (danshive)
+|2019-09-18 = Just a couple of Not-Dianes talking (danshive)
+|2019-09-20 = Disapproval (danshive)
+|2019-09-23 = Attempting to dissuade a wrecking ball (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -27789,6 +27816,9 @@
 |None = Geeking out (danshive)
 |None = Over 9,000 Corgi Puppies (danshive)
 |None = Sorry Diane Is Not A Squirrel (danshive)
+|None = Just a couple of Not-Dianes talking (danshive)
+|None = Disapproval (danshive)
+|None = Attempting to dissuade a wrecking ball (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -38517,6 +38547,9 @@
 |2019-09-09 = Power Up (danshive) (Reddit)
 |2019-09-11 = Wow (danshive) (Reddit)
 |2019-09-13 = Moral Choice Incoming (danshive) (Reddit)
+|2019-09-16 = This skirt's not made for walkin'... (danshive) (Reddit)
+|2019-09-18 = Just to be clear (danshive) (Reddit)
+|2019-09-20 = Timey Wimey (danshive) (Reddit)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)
@@ -39485,6 +39518,9 @@
 |None = Power Up (danshive) (Reddit)
 |None = Wow (danshive) (Reddit)
 |None = Moral Choice Incoming (danshive) (Reddit)
+|None = This skirt's not made for walkin'... (danshive) (Reddit)
+|None = Just to be clear (danshive) (Reddit)
+|None = Timey Wimey (danshive) (Reddit)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -40723,6 +40759,9 @@
 |2019-09-09 = Power Up (danshive)
 |2019-09-11 = Wow (danshive)
 |2019-09-13 = Moral Choice Incoming (danshive)
+|2019-09-16 = This skirt's not made for walkin'... (danshive)
+|2019-09-18 = Just to be clear (danshive)
+|2019-09-20 = Timey Wimey (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |180 = Farewell Gods of Curling! (ScorpSt)
@@ -41495,6 +41534,9 @@
 |None = Power Up (danshive)
 |None = Wow (danshive)
 |None = Moral Choice Incoming (danshive)
+|None = This skirt's not made for walkin'... (danshive)
+|None = Just to be clear (danshive)
+|None = Timey Wimey (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |haylo = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -42469,6 +42511,9 @@
 |2019-09-09 = Power Up (danshive)
 |2019-09-11 = Wow (danshive)
 |2019-09-13 = Moral Choice Incoming (danshive)
+|2019-09-16 = This skirt's not made for walkin'... (danshive)
+|2019-09-18 = Just to be clear (danshive)
+|2019-09-20 = Timey Wimey (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -43437,6 +43482,9 @@
 |None = Power Up (danshive)
 |None = Wow (danshive)
 |None = Moral Choice Incoming (danshive)
+|None = This skirt's not made for walkin'... (danshive)
+|None = Just to be clear (danshive)
+|None = Timey Wimey (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -44479,6 +44527,9 @@
 |2019-09-09 = Power Up (danshive)
 |2019-09-11 = Wow (danshive)
 |2019-09-13 = Moral Choice Incoming (danshive)
+|2019-09-16 = This skirt's not made for walkin'... (danshive)
+|2019-09-18 = Just to be clear (danshive)
+|2019-09-20 = Timey Wimey (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -45447,6 +45498,9 @@
 |None = Power Up (danshive)
 |None = Wow (danshive)
 |None = Moral Choice Incoming (danshive)
+|None = This skirt's not made for walkin'... (danshive)
+|None = Just to be clear (danshive)
+|None = Timey Wimey (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -46829,6 +46883,9 @@
 |2019-09-09 = Power Up (danshive)
 |2019-09-11 = Wow (danshive)
 |2019-09-13 = Moral Choice Incoming (danshive)
+|2019-09-16 = This skirt's not made for walkin'... (danshive)
+|2019-09-18 = Just to be clear (danshive)
+|2019-09-20 = Timey Wimey (danshive)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = XYC
@@ -47797,6 +47854,9 @@
 |None = Power Up (danshive)
 |None = Wow (danshive)
 |None = Moral Choice Incoming (danshive)
+|None = This skirt's not made for walkin'... (danshive)
+|None = Just to be clear (danshive)
+|None = Timey Wimey (danshive)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
