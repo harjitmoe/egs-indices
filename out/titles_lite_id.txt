@@ -1396,6 +1396,15 @@
 |None = Just a couple of Not-Dianes talking
 |None = Disapproval
 |None = Attempting to dissuade a wrecking ball
+|None = Execute comic sixty-six
+|None = Ice Ice Sarah
+|None = Easy Going Grace
+|None = How to Cool
+|None = Not That Weird
+|None = Clearly The Apocalypse
+|None = Oh hey these two
+|None = Party meeting!
+|None = Who gave Grace coffee -
 |#default = }}
 |sketch= {{#switch:{{{2}}}
 |79 = Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.
@@ -2346,6 +2355,15 @@
 |None = This skirt's not made for walkin'...
 |None = Just to be clear
 |None = Timey Wimey
+|None = Debatably Defeated
+|None = SUDDEN MORAL CHOICE!
+|None = XP Fine Print
+|None = Working Nine To Five
+|None = Business Purity
+|None = The world's most sparkly landlord
+|None = Business business numbers...!
+|None = Definitely a Wednesday EGSNP
+|None = The twang of Cupid's bowstring
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title-dateid|EGS-title-dateid]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>
 

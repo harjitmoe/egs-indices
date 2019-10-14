@@ -2679,6 +2679,15 @@
 |2019-09-18 = Just a couple of Not-Dianes talking (Official)
 |2019-09-20 = Disapproval (Official)
 |2019-09-23 = Attempting to dissuade a wrecking ball (Official)
+|2019-09-25 = Execute comic sixty-six (Official)
+|2019-09-27 = Ice Ice Sarah (Official)
+|2019-09-30 = Easy Going Grace (Official)
+|2019-10-02 = How to Cool (Official)
+|2019-10-04 = Not That Weird (Official)
+|2019-10-07 = Clearly The Apocalypse (Official)
+|2019-10-09 = Oh hey these two (Official)
+|2019-10-11 = Party meeting! (Official)
+|2019-10-14 = Who gave Grace coffee - (Official)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic (Official)
@@ -5370,6 +5379,15 @@
 |None = Just a couple of Not-Dianes talking (Official)
 |None = Disapproval (Official)
 |None = Attempting to dissuade a wrecking ball (Official)
+|None = Execute comic sixty-six (Official)
+|None = Ice Ice Sarah (Official)
+|None = Easy Going Grace (Official)
+|None = How to Cool (Official)
+|None = Not That Weird (Official)
+|None = Clearly The Apocalypse (Official)
+|None = Oh hey these two (Official)
+|None = Party meeting! (Official)
+|None = Who gave Grace coffee - (Official)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -6759,6 +6777,15 @@
 |2019-09-18 = Just a couple of Not-Dianes talking
 |2019-09-20 = Disapproval
 |2019-09-23 = Attempting to dissuade a wrecking ball
+|2019-09-25 = Execute comic sixty-six
+|2019-09-27 = Ice Ice Sarah
+|2019-09-30 = Easy Going Grace
+|2019-10-02 = How to Cool
+|2019-10-04 = Not That Weird
+|2019-10-07 = Clearly The Apocalypse
+|2019-10-09 = Oh hey these two
+|2019-10-11 = Party meeting!
+|2019-10-14 = Who gave Grace coffee -
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -8157,6 +8184,15 @@
 |None = Just a couple of Not-Dianes talking
 |None = Disapproval
 |None = Attempting to dissuade a wrecking ball
+|None = Execute comic sixty-six
+|None = Ice Ice Sarah
+|None = Easy Going Grace
+|None = How to Cool
+|None = Not That Weird
+|None = Clearly The Apocalypse
+|None = Oh hey these two
+|None = Party meeting!
+|None = Who gave Grace coffee -
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -13190,6 +13226,15 @@
 |2019-09-18 = Just a couple of Not-Dianes talking
 |2019-09-20 = Disapproval
 |2019-09-23 = Attempting to dissuade a wrecking ball
+|2019-09-25 = Execute comic sixty-six
+|2019-09-27 = Ice Ice Sarah
+|2019-09-30 = Easy Going Grace
+|2019-10-02 = How to Cool
+|2019-10-04 = Not That Weird
+|2019-10-07 = Clearly The Apocalypse
+|2019-10-09 = Oh hey these two
+|2019-10-11 = Party meeting!
+|2019-10-14 = Who gave Grace coffee -
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -15881,6 +15926,15 @@
 |None = Just a couple of Not-Dianes talking
 |None = Disapproval
 |None = Attempting to dissuade a wrecking ball
+|None = Execute comic sixty-six
+|None = Ice Ice Sarah
+|None = Easy Going Grace
+|None = How to Cool
+|None = Not That Weird
+|None = Clearly The Apocalypse
+|None = Oh hey these two
+|None = Party meeting!
+|None = Who gave Grace coffee -
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -19751,6 +19805,15 @@
 |2019-09-18 = Just a couple of Not-Dianes talking
 |2019-09-20 = Disapproval
 |2019-09-23 = Attempting to dissuade a wrecking ball
+|2019-09-25 = Execute comic sixty-six
+|2019-09-27 = Ice Ice Sarah
+|2019-09-30 = Easy Going Grace
+|2019-10-02 = How to Cool
+|2019-10-04 = Not That Weird
+|2019-10-07 = Clearly The Apocalypse
+|2019-10-09 = Oh hey these two
+|2019-10-11 = Party meeting!
+|2019-10-14 = Who gave Grace coffee -
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -22442,6 +22505,15 @@
 |None = Just a couple of Not-Dianes talking
 |None = Disapproval
 |None = Attempting to dissuade a wrecking ball
+|None = Execute comic sixty-six
+|None = Ice Ice Sarah
+|None = Easy Going Grace
+|None = How to Cool
+|None = Not That Weird
+|None = Clearly The Apocalypse
+|None = Oh hey these two
+|None = Party meeting!
+|None = Who gave Grace coffee -
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -25128,6 +25200,15 @@
 |2019-09-18 = Just a couple of Not-Dianes talking
 |2019-09-20 = Disapproval
 |2019-09-23 = Attempting to dissuade a wrecking ball
+|2019-09-25 = Execute comic sixty-six
+|2019-09-27 = Ice Ice Sarah
+|2019-09-30 = Easy Going Grace
+|2019-10-02 = How to Cool
+|2019-10-04 = Not That Weird
+|2019-10-07 = Clearly The Apocalypse
+|2019-10-09 = Oh hey these two
+|2019-10-11 = Party meeting!
+|2019-10-14 = Who gave Grace coffee -
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -27819,6 +27900,15 @@
 |None = Just a couple of Not-Dianes talking
 |None = Disapproval
 |None = Attempting to dissuade a wrecking ball
+|None = Execute comic sixty-six
+|None = Ice Ice Sarah
+|None = Easy Going Grace
+|None = How to Cool
+|None = Not That Weird
+|None = Clearly The Apocalypse
+|None = Oh hey these two
+|None = Party meeting!
+|None = Who gave Grace coffee -
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -38528,6 +38618,15 @@
 |2019-09-16 = This skirt's not made for walkin'... (Official)
 |2019-09-18 = Just to be clear (Official)
 |2019-09-20 = Timey Wimey (Official)
+|2019-09-23 = Debatably Defeated (Official)
+|2019-09-25 = SUDDEN MORAL CHOICE! (Official)
+|2019-09-27 = XP Fine Print (Official)
+|2019-09-30 = Working Nine To Five (Official)
+|2019-10-02 = Business Purity (Official)
+|2019-10-04 = The world's most sparkly landlord (Official)
+|2019-10-07 = Business business numbers...! (Official)
+|2019-10-09 = Definitely a Wednesday EGSNP (Official)
+|2019-10-11 = The twang of Cupid's bowstring (Official)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)
@@ -39499,6 +39598,15 @@
 |None = This skirt's not made for walkin'... (Official)
 |None = Just to be clear (Official)
 |None = Timey Wimey (Official)
+|None = Debatably Defeated (Official)
+|None = SUDDEN MORAL CHOICE! (Official)
+|None = XP Fine Print (Official)
+|None = Working Nine To Five (Official)
+|None = Business Purity (Official)
+|None = The world's most sparkly landlord (Official)
+|None = Business business numbers...! (Official)
+|None = Definitely a Wednesday EGSNP (Official)
+|None = The twang of Cupid's bowstring (Official)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -40038,6 +40146,15 @@
 |2019-09-16 = This skirt's not made for walkin'...
 |2019-09-18 = Just to be clear
 |2019-09-20 = Timey Wimey
+|2019-09-23 = Debatably Defeated
+|2019-09-25 = SUDDEN MORAL CHOICE!
+|2019-09-27 = XP Fine Print
+|2019-09-30 = Working Nine To Five
+|2019-10-02 = Business Purity
+|2019-10-04 = The world's most sparkly landlord
+|2019-10-07 = Business business numbers...!
+|2019-10-09 = Definitely a Wednesday EGSNP
+|2019-10-11 = The twang of Cupid's bowstring
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -40576,6 +40693,15 @@
 |None = This skirt's not made for walkin'...
 |None = Just to be clear
 |None = Timey Wimey
+|None = Debatably Defeated
+|None = SUDDEN MORAL CHOICE!
+|None = XP Fine Print
+|None = Working Nine To Five
+|None = Business Purity
+|None = The world's most sparkly landlord
+|None = Business business numbers...!
+|None = Definitely a Wednesday EGSNP
+|None = The twang of Cupid's bowstring
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -42382,6 +42508,15 @@
 |2019-09-16 = This skirt's not made for walkin'...
 |2019-09-18 = Just to be clear
 |2019-09-20 = Timey Wimey
+|2019-09-23 = Debatably Defeated
+|2019-09-25 = SUDDEN MORAL CHOICE!
+|2019-09-27 = XP Fine Print
+|2019-09-30 = Working Nine To Five
+|2019-10-02 = Business Purity
+|2019-10-04 = The world's most sparkly landlord
+|2019-10-07 = Business business numbers...!
+|2019-10-09 = Definitely a Wednesday EGSNP
+|2019-10-11 = The twang of Cupid's bowstring
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -43353,6 +43488,15 @@
 |None = This skirt's not made for walkin'...
 |None = Just to be clear
 |None = Timey Wimey
+|None = Debatably Defeated
+|None = SUDDEN MORAL CHOICE!
+|None = XP Fine Print
+|None = Working Nine To Five
+|None = Business Purity
+|None = The world's most sparkly landlord
+|None = Business business numbers...!
+|None = Definitely a Wednesday EGSNP
+|None = The twang of Cupid's bowstring
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -44398,6 +44542,15 @@
 |2019-09-16 = This skirt's not made for walkin'...
 |2019-09-18 = Just to be clear
 |2019-09-20 = Timey Wimey
+|2019-09-23 = Debatably Defeated
+|2019-09-25 = SUDDEN MORAL CHOICE!
+|2019-09-27 = XP Fine Print
+|2019-09-30 = Working Nine To Five
+|2019-10-02 = Business Purity
+|2019-10-04 = The world's most sparkly landlord
+|2019-10-07 = Business business numbers...!
+|2019-10-09 = Definitely a Wednesday EGSNP
+|2019-10-11 = The twang of Cupid's bowstring
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -45369,6 +45522,15 @@
 |None = This skirt's not made for walkin'...
 |None = Just to be clear
 |None = Timey Wimey
+|None = Debatably Defeated
+|None = SUDDEN MORAL CHOICE!
+|None = XP Fine Print
+|None = Working Nine To Five
+|None = Business Purity
+|None = The world's most sparkly landlord
+|None = Business business numbers...!
+|None = Definitely a Wednesday EGSNP
+|None = The twang of Cupid's bowstring
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -46754,6 +46916,15 @@
 |2019-09-16 = This skirt's not made for walkin'...
 |2019-09-18 = Just to be clear
 |2019-09-20 = Timey Wimey
+|2019-09-23 = Debatably Defeated
+|2019-09-25 = SUDDEN MORAL CHOICE!
+|2019-09-27 = XP Fine Print
+|2019-09-30 = Working Nine To Five
+|2019-10-02 = Business Purity
+|2019-10-04 = The world's most sparkly landlord
+|2019-10-07 = Business business numbers...!
+|2019-10-09 = Definitely a Wednesday EGSNP
+|2019-10-11 = The twang of Cupid's bowstring
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = XYC
@@ -47725,6 +47896,15 @@
 |None = This skirt's not made for walkin'...
 |None = Just to be clear
 |None = Timey Wimey
+|None = Debatably Defeated
+|None = SUDDEN MORAL CHOICE!
+|None = XP Fine Print
+|None = Working Nine To Five
+|None = Business Purity
+|None = The world's most sparkly landlord
+|None = Business business numbers...!
+|None = Definitely a Wednesday EGSNP
+|None = The twang of Cupid's bowstring
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
