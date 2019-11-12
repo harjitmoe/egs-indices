@@ -155,6 +155,7 @@ def export_numberdatemaps(alldat):
         print("|}\n\n", file=nom)
         print("|}\n\n", file=dim)
         print("|}\n\n", file=dfm)
+        print("COMIC COUNT FOR {}: {} strips".format(title, numero)) # i.e. to stdout.
     for i in (nem, nom, dim, dfm):
         i.close()  #IronPython grumble grumble
 

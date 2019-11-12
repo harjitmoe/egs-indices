@@ -1405,6 +1405,18 @@
 |None = Oh hey these two
 |None = Party meeting!
 |None = Who gave Grace coffee -
+|None = FEELS
+|None = Hindsight, education, and people
+|None = Expectations
+|None = Nothing To Ship Home About
+|None = Nanase The Flirt
+|None = Nothing to Fear!
+|None = IT'S TIME
+|None = HIJINKS?!
+|None = Where everybody knows Susan's name
+|None = Your exposition is in another castle
+|None = A Muggle in Hogwarts
+|None = Yer not a wizard, Diane
 |#default = }}
 |sketch= {{#switch:{{{2}}}
 |79 = Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.
@@ -2364,6 +2376,19 @@
 |None = Business business numbers...!
 |None = Definitely a Wednesday EGSNP
 |None = The twang of Cupid's bowstring
+|None = Non-Personal Space
+|None = Core gameplay
+|None = DONE WAITING!
+|None = Recycling
+|None = Alchemy!
+|None = Potion Preparations
+|None = Glug
+|None = Relativity
+|None = Buy something, will ya?!
+|None = Potions stuff
+|None = Not-Skill Potions!
+|None = So many bargain priced potions!
+|None = Meeting Quotas
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title-dateid|EGS-title-dateid]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>
 

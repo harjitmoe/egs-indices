@@ -1395,6 +1395,18 @@
 |2019-10-09 = Oh hey these two
 |2019-10-11 = Party meeting!
 |2019-10-14 = Who gave Grace coffee -
+|2019-10-16 = FEELS
+|2019-10-18 = Hindsight, education, and people
+|2019-10-21 = Expectations
+|2019-10-23 = Nothing To Ship Home About
+|2019-10-25 = Nanase The Flirt
+|2019-10-28 = Nothing to Fear!
+|2019-10-30 = IT'S TIME
+|2019-11-01 = HIJINKS?!
+|2019-11-04 = Where everybody knows Susan's name
+|2019-11-06 = Your exposition is in another castle
+|2019-11-08 = A Muggle in Hogwarts
+|2019-11-11 = Yer not a wizard, Diane
 |#default = }}
 |sketch= {{#switch:{{{2}}}-{{{3}}}-{{{4}}}
 |2002-07-01 = Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.
@@ -2349,6 +2361,19 @@
 |2019-10-07 = Business business numbers...!
 |2019-10-09 = Definitely a Wednesday EGSNP
 |2019-10-11 = The twang of Cupid's bowstring
+|2019-10-14 = Non-Personal Space
+|2019-10-16 = Core gameplay
+|2019-10-18 = DONE WAITING!
+|2019-10-21 = Recycling
+|2019-10-23 = Alchemy!
+|2019-10-25 = Potion Preparations
+|2019-10-28 = Glug
+|2019-10-30 = Relativity
+|2019-11-01 = Buy something, will ya?!
+|2019-11-04 = Potions stuff
+|2019-11-06 = Not-Skill Potions!
+|2019-11-08 = So many bargain priced potions!
+|2019-11-11 = Meeting Quotas
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title-date|EGS-title-date]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>
 

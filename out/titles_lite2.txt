@@ -1396,6 +1396,18 @@
 |2019-10-09 = Oh hey these two
 |2019-10-11 = Party meeting!
 |2019-10-14 = Who gave Grace coffee -
+|2019-10-16 = FEELS
+|2019-10-18 = Hindsight, education, and people
+|2019-10-21 = Expectations
+|2019-10-23 = Nothing To Ship Home About
+|2019-10-25 = Nanase The Flirt
+|2019-10-28 = Nothing to Fear!
+|2019-10-30 = IT'S TIME
+|2019-11-01 = HIJINKS?!
+|2019-11-04 = Where everybody knows Susan's name
+|2019-11-06 = Your exposition is in another castle
+|2019-11-08 = A Muggle in Hogwarts
+|2019-11-11 = Yer not a wizard, Diane
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -2803,6 +2815,18 @@
 |None = Oh hey these two
 |None = Party meeting!
 |None = Who gave Grace coffee -
+|None = FEELS
+|None = Hindsight, education, and people
+|None = Expectations
+|None = Nothing To Ship Home About
+|None = Nanase The Flirt
+|None = Nothing to Fear!
+|None = IT'S TIME
+|None = HIJINKS?!
+|None = Where everybody knows Susan's name
+|None = Your exposition is in another castle
+|None = A Muggle in Hogwarts
+|None = Yer not a wizard, Diane
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
@@ -4175,6 +4199,19 @@
 |2019-10-07 = Business business numbers...!
 |2019-10-09 = Definitely a Wednesday EGSNP
 |2019-10-11 = The twang of Cupid's bowstring
+|2019-10-14 = Non-Personal Space
+|2019-10-16 = Core gameplay
+|2019-10-18 = DONE WAITING!
+|2019-10-21 = Recycling
+|2019-10-23 = Alchemy!
+|2019-10-25 = Potion Preparations
+|2019-10-28 = Glug
+|2019-10-30 = Relativity
+|2019-11-01 = Buy something, will ya?!
+|2019-11-04 = Potions stuff
+|2019-11-06 = Not-Skill Potions!
+|2019-11-08 = So many bargain priced potions!
+|2019-11-11 = Meeting Quotas
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -4722,6 +4759,19 @@
 |None = Business business numbers...!
 |None = Definitely a Wednesday EGSNP
 |None = The twang of Cupid's bowstring
+|None = Non-Personal Space
+|None = Core gameplay
+|None = DONE WAITING!
+|None = Recycling
+|None = Alchemy!
+|None = Potion Preparations
+|None = Glug
+|None = Relativity
+|None = Buy something, will ya?!
+|None = Potions stuff
+|None = Not-Skill Potions!
+|None = So many bargain priced potions!
+|None = Meeting Quotas
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
