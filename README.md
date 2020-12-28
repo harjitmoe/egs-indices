@@ -27,10 +27,10 @@ You may need to edit the scripts to use the correct path to a GNU wget.  Also, y
 To update the databases on official titles and date anomalies:
 
 * Delete a.txt
-* Rename metadataegs3.txt to a.txt (this is used by the script as the starting point).
-* Run htmlonlyyo.py
+* Rename metadataegs4.txt to a.txt (this is used by the script as the starting point).
+* Run htmlonlyyoslug.py
 * Press RETURN (Enter) after the script has finished.
-* Force copy metadataegs3.txt into the repository root.
+* Force copy metadataegs4.txt into the repository root.
 
 To check for any anomalous date lookup successes (this should not be done too frequently):
 
