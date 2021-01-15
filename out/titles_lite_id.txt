@@ -1572,6 +1572,12 @@
 |None = Standards
 |None = One More Test Left
 |None = A Sudden and Intense Rivalry
+|None = Talking To A Mirror
+|None = Welcome to 2021
+|None = Why
+|None = Concerned Dorks
+|None = Emotional Retreat
+|None = Where's A Demonic Duck When You Need Them?!
 |#default = }}
 |sketch= {{#switch:{{{2}}}
 |79 = Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.
@@ -2721,6 +2727,13 @@
 |None = The Final Cutscene
 |None = Obligatory Twist
 |None = The Ultimate Counter
+|None = Cut Cutscene
+|None = Ragnar Is Not Into It
+|None = Battle time?
+|None = Of course, of course
+|None = The perfect plan! If not for all the flaws
+|None = Never Ending Search
+|None = Scary Nosy Unicorn
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title-dateid|EGS-title-dateid]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>
 

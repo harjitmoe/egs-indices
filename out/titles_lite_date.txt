@@ -1562,6 +1562,12 @@
 |2020-12-21 = Standards
 |2020-12-23 = One More Test Left
 |2020-12-28 = A Sudden and Intense Rivalry
+|2020-12-30 = Talking To A Mirror
+|2021-01-01 = Welcome to 2021
+|2021-01-04 = Why
+|2021-01-06 = Concerned Dorks
+|2021-01-11 = Emotional Retreat
+|2021-01-13 = Where's A Demonic Duck When You Need Them?!
 |#default = }}
 |sketch= {{#switch:{{{2}}}-{{{3}}}-{{{4}}}
 |2002-07-01 = Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.
@@ -2706,6 +2712,13 @@
 |2020-12-22 = The Final Cutscene
 |2020-12-24 = Obligatory Twist
 |2020-12-26 = The Ultimate Counter
+|2020-12-29 = Cut Cutscene
+|2020-12-31 = Ragnar Is Not Into It
+|2021-01-02 = Battle time?
+|2021-01-05 = Of course, of course
+|2021-01-09 = The perfect plan! If not for all the flaws
+|2021-01-12 = Never Ending Search
+|2021-01-14 = Scary Nosy Unicorn
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title-date|EGS-title-date]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>
 

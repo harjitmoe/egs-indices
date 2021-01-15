@@ -2855,6 +2855,12 @@
 |2020-12-21 = Standards (Official)
 |2020-12-23 = One More Test Left (Official)
 |2020-12-28 = A Sudden and Intense Rivalry (Official)
+|2020-12-30 = Talking To A Mirror (Official)
+|2021-01-01 = Welcome to 2021 (Official)
+|2021-01-04 = Why (Official)
+|2021-01-06 = Concerned Dorks (Official)
+|2021-01-11 = Emotional Retreat (Official)
+|2021-01-13 = Where's A Demonic Duck When You Need Them?! (Official)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic (Official)
@@ -5722,6 +5728,12 @@
 |None = Standards (Official)
 |None = One More Test Left (Official)
 |None = A Sudden and Intense Rivalry (Official)
+|None = Talking To A Mirror (Official)
+|None = Welcome to 2021 (Official)
+|None = Why (Official)
+|None = Concerned Dorks (Official)
+|None = Emotional Retreat (Official)
+|None = Where's A Demonic Duck When You Need Them?! (Official)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -7287,6 +7299,12 @@
 |2020-12-21 = Standards
 |2020-12-23 = One More Test Left
 |2020-12-28 = A Sudden and Intense Rivalry
+|2020-12-30 = Talking To A Mirror
+|2021-01-01 = Welcome to 2021
+|2021-01-04 = Why
+|2021-01-06 = Concerned Dorks
+|2021-01-11 = Emotional Retreat
+|2021-01-13 = Where's A Demonic Duck When You Need Them?!
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -8861,6 +8879,12 @@
 |None = Standards
 |None = One More Test Left
 |None = A Sudden and Intense Rivalry
+|None = Talking To A Mirror
+|None = Welcome to 2021
+|None = Why
+|None = Concerned Dorks
+|None = Emotional Retreat
+|None = Where's A Demonic Duck When You Need Them?!
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -14070,6 +14094,12 @@
 |2020-12-21 = Standards
 |2020-12-23 = One More Test Left
 |2020-12-28 = A Sudden and Intense Rivalry
+|2020-12-30 = Talking To A Mirror
+|2021-01-01 = Welcome to 2021
+|2021-01-04 = Why
+|2021-01-06 = Concerned Dorks
+|2021-01-11 = Emotional Retreat
+|2021-01-13 = Where's A Demonic Duck When You Need Them?!
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -16937,6 +16967,12 @@
 |None = Standards
 |None = One More Test Left
 |None = A Sudden and Intense Rivalry
+|None = Talking To A Mirror
+|None = Welcome to 2021
+|None = Why
+|None = Concerned Dorks
+|None = Emotional Retreat
+|None = Where's A Demonic Duck When You Need Them?!
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -20983,6 +21019,12 @@
 |2020-12-21 = Standards
 |2020-12-23 = One More Test Left
 |2020-12-28 = A Sudden and Intense Rivalry
+|2020-12-30 = Talking To A Mirror
+|2021-01-01 = Welcome to 2021
+|2021-01-04 = Why
+|2021-01-06 = Concerned Dorks
+|2021-01-11 = Emotional Retreat
+|2021-01-13 = Where's A Demonic Duck When You Need Them?!
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -23850,6 +23892,12 @@
 |None = Standards
 |None = One More Test Left
 |None = A Sudden and Intense Rivalry
+|None = Talking To A Mirror
+|None = Welcome to 2021
+|None = Why
+|None = Concerned Dorks
+|None = Emotional Retreat
+|None = Where's A Demonic Duck When You Need Them?!
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -26712,6 +26760,12 @@
 |2020-12-21 = Standards
 |2020-12-23 = One More Test Left
 |2020-12-28 = A Sudden and Intense Rivalry
+|2020-12-30 = Talking To A Mirror
+|2021-01-01 = Welcome to 2021
+|2021-01-04 = Why
+|2021-01-06 = Concerned Dorks
+|2021-01-11 = Emotional Retreat
+|2021-01-13 = Where's A Demonic Duck When You Need Them?!
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -29579,6 +29633,12 @@
 |None = Standards
 |None = One More Test Left
 |None = A Sudden and Intense Rivalry
+|None = Talking To A Mirror
+|None = Welcome to 2021
+|None = Why
+|None = Concerned Dorks
+|None = Emotional Retreat
+|None = Where's A Demonic Duck When You Need Them?!
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -40559,6 +40619,13 @@
 |2020-12-22 = The Final Cutscene (Official)
 |2020-12-24 = Obligatory Twist (Official)
 |2020-12-26 = The Ultimate Counter (Official)
+|2020-12-29 = Cut Cutscene (Official)
+|2020-12-31 = Ragnar Is Not Into It (Official)
+|2021-01-02 = Battle time? (Official)
+|2021-01-05 = Of course, of course (Official)
+|2021-01-09 = The perfect plan! If not for all the flaws (Official)
+|2021-01-12 = Never Ending Search (Official)
+|2021-01-14 = Scary Nosy Unicorn (Official)
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I (Official) / XYC (Zorua)
@@ -41721,6 +41788,13 @@
 |None = The Final Cutscene (Official)
 |None = Obligatory Twist (Official)
 |None = The Ultimate Counter (Official)
+|None = Cut Cutscene (Official)
+|None = Ragnar Is Not Into It (Official)
+|None = Battle time? (Official)
+|None = Of course, of course (Official)
+|None = The perfect plan! If not for all the flaws (Official)
+|None = Never Ending Search (Official)
+|None = Scary Nosy Unicorn (Official)
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |official = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -42451,6 +42525,13 @@
 |2020-12-22 = The Final Cutscene
 |2020-12-24 = Obligatory Twist
 |2020-12-26 = The Ultimate Counter
+|2020-12-29 = Cut Cutscene
+|2020-12-31 = Ragnar Is Not Into It
+|2021-01-02 = Battle time?
+|2021-01-05 = Of course, of course
+|2021-01-09 = The perfect plan! If not for all the flaws
+|2021-01-12 = Never Ending Search
+|2021-01-14 = Scary Nosy Unicorn
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -43180,6 +43261,13 @@
 |None = The Final Cutscene
 |None = Obligatory Twist
 |None = The Ultimate Counter
+|None = Cut Cutscene
+|None = Ragnar Is Not Into It
+|None = Battle time?
+|None = Of course, of course
+|None = The perfect plan! If not for all the flaws
+|None = Never Ending Search
+|None = Scary Nosy Unicorn
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |deviantart = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -45177,6 +45265,13 @@
 |2020-12-22 = The Final Cutscene
 |2020-12-24 = Obligatory Twist
 |2020-12-26 = The Ultimate Counter
+|2020-12-29 = Cut Cutscene
+|2020-12-31 = Ragnar Is Not Into It
+|2021-01-02 = Battle time?
+|2021-01-05 = Of course, of course
+|2021-01-09 = The perfect plan! If not for all the flaws
+|2021-01-12 = Never Ending Search
+|2021-01-14 = Scary Nosy Unicorn
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -46339,6 +46434,13 @@
 |None = The Final Cutscene
 |None = Obligatory Twist
 |None = The Ultimate Counter
+|None = Cut Cutscene
+|None = Ragnar Is Not Into It
+|None = Battle time?
+|None = Of course, of course
+|None = The perfect plan! If not for all the flaws
+|None = Never Ending Search
+|None = Scary Nosy Unicorn
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |ookii = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -47575,6 +47677,13 @@
 |2020-12-22 = The Final Cutscene
 |2020-12-24 = Obligatory Twist
 |2020-12-26 = The Ultimate Counter
+|2020-12-29 = Cut Cutscene
+|2020-12-31 = Ragnar Is Not Into It
+|2021-01-02 = Battle time?
+|2021-01-05 = Of course, of course
+|2021-01-09 = The perfect plan! If not for all the flaws
+|2021-01-12 = Never Ending Search
+|2021-01-14 = Scary Nosy Unicorn
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -48737,6 +48846,13 @@
 |None = The Final Cutscene
 |None = Obligatory Twist
 |None = The Ultimate Counter
+|None = Cut Cutscene
+|None = Ragnar Is Not Into It
+|None = Battle time?
+|None = Of course, of course
+|None = The perfect plan! If not for all the flaws
+|None = Never Ending Search
+|None = Scary Nosy Unicorn
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |zorua = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
@@ -50313,6 +50429,13 @@
 |2020-12-22 = The Final Cutscene
 |2020-12-24 = Obligatory Twist
 |2020-12-26 = The Ultimate Counter
+|2020-12-29 = Cut Cutscene
+|2020-12-31 = Ragnar Is Not Into It
+|2021-01-02 = Battle time?
+|2021-01-05 = Of course, of course
+|2021-01-09 = The perfect plan! If not for all the flaws
+|2021-01-12 = Never Ending Search
+|2021-01-14 = Scary Nosy Unicorn
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = XYC
@@ -51475,6 +51598,13 @@
 |None = The Final Cutscene
 |None = Obligatory Twist
 |None = The Ultimate Counter
+|None = Cut Cutscene
+|None = Ragnar Is Not Into It
+|None = Battle time?
+|None = Of course, of course
+|None = The perfect plan! If not for all the flaws
+|None = Never Ending Search
+|None = Scary Nosy Unicorn
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |harjit = {{#switch:{{{3}}} |date = {{#switch:{{{4}}}-{{{5}}}-{{{6}}}
