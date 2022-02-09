@@ -103,6 +103,13 @@
     ["2019-07-15","The New World: Title Pending 2 - Even More Pending"],
     ["2019-10-28","The New World: Title Pending 3 - Untitled Party"],
     ["2020-08-31","The New World: Title Pending 5 or 6"],
+    ["2021-03-31","Balance: Part 1"],
+    ["2021-06-02","Balance: Part 2"],
+    ["2021-08-09","Balance: Part 2-B"],
+    ["2021-10-06","Balance: Part 3"],
+    ["2022-01-10","Balance: Part 4"],
+    ["2022-01-17","Balance: Part 5"],
+    ["2022-02-02","Balance: Part 6"],
 ],"sketch":[
     [708, "2013 [- Jul 2014]"], # Post-Ookii start
     # Proper lines start here
@@ -159,6 +166,11 @@
     ["2019-07-15","Super Hero Science"],
     ["2019-08-28","Parable"],
     ["2021-02-09","Q&A WAO #1"],
+    ["2021-05-04","Tedd Video Game Opinions"],
+    ["2021-08-31","Canons Fired"],
+    ["2021-09-14","Blanket"],
+    ["2021-10-12","For Reals"],
+    ["2021-11-23","Jestful Statement"],
 ]},
 
 "datitles":{
