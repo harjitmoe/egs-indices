@@ -1710,6 +1710,17 @@
 |None = After a thousand years...
 |None = KEVIN!
 |None = Another person?!
+|None = Intense training
+|None = Ashley no Mahou Academia
+|None = Don't mind me I'm not even here but since I AM here...
+|None = Getting to help YAY
+|None = &quot;Concerns!&quot;
+|None = Scary assessment
+|None = Good Elliot
+|None = End of Part 6: What's this? - Part 7 begins Wednesday, March 9th.
+|None = Balance, Part 7 Begins
+|None = Incredible Text Powers
+|None = Story comic
 |#default = }}
 |sketch= {{#switch:{{{2}}}
 |79 = Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.
@@ -2133,6 +2144,8 @@
 |None = Year of the Moo
 |None = Susan And Elliot - For The Ratings!
 |None = Just Not Sure - Diane And Rhoda
+|None = Technically a new sketchbook. The BEST KIND of sketchbook (Just Not Sure - Susan and Catalina)
+|None = Flexing!
 |#default = }}
 |np= {{#switch:{{{2}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -3028,6 +3041,21 @@
 |None = The Judge
 |None = SPIKE
 |None = Grace's Turn
+|None = Hey, you. You're finally awake
+|None = What no it's fine
+|None = 100 PUSH UPS...
+|None = Huge Success
+|None = Her legend grows
+|None = THAT'S what happened?!
+|None = Super Cool!
+|None = Who would dare to challenge?
+|None = Looking cool
+|None = A natural!
+|None = Many thoughts
+|None = Squirrel train choo choo
+|None = Floating hearts and stuff
+|None = Something something boats?
+|None = Conclusion
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title-dateid|EGS-title-dateid]]: Unsupported comic type '{{{1}}}'</span>}}</includeonly><noinclude>
 

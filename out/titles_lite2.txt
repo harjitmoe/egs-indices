@@ -1701,6 +1701,17 @@
 |2022-02-02 = After a thousand years...
 |2022-02-04 = KEVIN!
 |2022-02-07 = Another person?!
+|2022-02-09 = Intense training
+|2022-02-11 = Ashley no Mahou Academia
+|2022-02-14 = Don't mind me I'm not even here but since I AM here...
+|2022-02-16 = Getting to help YAY
+|2022-02-18 = &quot;Concerns!&quot;
+|2022-02-21 = Scary assessment
+|2022-02-23 = Good Elliot
+|2022-02-25 = End of Part 6: What's this? - Part 7 begins Wednesday, March 9th.
+|2022-03-09 = Balance, Part 7 Begins
+|2022-03-14 = Incredible Text Powers
+|2022-03-16 = Story comic
 |#default = }}
 |id = {{#switch:{{{4}}}
 |1 = First Comic
@@ -3413,6 +3424,17 @@
 |None = After a thousand years...
 |None = KEVIN!
 |None = Another person?!
+|None = Intense training
+|None = Ashley no Mahou Academia
+|None = Don't mind me I'm not even here but since I AM here...
+|None = Getting to help YAY
+|None = &quot;Concerns!&quot;
+|None = Scary assessment
+|None = Good Elliot
+|None = End of Part 6: What's this? - Part 7 begins Wednesday, March 9th.
+|None = Balance, Part 7 Begins
+|None = Incredible Text Powers
+|None = Story comic
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
@@ -3834,6 +3856,8 @@
 |2021-03-02 = Year of the Moo
 |2021-12-11 = Susan And Elliot - For The Ratings!
 |2022-01-09 = Just Not Sure - Diane And Rhoda
+|2022-02-27 = Technically a new sketchbook. The BEST KIND of sketchbook (Just Not Sure - Susan and Catalina)
+|2022-03-02 = Flexing!
 |#default = }}
 |id = {{#switch:{{{4}}}
 |79 = Shrink Filler Comic: A Don't Care What She Says, I Think She Just Can't Resist the Amazing Flavor.
@@ -4257,6 +4281,8 @@
 |None = Year of the Moo
 |None = Susan And Elliot - For The Ratings!
 |None = Just Not Sure - Diane And Rhoda
+|None = Technically a new sketchbook. The BEST KIND of sketchbook (Just Not Sure - Susan and Catalina)
+|None = Flexing!
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
@@ -5155,6 +5181,21 @@
 |2022-02-03 = The Judge
 |2022-02-05 = SPIKE
 |2022-02-08 = Grace's Turn
+|2022-02-11 = Hey, you. You're finally awake
+|2022-02-15 = What no it's fine
+|2022-02-17 = 100 PUSH UPS...
+|2022-02-22 = Huge Success
+|2022-02-24 = Her legend grows
+|2022-02-26 = THAT'S what happened?!
+|2022-03-01 = Super Cool!
+|2022-03-03 = Who would dare to challenge?
+|2022-03-05 = Looking cool
+|2022-03-08 = A natural!
+|2022-03-10 = Many thoughts
+|2022-03-12 = Squirrel train choo choo
+|2022-03-15 = Floating hearts and stuff
+|2022-03-17 = Something something boats?
+|2022-03-19 = Conclusion
 |#default = }}
 |id = {{#switch:{{{4}}}
 |12 = Tedd Forgot To Do Something - Part I
@@ -6050,6 +6091,21 @@
 |None = The Judge
 |None = SPIKE
 |None = Grace's Turn
+|None = Hey, you. You're finally awake
+|None = What no it's fine
+|None = 100 PUSH UPS...
+|None = Huge Success
+|None = Her legend grows
+|None = THAT'S what happened?!
+|None = Super Cool!
+|None = Who would dare to challenge?
+|None = Looking cool
+|None = A natural!
+|None = Many thoughts
+|None = Squirrel train choo choo
+|None = Floating hearts and stuff
+|None = Something something boats?
+|None = Conclusion
 |#default = }}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported lookup scheme '{{{3}}}'</span>}}
 |#default = <span class="error">[[Template:EGS-title|EGS-title]]: Unsupported authority scheme '{{{2}}}' (only official supported in this version)</span>}}
